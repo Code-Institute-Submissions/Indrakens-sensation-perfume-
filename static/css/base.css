@@ -8,7 +8,16 @@ body {
     height: calc(100vh - 164px);
     color: #0c0c0c; 
     font-family: 'Ubuntu', sans-serif; 
+}
+
+.bg-dark{
+    background-color: #000 !important;
 } 
+
+.logo {
+    font-family: 'Lobster', sans-serif; 
+    color: #E0B411; 
+}
 
 .logo-font {
     font-family: 'Lobster', sans-serif; 
@@ -49,7 +58,7 @@ body {
 }
 
 .border-warning {
-    border: 1px solid #f3b805 !important;
+    border: 1px solid #000;
 }
 
 /* -------------------------------- Media Queries */
