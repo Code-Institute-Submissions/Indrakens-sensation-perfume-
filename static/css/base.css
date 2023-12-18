@@ -21,7 +21,7 @@ body {
 
 .logo-font {
     font-family: 'Lobster', sans-serif; 
-} 
+}
 
 /* from Bulma */
 .icon {
@@ -32,14 +32,21 @@ body {
     width: 1.5rem;
 }
 
-.main-logo-link {
-    width: fit-content;
-}
+.my-account, 
+.shopping-bag{
+    color: #E0B411;
+}  
+
+.my-account:hover,
+.shopping-bag:hover{
+    color: #e7cd71;
+} 
 
 .shop-now-button {
     background: #E0B411;
     color: #000;
     min-width: 260px;
+    font-weight: 700;
 }
 
 .btn-warning { 
@@ -58,7 +65,7 @@ body {
 }
 
 .border-warning {
-    border: 1px solid #000;
+    border: 1px solid #000 !important;
 }
 
 /* -------------------------------- Media Queries */
