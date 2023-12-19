@@ -23,9 +23,8 @@ body {
     font-family: 'Lobster', sans-serif; 
 }
 
-/* nav bar */
-.navbar-toggler{
-    color: #E0B411;
+.font {
+    font-family: 'Ubuntu'; 
 } 
 
 /* from Bulma */
@@ -44,7 +43,8 @@ body {
 } 
 
 .my-account:hover,
-.shopping-bag:hover{
+.shopping-bag:hover,
+.search:hover{
     color: #e7cd71;
 } 
 
@@ -68,10 +68,15 @@ body {
 .btn-warning:focus {
     background: #e7cd71;
     color: #000;
-}
+} 
 
 .border-warning {
     border: 1px solid #000 !important;
+}
+
+/*------------------------- mobile */
+.fst-normal{
+    font-size: 25px;
 } 
 
 /* -------------------------------- Media Queries */
