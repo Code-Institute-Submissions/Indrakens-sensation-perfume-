@@ -28,8 +28,33 @@ body {
 }
 
 .fst-normal{
-    font-size: 22px; 
+    font-size: 22px;  
 }
+
+.nav-item a{
+    color: #E0B411 !important; 
+} 
+
+.nav-item a:hover{
+    color: #e7cd71 !important; 
+} 
+
+.navbar-toggler-icon i{
+    color: #E0B411;  
+} 
+
+.navbar-toggler-icon i:hover{
+    color: #e7cd71;  
+}
+
+.dropdown-menu a{
+    color: #000 !important;
+} 
+
+.dropdown-menu a:hover{
+    color: #000 !important;
+    text-decoration: underline; 
+} 
 
 /* from Bulma */
 .icon {
