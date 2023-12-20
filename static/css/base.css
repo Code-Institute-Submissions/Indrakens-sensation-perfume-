@@ -31,6 +31,7 @@ body {
     font-size: 22px;  
 }
 
+/* navigation */
 .nav-item a{
     color: #E0B411 !important; 
 } 
@@ -54,7 +55,7 @@ body {
 .dropdown-menu a:hover{
     color: #000 !important;
     text-decoration: underline; 
-} 
+}  
 
 /* from Bulma */
 .icon {
@@ -77,6 +78,7 @@ body {
     color: #e7cd71;
 } 
 
+/* buttons */
 .shop-now-button {
     background: #E0B411;
     color: #000;
@@ -101,8 +103,8 @@ body {
 
 .border-warning {
     border: 1px solid #000 !important;
-}  
-
+}
+ 
 /* -------------------------------- Media Queries */
 
 @media (min-width: 1200px) {

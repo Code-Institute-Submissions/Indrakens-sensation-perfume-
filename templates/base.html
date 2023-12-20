@@ -41,11 +41,12 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
+      <!-- top nav -->
       <div id="topnav" class="row bg-dark pt-lg-2 d-none d-lg-flex">
         <!-- logo -->
         <div class="col-12 col-lg 4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a class="navbar-brand" href="{% url 'home' %}">
-            <h1 class="logo h4"><img src="{% static 'images/logo.jpg' %}" width="50" alt="s">ensation -  Perfume World</h1>
+            <h1 class="logo h3 mt-4"><img src="{% static 'images/logo.jpg' %}" width="50" alt="s">ensation -  Perfume World</h1>
           </a>
         </div>
         <!-- search field -->
@@ -105,6 +106,12 @@
             </li>
           </ul>
         </div>
+      </div>
+      <!-- delivery banner -->
+      <div id="delivery-banner" class="row text-center">
+        <div class="col text-white bg-dark">
+          <h4 class="font mt-1">Free delivery on orders over ${{ free_shipping_threshold }}!</h4>                
+        </div>            
       </div>
       <!-- main nav and mobile-top-header -->
       <div class="row bg-dark">
