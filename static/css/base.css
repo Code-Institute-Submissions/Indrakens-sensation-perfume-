@@ -3,9 +3,9 @@ html {
 }
 
 body {
-    background: url('/media/86809596-7EAB-4BCB-B699-6EAD47317F22.jpg') no-repeat center center fixed;
+    background: url('/media/4C6A912A-D15A-4BBD-88C8-50D6664D5C76.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: 100%; 
     color: #000; 
     font-family: 'Ubuntu', sans-serif; 
 }
@@ -103,7 +103,7 @@ body {
 
 .border-warning {
     border: 1px solid #000 !important;
-}
+} 
  
 /* -------------------------------- Media Queries */
 
@@ -111,7 +111,8 @@ body {
   .container {
     max-width: 80%;
   }
-}
+
+} 
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -125,5 +126,13 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }  
+} 
+
+@media (min-width: 900px) {
+
+    .header-container {
+        padding-top: 122px;
     }
+ 
 } 
