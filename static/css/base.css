@@ -116,9 +116,13 @@ body {
 	z-index: -1;
 } 
 
+.shop hr{
+    border-top: 2px solid #000 !important;
+}
+
 hr{
-    border-top: 1px solid #000;
-}  
+    border-top: 1px solid #000 !important; 
+} 
  
 /* -------------------------------- Media Queries */
 
