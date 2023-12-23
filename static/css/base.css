@@ -115,6 +115,10 @@ body {
 	background: white;
 	z-index: -1;
 } 
+
+hr{
+    border-top: 1px solid #000;
+}  
  
 /* -------------------------------- Media Queries */
 
@@ -143,7 +147,7 @@ body {
 @media (min-width: 900px) {
 
     .header-container {
-        padding-top: 122px;
+        padding-top: 232px;
     }
  
 } 

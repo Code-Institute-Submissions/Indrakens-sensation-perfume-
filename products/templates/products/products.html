@@ -13,8 +13,8 @@
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font">Products</h2>
+            <div class="col text-center mt-4">
+                <h2 class="font">Products</h2>
                 <hr class="w-50 mb-1">
             </div>
         </div>
@@ -24,14 +24,14 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0 pt-2">
+                            <div class="card h-100 border-0">
                                 <!-- product image -->    
                                 <a href="">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 <!-- product body -->   
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
+                                    <p class="mb-0 text-uppercase">{{ product.name }}</p>
                                 </div>
                                 <!-- product footer -->
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
@@ -39,7 +39,7 @@
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
                                             {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                                <small class="text-dark"><i class="fas fa-star mr-1" style="color: #E0B411;"></i>{{ product.rating }} / 5</small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
