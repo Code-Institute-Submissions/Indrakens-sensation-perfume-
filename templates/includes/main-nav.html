@@ -17,20 +17,20 @@
                 For Her
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="her-link">
-                <a href="#" class="dropdown-item">Eau De Perfum</a>
-                <a href="#" class="dropdown-item">Eau De Toilette</a>
-                <a href="#" class="dropdown-item">All For Her</a>
+                <a href="{% url 'products' %}?category=perfum_for_her" class="dropdown-item">Eau De Perfum</a>
+                <a href="{% url 'products' %}?category=eau_de_toilette_her" class="dropdown-item">Eau De Toilette</a>
+                <a href="{% url 'products' %}?category=perfum_for_her,eau_de_toilette_her" class="dropdown-item">All For Her</a>
             </div>
-        </li>
+        </li> 
         <!-- for him products menu -->
         <li class="nav-item dropdown">
             <a class="fst-normal nav-link text-black mr-5" href="#" id="him-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 For Him 
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="him-link">
-                <a href="#" class="dropdown-item">Eau De Parfum</a>
-                <a href="#" class="dropdown-item">Eau De Toilette</a>
-                <a href="#" class="dropdown-item">All For Him</a>
+                <a href="{% url 'products' %}?category=perfum_for_him" class="dropdown-item">Eau De Parfum</a>
+                <a href="{% url 'products' %}?category=eau_de_toilette_him" class="dropdown-item">Eau De Toilette</a>
+                <a href="{% url 'products' %}?category=perfum_for_him,eau_de_toilette_him" class="dropdown-item">All For Him</a>
             </div>
         </li>
         <!-- gift sets menu -->
@@ -39,9 +39,9 @@
                 Gift Sets
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="gift_set-link">
-                <a href="#" class="dropdown-item">Gift Sets For Her</a>
-                <a href="#" class="dropdown-item">Gift Sets For Him</a>
-                <a href="#" class="dropdown-item">All Gift Sets</a>
+                <a href="{% url 'products' %}?category=gift_set_her" class="dropdown-item">Gift Sets For Her</a>
+                <a href="{% url 'products' %}?category=gift_set_him" class="dropdown-item">Gift Sets For Him</a>
+                <a href="{% url 'products' %}?category=gift_set_her,gift_set_him" class="dropdown-item">All Gift Sets</a>
             </div>
         </li>
         <!-- sales menu -->
@@ -50,11 +50,11 @@
                 Sales 
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="sales-link">
-                <a href="#" class="dropdown-item">For Her</a>
-                <a href="#" class="dropdown-item">Gift Sets For Her</a>
-                <a href="#" class="dropdown-item">For Him</a>
-                <a href="#" class="dropdown-item">Gift Sets For Him</a>
-                <a href="#" class="dropdown-item">All Sales</a>
+                <a href="{% url 'products' %}?category=her_sales" class="dropdown-item">For Her</a>
+                <a href="{% url 'products' %}?category=gift_set_her_sales" class="dropdown-item">Gift Sets For Her</a>
+                <a href="{% url 'products' %}?category=him_sales" class="dropdown-item">For Him</a>
+                <a href="{% url 'products' %}?category=gift_set_him_sales" class="dropdown-item">Gift Sets For Him</a>
+                <a href="{% url 'products' %}?category=her_sales,gift_set_her_sales,him_sales,gift_set_him_sales" class="dropdown-item">All Sales</a>
             </div>
         </li>
     </ul>
