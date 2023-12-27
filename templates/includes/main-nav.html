@@ -5,9 +5,10 @@
             <a class="fst-normal nav-link text-black mr-5" href="#" id="all-items-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shop All
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-items-link">
-                <a href="#" class="dropdown-item ">Category</a>
-                <a href="#" class="dropdown-item ">Rating</a>
+            <div class="dropdown-menu border border-dark" aria-labelledby="all-items-link">
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">Category</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">Rating</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price</a>
                 <a href="{% url 'products' %}" class="dropdown-item">Shop All</a> 
             </div> 
         </li>
@@ -16,7 +17,7 @@
             <a class="fst-normal nav-link text-black mr-5" href="#" id="her-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 For Her
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="her-link">
+            <div class="dropdown-menu border border-dark" aria-labelledby="her-link">
                 <a href="{% url 'products' %}?category=perfum_for_her" class="dropdown-item">Eau De Perfum</a>
                 <a href="{% url 'products' %}?category=eau_de_toilette_her" class="dropdown-item">Eau De Toilette</a>
                 <a href="{% url 'products' %}?category=perfum_for_her,eau_de_toilette_her" class="dropdown-item">All For Her</a>
@@ -27,7 +28,7 @@
             <a class="fst-normal nav-link text-black mr-5" href="#" id="him-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 For Him 
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="him-link">
+            <div class="dropdown-menu border border-dark" aria-labelledby="him-link">
                 <a href="{% url 'products' %}?category=perfum_for_him" class="dropdown-item">Eau De Parfum</a>
                 <a href="{% url 'products' %}?category=eau_de_toilette_him" class="dropdown-item">Eau De Toilette</a>
                 <a href="{% url 'products' %}?category=perfum_for_him,eau_de_toilette_him" class="dropdown-item">All For Him</a>
@@ -38,7 +39,7 @@
             <a class="fst-normal nav-link text-black mr-5" href="#" id="gift_set-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Gift Sets
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="gift_set-link">
+            <div class="dropdown-menu border border-dark" aria-labelledby="gift_set-link">
                 <a href="{% url 'products' %}?category=gift_set_her" class="dropdown-item">Gift Sets For Her</a>
                 <a href="{% url 'products' %}?category=gift_set_him" class="dropdown-item">Gift Sets For Him</a>
                 <a href="{% url 'products' %}?category=gift_set_her,gift_set_him" class="dropdown-item">All Gift Sets</a>
@@ -49,13 +50,13 @@
             <a class="fst-normal nav-link text-black mr-5" href="#" id="sales-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sales 
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="sales-link">
+            <div class="dropdown-menu border border-dark" aria-labelledby="sales-link">
                 <a href="{% url 'products' %}?category=her_sales" class="dropdown-item">For Her</a>
                 <a href="{% url 'products' %}?category=gift_set_her_sales" class="dropdown-item">Gift Sets For Her</a>
                 <a href="{% url 'products' %}?category=him_sales" class="dropdown-item">For Him</a>
                 <a href="{% url 'products' %}?category=gift_set_him_sales" class="dropdown-item">Gift Sets For Him</a>
                 <a href="{% url 'products' %}?category=her_sales,gift_set_her_sales,him_sales,gift_set_him_sales" class="dropdown-item">All Sales</a>
-            </div>
+            </div> 
         </li>
     </ul>
 </div> 
