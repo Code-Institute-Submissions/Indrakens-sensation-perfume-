@@ -79,8 +79,7 @@ body {
 } 
 
 /* buttons */
-.shop-now-button,
-.keep-shopping-button {
+.shop-now-button {
     background: #E0B411;
     color: #000;
     min-width: 260px;
@@ -92,8 +91,6 @@ body {
     color: #000;
 }
 
-.keep-shopping-button:hover, 
-.keep-shopping-button:active,
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
