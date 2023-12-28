@@ -116,6 +116,14 @@ body {
 	z-index: -1;
 } 
 
+.badge{
+    color: #000 !important;
+} 
+
+.badge:hover{
+    color: #E0B411 !important;
+} 
+
 .shop hr{
     border-top: 2px solid #000 !important;
 } 
