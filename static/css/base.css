@@ -137,6 +137,20 @@ hr{
     color: #E0B411 !important; 
 }  
 
+.btt-button {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #dbdbd9; 
+}  
+
+.btt-link {
+    cursor: pointer; 
+} 
+
+
 /* product detail */
 .was{
     text-decoration: line-through 1px; 
