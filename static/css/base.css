@@ -130,7 +130,12 @@ body {
 
 hr{
     border-top: 1px solid #000 !important; 
-} 
+}
+
+
+.medium a{
+    color: #E0B411 !important; 
+}  
 
 /* product detail */
 .was{
