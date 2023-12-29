@@ -58,19 +58,18 @@
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
-                            <!-- product sizes -->
+                            <!-- product gift bag sizes -->
                             {% with product.has_sizes as s %}
                             {% if s %} 
-                                <div class="col-12">
-                                    <p><strong>Size:</strong></p>
-                                    <select class="form-control rounded-0 w-25" name="product_size" id='id_product_size'>
-                                        <option value="xs">XS</option>
-                                        <option value="s">S</option>
-                                        <option value="m" selected>M</option>
-                                        <option value="l">L</option>
-                                        <option value="xl">XL</option>
-                                    </select>
-                                </div>
+                                <div class="col-12 pb-4 pt-2">
+                                    <p><strong>Offer Gift Wrap - Includes Gift Bag & Decorative Ribbon:</strong></p>
+                                    <select class="form-control-sm w-50 h-50" name="product_size" id='id_product_size'>
+                                        <option class="warning" value="N/A" selected>None</option>
+                                        <option value="Mini gift bag with decorative ribbon">Mini Gift Bag</option>
+                                        <option value="Party gift bag with decorative ribbon">Party Gift Bag</option>
+                                        <option value="Small gift bag with decorative ribbon">Small Gift Bag</option> 
+                                    </select> 
+                                </div> 
                             {% endif %}  
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
