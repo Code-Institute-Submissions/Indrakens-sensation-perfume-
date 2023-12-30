@@ -197,6 +197,45 @@ hr{
 } 
 
 
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+.arrow-success {
+    border-bottom-color: #068e0a !important;
+}
+
+.arrow-danger {
+    background-color: #c10404 !important;
+}
+
+.arrow-info{
+    background-color: #a19e9e !important;
+} 
+
+.bg-warning{
+    background-color: #E0B411 !important; 
+} 
+
+.shopping-bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+} 
+
+.btn-black{
+    background-color: #000 !important;
+    color: #ffffff !important; 
+} 
+
 /* -------------------------------- Media Queries */
 
 @media (min-width: 1200px) {
