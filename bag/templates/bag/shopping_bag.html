@@ -45,7 +45,7 @@
                                         <p class="my-0 small"><strong>Included Gift Bag: </strong>{% if item.product.has_sizes %}{{ item.size }}{% else %}N/A{% endif %}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>  
+                                        <p class="my-0">&euro;{{ item.product.price }}</p>  
                                     </td> 
                                     <td class="py-3 w-25">
                                         <!-- update item quantity -->
@@ -86,22 +86,22 @@
                                         <a class="remove-item text-success float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove Item</small></a>
                                     </td> 
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
+                                        <p class="my-0">&euro;{{ item.product.price }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
                             <tr>
                                 <!-- user summary -->
                                 <td colspan="5" class="pt-5 text-right">
-                                    <h6><strong>Shopping Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                                    <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
-                                    <h4 class="mt-4"><strong>Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                    <h6><strong>Shopping Bag Total: &euro;{{ total|floatformat:2 }}</strong></h6>
+                                    <h6>Delivery: &euro;{{ delivery|floatformat:2 }}</h6>
+                                    <h4 class="mt-4"><strong>Total: &euro;{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %}
                                         <p class="mb-1 text-success">
-                                            Free delivery available by spending <strong>${{ free_delivery_delta }}</strong> more!
+                                            Free delivery available by spending <strong>&euro;{{ free_delivery_delta }}</strong> more!
                                         </p>
                                     {% endif %} 
-                                </td>
+                                </td> 
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
