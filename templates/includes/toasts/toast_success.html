@@ -24,7 +24,9 @@
                         </div>
                         <div class="col-9">
                             <p class="my-0"><strong>{{ item.product.name|upper }}</strong></p>
-                            <p class="my-0 small"><strong>Included Gift Wrap:</strong> {% if item.product.has_sizes %}{{ item.size }}{% else %}N/A{% endif %}</p>
+                            {% if item.product.has_sizes %} 
+                            <p class="my-0 small"><strong>Included Gift Wrap:</strong>{{ item.size }}</p>
+                            {% endif %} 
                             <p class="my-0 small text-muted">Quantity: {{ item.quantity }}</p>
                         </div>
                     </div>
@@ -44,7 +46,7 @@
                     <a href="{% url 'view_shopping_bag' %}" class="btn btn-black btn-block rounded-0">
                         <span class="text-uppercase">Go To Checkout</span>
                         <span class="icon">
-                            <i class="fas fa-lock" style="color: white;"></i> 
+                            <i class="fas fa-lock" style="color: #E0B411;"></i> 
                         </span>
                     </a>
                 </div>

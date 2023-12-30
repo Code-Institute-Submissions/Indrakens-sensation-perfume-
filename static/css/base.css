@@ -174,7 +174,7 @@ hr{
     top: 72px;
     right: 15px;
     z-index: 99999999999;
-}
+} 
 
 .custom-toast {
     overflow: visible;
@@ -233,7 +233,7 @@ hr{
 
 .btn-black{
     background-color: #000 !important;
-    color: #ffffff !important; 
+    color: #E0B411 !important; 
 } 
 
 /* -------------------------------- Media Queries */
