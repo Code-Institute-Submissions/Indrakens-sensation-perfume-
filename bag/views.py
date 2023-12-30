@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse 
+from django.shortcuts import render, redirect, reverse, HttpResponse 
 
 
 def view_shopping_bag(request):
@@ -53,12 +53,39 @@ def adjust_shopping_bag(request, item_id):
         if quantity > 0:
             shopping_bag[item_id]['items_by_size'][size] = quantity
         else: 
-            del shopping_bag[item_id]['items_by_size'][size]     
+            del shopping_bag[item_id]['items_by_size'][size]
+            if not shopping_bag[item_id]['items_by_size']:  
+                shopping_bag.pop(item_id)      
     else:
         if quantity > 0:
             shopping_bag[item_id] = quantity
         else: 
-            shopping_bag.pop[item_id] 
+            shopping_bag.pop(item_id) 
 
     request.session['bag'] = shopping_bag
     return redirect(reverse('view_shopping_bag')) 
+
+
+def remove_from_shopping_bag(request, item_id):
+    """ 
+    Remove the item from shopping bag
+    """
+
+    try:
+        size = None
+        if 'product_size' in request.POST:
+            size = request.POST['product_size']
+        shopping_bag = request.session.get('bag', {}) 
+
+        if size:        
+            del shopping_bag[item_id]['items_by_size'][size]  
+            if not shopping_bag[item_id]['items_by_size']:  
+                shopping_bag.pop(item_id)   
+        else:
+            shopping_bag.pop(item_id) 
+
+        request.session['bag'] = shopping_bag
+        return HttpResponse(status=200)
+        
+    except Exception as e:
+        return HttpResponse(status=500)     
