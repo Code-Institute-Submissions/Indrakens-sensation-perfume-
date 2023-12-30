@@ -27,7 +27,7 @@
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
                                 <tr>
-                                    <th scope="col">Product Info</th>
+                                    <th scope="col">Order Info</th>
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col" class="pl-2">Quantity</th>
@@ -47,7 +47,7 @@
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>  
                                     </td> 
-                                    <td class="py-3 h-25 d-inline-block">
+                                    <td class="py-3 w-25">
                                         <!-- update item quantity -->
                                         <form class="form update-form" method="POST" action="">
                                             {% csrf_token %}
@@ -82,8 +82,8 @@
                                                 </div>
                                             </div>
                                         </form> 
-                                        <a class="update-link text-success"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove</small></a>
+                                        <a class="update-link text-success"><small>Update Item</small></a>
+                                        <a class="remove-item text-success float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove Item</small></a>
                                     </td> 
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
@@ -97,10 +97,10 @@
                                     <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
                                     <h4 class="mt-4"><strong>Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %}
-                                        <p class="mb-1 text-danger">
-                                            Free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
+                                        <p class="mb-1 text-success">
+                                            Free delivery available by spending <strong>${{ free_delivery_delta }}</strong> more!
                                         </p>
-                                    {% endif %}
+                                    {% endif %} 
                                 </td>
                             </tr>
                             <tr>

@@ -161,6 +161,11 @@ hr{
 .update-link,
 .remove-item{
     cursor: pointer; 
+} 
+
+.update-link:hover,
+.remove-item:hover{
+    text-decoration: underline !important;
 }  
 
 /* -------------------------------- Media Queries */
