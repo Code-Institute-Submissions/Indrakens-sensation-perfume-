@@ -55,7 +55,7 @@
                     <p class="mt-3"><span class="font-weight-bold text-uppercase">Includes: </span>{{ product.include }}</p> 
                     {% endif %} 
                     <!-- product form -->
-                    <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+                    <form class="form" action="{% url 'add_to_shopping_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
                             <!-- product gift bag sizes -->
