@@ -166,7 +166,24 @@ hr{
 .update-link:hover,
 .remove-item:hover{
     text-decoration: underline !important;
-}  
+}
+
+/* toast messages */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+} 
+
+.toast-capper {
+    height: 4px; 
+    background-color: #E0B411 !important; 
+} 
 
 /* -------------------------------- Media Queries */
 
