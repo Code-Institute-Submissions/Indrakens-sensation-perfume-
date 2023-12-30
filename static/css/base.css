@@ -182,8 +182,20 @@ hr{
 
 .toast-capper {
     height: 4px; 
-    background-color: #E0B411 !important; 
 } 
+
+.bg-success {
+    background-color: #068e0a !important;
+} 
+
+.bg-danger {
+    background-color: #c10404 !important;
+}
+
+.bg-info{
+    background-color: #a19e9e !important;
+} 
+
 
 /* -------------------------------- Media Queries */
 
