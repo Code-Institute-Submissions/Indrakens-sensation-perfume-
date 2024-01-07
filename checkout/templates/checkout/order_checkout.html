@@ -49,7 +49,7 @@
                             </a>
                         </div>
                         <div class="col-7"> 
-                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 text-uppercase small"><strong>{{ item.product.name }}</strong></p>
                             <p class="my-0 small">Included Gift Bag: {% if item.product.has_sizes %}{{ item.size }}{% else %}N/A{% endif %}</p>
                             <p class="mb-2 small text-muted">Quantity: {{ item.quantity }}</p>
                         </div>
@@ -98,11 +98,11 @@
 								<label class="form-check-label" for="id-save-info">Save delivery information to my profile</label>
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
-								<label class="form-check-label" for="id-save-info">
+								<label class="form-check-label small" for="id-save-info">
                                     <a class="text-success" href="{% url 'account_signup' %}">Create Account</a> or 
                                     <a class="text-success" href="{% url 'account_login' %}">Login</a> to save information.
                                 </label> 
-							{% endif %}
+							{% endif %} 
 						</div>  
                     </fieldset>
                     <fieldset class="px-3">
@@ -141,3 +141,9 @@
     </div>     
 {% endblock %} 
 
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
+{% endblock %} 
