@@ -41,22 +41,22 @@
                         <span class="float-right">&euro;{{ total|floatformat:2 }}</span>
                     </p></strong>
                     {% if free_delivery_delta > 0 %}
-                        <p class="mb-0 p-2 bg-warning shadow-sm text-black text-center">
+                        <p class="mb-0 p-2 bg-success shadow-sm text-black text-center">
                             Spend <strong>&euro;{{ free_delivery_delta }}</strong> more to get free delivery!
                         </p>
                     {% endif %}
-                    <!-- go to checkout button -->
-                    <a href="{% url 'order_checkout' %}" class="btn btn-black btn-block rounded-0">
-                        <span class="text-uppercase">Go To Checkout</span>
-                        <span class="icon">
-                            <i class="fas fa-lock" style="color: #E0B411;"></i> 
-                        </span>
-                    </a> 
                     <!-- view shopping bag button -->
-                    <a href="{% url 'view_shopping_bag' %}" class="btn btn-warning btn-block rounded-0">
+                    <a href="{% url 'view_shopping_bag' %}" class="btn btn-warning btn-block rounded-0 mb-0">
                         <span class="text-uppercase">View Shopping Bag</span>
                         <span class="icon">
                             <i class="fa-solid fa-angles-right"></i> 
+                        </span>
+                    </a> 
+                    <!-- go to checkout button -->
+                    <a href="{% url 'order_checkout' %}" class="btn btn-black btn-block rounded-0 mb-0">
+                        <span class="text-uppercase">Go To Checkout</span>
+                        <span class="icon">
+                            <i class="fas fa-lock" style="color: #E0B411;"></i> 
                         </span>
                     </a> 
                 </div>
