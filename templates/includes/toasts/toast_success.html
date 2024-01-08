@@ -14,6 +14,7 @@
                 <hr class="mt-1 mb-3">
             </div>
         </div>
+        <!-- shopping bag item -->
         {% if grand_total %}
             <p class="font bg-white text-black py-1"><strong>Your Shopping Bag ({{ product_count }})</strong></p>
             <div class="shopping-bag-notification-wrapper">
@@ -32,6 +33,7 @@
                     </div>
                 {% endfor %}
             </div>
+            <!-- total -->
             <div class="row">
                 <div class="col">
                     <strong><p class="mt-3 mb-1 text-black">
@@ -43,10 +45,18 @@
                             Spend <strong>&euro;{{ free_delivery_delta }}</strong> more to get free delivery!
                         </p>
                     {% endif %}
+                    <!-- go to checkout button -->
                     <a href="{% url 'order_checkout' %}" class="btn btn-black btn-block rounded-0">
                         <span class="text-uppercase">Go To Checkout</span>
                         <span class="icon">
                             <i class="fas fa-lock" style="color: #E0B411;"></i> 
+                        </span>
+                    </a> 
+                    <!-- view shopping bag button -->
+                    <a href="{% url 'view_shopping_bag' %}" class="btn btn-warning btn-block rounded-0">
+                        <span class="text-uppercase">View Shopping Bag</span>
+                        <span class="icon">
+                            <i class="fa-solid fa-angles-right"></i> 
                         </span>
                     </a> 
                 </div>
