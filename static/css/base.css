@@ -7,24 +7,25 @@ body {
     background-size: cover;
     height: 100%;  
     color: #000; 
-    font-family: 'Ubuntu', sans-serif; 
-}
+    font-family: 'Livvic', sans-serif;
+} 
 
 .bg-dark{
     background-color: #000 !important;
 } 
 
 .logo {
-    font-family: 'Lobster', sans-serif; 
+    font-family: 'Cinzel Decorative', serif;
     color: #E0B411; 
 }
 
 .logo-font {
-    font-family: 'Lobster', sans-serif; 
-}
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 75px;
+} 
 
 .font {
-    font-family: 'Ubuntu'; 
+    font-family: 'Livvic', sans-serif;
 }
 
 .fst-normal{
@@ -203,7 +204,7 @@ hr{
 
 .arrow-success {
     border-bottom-color: #A6D16C !important;
-}
+} 
 
 .arrow-danger {
     background-color: #c10404 !important;
