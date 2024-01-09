@@ -46,15 +46,21 @@
       <!-- top nav -->
       <div id="topnav" class="row bg-dark pt-lg-2 d-none d-lg-flex">
         <!-- logo -->
-        <div class="col-12 col-lg 4 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <div class="col-12 col-lg-4 my-auto ml-2 text-center text-lg-left">
           <a class="navbar-brand" href="{% url 'home' %}">
-            <h1 class="logo"><img src="{% static 'images/logo.jpg' %}" width="118" alt="s"></h1>
+            <h1 class="logo"><img src="{% static 'images/logo.jpg' %}" width="118" alt="sensation-perfume"></h1>
           </a>
         </div>
         <!-- search field -->
-        <div class="col-12 col-lg 4 my-auto py-1 py-lg-0">
+        <div class="col-12 col-lg-4 my-auto">
+          <!-- delivery banner -->
+          <div id="delivery-banner" class="row text-center mt-2">
+            <div class="col text-white bg-dark">
+              <h5 class="font">Free delivery on orders over &euro;{{ free_delivery_threshold }}!</h5>                
+            </div>            
+          </div>  
           <form method="GET" action="{% url 'products' %}"> 
-            <div class="input-group w-100">
+            <div class="input-group w-100 mt-2">
                 <input class="form-control border-warning rounded-0" type="text" name="q" placeholder="Search">
                 <div class="input-group-append">
                     <button class="form-control btn btn-warning border border-warning rounded-0" type="submit">
@@ -65,7 +71,7 @@
                 </div>
             </div>
           </form>
-        </div>
+        </div>  
         <!-- account and shopping bag links -->
         <div class="col-12 col-lg 4 my-auto py-1 py-lg-0">
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
@@ -108,12 +114,6 @@
             </li>
           </ul>
         </div>
-      </div>
-      <!-- delivery banner -->
-      <div id="delivery-banner" class="row text-center">
-        <div class="col text-white bg-dark">
-          <h5 class="font">Free delivery on orders over &euro;{{ free_delivery_threshold }}!</h5>                
-        </div>            
       </div> 
       <!-- main nav and mobile-top-header -->
       <div class="row bg-dark">
@@ -126,6 +126,7 @@
             {% include 'includes/mobile-top-header.html' %}
             {% include 'includes/main-nav.html' %} 
         </nav>
+      </div> 
     </div>
     </header> 
     
