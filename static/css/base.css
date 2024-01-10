@@ -56,6 +56,10 @@ body {
 .dropdown-menu a:hover{
     color: #000 !important;
     text-decoration: underline; 
+}
+
+input[name='q']::placeholder{
+    color: #aab7c4;
 } 
 
 /* from Bulma */
@@ -237,6 +241,19 @@ hr{
 .link-sign-up,
 .home-link{
     color: #E0B411 !important;
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+} 
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+} 
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
 } 
 
 /* -------------------------------- Media Queries */
