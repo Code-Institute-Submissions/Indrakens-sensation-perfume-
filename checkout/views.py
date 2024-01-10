@@ -17,7 +17,7 @@ import json
 @require_POST
 def cache_checkout_data(request):
     try:
-        pid = request.POST.get('client_secret').split('_secret')[0]
+        pid = request.POST.get('client_secret').split('_secret')[0] 
         stripe.api_key = settings.STRIPE_SECRET_KEY
         stripe.PaymentIntent.modify(pid, metadata={
             'bag': json.dumps(request.session.get('bag', {})),
@@ -52,7 +52,11 @@ def order_checkout(request):
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save()
+            order = order_form.save(commit=False) 
+            pid = request.POST.get('client_secret').split('_secret')[0] 
+            order.stripe_pid = pid
+            order.original_bag = json.dumps(shopping_bag) 
+            order.save() 
             for item_id, item_data in shopping_bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
@@ -71,7 +75,7 @@ def order_checkout(request):
                                 quantity=quantity,
                                 gift_bag_size=size,
                             ) 
-                            order_line_item.save()
+                            order_line_item.save() 
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
