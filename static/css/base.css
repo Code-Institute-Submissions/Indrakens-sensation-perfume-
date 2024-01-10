@@ -263,8 +263,7 @@ hr{
 
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
-}
- 
+} 
 
 /* -------------------------------- Media Queries */
 
