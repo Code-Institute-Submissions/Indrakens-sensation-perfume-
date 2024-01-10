@@ -214,7 +214,8 @@ hr{
     background-color: #c10404 !important;
 }
 
-.arrow-info{
+.arrow-info,
+.arrow-alert{
     background-color: #a19e9e !important;
 } 
 
@@ -234,14 +235,22 @@ hr{
 }
 
 /* allauth account */
-.sign-in {
+.sign-in,
+.register,
+.verify,
+.confirm,
+.sign-out,
+.pasword {
     border-top: 2px solid #000 !important;
-}
+} 
 
-.link-sign-up,
-.home-link{
+.link-register,
+.home-link,
+.link-login,
+.link-email,
+.link-reset {
     color: #E0B411 !important;
-}
+} 
 
 .allauth-form-inner-content input {
     border-color: #000;
@@ -254,7 +263,8 @@ hr{
 
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
-} 
+}
+ 
 
 /* -------------------------------- Media Queries */
 

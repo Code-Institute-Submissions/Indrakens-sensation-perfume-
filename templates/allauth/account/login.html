@@ -7,7 +7,7 @@
 
 {% block inner_content %} 
 
-<h2 class="font">{% trans "Sign In" %}</h2>
+<h2 class="font">{% trans "Log In" %}</h2>
 <hr class="sign-in">
 
 {% get_providers as socialaccount_providers %}
@@ -31,16 +31,16 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
 {% else %}
 <p>{% blocktrans %}If you have not created an account yet, then please
-<a class="link-sign-up" href="{{ signup_url }}"><strong>Sign Up</strong></a> first.{% endblocktrans %}</p>
+<a class="link-register" href="{{ signup_url }}"><strong>Register</strong></a> first.{% endblocktrans %}</p>
 {% endif %} 
 
-<form class="login" method="POST" action="{% url 'account_login' %}">
+<form class="login mb-4" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %}
   {{ form|crispy }} 
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}  
-  <button class="primaryAction btn-warning border-warning rounded-0 btn-sm text-uppercase" type="submit">{% trans "Sign In" %} 
+  <button class="primaryAction btn-warning border-warning rounded-0 btn-sm text-uppercase" type="submit">{% trans "Log In" %} 
     <span class="icon">
       <i class="fa-solid fa-angles-right"></i>
     </span>
