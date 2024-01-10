@@ -5,9 +5,10 @@
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
-{% block content %}
+{% block inner_content %} 
 
-<h1>{% trans "Sign In" %}</h1>
+<h2 class="font">{% trans "Sign In" %}</h2>
+<hr class="sign-in">
 
 {% get_providers as socialaccount_providers %}
 
@@ -30,17 +31,27 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
 {% else %}
 <p>{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-{% endif %}
+<a class="link-sign-up" href="{{ signup_url }}"><strong>Sign Up</strong></a> first.{% endblocktrans %}</p>
+{% endif %} 
 
 <form class="login" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %}
-  {{ form.as_p }}
+  {{ form|crispy }} 
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+  {% endif %} 
+  <button class="primaryAction btn-warning border-warning rounded-0 btn-sm text-uppercase" type="submit">{% trans "Sign In" %} 
+    <span class="icon">
+      <i class="fa-solid fa-angles-right"></i>
+    </span>
+  </button>
+  <p class="small d-inline ml-2">Return to 
+    <a class="home-link" href="{% url 'home' %}">
+      <strong>Home</strong></a> page.
+  </p>
+  <p class="mt-2">
+    <a class="text-success secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+  </p>   
 </form>
 
 {% endblock %}
