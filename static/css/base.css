@@ -165,6 +165,10 @@ hr{
     text-decoration: underline !important;
 }
 
+input[name='q']::placeholder {
+    color: #aab7c4;   
+} 
+
 /* toast messages */
 .message-container {
     position: fixed;
@@ -250,6 +254,11 @@ hr{
 .link-email,
 .link-reset {
     color: #E0B411 !important;
+} 
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; 
+    color: #000; 
 } 
 
 .allauth-form-inner-content input {
