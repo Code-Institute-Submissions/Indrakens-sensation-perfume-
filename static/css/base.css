@@ -215,12 +215,11 @@ input[name='q']::placeholder {
 } 
 
 .arrow-danger {
-    background-color: #c10404 !important;
+    border-bottom-color: #c10404 !important;
 }
 
-.arrow-info,
 .arrow-alert{
-    background-color: #a19e9e !important;
+    border-bottom-color: #a19e9e !important;
 } 
 
 .bg-warning{

@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-$p*xv=4m+^ku2xmjxt8nz@+7a7^g!i3nv)f$_4t$u5rc^bh5*(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-indrakens-sensationperf-53kfohua0al.ws-eu107.gitpod.io'] 
+ALLOWED_HOSTS = ['8000-indrakens-sensationperf-8popu8olebb.ws-eu107.gitpod.io'] 
 
 
 # Application definition
@@ -105,13 +105,13 @@ SITE_ID = 1
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'optional'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/' 
 
-WSGI_APPLICATION = 'sensation.wsgi.application'
+WSGI_APPLICATION = 'sensation.wsgi.application' 
 
 
 # Database

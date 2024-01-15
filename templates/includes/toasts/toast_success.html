@@ -15,7 +15,7 @@
             </div>
         </div>
         <!-- shopping bag item -->
-        {% if grand_total %} 
+        {% if grand_total and not on_user_profile_page %} 
             <p class="font bg-white text-black py-1"><strong>Your Shopping Bag ({{ product_count }})</strong></p>
             <div class="shopping-bag-notification-wrapper">
                 {% for item in shopping_bag_items %} 
