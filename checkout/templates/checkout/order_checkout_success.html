@@ -202,12 +202,21 @@
         <!-- sales button -->
         <div class="row">
 			<div class="col-12 col-lg-7 text-right">
-				<a href="{% url 'products' %}?category=her_sales,gift_set_her_sales,him_sales,gift_set_him_sales" class="btn btn-warning border-warning rounded-0 my-2">
-					<span class="icon mr-2">
-						<i class="fa-sharp fa-solid fa-gift"></i>
-					</span>
-					<span class="text-uppercase">Check out the latest sales!</span>
-				</a>
+                {% if from_profile %}
+                    <a href="{% url 'profile' %}" class="btn btn-warning border-warning rounded-0 my-2">
+                        <span class="icon mr-2">
+                            <i class="fa-solid fa-angles-left"></i>
+                        </span>
+                        <span class="text-uppercase">Back to Profile</span>
+                    </a>
+                {% else %} 
+                    <a href="{% url 'products' %}?category=her_sales,gift_set_her_sales,him_sales,gift_set_him_sales" class="btn btn-warning border-warning rounded-0 my-2">
+					    <span class="icon mr-2">
+						    <i class="fa-sharp fa-solid fa-gift"></i>
+					    </span>
+					    <span class="text-uppercase">Check out the latest sales!</span>
+				    </a>
+				{% endif %} 
 			</div>
 		</div>
     </div>
