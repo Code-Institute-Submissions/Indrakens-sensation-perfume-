@@ -15,7 +15,7 @@ import dj_database_url
 from pathlib import Path 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent 
 
 
 # Quick-start development settings - unsuitable for production
@@ -81,6 +81,7 @@ TEMPLATES = [
                 'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.contrib.messages.context_processors.messages', 
                 'bag.contexts.bag_contents', 
             ],
             'builtins': [
@@ -175,10 +176,11 @@ STRIPE_CURRENCY = 'eur'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '') 
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '') 
+DEFAULT_FROM_EMAIL = 'sensation-perfume@example.com' 
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField' 
