@@ -58,7 +58,7 @@
                                 {% if product.image %}     
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
+                                </a> 
                                 {% else %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{% static 'images/noimage.png' %}" alt="{{ product.name }}">
@@ -87,6 +87,17 @@
                                             {% else %}
                                                 <small class="text-muted">No Rating</small> 
                                             {% endif %}
+                                            {% if request.user.is_superuser %}
+                                                <p class="mt-2 text-uppercase small">
+                                                    <a class="text-success" href="{% url 'update_product' product.id %}">
+                                                        <strong>Update</strong>
+                                                    </a>
+                                                    <span class="ml-3"></span>
+                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">
+                                                        <strong>Delete</strong>
+                                                    </a> 
+                                                </p> 
+                                            {% endif %}  
                                         </div>
                                     </div>
                                 </div>
