@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect,  get_object_or_404
 from django.contrib import messages 
 from django.contrib.auth.decorators import login_required  
 
@@ -35,6 +35,7 @@ def profile(request):
     return render(request, template, context)
 
 
+@login_required 
 def user_order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
 
@@ -49,4 +50,13 @@ def user_order_history(request, order_number):
         'from_profile': True,    
     } 
 
-    return render(request, template, context)      
+    return render(request, template, context) 
+
+
+@login_required 
+def delete_order_history(request, order_number):
+    order = get_object_or_404(Order, order_number=order_number)
+    order.delete()
+    messages.success(request, f'Order {order} deleted from order history!') 
+
+    return redirect('profile')         

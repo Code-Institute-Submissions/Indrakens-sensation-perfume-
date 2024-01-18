@@ -8,4 +8,5 @@ urlpatterns = [
         views.user_order_history,
         name="user_order_history",
     ),
-] 
+    path('delete/<order_number>/', views.delete_order_history, name='delete_order_history'),
+]  

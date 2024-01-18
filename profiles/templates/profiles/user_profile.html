@@ -71,14 +71,19 @@
                                                 </li> 
                                                 <li>
                                                     {% if item.gift_bag_size %}
-                                                        <strong>Included Gift Bag:</strong> {{ item.gift_bag_size }}{% else %}N/A
+                                                        <strong>Included Gift Bag:</strong> {{ item.gift_bag_size }} 
                                                     {% endif %}  
                                                 </li>    
                                             {% endfor %}  
                                         </ul> 
                                     </td>
                                     <!-- order grand total -->
-                                    <td>&euro;{{ order.grand_total }}</td> 
+                                    <td>&euro;{{ order.grand_total }}</td>
+                                    <td>   
+                                        <a class="text-danger" href="{% url 'delete_order_history' order.order_number %}">
+                                            <strong>Delete</strong>
+                                        </a> 
+                                    </td>
                                 </tr> 
                             {% endfor %} 
                         </tbody>
@@ -90,5 +95,5 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript" src="{% static 'profiles/js/country_field.js' %}"></script>
+    <script type="text/javascript" src="{% static 'profiles/js/country_field.js' %}"></script> 
 {% endblock %} 
