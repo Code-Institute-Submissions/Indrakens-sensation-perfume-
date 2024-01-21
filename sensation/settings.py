@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os 
 import dj_database_url
 from pathlib import Path 
+if os.path.isfile("env.py"):
+    import env 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent 
@@ -27,7 +29,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ 
 
-ALLOWED_HOSTS = ['sensation-perfume-812e78510f66.herokuapp.com', 'localhost']  
+ALLOWED_HOSTS = [
+    'sensation-perfume-812e78510f66.herokuapp.com', 
+    'localhost',
+    '8000-indrakens-sensationperf-tzqm8m888oc.ws-eu107.gitpod.io',
+    ]  
 
 
 # Application definition
@@ -120,7 +126,7 @@ WSGI_APPLICATION = 'sensation.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ('DATABASE_URL')) 
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) 
     }
 else:    
     DATABASES = {
