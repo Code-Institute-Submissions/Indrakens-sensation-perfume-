@@ -1,1 +1,1 @@
-web: gunicorn sensation.wsgi:application
+web: gunicorn sensation.wsgi
