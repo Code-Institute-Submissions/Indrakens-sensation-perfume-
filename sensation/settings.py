@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$p*xv=4m+^ku2xmjxt8nz@+7a7^g!i3nv)f$_4t$u5rc^bh5*('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['sensation-perfume.herokuapp.com', 'localhost'] 
 
