@@ -44,7 +44,7 @@
   <body> 
     <header class="container-fluid fixed-top">
       <!-- top nav -->
-      <div id="topnav" class="row bg-dark pt-lg-2 d-none d-lg-flex">
+      <div id="topnav" class="row bg-dark pt-lg-0 d-none d-lg-flex">
         <!-- logo -->
         <div class="col-12 col-lg-4 my-auto ml-2 text-center text-lg-left">
           <a class="navbar-brand" href="{% url 'home' %}">
@@ -52,13 +52,7 @@
           </a>
         </div>
         <!-- search field -->
-        <div class="col-12 col-lg-4 my-auto">
-          <!-- delivery banner -->
-          <div id="delivery-banner" class="row text-center mt-2">
-            <div class="col text-white bg-dark">
-              <h5 class="font banner">Free delivery on orders over &euro;{{ free_delivery_threshold }}!</h5>                
-            </div>            
-          </div>  
+        <div class="col-12 col-lg-4 my-auto">   
           <form method="GET" action="{% url 'products' %}"> 
             <div class="input-group w-100 mt-2">
                 <input class="form-control border-warning rounded-0" type="text" name="q" placeholder="Search">
@@ -73,7 +67,7 @@
           </form>
         </div>  
         <!-- account and shopping bag links -->
-        <div class="col-12 col-lg 4 my-auto py-1 py-lg-0">
+        <div class="col-12 col-lg my-auto py-1 py-lg-0">
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
             <!-- may account -->
             <li class="list-inline-item dropdown">
@@ -128,6 +122,12 @@
         </nav>
       </div> 
     </div>
+    <!-- delivery banner -->
+    <div id="delivery-banner" class="row text-center">
+      <div class="col text-white bg-dark">
+        <h4 class="font banner">Free delivery on orders over &euro;{{ free_delivery_threshold }}!</h4>                
+      </div>            
+    </div> 
     </header> 
     
     <!-- toast messages -->

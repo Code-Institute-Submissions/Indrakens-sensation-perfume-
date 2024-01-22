@@ -3,12 +3,12 @@ html {
 }
 
 body {
-    background: url('/media/home-page.jpg') no-repeat center center fixed;
+    background: url('/media/home-page.jpg') no-repeat center center;
     background-size: cover;
-    width: 100%;  
+    height: calc(100vh - 164px);  
     color: #000; 
     font-family: 'Livvic', sans-serif;
-}  
+}   
 
 .bg-dark{
     background-color: #000 !important;
@@ -16,8 +16,9 @@ body {
 
 .logo-font {
     font-family: 'Cinzel Decorative', serif;
-    font-size: 6vw;
+    font-size: 4.8em;
     color: #FFFBC2 !important;
+    margin-top: 80px;
 } 
 
 .font {
@@ -30,9 +31,15 @@ body {
 
 .banner{
     color: #FFFBC2;
-} 
+    font-size: 1.5em;
+    margin-top: -5px;
+}  
 
 /* navigation */
+.navbar {
+    margin-top: -40px;
+} 
+
 .nav-item a{
     color: #E0B411 !important; 
 } 
@@ -47,7 +54,7 @@ body {
 
 .navbar-toggler-icon i:hover{
     color: #FFFBC2;  
-}
+} 
 
 .dropdown-menu a{
     color: #000 !important;
@@ -69,7 +76,7 @@ input[name='q']::placeholder{
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-}
+} 
 
 .my-account, 
 .shopping-bag,
@@ -89,7 +96,7 @@ input[name='q']::placeholder{
     color: #000;
     min-width: 260px;
     font-weight: 700;
-}
+} 
 
 .btn-warning { 
     background: #E0B411;
@@ -273,15 +280,6 @@ input[name='q']::placeholder {
     display: none;
 } 
 
-/* -------------------------------- Media Queries */
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 90%;
-  }  
-
-}
-
 /* product form */
 .btn-file {
     position: relative;
@@ -307,6 +305,22 @@ input[name='q']::placeholder {
     background-color: #c10404;
     border-color: #c10404;
     border-radius: 0;
+}
+
+/* -------------------------------- Media Queries */
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 90%;
+    }  
+  
+} 
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
 } 
 
 /* fixed top navbar only on medium and up */
@@ -325,14 +339,5 @@ input[name='q']::placeholder {
 
     .container {
         max-height: 50%;
-      }      
-    
+    }     
 } 
-
-@media (min-width: 950px) {
-
-    .header-container {
-        padding-top: 232px;
-    }  
-  
-}  
