@@ -10,15 +10,17 @@
 {% endblock %} 
 
 {% block content %}
-    <div class="container h-100">
+    <div class="container container-text">
         <div class="row h-100">
             <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-3 logo-font text-white" style="font-size: 6.5vw;">
+                <h1 class="display-3 logo-font text-white">
                     Luxury Collection
                 </h1>
                 <div class="my-4">
                     <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-warning rounded-0 text-uppercase py-3">Shop Now</a>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-warning border-warning rounded-0 text-uppercase py-3">
+                            Shop Now
+                        </a>
                     </h4>
                 </div>
             </div>
