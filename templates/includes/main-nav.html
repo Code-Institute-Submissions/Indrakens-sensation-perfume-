@@ -1,5 +1,11 @@
 <div class="collapse navbar-collapse" id="main-nav"> 
     <ul class="navbar-nav w-auto mx-auto">
+        <!-- home link -->
+        <li class="nav-item d-block d-md-none">
+            <a class="fst-normal font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li> 
         <!-- all products menu -->
         <li class="nav-item dropdown">
             <a class="fst-normal nav-link text-black mr-5" href="#" id="all-items-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,6 +63,6 @@
                 <a href="{% url 'products' %}?category=gift_set_him_sales" class="dropdown-item">Gift Sets For Him</a>
                 <a href="{% url 'products' %}?category=her_sales,gift_set_her_sales,him_sales,gift_set_him_sales" class="dropdown-item">All Sales</a>
             </div> 
-        </li>
+        </li> 
     </ul>
 </div> 
