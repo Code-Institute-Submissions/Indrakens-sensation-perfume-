@@ -18,7 +18,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center mt-4 blog-header">
-                <h2 class="font text-uppercase">Blog</h2>
+                <h4 class="font text-uppercase">Share Yours Favorite Brand</h4>
                 <hr class="w-100">  
             </div>
         </div>
@@ -38,11 +38,11 @@
                                 <!-- blog body -->   
                                 <div class="card-body">
                                     <a href="{% url 'post_detail' post.slug  %}" class="post-link">
-                                        <h4 class="mb-0 text-uppercase">
+                                        <h5 class="mb-0 text-uppercase">
                                             <strong>{{ post.title }}</strong>
-                                        </h4>
+                                        </h5>
                                     </a>
-                                    <p class="card-text">{{ post.excerpt }}</p>
+                                    <p class="card-text small">{{ post.excerpt }}</p>
                                     <p class="card-text text-muted small">
                                         {{ post.created_on}}
                                         <span class="text-muted ml-2">    

@@ -60,3 +60,4 @@ class PostLike(View):
             post.likes.add(profile) 
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug])) 
+        
