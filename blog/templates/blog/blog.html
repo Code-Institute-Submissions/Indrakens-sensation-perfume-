@@ -37,7 +37,7 @@
                                 {% endif %} 
                                 <!-- blog body -->   
                                 <div class="card-body">
-                                    <a href="#" class="post-link">
+                                    <a href="{% url 'post_detail' post.slug  %}" class="post-link">
                                         <h4 class="mb-0 text-uppercase">
                                             <strong>{{ post.title }}</strong>
                                         </h4>
