@@ -2,13 +2,13 @@
     <ul class="navbar-nav w-auto mx-auto">
         <!-- home link -->
         <li class="nav-item d-block d-md-none">
-            <a class="fst-normal font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+            <a class="font-weight-bold nav-link text-black mr-5 text-uppercase" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li> 
         <!-- all products menu -->
         <li class="nav-item dropdown">
-            <a class="fst-normal nav-link text-black mr-5" href="#" id="all-items-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link text-black mr-4 mt-2 text-uppercase" href="#" id="all-items-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shop All
             </a>
             <div class="dropdown-menu border border-dark" aria-labelledby="all-items-link">
@@ -20,7 +20,7 @@
         </li>
         <!-- for her products menu -->
         <li class="nav-item dropdown">
-            <a class="fst-normal nav-link text-black mr-5" href="#" id="her-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link text-black mr-4 mt-2 text-uppercase" href="#" id="her-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 For Her
             </a>
             <div class="dropdown-menu border border-dark" aria-labelledby="her-link">
@@ -31,7 +31,7 @@
         </li> 
         <!-- for him products menu -->
         <li class="nav-item dropdown">
-            <a class="fst-normal nav-link text-black mr-5" href="#" id="him-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link text-black mr-4 mt-2 text-uppercase" href="#" id="him-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 For Him 
             </a>
             <div class="dropdown-menu border border-dark" aria-labelledby="him-link">
@@ -42,7 +42,7 @@
         </li>
         <!-- gift sets menu -->
         <li class="nav-item dropdown">
-            <a class="fst-normal nav-link text-black mr-5" href="#" id="gift_set-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link text-black mr-4 mt-2 text-uppercase" href="#" id="gift_set-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Gift Sets
             </a>
             <div class="dropdown-menu border border-dark" aria-labelledby="gift_set-link">
@@ -53,7 +53,7 @@
         </li>
         <!-- sales menu -->
         <li class="nav-item dropdown">
-            <a class="fst-normal nav-link text-black mr-5" href="#" id="sales-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link text-black mt-2 text-uppercase" href="#" id="sales-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sales 
             </a>
             <div class="dropdown-menu border border-dark" aria-labelledby="sales-link">
@@ -63,6 +63,6 @@
                 <a href="{% url 'products' %}?category=gift_set_him_sales" class="dropdown-item">Gift Sets For Him</a>
                 <a href="{% url 'products' %}?category=her_sales,gift_set_her_sales,him_sales,gift_set_him_sales" class="dropdown-item">All Sales</a>
             </div> 
-        </li> 
+        </li>
     </ul>
 </div> 

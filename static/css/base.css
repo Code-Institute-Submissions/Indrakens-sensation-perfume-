@@ -37,11 +37,12 @@ body {
 
 /* navigation */
 .navbar {
-    margin-top: -40px;
+    margin-top: -60px;
 } 
 
 .nav-item a{
-    color: #E0B411 !important; 
+    color: #E0B411 !important;
+    font-size: 18px; 
 } 
 
 .nav-item a:hover{
@@ -80,15 +81,17 @@ input[name='q']::placeholder{
 
 .my-account, 
 .shopping-bag,
-.search{
+.search, 
+.blog{
     color: #E0B411;
 } 
 
 .my-account:hover,
 .shopping-bag:hover,
-.search:hover{
+.search:hover, 
+.blog:hover {
     color: #FFFBC2;
-} 
+}  
 
 /* buttons */
 .shop-now-button {
@@ -323,8 +326,8 @@ input[name='q']::placeholder {
         top: 0;
         right: 0;
         left: 0;
-        z-index: 1030;
-    }
+        z-index: 1050;
+    } 
 
     .header-container {
         padding-top: 164px;
@@ -454,5 +457,5 @@ input[name='q']::placeholder {
     
     .container-text{
         height: 150%;
-    }  
+    } 
 }  
