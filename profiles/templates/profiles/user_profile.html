@@ -1,0 +1,99 @@
+{% extends "base.html" %} 
+{% load static %} 
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'profiles/css/user_profile.css' %}">
+{% endblock %} 
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %} 
+
+{% block content %} 
+    <div class="overlay"></div>
+    <div class="container"> 
+        <div class="row">
+            <div class="col profile mt-4">
+                    <h2 class="font text-uppercase">My Profile</h2> 
+                <hr> 
+            </div>
+        </div>
+        <div class="row">
+            <!-- default delivery information form -->
+            <div class="col-12 col-lg-4">
+                <p class="text-muted">Default Delivery Information</p>
+                <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                    {% csrf_token %} 
+                    {{ form|crispy }} 
+                    <button class="btn btn-warning btn-sm border-warning rounded-0 text-uppercase float-left mb-2">Update Information</button>
+                    <p class="small d-inline ml-2 mt-3">Go to 
+                        <a class="home-link" href="{% url 'home' %}">
+                          <strong>Home</strong>
+                        </a> page.
+                    </p>
+                </form>
+            </div> 
+            <!-- order history -->
+            <div class="col-12 col-lg-8">
+                <p class="text-muted">Order History</p>
+                <div class="order-history table-responsive">
+                    <table class="table table-sm table-borderless align-items-start"> 
+                        <thead>
+                            <tr class="small text-uppercase"> 
+                                <th class="w-25">Order Number</th>
+                                <th class="w-25">Date</th>
+                                <th class="w-50">Items</th>
+                                <th class="w-25">Total</th>
+                            </tr>
+                        </thead> 
+                        <tbody>
+                            {% for order in orders %} 
+                                <tr class="small">
+                                    <!-- order number --> 
+                                    <td>
+                                        <a class="text-success" href="{% url 'user_order_history' order.order_number %}" 
+                                        title="{{ order.order_number }}">
+                                            {{ order.order_number|truncatechars:11 }} 
+                                        </a> 
+                                    </td>
+                                    <!-- order date -->
+                                    <td>{{ order.date }}</td>
+                                    <!-- order items -->
+                                    <td>
+                                        <ul class="list-unstyled"> 
+                                            {% for item in order.lineitems.all %}  
+                                                <li>
+                                                    {{ item.product.name }} x <strong>{{ item.quantity }}</strong> 
+                                                </li> 
+                                                <li>
+                                                    {% if item.gift_bag_size %}
+                                                        <strong>Included Gift Bag:</strong> {{ item.gift_bag_size }} 
+                                                    {% endif %}  
+                                                </li>    
+                                            {% endfor %}  
+                                        </ul> 
+                                    </td>
+                                    <!-- order grand total -->
+                                    <td>&euro;{{ order.grand_total }}</td>
+                                    <td>   
+                                        <a class="text-danger" href="{% url 'delete_order_history' order.order_number %}">
+                                            <strong>Delete</strong>
+                                        </a> 
+                                    </td>
+                                </tr> 
+                            {% endfor %} 
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
+        </div>       
+{% endblock %} 
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'profiles/js/country_field.js' %}"></script> 
+{% endblock %}  
