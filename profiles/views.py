@@ -11,7 +11,7 @@ from checkout.models import Order
 
 @login_required
 def profile(request):
-    
+       
     profile = get_object_or_404(UserProfile, user=request.user) 
     form = UserProfileForm(instance=profile) 
     orders = profile.orders.all() 
@@ -19,7 +19,7 @@ def profile(request):
         'profile': profile,
         'form': form,
         'orders': orders, 
-        'on_user_profile': True     
+        'on_user_profile': True       
     }  
     template = "profiles/user_profile.html"  
     return render(request, template, context) 
@@ -46,7 +46,7 @@ def update_profile(request, profile):
     context = {
         'form': form,
         'orders': orders, 
-        'on_user_profile': True     
+        'on_user_profile': True      
     }  
 
     return render(request, template, context) 

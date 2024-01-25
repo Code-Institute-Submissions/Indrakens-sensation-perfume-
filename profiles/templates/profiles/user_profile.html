@@ -26,24 +26,46 @@
             <!-- delivery information --> 
             <div class="col-12 col-lg-4">
                 <p class="text-muted">Delivery Information</p>
-                <ul>
-                    <li><strong>Phone Number:</strong> {{ profile.default_phone_number }}</li> 
-                    <li><strong>Street Address:</strong> {{ profile.default_street_address1 }}</li>
-                    {% if profile.street_address2 %} 
-                    <li><strong>Street Address2:</strong> {{ profile.default_street_address2 }}</li>
-                    {% endif %} 
-                    <li><strong>Town or City:</strong> {{ profile.default_town_or_city }}</li> 
-                    <li><strong>County:</strong> {{ profile.default_county }}</li>
-                    {% if profile.street_address2 %}  
-                    <li><strong>Postcode:</strong> {{ profile.default_postcode }}</li>
-                    {% endif %} 
-                    <li><strong>Country:</strong> {{ profile.default_country }}</li> 
-                </ul> 
-                <p class="d-inline ml-2 mt-3">
-                    <a class="home-link" href="{% url 'update_profile' user %}"> 
-                      <strong>Update Profile</strong> 
-                    </a>
-                </p> 
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">
+                        <strong class="text-uppercase">Phone Number :</strong>
+                            <span class="float-right">{{ profile.default_phone_number }}</span>
+                    </li> 
+                    <li class="list-group-item"> 
+                        <strong class="text-uppercase">Street Address :</strong>
+                        <span class="float-right">{{ profile.default_street_address1 }}</span>
+                    </li> 
+                    <li class="list-group-item">
+                        <strong class="text-uppercase">Street Address2 :</strong>
+                        <span class="float-right">{{ profile.default_street_address2 }}</span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong class="text-uppercase">Town / City :</strong>
+                        <span class="float-right">{{ profile.default_town_or_city }}</span>
+                    </li> 
+                    <li class="list-group-item">
+                        <strong class="text-uppercase">County :</strong>
+                        <span class="float-right">{{ profile.default_county }}</span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong class="text-uppercase">Postcode :</strong>
+                        <span class="float-right">{{ profile.default_postcode }}</span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong class="text-uppercase">Country :</strong>
+                        <span class="float-right">{{ profile.default_country }}</span>
+                    </li> 
+                </ul>
+                <a href="{% url 'update_profile' profile %}">
+                    <button class="btn btn-warning btn-sm border-warning rounded-0 text-uppercase float-left mb-2">
+                        Update Profile
+                    </button>
+                </a>
+                <p class="small d-inline ml-2 mt-3">Go to 
+                    <a class="home-link" href="{% url 'home' %}">
+                        <strong>Home</strong>
+                    </a> page.
+                </p>
             </div> 
             <!-- order history -->
             <div class="col-12 col-lg-8">
