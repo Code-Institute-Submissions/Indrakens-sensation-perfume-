@@ -8,8 +8,25 @@ from .forms import UserProfileForm
 from checkout.models import Order 
 
 
+
 @login_required
 def profile(request):
+    
+    profile = get_object_or_404(UserProfile, user=request.user) 
+    form = UserProfileForm(instance=profile) 
+    orders = profile.orders.all() 
+    context = {
+        'profile': profile,
+        'form': form,
+        'orders': orders, 
+        'on_user_profile': True     
+    }  
+    template = "profiles/user_profile.html"  
+    return render(request, template, context) 
+
+
+@login_required
+def update_profile(request, profile): 
     """ Display the user's profile. """
 
     profile = get_object_or_404(UserProfile, user=request.user) 
@@ -24,15 +41,15 @@ def profile(request):
     else: 
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all() 
-
-    template = 'profiles/user_profile.html'
+    
+    template = 'profiles/update_user_profile.html'
     context = {
         'form': form,
         'orders': orders, 
-        'on_user_profile_page': True   
+        'on_user_profile': True     
     }  
 
-    return render(request, template, context)
+    return render(request, template, context) 
 
 
 @login_required 

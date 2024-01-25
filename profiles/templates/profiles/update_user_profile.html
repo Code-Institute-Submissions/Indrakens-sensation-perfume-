@@ -18,32 +18,24 @@
     <div class="container"> 
         <div class="row">
             <div class="col profile mt-4">
-                    <h2 class="font text-uppercase">My Profile</h2> 
+                    <h2 class="font text-uppercase">Update My Profile</h2> 
                 <hr> 
             </div>
         </div>
         <div class="row">
-            <!-- delivery information --> 
+            <!-- default delivery information form -->
             <div class="col-12 col-lg-4">
-                <p class="text-muted">Delivery Information</p>
-                <ul>
-                    <li><strong>Phone Number:</strong> {{ profile.default_phone_number }}</li> 
-                    <li><strong>Street Address:</strong> {{ profile.default_street_address1 }}</li>
-                    {% if profile.street_address2 %} 
-                    <li><strong>Street Address2:</strong> {{ profile.default_street_address2 }}</li>
-                    {% endif %} 
-                    <li><strong>Town or City:</strong> {{ profile.default_town_or_city }}</li> 
-                    <li><strong>County:</strong> {{ profile.default_county }}</li>
-                    {% if profile.street_address2 %}  
-                    <li><strong>Postcode:</strong> {{ profile.default_postcode }}</li>
-                    {% endif %} 
-                    <li><strong>Country:</strong> {{ profile.default_country }}</li> 
-                </ul> 
-                <p class="d-inline ml-2 mt-3">
-                    <a class="home-link" href="{% url 'update_profile' user %}"> 
-                      <strong>Update Profile</strong> 
-                    </a>
-                </p> 
+                <p class="text-muted">Update Default Delivery Information</p>
+                <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                    {% csrf_token %} 
+                    {{ form|crispy }} 
+                    <button class="btn btn-warning btn-sm border-warning rounded-0 text-uppercase float-left mb-2">Update Information</button>
+                    <p class="small d-inline ml-2 mt-3">Go to 
+                        <a class="home-link" href="{% url 'home' %}">
+                          <strong>Home</strong>
+                        </a> page.
+                    </p>
+                </form>
             </div> 
             <!-- order history -->
             <div class="col-12 col-lg-8">
@@ -87,6 +79,14 @@
                                     </td>
                                     <!-- order grand total -->
                                     <td>&euro;{{ order.grand_total }}</td>
+                                    <td>   
+                                        <a class="text-danger small text-uppercase" href="{% url 'delete_order_history' order.order_number %}">
+                                            <strong>
+                                                Delete
+                                            </strong>
+                                        </a>
+                                        <p class="small text-danger">This action is not reversable!</p> 
+                                    </td>
                                 </tr> 
                             {% endfor %} 
                         </tbody>
@@ -94,4 +94,9 @@
                 </div>
             </div> 
         </div>       
+{% endblock %} 
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'profiles/js/country_field.js' %}"></script> 
 {% endblock %}  
