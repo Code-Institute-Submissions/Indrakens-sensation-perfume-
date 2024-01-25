@@ -34,21 +34,21 @@ def update_profile(request, profile):
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your profile updated successfully')
+            messages.success(request, 'Your profile updated successfully') 
         else:
             messages.error(request, 'Update failed. Please ensure the form is valid.')     
     else: 
         form = UserProfileForm(instance=profile)
-    orders = profile.orders.all() 
+    orders = profile.orders.all()  
     
     template = 'profiles/update_user_profile.html'
     context = {
         'form': form,
         'orders': orders,
         'on_user_profile': True        
-    }  
+    } 
 
-    return render(request, template, context) 
+    return render(request, template, context)  
 
 
 @login_required 
@@ -70,10 +70,10 @@ def user_order_history(request, order_number):
 
 
 @login_required 
-def delete_order_history(request, order_number):
-    """ Delete order history """
+def delete_order_history(request, order_number): 
+    """ Delete order history """  
     order = get_object_or_404(Order, order_number=order_number)
-    order.delete()
+    order.delete() 
     messages.success(request, f'Order {order} deleted from order history!') 
-
-    return redirect('update_profile') 
+ 
+    return redirect('profile')  
