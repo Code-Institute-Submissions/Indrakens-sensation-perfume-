@@ -13,17 +13,31 @@
     </div>
 {% endblock %} 
 
-{% block content %}
+{% block content %} 
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col text-center mt-4 blog-header">
-                <h4 class="font text-uppercase">Share Yours Favorite Brand</h4>
+                <h4 class="font text-uppercase">Sensation-Perfume Blog</h4>
                 <hr class="w-100">  
             </div>
         </div>
         <div class="row">
-            <div class="blog-container col-10 offset-1">  
+            <div class="blog-container col-10 offset-1">
+                <!-- links to home page and add post --> 
+                {% if request.user.is_authenticated %}  
+                <p class="float-right small">Share yours favorite brand!
+                    <a class="home-link" href="#"> 
+                        <strong>Add Post</strong>
+                    </a> .
+                </p>
+                {% endif %} 
+                <p class="small">Go to 
+                    <a class="home-link" href="{% url 'home' %}">
+                        <strong>Home</strong>
+                    </a> page.
+                </p>  
+                <!-- blog posts -->
                 <div class="row">
                     {% for post in post_list %} 
                         <div class="col-lg-4 col-xl-4 mb-4">

@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required  
 
 from .models import UserProfile
-from .forms import UserProfileForm 
+from .forms import UserProfileForm  
 
 from checkout.models import Order 
 
@@ -50,7 +50,7 @@ def user_order_history(request, order_number):
         'from_profile': True,    
     } 
 
-    return render(request, template, context) 
+    return render(request, template, context)  
 
 
 @login_required 

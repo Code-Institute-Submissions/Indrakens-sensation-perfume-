@@ -25,6 +25,11 @@
         <div class="row">
             <!-- default delivery information form -->
             <div class="col-12 col-lg-4">
+                {% if user.userprofile.default_picture %} 
+                    <img src="{{user.profile.default_picture.url}}" height="100px" alt="users profile image">
+                {% else %}
+                    <img src="{% static 'images/images.png' %}" height="100px" alt="default user image"> 
+                {% endif %}     
                 <p class="text-muted">Default Delivery Information</p>
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %} 
