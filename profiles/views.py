@@ -18,8 +18,7 @@ def profile(request):
     context = {
         'profile': profile,
         'form': form,
-        'orders': orders, 
-        'on_user_profile': True       
+        'orders': orders,      
     }  
     template = "profiles/user_profile.html"  
     return render(request, template, context) 
@@ -45,8 +44,8 @@ def update_profile(request, profile):
     template = 'profiles/update_user_profile.html'
     context = {
         'form': form,
-        'orders': orders, 
-        'on_user_profile': True      
+        'orders': orders,
+        'on_user_profile': True        
     }  
 
     return render(request, template, context) 
@@ -64,7 +63,7 @@ def user_order_history(request, order_number):
     template = 'checkout/order_checkout_success.html'
     context = {
         'order': order,
-        'from_profile': True,    
+        'from_profile': True,   
     } 
 
     return render(request, template, context)  
@@ -77,4 +76,4 @@ def delete_order_history(request, order_number):
     order.delete()
     messages.success(request, f'Order {order} deleted from order history!') 
 
-    return redirect('profile') 
+    return redirect('update_profile') 
