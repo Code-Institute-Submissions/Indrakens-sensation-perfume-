@@ -71,9 +71,20 @@ def user_order_history(request, order_number):
 
 @login_required 
 def delete_order_history(request, order_number): 
-    """ Delete order history """  
+    """ Delete order history """ 
+    profile = get_object_or_404(UserProfile, user=request.user)  
     order = get_object_or_404(Order, order_number=order_number)
-    order.delete() 
-    messages.success(request, f'Order {order} deleted from order history!') 
+    form = UserProfileForm(instance=profile) 
+    if order.delete(): 
+       messages.success(request, f'Order {order} deleted from order history!')
+    else:
+        messages.error(request, f'Deleting {order} from order history failed. Please try again.')
+
+    template = 'profiles/update_user_profile.html'
+    context = {
+        'form': form,
+        'order': order,
+        'on_user_profile': True        
+    }         
  
-    return redirect('profile')  
+    return render(request, template, context)  
