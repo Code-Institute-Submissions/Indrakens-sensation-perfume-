@@ -23,6 +23,15 @@
             </div>
         </div>
         <div class="row">
+            <div class="col profile mb-4">
+                {% if user.profile.default_picture %}
+                    <img class="rounded-circle" src="{{ user.profile.default_picture.url }}" height="130px" alt="profile_image"> 
+                {% else %}
+                    <img class="rounded-circle" src="{% static 'images/profile_image.jpg' %}" height="130px" alt="default_profile_image">
+                {% endif %}
+            </div>
+        </div>
+        <div class="row">
             <!-- delivery information --> 
             <div class="col-12 col-lg-4">
                 <p class="text-muted">Delivery Information</p>

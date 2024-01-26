@@ -34,10 +34,10 @@ def update_profile(request, profile):
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your delivery information updated successfully') 
+            messages.success(request, 'Your profile updated successfully') 
             return redirect('profile')  
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')     
+            messages.error(request, 'Update failed.')     
     else: 
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()  
