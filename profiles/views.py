@@ -34,7 +34,8 @@ def update_profile(request, profile):
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your profile updated successfully') 
+            messages.success(request, 'Your delivery information updated successfully') 
+            return redirect('profile')  
         else:
             messages.error(request, 'Update failed. Please ensure the form is valid.')     
     else: 
@@ -71,20 +72,12 @@ def user_order_history(request, order_number):
 
 @login_required 
 def delete_order_history(request, order_number): 
-    """ Delete order history """ 
-    profile = get_object_or_404(UserProfile, user=request.user)  
-    order = get_object_or_404(Order, order_number=order_number)
-    form = UserProfileForm(instance=profile) 
+    """ Delete order history """  
+   
+    order = get_object_or_404(Order, order_number=order_number) 
     if order.delete(): 
        messages.success(request, f'Order {order} deleted from order history!')
     else:
-        messages.error(request, f'Deleting {order} from order history failed. Please try again.')
-
-    template = 'profiles/update_user_profile.html'
-    context = {
-        'form': form,
-        'order': order,
-        'on_user_profile': True        
-    }         
+        messages.error(request, f'Deleting {order} from order history failed. Please try again.')               
  
-    return render(request, template, context)  
+    return redirect('profile')  
