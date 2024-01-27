@@ -6,7 +6,7 @@ urlpatterns = [
     path(
         "update_profile/<profile>", 
         views.update_profile, 
-        name="update_profile"), 
+        name="update_profile"),     
     path(
         "user_order_history/<order_number>",
         views.user_order_history,
