@@ -2,14 +2,17 @@ html {
     height: 100%;
 } 
 
-body {
-    background: url('/media/home-page.jpg') no-repeat center center;
-    background-size: cover;
-    height: calc(100vh - 164px);  
+body {  
     color: #000; 
     font-family: 'Livvic', sans-serif;
     background-color: #000;
-}   
+}  
+
+.hero-container{
+    background: url('/media/home-page.jpg') no-repeat center center;
+    background-size: cover;
+    height: calc(100vh - 54px);  
+} 
 
 .bg-dark{
     background-color: #000 !important;
@@ -311,11 +314,16 @@ input[name='q']::placeholder {
 }
 
 .footer{
+    margin-top: 20px;
     width: 100%;
 } 
 
 .footer-header {  
     margin-bottom: -2px;
+}
+
+.contact {
+    list-style-type: none;
 } 
 
 /* -------------------------------- Media Queries */
@@ -338,7 +346,7 @@ input[name='q']::placeholder {
     } 
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 64px;
     }     
 } 
 
