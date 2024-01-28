@@ -310,6 +310,14 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+.footer{
+    width: 100%;
+} 
+
+.footer-header {  
+    margin-bottom: -2px;
+} 
+
 /* -------------------------------- Media Queries */
 
 @media (min-width: 1200px) {
