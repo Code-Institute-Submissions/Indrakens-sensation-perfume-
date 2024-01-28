@@ -1,6 +1,6 @@
-.profile hr{
-    border-top: 2px solid #000 !important;
-}
+.rounded-circle {
+    border: 3px solid #E0B411 !important;
+} 
 
 #profile-update-form .form-control {
     color: #000;   

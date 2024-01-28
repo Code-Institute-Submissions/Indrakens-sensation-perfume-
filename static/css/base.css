@@ -315,8 +315,7 @@ input[name='q']::placeholder {
 }
 
 .footer{
-    margin-top: 20px;
-    width: 100%;
+    margin-top: 20px; 
 } 
 
 .footer-header {  
