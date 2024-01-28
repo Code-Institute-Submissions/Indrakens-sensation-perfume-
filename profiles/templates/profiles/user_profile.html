@@ -25,7 +25,7 @@
         <div class="row">
             <div class="col profile mb-4">
                 {% if profile.default_picture %} 
-                    <img class="rounded-circle" src="{{ profile.default_picture }}" height="130px" alt="profile_image"> 
+                    <img class="rounded-circle" src="{{ profile.default_picture.url }}" height="130px" alt="profile_image"> 
                 {% else %}
                     <img class="rounded-circle" src="{% static 'images/profile_image.jpg' %}" height="130px" alt="default_profile_image">
                 {% endif %}

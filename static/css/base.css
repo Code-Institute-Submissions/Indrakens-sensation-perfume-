@@ -5,7 +5,8 @@ html {
 body {  
     color: #000; 
     font-family: 'Livvic', sans-serif;
-    background-color: #000;
+    background-color: #000; 
+    height: calc(100vh - 164px); 
 }  
 
 .hero-container{
@@ -346,8 +347,12 @@ input[name='q']::placeholder {
     } 
 
     .header-container {
-        padding-top: 64px;
-    }     
+        padding-top: 164px;
+    }
+    
+    .hero-container {
+        padding-bottom: -154px;
+    }
 } 
 
 @media (max-width: 990px) {  
