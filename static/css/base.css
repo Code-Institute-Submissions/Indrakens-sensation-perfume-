@@ -330,6 +330,34 @@ input[name='q']::placeholder {
     list-style-type: none;
 } 
 
+/* mailchimp */
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    width: 465px;
+} 
+
+.mc-field-group{
+    font-family: 'Livvic', sans-serif;
+} 
+
+.refferal_badge{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    padding: 2px 0px;
+    justify-content: center;
+    align-items: center;
+} 
+
+.label{
+    color: #000;
+} 
+
+#mce-error-response {
+    color: #c10404 !important;
+} 
+
 /* -------------------------------- Media Queries */
 
 @media (min-width: 1200px) {
