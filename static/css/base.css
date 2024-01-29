@@ -37,7 +37,7 @@ body {
 } 
 
 .banner{
-    color: #FFFBC2;
+    color: #fff;
     margin-top: -5px;
 }  
 
@@ -334,7 +334,7 @@ input[name='q']::placeholder {
 #mc_embed_signup {
     background: #fff;
     clear: left;
-    width: 465px;
+    width: 600px;
 } 
 
 .mc-field-group{
