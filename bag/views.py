@@ -30,7 +30,7 @@ def add_to_shopping_bag(request, item_id):
         if item_id in list(shopping_bag.keys()):
             if size in shopping_bag[item_id]['items_by_size'].keys():
                 shopping_bag[item_id]['items_by_size'][size] += quantity
-                messages.success(request, f'Updated {product.name.upper()} with included gift wrap {size.upper()} quantity to {shopping_bag[item_id]['items_by_size'][size]}') 
+                messages.success(request, f"Updated {product.name.upper()} with included gift wrap {size.upper()} quantity to {shopping_bag[item_id]['items_by_size'][size]}") 
             else:
                 shopping_bag[item_id]['items_by_size'][size] = quantity
                 messages.success(request, f'Added {product.name.upper()} with included gift wrap {size.upper()} to your shopping bag') 
