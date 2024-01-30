@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://sensation-perfume-812e78510f66.herokuapp.com/sitemap.xml 
