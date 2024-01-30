@@ -20,7 +20,7 @@
         "model": "products.category",
         "fields": {
             "name": "perfum_for_him",
-            "friendly_name": "Eau De Parfum"
+            "friendly_name": "Eau De Parfum For Him"
         }
     },
     {
@@ -28,7 +28,7 @@
         "model": "products.category",
         "fields": {
             "name": "eau_de_toilette_him",
-            "friendly_name": "Eau De Toilette"
+            "friendly_name": "Eau De Toilette For Him"
         }
     },
     {
