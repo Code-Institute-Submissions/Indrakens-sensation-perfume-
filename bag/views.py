@@ -64,7 +64,7 @@ def adjust_shopping_bag(request, item_id):
     if size:
         if quantity > 0:
             shopping_bag[item_id]['items_by_size'][size] = quantity
-            messages.success(request, f'Updated {product.name.upper()} with included gift wrap {size.upper()} quantity to {shopping_bag[item_id]['items_by_size'][size]}') 
+            messages.success(request, f"Updated {product.name.upper()} with included gift wrap {size.upper()} quantity to {shopping_bag[item_id]['items_by_size'][size]}") 
         else: 
             del shopping_bag[item_id]['items_by_size'][size] 
             if not shopping_bag[item_id]['items_by_size']:  
