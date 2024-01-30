@@ -358,6 +358,11 @@ input[name='q']::placeholder {
     color: #c10404 !important;
 } 
 
+/* account */
+.allauth-form-inner-content{
+    height: calc(100vh - 124px); 
+} 
+
 /* -------------------------------- Media Queries */
 
 @media (min-width: 1200px) {
