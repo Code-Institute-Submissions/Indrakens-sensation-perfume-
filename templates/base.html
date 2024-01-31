@@ -181,13 +181,13 @@
       <div class="row">
         <div class="col-12 col-lg-6 text-light mt-4">
           <p class="footer-header">
-            <a href="#" class="text-light">Home</a>
+            <a href="{% url 'home' %}" class="text-light">Home</a>
           </p>
           <p class="footer-header">
-            <a href="#" class="text-light">Register</a>
+            <a href="{% url 'account_signup' %}" class="text-light">Register</a>
           </p>
           <p class="footer-header">
-            <a href="#" class="text-light">Login</a>
+            <a href="{% url 'account_login' %}" class="text-light">Login</a>
           </p>
           <p class="footer-header">
             <a href="{% url 'privacy' %}" class="text-light">Privacy Policy</a>

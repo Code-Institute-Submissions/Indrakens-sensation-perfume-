@@ -27,13 +27,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '') 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+#DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 
 
 ALLOWED_HOSTS = [
     'sensation-perfume-812e78510f66.herokuapp.com', 
-    'localhost'
+    '8000-indrakens-sensationperf-7p03ywy2wj9.ws-eu107.gitpod.io'
     ]  
 
 
