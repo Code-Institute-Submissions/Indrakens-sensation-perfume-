@@ -50,7 +50,7 @@
                         </div>
                         <div class="col-7"> 
                             <p class="my-0 text-uppercase small"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small">Included Gift Bag: {% if item.product.has_sizes %}{{ item.size }}{% else %}N/A{% endif %}</p>
+                            <p class="my-0 small">Included Gift Bag: {% if item.product.has_giftwrap %}{{ item.giftwrap }}{% else %}N/A{% endif %}</p>
                             <p class="mb-2 small text-muted">Quantity: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
