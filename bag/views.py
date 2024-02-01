@@ -87,7 +87,7 @@ def remove_from_shopping_bag(request, item_id):
     """ 
     Remove the item from shopping bag
     """
-
+    
     try:
         product = get_object_or_404(Product, pk=item_id)  
         giftwrap = None
