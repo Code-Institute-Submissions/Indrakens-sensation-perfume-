@@ -13,6 +13,7 @@ def view_shopping_bag(request):
 
     return render(request, 'bag/shopping_bag.html')
 
+
 def add_to_shopping_bag(request, item_id):
     """ 
     Add a quantity of the specified product to the shopping bag 
@@ -21,22 +22,22 @@ def add_to_shopping_bag(request, item_id):
     product = get_object_or_404(Product, pk=item_id)  
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
-    size = None
-    if 'product_size' in request.POST:
-        size = request.POST['product_size']
+    giftwrap = None 
+    if 'product_giftwrap' in request.POST:
+        giftwrap = request.POST['product_giftwrap']
     shopping_bag = request.session.get('bag', {})
 
-    if size:
+    if giftwrap:
         if item_id in list(shopping_bag.keys()):
-            if size in shopping_bag[item_id]['items_by_size'].keys():
-                shopping_bag[item_id]['items_by_size'][size] += quantity
-                messages.success(request, f'Updated {product.name.upper()} with included gift wrap {size.upper()} quantity to {shopping_bag[item_id]["items_by_size"][size]}') 
+            if giftwrap in shopping_bag[item_id]['items_by_giftwrap'].keys(): 
+                shopping_bag[item_id]['items_by_giftwrap'][giftwrap] += quantity
+                messages.success(request, f'Updated {product.name.upper()} with included gift wrap {giftwrap.upper()} quantity to {shopping_bag[item_id]["items_by_giftwrap"][giftwrap]}') 
             else:
-                shopping_bag[item_id]['items_by_size'][size] = quantity
-                messages.success(request, f'Added {product.name.upper()} with included gift wrap {size.upper()} to your shopping bag') 
+                shopping_bag[item_id]['items_by_giftwrap'][giftwrap] = quantity
+                messages.success(request, f'Added {product.name.upper()} with included gift wrap {giftwrap.upper()} to your shopping bag') 
         else:
-            shopping_bag[item_id] = {'items_by_size': {size: quantity}} 
-            messages.success(request, f'Added {product.name.upper()} with included gift wrap {size.upper()} to your shopping bag')  
+            shopping_bag[item_id] = {'items_by_giftwrap': {giftwrap: quantity}} 
+            messages.success(request, f'Added {product.name.upper()} with included gift wrap {giftwrap.upper()} to your shopping bag')  
     else:
         if item_id in list(shopping_bag.keys()): 
             shopping_bag[item_id] += quantity
@@ -56,20 +57,20 @@ def adjust_shopping_bag(request, item_id):
 
     product = get_object_or_404(Product, pk=item_id) 
     quantity = int(request.POST.get('quantity')) 
-    size = None
-    if 'product_size' in request.POST:
-        size = request.POST['product_size']
+    giftwrap = None
+    if 'product_giftwrap' in request.POST:
+        giftwrap = request.POST['product_giftwrap'] 
     shopping_bag = request.session.get('bag', {})
 
-    if size:
+    if giftwrap:
         if quantity > 0:
-            shopping_bag[item_id]['items_by_size'][size] = quantity
-            messages.success(request, f'Updated {product.name.upper()} with included gift wrap {size.upper()} quantity to {shopping_bag[item_id]["items_by_size"][size]}') 
+            shopping_bag[item_id]['items_by_giftwrap'][giftwrap] = quantity 
+            messages.success(request, f'Updated {product.name.upper()} with included gift wrap {giftwrap.upper()} quantity to {shopping_bag[item_id]["items_by_giftwrap"][giftwrap]}')  
         else: 
-            del shopping_bag[item_id]['items_by_size'][size] 
-            if not shopping_bag[item_id]['items_by_size']:  
+            del shopping_bag[item_id]['items_by_giftwrap'][giftwrap] 
+            if not shopping_bag[item_id]['items_by_giftwrap']:  
                 shopping_bag.pop(item_id)
-            messages.success(request, f'Removed {product.name.upper()} with included gift wrap {size.upper()} from your shopping bag')          
+            messages.success(request, f'Removed {product.name.upper()} with included gift wrap {giftwrap.upper()} from your shopping bag')          
     else:
         if quantity > 0:
             shopping_bag[item_id] = quantity
@@ -89,16 +90,16 @@ def remove_from_shopping_bag(request, item_id):
 
     try:
         product = get_object_or_404(Product, pk=item_id)  
-        size = None
-        if 'product_size' in request.POST:
-            size = request.POST['product_size']
+        giftwrap = None
+        if 'product_giftwrap' in request.POST:
+            giftwrap = request.POST['product_giftwrap'] 
         shopping_bag = request.session.get('bag', {}) 
 
-        if size:        
-            del shopping_bag[item_id]['items_by_size'][size]  
-            if not shopping_bag[item_id]['items_by_size']:  
+        if giftwrap:        
+            del shopping_bag[item_id]['items_by_giftwrap'][giftwrap]  
+            if not shopping_bag[item_id]['items_by_giftwrap']:  
                 shopping_bag.pop(item_id)
-            messages.success(request, f'Removed {product.name.upper()} with included gift wrap {size.upper()} from your shopping bag')        
+            messages.success(request, f'Removed {product.name.upper()} with included gift wrap {giftwrap.upper()} from your shopping bag')        
         else:
             shopping_bag.pop(item_id)
             messages.success(request, f'Removed {product.name.upper()} from your shopping bag')  

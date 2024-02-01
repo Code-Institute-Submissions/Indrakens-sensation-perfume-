@@ -47,7 +47,7 @@
                                     <td class="py-3">
                                         <p class="my-0 text-uppercase"><strong>{{ item.product.name }}</strong></p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
-                                        <p class="my-0 small"><strong>Included Gift Bag: </strong>{% if item.product.has_sizes %}{{ item.size }}{% else %}N/A{% endif %}</p>
+                                        <p class="my-0 small"><strong>Included Gift Bag: </strong>{% if item.product.has_giftwrap %}{{ item.giftwrap }}{% else %}N/A{% endif %}</p>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">&euro;{{ item.product.price }}</p>  
@@ -81,10 +81,10 @@
                                                             </span>
                                                         </button>
                                                     </div>
-                                                    {% if item.product.has_sizes %}
-                                                        <input type="hidden" name="product_size" value="{{ item.size }}">
+                                                    {% if item.product.has_giftwrap %} 
+                                                        <input type="hidden" name="product_giftwrap" value="{{ item.giftwrap }}">
                                                     {% endif %}
-                                                </div>
+                                                </div> 
                                             </div>
                                         </form> 
                                         <a class="update-link text-success"><small>Update Item</small></a>

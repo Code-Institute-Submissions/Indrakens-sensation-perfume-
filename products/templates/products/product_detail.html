@@ -70,11 +70,11 @@
                         {% csrf_token %}
                         <div class="form-row">
                             <!-- product gift bag sizes -->
-                            {% with product.has_sizes as s %} 
-                            {% if s %} 
+                            {% with product.has_giftwrap as g %} 
+                            {% if g %} 
                                 <div class="col-12 pb-4 pt-2">
                                     <p><strong>Offer Gift Wrap - Includes Gift Bag & Decorative Ribbon:</strong></p>
-                                    <select class="form-control-sm w-50 h-50" name="product_size" id='id_product_size'>
+                                    <select class="form-control-sm w-50 h-50" name="product_giftwrap" id='id_product_giftwrap'>
                                         <option value="N/A" selected>None</option>
                                         <option value="Mini gift bag and decorative ribbon">Mini Gift Bag</option>
                                         <option value="Party gift bag and decorative ribbon">Party Gift Bag</option>

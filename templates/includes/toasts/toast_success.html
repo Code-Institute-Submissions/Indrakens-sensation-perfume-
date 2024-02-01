@@ -16,7 +16,7 @@
         </div>
         <!-- shopping bag item -->
 
-        <!--{% if grand_total and not on_user_profile_page %} 
+        {% if grand_total and not on_user_profile_page %} 
             <p class="font bg-white text-black py-1"><strong>Your Shopping Bag ({{ product_count }})</strong></p>
             <div class="shopping-bag-notification-wrapper">
                 {% for item in shopping_bag_items %} 
@@ -30,8 +30,8 @@
                         </div> 
                         <div class="col-9">
                             <p class="my-0"><strong>{{ item.product.name|upper }}</strong></p>
-                            {% if item.product.has_sizes %} 
-                            <p class="my-0 small"><strong>Included Gift Wrap:</strong>{{ item.size }}</p>
+                            {% if item.product.has_giftwrap %} 
+                            <p class="my-0 small"><strong>Included Gift Wrap:</strong>{{ item.giftwrap }}</p> 
                             {% endif %} 
                             <p class="my-0 small text-muted">Quantity: {{ item.quantity }}</p>
                         </div>
@@ -66,6 +66,6 @@
                     </a> 
                 </div>
             </div>
-        {% endif %} -->
+        {% endif %} 
     </div>
 </div> 

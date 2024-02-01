@@ -7,7 +7,7 @@
             "name": "ACQUA DI PARMA COLONIA SANDALO (100ML) - Men's Aftershave Perfume Spray",
             "description": "The top notes of Acqua di Parma Colonia Sandalo consist of bergamot, orange, and lemon. The heart notes are lavender, petitgrain, and cardamom. The base notes include sandalwood, tonka bean, and patchouli. The bergamot, orange, and lemon in the top notes give the fragrance a fresh and citrusy opening. The heart notes of lavender, petitgrain, and cardamom add a herbal and spicy touch to the scent.",
             "category": 3,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 69.99,
             "rating": 5,
             "image": "34942157717663.jpg"
@@ -21,7 +21,7 @@
             "name": "ARMANI ACQUA DI GIO PROFONDO (75ML) - Men's Aftershave Perfume Spray",
             "description": "Like taking a plunge into the deep blue sea, senses are awakened by green mandarin and bergamot while an ultramarine, nearly icy hue is conveyed by Acqua di Giò's iconic marine notes. As the bubbles of oxygen rise to the top, the rosemary, lavender, cypress and lentisk absolute blend at its heart. Exuding a masculine character of depth and intensity, notes of woody patchouli and enveloping musk finally fuse with the saline accent of a mineral ambery accord at the base.",
             "category": 3,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 74.99,
             "rating": 5,
             "image": "30765557153951.jpg"
@@ -78,7 +78,7 @@
             "name": "BURBERRY LONDON (100ML) - Men's Aftershave Spray",
             "description": "A sophisticated scent with notes of lavender, bergamot and warm cinnamon perfectly balanced with heart notes of leather and mimosa with tobacco leaves and oak moss make this a truly refined fragrance.",
             "category": 4,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 46.99,
             "rating": 4.5,
             "image": "20284524789919.jpg"
@@ -106,7 +106,7 @@
             "name": "CALVIN KLEIN EUPHORIA MEN (30ML) - Men's Aftershave Spray",
             "description": "Euphoria Men by Calvin Klein is a Woody Aromatic fragrance for men. An addictive and evocative scent arouses all the senses. The fragrance is a refreshing, woody fragrance containing ginger, pepper, black basil, sage, cedar, amber, patchouli, Brazilian redwood and suede.",
             "category": 4,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 47.99,
             "rating": 5,
             "image": "36394024042655.jpg"
@@ -204,7 +204,7 @@
             "name": "DIESEL BAD INTENSE (50ML) - Men's Aftershave Perfume Spray",
             "description": "A masculine fragrance for a man who lives for seduction and never gets enough. Diesel Bad Intense is a sizzling take on the tobacco-caviar signature of their popular Bad fragrance. The scent reveals itself with a sharp sparkle of bergamot. Before you know it, a hot cocktail of nutmeg and cinnamon inflamed the caviar accord. Tobacco and woody notes burning.",
             "category": 3,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 52.99,
             "rating": 4.4,
             "image": "18019119759519.jpg"
@@ -218,7 +218,7 @@
             "name": "DIESEL SOUND OF THE BRAVE (50ML) - Men's Aftershave Spray",
             "description": "The fragrance is an oriental fougère with aromatic bison grass accord and lavandin essence resonating against each other, creating a perfect flow at the heart of the fragrance. Mixed in on top, spicy juniper essence and invigorating lemon essence bounce and vibrate. The end is an intense base of warm amber woods and sensual musks.",
             "category": 4,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 43.99,
             "rating": 5,
             "image": "30765764477087.jpg"
@@ -261,7 +261,7 @@
             "name": "DOLCE & GABBANA K (50ML) - Men's Aftershave Perfume Spray",
             "description": "This effortlessly joyful fragrance opens with notes of blood orange, zingy Sicilian lemon and tangy juniper berries. The heart is a unique twist of aromatic notes, smooth fig nectar and clary sage. The fragrance finishes with a sensual base formed of patchouli, cedar and vetiver.",
             "category": 3,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 62.99,
             "rating": 5,
             "image": "20854045900959.jpg"
@@ -275,7 +275,7 @@
             "name": "DOLCE & GABBANA POUR HOMME INTENSO (75ML) - Men's Aftershave Perfume Spray",
             "description": "Dolce & Gabbana Intenso is a woody aromatic fragrance, whose profound appeal is defined by a brand new discovery in the olfactory world: the Moepel accord which has been re-created from the flowers and leaves of the Milkwood tree using Headspace technology.",
             "category": 3,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 52.99,
             "rating": 4.5,
             "image": "34807692918943.jpg"
@@ -289,7 +289,7 @@
             "name": "DOLCE & GABBANA K (50ML) - Men's Aftershave Spray",
             "description": "This effortlessly joyful fragrance opens with notes of blood orange, zingy Sicilian lemon and tangy Juniper berries. This instantly refreshes and energizes the wearer, taking inspiration from the Mediterranean air. The heart is a unique twist of aromatic, herby notes with a kick of fiery Pimento. The fragrance is finished with a sensual base formed of Cedar, Vetiver and Patchouli.",
             "category": 4,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 59.99,
             "rating": 5,
             "image": "15096326488157.jpg"
@@ -303,7 +303,7 @@
             "name": "DOLCE & GABBANA THE ONE GREY (30ML) - Men's Aftershave Spray",
             "description": "A playful fusion of spicy and aromatic notes takes place. Bitter grapefruit is combined with aromatic and herbal notes of coriander, cardamom and basil to introduce the scent. Lavender powers the heart alongside geranium and clary sage. The One For Men's signature combination of warm tobacco and woody notes completes this masculine scent.",
             "category": 4,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 54.99,
             "rating": 5,
             "image": "34228562493599.jpg"
@@ -345,7 +345,7 @@
             "name": "GIVENCHY GENTLEMAN SOCIETY (60ML) - Men's Aftershave Perfume spray",
             "description": "The fragrance opens with top aromatic top notes of fresh sage combined with the floral notes of wild narcissus absolute. The notes contrast with the mysterious intensity of the vetiver. The warmth of vanilla melts with sandalwood and cedarwood essences to create the addictive base of this sophisticated men’s aftershave, leaving a memorable trail behind.",
             "category": 3,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 66.99,
             "rating": 5,
             "image": "36418018345119.jpg"
@@ -373,7 +373,7 @@
             "name": "GUCCI GUILTY POUR HOMME (50ML) - Men's Aftershave Perfume Spray",
             "description": "This bold and captivating scent combines the finest of ingredients to bring forth a signature aroma that is truly unique. The top notes are a fusion of juniper, lavender, and lemon that make for an invigorating opening. The middle notes, on the other hand, blend the enchanting scents of orange blossom, nutmeg, and Spanish labdanum that enhance the allure of the fragrance. The base notes include patchouli, dry wood, and musk.",
             "category": 3,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 67.99,
             "rating": 5,
             "image": "36490391093407.jpg"
@@ -415,7 +415,7 @@
             "name": "HUGO BOSS HUGO MAN (75ML) - Men's Aftersave Spray",
             "description": "Hugo Man by Hugo Boss is a fresh-aromatic fragrance for men. Opening with fruity top notes of green apple, mint, grapefruit leading to woody notes of fir and cedar.",
             "category": 4,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 56,
             "rating": 5,
             "image": "30755849896095.jpg"
@@ -458,7 +458,7 @@
             "name": "ISSEY MIYAKE FUSION D'ISSEY (100ML) - Men's Aftershave Spray",
             "description": "This fragrance is an energetic fusion of nature and depth. Cool and blazing. A play on contrasts between the cold and the heat of warming spices. The explosive freshness from the beginning of the composition includes citrus and fruit aromas, lemon being one of them, and sweet coconut milk. The aromatic-spicy heart, pungent and fresh like a forest breeze, blends with the sunny amber base and a deep volcanic note of patchouli. A new masculinity, heat and cold to express the idea of the quintessence of molten rock.",
             "category": 4,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 55.99,
             "rating": 5,
             "image": "32323206676639.jpg"
@@ -486,7 +486,7 @@
             "name": "JEAN PAUL GAULTIER LE MALE (125ML) - Men's Aftershave Spray",
             "description": "Known for the unique bottle in the shape of a torso. The tin cans serve as the perfume's packaging. Containing notes of mint, lavender, vanilla, bergamot, cinnamon, cumin, orange blossom, tonka bean, sandalwood and cedarwood.",
             "category": 4,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 69.99,
             "rating": 4.3,
             "image": "15096318918749.jpg"
@@ -500,7 +500,7 @@
             "name": "JEAN PAUL GAULTIER SCANDAL POUR HOMME (100ML) - Men's Aftershave Spray",
             "description": "An energizing and addictive eau de toilette fragrance. A modern woody oriental scent that packs a punch. The fragrance opens with freshness; sage and full-fruit mandarin sharpening the senses. Roasted tonka beans and caramel are at the heart adding to the masculine energy and the sensual base draws on notes of vetiver and cedar.",
             "category": 4,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 78.99,
             "rating": 5,
             "image": "30540396265631.jpg"
@@ -528,7 +528,7 @@
             "name": "MONT BLANC EXPLORER PLATINUM (30ML) - Men's Aftershave Perfume Spray",
             "description": "The fragrance opens with top notes of violet leaves, followed by middle notes of clary sage, and base notes of cedarwood. It has a fresh, spicy, and warm welcoming scent that gains a noticeable leathery and woody effect once it dries down. A beautiful fragrance that is perfect for anyone who loves fresh and spicy scents.",
             "category": 3,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 48.99,
             "rating": 4.5,
             "image": "36595822330015.jpg"
@@ -542,7 +542,7 @@
             "name": "MONT BLANC LEGEND RED (100ML) - Men's Aftershave Perfume Spray",
             "description": "Legend Red by Montblanc is a citrus, woody fragrance for men. A bold, confident, powerful fragrance with strength, opens with a burst of blood oranges and zesty grapefruit, combined with a spicy touch of cardamom. The heart reveals the intense aromatic harmony of juniper berries and clary sage, strengthened with cedarwood, while the trail of mahogany, tonka beans, and Atlas cedar form the base of the fragrance.",
             "category": 3,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 52.99,
             "rating": 4.2,
             "image": "32440268914847.jpg"
@@ -556,7 +556,7 @@
             "name": "PACO RABANNE INVICTUS VICTORY EXTREME (100ML) - Men's Aftershave Perfume Spray",
             "description": "A fragrance that shocks and seduces with its juxtaposing senses; emphatic freshness and magnetic intensity. It screams masculinity in a strong and beguiling manner. Two unique combinations are featured for a long-lasting scent. At the outset, a surprisingly fresh boost: sharp lemon mingles with powerful incense.",
             "category": 3,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 74.99,
             "rating": 4.5,
             "image": "29733447827615.jpg"
@@ -570,7 +570,7 @@
             "name": "PACO RABANNE 1 MILLION ROYAL (50ML) - Men's Aftershave Perfume Spray",
             "description": "1 Million Royal by Paco Rabanne is an Amber Woody fragrance for men.",
             "category": 3,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 66.99,
             "rating": 4.6,
             "image": "36335405629599.jpg"
@@ -584,7 +584,7 @@
             "name": "PACO RABANNE PURE XS (50ML) - Men's Aftershave Spray",
             "description": "A vibrant fresh oriental scent with two accords that contrast and harmonize with each other, body to body, caught between excesses, hot and cold, gentle and intense, on edge, attracting each other. The fragrance starts with explosive freshness of the aphrodisiac ginger, then smoldering sensuality from cinnamon, followed by a surge of power with deep vanilla infused with leather, liquor and musk.",
             "category": 4,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 57,
             "rating": 4.3,
             "image": "66028141282211.jpg"
@@ -598,7 +598,7 @@
             "name": "PACO RABANNE INVICTUS (100ML) - Men's Aftershave",
             "description": "The fragrance opens with fresh grapefruit and a marine accord that lead to the heart of aromatic bay leaf and Hedione jasmine and a woody base of guaiac wood, patchouli, oak moss and ambergris.",
             "category": 4,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 85.99,
             "rating": 5,
             "image": "36393905193119.jpg"
@@ -684,7 +684,7 @@
             "name": "YSL LA NUIT DE L'HOMME (60ML) - Men's Aftershave Spray",
             "description": "A dark and powerful masculine fragrance full of contrasts and tensions. A timeless scent with an intoxicating silage. La Nuit de l'Homme opens with cardamom and sparkling freshness of bergamot, lavender and cedar. Cumin and vetiver in a base ensure an opulent finish. Attraction is at its height.",
             "category": 4,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 63.99,
             "rating": 5,
             "image": "31362797371551.jpg"
@@ -698,7 +698,7 @@
             "name": "ARMANI SI (30ML) - Women's Perfume Spray",
             "description": "Say 'yes' to this irresistible, chic scent by Armani for the dependant, confident woman. Sultry and intense, but soft at the same time, Sì is a chypre scent reinvented. Lingering on the skin,  captivating the senses. Combining blackcurrant nectar, modern chypre and light musky woods, it leaves an unforgettable trail wherever you are.",
             "category": 1,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 58.99,
             "rating": 5,
             "image": "4475569406045.jpg"
@@ -712,7 +712,7 @@
             "name": "CALVIN KLEIN CK IN2U HER (100ML) - Women's",
             "description": "Opening with a burst of pink grapefruit, with mouth watering sugar orchid, leading to a base full of seduction and satisfaction, with a lingering amber afterglow.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 36.99,
             "rating": 5,
             "image": "37321784034211.jpg"
@@ -740,7 +740,7 @@
             "name": "CAROLINA HERRERA 212 VIP (50ML) - Women's Perfume Spray",
             "description": "Carolina Herrera 212 VIP is a glamorous fragrance for women. Inspired by a new generation of VIP in New York, the city that never sleeps. Magnetic and seduction, this is a modern icon for youth wanting to have fun and party, no matter what.",
             "category": 1,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 68.99,
             "rating": 5,
             "image": "14730550018141.jpg"
@@ -754,7 +754,7 @@
             "name": "CAROLINA HERRERA GOOD GIRL LEGERE (30ML) - Women's Perfume Spray",
             "description": "Its mixture of sweet, fresh and sensual aromas highlighted a woman's ability to be both tough and tender. This new update lightened up the fragrance with a focus on bright citruses and light floral scents.",
             "category": 1,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 59.99,
             "rating": 4.5,
             "image": "17610890018975.jpg"
@@ -768,7 +768,7 @@
             "name": "CAROLINA HERRERA GOOD GIRL SUPREME (30ML) - Women's Perfume Spray",
             "description": "The iconic fragrance reinvents herself with a daring new Supreme scent. Opening with juicy berries, Egyptian jasmine and creamy tonka bean on a base of vetiver gives a modern twist.",
             "category": 1,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 57.99,
             "rating": 5,
             "image": "21435055014047.jpg"
@@ -882,7 +882,7 @@
             "name": "DAVIDOFF COOL WATER (50ML) - Women's",
             "description": "A totally fresh sensation, cool and calm, Cool Water Woman is like a breath of fresh air. Light and breezy florals blended with sweet fruit for a revitalizing scent sensation. The transparent floral fragrance, with aquatic notes, sets a mood of  confident femininity. Fresh, juicy top notes of watermelon and pineapple introduce the delicate energy of a floral accord led by lily of the valley.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 41.99,
             "rating": 4.3,
             "image": "32995329147039.jpg"
@@ -896,7 +896,7 @@
             "name": "DKNY GOLDEN DELICIOUS (30ML) - Women's Perfume Spray",
             "description": "Celebrate luxury and style with DKNY Golden Delicious. Radiating lavish sensuality, dripping with gold. It's a tempting rich blend of juicy golden delicious apples with orange blossom, white rose, Casablanca lily, vanilla orchid, musk and sandalwood.",
             "category": 1,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 56.99,
             "rating": 5,
             "image": "33558300852383.jpg"
@@ -910,7 +910,7 @@
             "name": "DOLCE & GABBANA DOLCE ROSE (30ML) - Women's",
             "description": "A flower we all know to symbolize love, beauty and femininity. Dolce Rose is an alluring and joyful fragrance radiating energy.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 49.99,
             "rating": 4.2,
             "image": "33568760332447.jpg"
@@ -924,7 +924,7 @@
             "name": "DOLCE & GABBANA THE ONE (50ML) - Women's Perfume Spray",
             "description": "A luxury perfume that transcends ordinary fragrances. Its unique oriental-floral-fruity composition is a one-of-a-kind blend of balanced, warm, and sensual notes. Let the sweet notes of mandarin, bergamot, litchi, and peach whisk you away from the everyday. Delight in the delicate layers of jasmine, lily of the valley, and white lily, perfectly complemented by the rich notes of plum. Finally, indulge in the mesmerizing scents coming from the base of vetiver root, amber, musk, and vanilla.",
             "category": 1,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 89.99,
             "rating": 5,
             "image": "30763632427167.jpg"
@@ -938,7 +938,7 @@
             "name": "DOLCE & GABBANA DOLCE LILY (50ML) - Women's",
             "description": "A gorgeous Summery scent inspired by the pink lily flower. The Dolce girl is authentic and caring, the sparkling fragrance being a symbol of femininity and kindness. The fragrance is a bright fruity floral, combining the delicate floral signature of pink lily accord with exotic passion fruit and a background of soft, sensual musks.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 60.99,
             "rating": 5,
             "image": "32696711577759.jpg"
@@ -996,7 +996,7 @@
             "name": "GIVENCHY ORGANZA (50ML) - Women's Perfume Spray",
             "description": "Organza is a timeless classic fragrance by Givenchy. A symbol of the eternal woman, a modern day goddess. This woody-oriental-floral fragrance is a magical potion of sensual, delicate notes of opulent white flowers, iris and walnut on a base of soft vanilla, amber and woody notes.",
             "category": 1,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 62.99,
             "rating": 5,
             "image": "7073155973213.jpg"
@@ -1010,7 +1010,7 @@
             "name": "HUGO BOSS ORANGE  (50ML) - Women's",
             "description": "The top notes burst with a woman's strong personality, blending sweet apples with a heart of white flowers and orange blossom, creating a vibrant and uplifting impression. The base notes of sandalwood, olive wood, and vanilla leave an unforgettable, passionate, and warm finish.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 59.99,
             "rating": 4.5,
             "image": "34422203318431.jpg"
@@ -1038,7 +1038,7 @@
             "name": "JIMMY CHOO FLORAL (40ML) - Women's",
             "description": "Top notes of tangerine, bergamot and nectarine open with an energetic burst, whilst its heart centers around soft petals of sweet pea, magnolia and apricot blossom. The base is sensual and warm with musk, ambroxan and woody notes.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 32.99,
             "rating": 4,
             "image": "30761453027487.jpg"
@@ -1095,7 +1095,7 @@
             "name": "KENZO FLOWER TINY POPPY (30ML) - Women's Perfume Spray",
             "description": "From the moment you open the bottle, the aroma of Bulgarian Rose, Hawthorn, Black Currant, and Mandarin Orange transports you to a field of blooming flowers. As the scent evolves, the middle notes of Parma Violet, Rose, Opoponax, and Jasmine emerge, lending an air of elegance and sophistication. These floral notes create a beautiful harmony that dances around you, invoking memories of delicate garden parties and whispered confessions of love. Finally, the fragrance settles into its base notes of Vanilla, White Musk, and Incense. The vanilla is warm and inviting, while the white musk adds depth and complexity. The incense ties everything together, giving the scent a spiritual and mystical quality that is both grounding and uplifting.",
             "category": 1,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 62.99,
             "rating": 5,
             "image": "11133832921181.jpg"
@@ -1109,7 +1109,7 @@
             "name": "LANCOME LA NUIT TRESOR NUDE (50ML) - Women's",
             "description": "The romantic floral notes of roses dominate and seduces our senses with exotic touches and a delicately soft vanilla cloud. The composition of La Nuit Trésor Nude will enchant you with a bouquet of bergamot freshened with coconut and seductive vanilla.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 59.99,
             "rating": 5,
             "image": "28310435725471.jpg"
@@ -1151,7 +1151,7 @@
             "name": "MARC JACOBS DAISY DREAM (30ML) - Women's",
             "description": "The beautiful fragrance draws you in with an irresistible feminine mix of juicy blackberry, fresh grapefruit and succulent pear with a heart of jasmine and wisteria, on a base of white woods and musk. A playful and fun fragrance.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 42.99,
             "rating": 5,
             "image": "30450447646879.jpg"
@@ -1165,7 +1165,7 @@
             "name": "MARC JACOBS DAISY LOVE (50ML) - Women's",
             "description": "A captivating, addictive scent for the millennials. Youthful, yet sophisticated with a happy-go-lucky character. Conjuring up the picture-perfect scene of a Californian summer, with golden beaches and cloudless skies. Daisy Love’s blend of sweet cloudberry with the solar yet creamy tones of daisy tree petals on a base of driftwood and cashmere musk mesmerize the senses with their sublime warmth.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 42.99,
             "rating": 4.2,
             "image": "20851717931167.jpg"
@@ -1263,7 +1263,7 @@
             "name": "PRADA CANDY FLORALE (50ML) - Women's",
             "description": "Designed especially for 'Candy', this scent resembles a fantasy flower formed of sweet, delightful treats. Notes of limoncello and peony create a refreshing airiness to the scent while base notes of caramel, benzoin, honey and musk leave a warm and sensual trail.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 49.99,
             "rating": 4.5,
             "image": "15296090308701.jpg"
@@ -1277,7 +1277,7 @@
             "name": "ROBERTO CAVALLI JUST CAVALLI (30ML) - Women's",
             "description": "Opening with the luminous smell of neroli from the bitter orange tree, Roberto Cavalli Just Cavalli moves into a heart of Tiare flower cultivated from Tahiti. The fragrance finishes on a creamy accord created from palisander rosewood, resulting in a balanced yet intoxicating scent.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 32.99,
             "rating": 4.3,
             "image": "36376311136415.jpg"
@@ -1305,7 +1305,7 @@
             "name": "VERSACE YELLOW DIAMOND (30ML) - Women's",
             "description": "Top notes of Neroli, Bergamot, Amalfi Lemon, and Pear, middle notes of African Orange Flower, Water Lily, Freesia, and Mimosa, and base notes of Musk, Guaiac, and Amber.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 45.99,
             "rating": 5,
             "image": "33977993167007.jpg"
@@ -1319,7 +1319,7 @@
             "name": "VERSACE DYLAN BLUE POUR FEMME (30ML) - Women's Perfume Spray",
             "description": "Versace Dylan Blue Pour Femme is a floral-fruity-woody fragrance for women. Celebrating women with a strong statement, accepting no stereotypes. A strong and sensual tribute to femininity. Blackcurrant sorbet mingles with sparkling sharp granny smith apple with a contemporary floral heart of rose and jasmine petals. The base is made up of sensual musk and woody notes.",
             "category": 1,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 53.99,
             "rating": 5,
             "image": "34118663438495.jpg"
@@ -1333,7 +1333,7 @@
             "name": "VERSACE EROS POUR FEMME (50ML) - Women's",
             "description": "Vibrant, glimmering with radiant sparkling notes of Sicilian lemon, jasmine sambac and musk. Eros Pour Femme is a floral and woody fragrance that is inspired by love and passion, and its scent reflects this.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 53.99,
             "rating": 5,
             "image": "36444018999455.jpg"
@@ -1347,7 +1347,7 @@
             "name": "VERSACE DYLAN TURQUOISE POUR FEMME (30ML) - Women's",
             "description": "Light, fresh and zesty the perfect sparkling summer scent with notes of lemon, mandarin orange, guava, freesia, musk and cedar.",
             "category": 2,
-            "has_sizes": "True",
+            "has_giftwrap": "True",
             "price": 59.99,
             "rating": 5,
             "image": "30692577181855.jpg"
