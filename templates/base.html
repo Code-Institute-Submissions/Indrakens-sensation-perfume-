@@ -77,15 +77,23 @@
       </div>
       <!-- account and shopping bag links -->
       <div class="col-12 col-lg my-auto">
-        <ul class="list-inline text-center text-lg-right">
-          <!-- may account -->
+        <ul class="list-inline text-center text-lg-right"> 
+          <!-- my account -->
           <li class="list-inline-item dropdown">
             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               <div class="text-center my-account">
-                <div><i class="fas fa-user fa-lg"></i></div>
+                <div>
+                  <div>
+                    {% if profile.profile_picture %} 
+                      <img class="rounded-circle border" src="{{ profile.profile_picture.url }}" height="50px" alt="profile_image"> 
+                    {% else %}
+                      <img class="rounded-circle" src="{% static 'images/profile_image.jpg' %}" height="50px" alt="default_profile_image">
+                    {% endif %}
+                  </div>
                 <p class="my-0">My Account</p>
-              </div>
+                </div>
+              </div>   
             </a>
             <!-- user is authenticated -->
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -116,7 +124,7 @@
                 </p>
               </div>
             </a>
-          </li>
+          </li> 
         </ul>
       </div>
     </div>

@@ -76,6 +76,10 @@ input[name='q']::placeholder{
     color: #aab7c4;
 } 
 
+.rounded-circle {
+    border: 3px solid #E0B411 !important;
+} 
+
 /* from Bulma */
 .icon {
     align-items: center;
