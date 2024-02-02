@@ -18,8 +18,8 @@ def profile(request):
     context = {
         'profile': profile,
         'form': form,
-        'orders': orders,      
-    }  
+        'orders': orders,
+    }    
     template = "profiles/user_profile.html"  
     return render(request, template, context) 
 
@@ -46,7 +46,7 @@ def update_profile(request, profile):
     context = {
         'form': form,
         'orders': orders,
-        'on_user_profile': True        
+        'on_update_user_profile': True       
     } 
 
     return render(request, template, context)  
