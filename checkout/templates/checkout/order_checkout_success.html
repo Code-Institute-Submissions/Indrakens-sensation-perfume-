@@ -25,7 +25,7 @@
                         <i class="fa-sharp fa-solid fa-envelope-circle-check" style="color: #E0B411;"></i>
                     </span>
                     Confirmation email will be sent to
-                    <strong>{{ order.email }}</strong>. Your order information is below.
+                    <strong>{{ order.user_email }}</strong>. Your order information is below.
                 </p>               
             </div>
         </div>
@@ -53,7 +53,7 @@
                             <p class="mb-0 text-black font-weight-bold">Oreder Date:</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0">{{ order.date }}</p>
+                            <p class="mb-0">{{ order.date }}</p> 
                         </div>
                     </div>
                     <!-- order details -->
@@ -95,7 +95,7 @@
                             <p class="mb-0 text-black font-weight-bold small">Full Name</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0 small">{{ order.full_name }}</p>
+                            <p class="mb-0 small">{{ order.user_full_name }}</p>
                         </div>
                     </div>
                     <div class="row">
@@ -103,17 +103,17 @@
                             <p class="mb-0 text-black font-weight-bold small">Address 1</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0 small">{{ order.street_address1 }}</p>
+                            <p class="mb-0 small">{{ order.user_street_address1 }}</p>
                         </div>
                     </div>
 
-                    {% if order.street_address2 %} 
+                    {% if order.user_street_address2 %} 
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold small">Address 2</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0 small">{{ order.street_address2 }}</p>
+                            <p class="mb-0 small">{{ order.user_street_address2 }}</p>
                         </div>
                     </div>
                     {% endif %} 
@@ -123,28 +123,28 @@
                             <p class="mb-0 text-black font-weight-bold small">Town or City</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0 small">{{ order.town_or_city }}</p> 
+                            <p class="mb-0 small">{{ order.user_town_or_city }}</p> 
                         </div>
                     </div>
 
-                    {% if order.county %} 
+                    {% if order.user_county %} 
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold small">County</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0 small">{{ order.county }}</p>
+                            <p class="mb-0 small">{{ order.user_county }}</p>
                         </div>
                     </div>
                     {% endif %} 
 
-                    {% if order.postcode %} 
+                    {% if order.user_postcode %} 
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold small">Postal Code</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0 small">{{ order.postcode }}</p>
+                            <p class="mb-0 small">{{ order.user_postcode }}</p>
                         </div>
                     </div>
                     {% endif %} 
@@ -154,7 +154,7 @@
                             <p class="mb-0 text-black font-weight-bold small">Country</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0 small">{{ order.country }}</p>
+                            <p class="mb-0 small">{{ order.user_country }}</p>
                         </div>
                     </div>
                     <div class="row">
@@ -162,7 +162,7 @@
                             <p class="mb-0 text-black font-weight-bold small">Phone Number</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0 small">{{ order.phone_number }}</p>
+                            <p class="mb-0 small">{{ order.user_phone_number }}</p> 
                         </div>
                     </div>
                     <!-- billing info -->
@@ -184,7 +184,7 @@
                             <p class="mb-0 text-black font-weight-bold small">Delivery</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0 small">&euro;{{ order.delivery_cost }}</p>
+                            <p class="mb-0 small">&euro;{{ order.user_delivery_cost }}</p> 
                         </div>
                     </div>
                     <div class="row">

@@ -43,15 +43,15 @@ def order_checkout(request):
         shopping_bag = request.session.get('bag', {}) 
 
         form_data = {
-            'full_name': request.POST['full_name'],
-            'email': request.POST['email'],
-            'phone_number': request.POST['phone_number'],
-            'street_address1': request.POST['street_address1'],
-            'street_address2': request.POST['street_address2'],
-            'town_or_city': request.POST['town_or_city'],
-            'county': request.POST['county'],
-            'postcode': request.POST['postcode'],
-            'country': request.POST['country'],
+            'user_full_name': request.POST['user_full_name'],
+            'user_email': request.POST['user_email'],
+            'user_phone_number': request.POST['user_phone_number'],
+            'user_street_address1': request.POST['user_street_address1'],
+            'user_street_address2': request.POST['user_street_address2'],
+            'user_town_or_city': request.POST['user_town_or_city'],
+            'user_county': request.POST['user_county'],
+            'user_postcode': request.POST['user_postcode'],
+            'user_country': request.POST['user_country'], 
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
@@ -71,12 +71,12 @@ def order_checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for giftwrap, quantity in item_data['items_by_giftwrap'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
-                                gift_bag_size=size,
+                                gift_bag_size=giftwrap,
                             ) 
                             order_line_item.save() 
                 except Product.DoesNotExist:
@@ -113,15 +113,15 @@ def order_checkout(request):
             try:
                 profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
-                    'full_name': profile.user.get_full_name(),
-                    'email': profile.user.email,
-                    'phone_number': profile.default_phone_number,
-                    'country': profile.default_country,
-                    'postcode': profile.default_postcode,
-                    'town_or_city': profile.default_town_or_city,
-                    'street_address1': profile.default_street_address1,
-                    'street_address2': profile.default_street_address2,
-                    'county': profile.default_county,
+                    'user_full_name': profile.user.get_full_name(),
+                    'user_email': profile.user.email, 
+                    'user_phone_number': profile.default_phone_number,
+                    'user_country': profile.default_country,
+                    'user_postcode': profile.default_postcode,
+                    'user_town_or_city': profile.default_town_or_city,
+                    'user_street_address1': profile.default_street_address1,
+                    'user_street_address2': profile.default_street_address2,
+                    'user_county': profile.default_county,
                 })
             except UserProfile.DoesNotExist:
                 order_form = OrderForm()
@@ -158,21 +158,21 @@ def order_checkout_success(request, order_number):
         # Save the user's info
         if save_info:
             profile_data = {
-                'default_phone_number': order.phone_number,
-                'default_country': order.country,
-                'default_postcode': order.postcode,
-                'default_town_or_city': order.town_or_city,
-                'default_street_address1': order.street_address1,
-                'default_street_address2': order.street_address2,
-                'default_county': order.county,
-            }
+                'default_phone_number': order.user_phone_number,
+                'default_country': order.user_country,
+                'default_postcode': order.user_postcode,
+                'default_town_or_city': order.user_town_or_city,
+                'default_street_address1': order.user_street_address1,
+                'default_street_address2': order.user_street_address2,
+                'default_county': order.user_county,
+            } 
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
     messages.success(request, f'Order processed! \
         Your order number is {order_number}. A confirmation \
-        email will be sent to {order.email}.') 
+        email will be sent to {order.user_email}.') 
 
     if 'bag' in request.session:
         del request.session['bag']

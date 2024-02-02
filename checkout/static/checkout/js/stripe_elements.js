@@ -61,28 +61,28 @@ form.addEventListener('submit', function(ev) {
             payment_method: {
                 card: card,
                 billing_details: {
-                    name: $.trim(form.full_name.value),
-                    phone: $.trim(form.phone_number.value),
-                    email: $.trim(form.email.value),
+                    name: $.trim(form.user_full_name.value),
+                    phone: $.trim(form.user_phone_number.value),
+                    email: $.trim(form.user_email.value),
                     address:{
-                        line1: $.trim(form.street_address1.value),
-                        line2: $.trim(form.street_address2.value),
-                        city: $.trim(form.town_or_city.value),
-                        country: $.trim(form.country.value),
-                        state: $.trim(form.county.value),
+                        line1: $.trim(form.user_street_address1.value),
+                        line2: $.trim(form.user_street_address2.value),
+                        city: $.trim(form.user_town_or_city.value),
+                        country: $.trim(form.user_country.value),
+                        state: $.trim(form.user_county.value), 
                     }
                 }
             },
             shipping: {
-                name: $.trim(form.full_name.value),
-                phone: $.trim(form.phone_number.value),
+                name: $.trim(form.user_full_name.value),
+                phone: $.trim(form.user_phone_number.value),
                 address: {
-                    line1: $.trim(form.street_address1.value),
-                    line2: $.trim(form.street_address2.value),
-                    city: $.trim(form.town_or_city.value),
-                    country: $.trim(form.country.value),
-                    postal_code: $.trim(form.postcode.value),
-                    state: $.trim(form.county.value),
+                    line1: $.trim(form.user_street_address1.value),
+                    line2: $.trim(form.user_street_address2.value),
+                    city: $.trim(form.user_town_or_city.value),
+                    country: $.trim(form.user_country.value),
+                    postal_code: $.trim(form.user_postcode.value),
+                    state: $.trim(form.user_county.value), 
                 }
             },
         }).then(function(result) {
