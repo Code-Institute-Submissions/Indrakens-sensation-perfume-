@@ -43,7 +43,7 @@ def order_checkout(request):
         shopping_bag = request.session.get('bag', {}) 
 
         form_data = {
-            'user_full_name': request.POST['user_full_name'],
+            'full_name': request.POST['full_name'], 
             'user_email': request.POST['user_email'],
             'user_phone_number': request.POST['user_phone_number'],
             'user_street_address1': request.POST['user_street_address1'],
@@ -113,16 +113,16 @@ def order_checkout(request):
             try:
                 profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
-                    'user_full_name': profile.user.get_full_name(),
+                    'full_name': profile.user.get_full_name(),   
                     'user_email': profile.user.email, 
-                    'user_phone_number': profile.default_phone_number,
-                    'user_country': profile.default_country,
-                    'user_postcode': profile.default_postcode,
-                    'user_town_or_city': profile.default_town_or_city,
-                    'user_street_address1': profile.default_street_address1,
-                    'user_street_address2': profile.default_street_address2,
-                    'user_county': profile.default_county,
-                })
+                    'user_phone_number': profile.profile_phone_number,
+                    'user_country': profile.profile_country,
+                    'user_postcode': profile.profile_postcode,
+                    'user_town_or_city': profile.profile_town_or_city,
+                    'user_street_address1': profile.profile_street_address1,
+                    'user_street_address2': profile.profile_street_address2,
+                    'user_county': profile.profile_county, 
+                }) 
             except UserProfile.DoesNotExist:
                 order_form = OrderForm()
         else:
@@ -158,14 +158,14 @@ def order_checkout_success(request, order_number):
         # Save the user's info
         if save_info:
             profile_data = {
-                'default_phone_number': order.user_phone_number,
-                'default_country': order.user_country,
-                'default_postcode': order.user_postcode,
-                'default_town_or_city': order.user_town_or_city,
-                'default_street_address1': order.user_street_address1,
-                'default_street_address2': order.user_street_address2,
-                'default_county': order.user_county,
-            } 
+                'profile_phone_number': order.user_phone_number,
+                'profile_country': order.user_country,
+                'profile_postcode': order.user_postcode,
+                'profile_town_or_city': order.user_town_or_city,
+                'profile_street_address1': order.user_street_address1,
+                'profile_street_address2': order.user_street_address2,
+                'profile_county': order.user_county,
+            }  
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()

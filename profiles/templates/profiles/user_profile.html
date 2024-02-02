@@ -23,8 +23,8 @@
         </div>
         <div class="row">
             <div class="col-12 profile mb-4 ml-5 mr-5">
-                {% if profile.default_picture %} 
-                    <img class="rounded-circle border" src="{{ profile.default_picture.url }}" height="130px" alt="profile_image"> 
+                {% if profile.profile_picture %} 
+                    <img class="rounded-circle border" src="{{ profile.profile_picture.url }}" height="130px" alt="profile_image"> 
                 {% else %}
                     <img class="rounded-circle" src="{% static 'images/profile_image.jpg' %}" height="130px" alt="default_profile_image">
                 {% endif %}
@@ -37,31 +37,31 @@
                 <ul class="list-group mb-4">
                     <li class="list-group-item">
                         <strong class="text-uppercase">Phone Number :</strong>
-                            <span class="float-right">{{ profile.default_phone_number }}</span> 
+                            <span class="float-right">{{ profile.profile_phone_number }}</span> 
                     </li> 
                     <li class="list-group-item"> 
                         <strong class="text-uppercase">Street Address :</strong>
-                        <span class="float-right">{{ profile.default_street_address1 }}</span>
+                        <span class="float-right">{{ profile.profile_street_address1 }}</span>
                     </li> 
                     <li class="list-group-item">
                         <strong class="text-uppercase">Street Address2 :</strong>
-                        <span class="float-right">{{ profile.default_street_address2 }}</span>
+                        <span class="float-right">{{ profile.profile_street_address2 }}</span>
                     </li>
                     <li class="list-group-item">
                         <strong class="text-uppercase">Town / City :</strong>
-                        <span class="float-right">{{ profile.default_town_or_city }}</span>
+                        <span class="float-right">{{ profile.profile_town_or_city }}</span> 
                     </li> 
                     <li class="list-group-item">
                         <strong class="text-uppercase">County :</strong>
-                        <span class="float-right">{{ profile.default_county }}</span>
+                        <span class="float-right">{{ profile.profile_county }}</span>
                     </li>
                     <li class="list-group-item">
                         <strong class="text-uppercase">Postcode :</strong>
-                        <span class="float-right">{{ profile.default_postcode }}</span>
+                        <span class="float-right">{{ profile.profile_postcode }}</span> 
                     </li>
                     <li class="list-group-item">
                         <strong class="text-uppercase">Country :</strong>
-                        <span class="float-right">{{ profile.default_country }}</span>
+                        <span class="float-right">{{ profile.profile_country }}</span>
                     </li> 
                 </ul>
                 <a href="{% url 'update_profile' profile %}">

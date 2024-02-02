@@ -70,13 +70,13 @@ class StripeWH_Handler:
         if username != 'AnonymousUser':
             profile = UserProfile.objects.get(user__username=username)
             if save_info:
-                profile.default_phone_number = shipping_details.phone
-                profile.default_country = shipping_details.address.country
-                profile.default_postcode = shipping_details.address.postal_code
-                profile.default_town_or_city = shipping_details.address.city
-                profile.default_street_address1 = shipping_details.address.line1
-                profile.default_street_address2 = shipping_details.address.line2
-                profile.default_county = shipping_details.address.state
+                profile.profile_phone_number = shipping_details.phone
+                profile.profile_country = shipping_details.address.country
+                profile.profile_postcode = shipping_details.address.postal_code
+                profile.profile_town_or_city = shipping_details.address.city
+                profile.profile_street_address1 = shipping_details.address.line1
+                profile.profile_street_address2 = shipping_details.address.line2
+                profile.profile_county = shipping_details.address.state 
                 profile.save()         
 
         order_exists = False
@@ -84,7 +84,7 @@ class StripeWH_Handler:
         while attempt <= 5:
             try:
                 order = Order.objects.get(
-                    user_full_name__iexact=shipping_details.name,
+                    full_name__iexact=shipping_details.name,  
                     user_email__iexact=billing_details.email,
                     user_phone_number__iexact=shipping_details.phone,
                     user_country__iexact=shipping_details.address.country,
@@ -111,7 +111,7 @@ class StripeWH_Handler:
             order = None                       
             try:
                 order = Order.object.create(
-                    user_full_name=shipping_details.name,
+                    full_name=shipping_details.name, 
                     user_profile=profile, 
                     user_email=billing_details.email,
                     user_phone_number=shipping_details.phone,
@@ -123,7 +123,7 @@ class StripeWH_Handler:
                     user_county=shipping_details.address.state,
                     original_bag=shopping_bag,
                     stripe_pid=pid,  
-                ) 
+                )  
                 for item_id, item_data in json.loads(shopping_bag).items():
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):

@@ -1,11 +1,14 @@
 from django import forms
+from .widgets import CustomClearableFileInput 
 from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
-        exclude = ('user',)
+        exclude = ('user',) 
+
+    profile_picture = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)      
 
     def __init__(self, *args, **kwargs):
         """
@@ -14,18 +17,18 @@ class UserProfileForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'default_phone_number': 'Phone Number',
-            'default_postcode': 'Postal Code',
-            'default_town_or_city': 'Town or City',
-            'default_street_address1': 'Street Address 1',
-            'default_street_address2': 'Street Address 2',
-            'default_county': 'Country',
-            'default_picture': 'Profile Picture',
+            'profile_phone_number': 'Phone Number',
+            'profile_postcode': 'Postal Code',
+            'profile_town_or_city': 'Town or City',
+            'profile_street_address1': 'Street Address 1',
+            'profile_street_address2': 'Street Address 2',
+            'profile_county': 'Country',
+            'profile_picture': 'Profile Picture',
         } 
 
-        self.fields['default_phone_number'].widget.attrs['autofocus'] = True
+        self.fields['profile_phone_number'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            if field != 'default_country':
+            if field != 'profile_country': 
                 if self.fields[field].required:
                     placeholder = f'{placeholders[field]} *'
                 else:

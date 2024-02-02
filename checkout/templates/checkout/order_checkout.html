@@ -80,13 +80,13 @@
                     <!-- your details -->
                     <fieldset class="rounded px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Your Details</legend>
-                        {{ order_form.user_full_name | as_crispy_field }} 
+                        {{ order_form.full_name | as_crispy_field }} 
                         {{ order_form.user_email | as_crispy_field }} 
+                        {{ order_form.user_phone_number | as_crispy_field }}  
                     </fieldset>
                     <!-- delivery info -->
                     <fieldset class="rounded px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Delivery Info</legend>
-                        {{ order_form.user_phone_number | as_crispy_field }} 
                         {{ order_form.user_street_address1 | as_crispy_field }} 
                         {{ order_form.user_street_address2 | as_crispy_field }} 
                         {{ order_form.user_town_or_city | as_crispy_field }} 
