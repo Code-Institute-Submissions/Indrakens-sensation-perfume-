@@ -16,7 +16,7 @@ class UserProfileForm(forms.ModelForm):
         labels and set autofocus on first field
         """
         super().__init__(*args, **kwargs)
-        placeholders = {
+        placeholders = { 
             'profile_phone_number': 'Phone Number',
             'profile_postcode': 'Postal Code',
             'profile_town_or_city': 'Town or City',
