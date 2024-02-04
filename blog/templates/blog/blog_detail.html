@@ -61,9 +61,10 @@
                 </strong>
                 {% with comments.count as total_comments %}
                 <span class="text-dark"> 
-                    <strong class="text-secondary"><i class="far fa-comments"></i>
+                    <strong class="text-dark ml-2">
+                        <i class="far fa-comments text-secondary"></i> 
                         <!-- total_comments variable goes before the closing strong tag --> 
-                        {{ total_comments }}
+                        {{ total_comments }} 
                     </strong>
                 </span>
                 {% endwith %}
@@ -71,15 +72,15 @@
         </div>
         <div class="row">
             {% if user and not user.is_authenticated %} 
-        <p class="small d-inline ml-2 mt-3"> 
-            <a class="home-link" href="{% url 'account_login' %}">
-                <strong>Login</strong>
-            </a> or
-            <a class="home-link" href="{% url 'account_signup' %}"> 
-                <strong>Register An Account</strong>
-            </a> to like post ,or leave an comment!
-        </p>
-        {% endif %} 
+            <p class="small d-inline ml-2 mt-3"> 
+                <a class="home-link" href="{% url 'account_login' %}">
+                    <strong>Login</strong>
+                </a> or
+                <a class="home-link" href="{% url 'account_signup' %}"> 
+                    <strong>Register An Account</strong>
+                </a> to like post ,or leave an comment!
+            </p>
+            {% endif %} 
         </div>
     </div>
     <div class="row">
@@ -88,22 +89,29 @@
         </div>
     </div> 
     <div class="row"> 
-        <div class="col-md-8 mb-4 mt-3">
-            <h4>Comments</h4>
+        <div class="col-md-8">
+            <h4 class="mb-4">Comments</h4>
             <div class="body">
                 <!-- we want a for loop inside the empty control tags to iterate through each comment in comments -->
                 {% for comment in comments %}
-                <div class="comments" style="padding: 10px;">
-                    <p class="font-weight-bold">
+                <div class="comments mt-2">
+                    <span>
+                        {% if profile.profile_picture %} 
+                            <img class="rounded-circle" src="{{ name.profile.profile_picture.url }}" height="50px" alt="profile_image"> 
+                        {% else %}
+                            <img class="rounded-circle" src="{% static 'images/profile_image.jpg' %}" height="50px" alt="default_profile_image">
+                        {% endif %} 
+                    </span> 
+                    <p class="font-weight-bold"> 
                         <!-- commenter's name -->
                         {{ comment.name }} 
-                        <span class=" text-muted font-weight-normal">
+                        <span class=" text-muted font-weight-normal small ml-2">
                             <!-- comment's created date -->
                             {{ comment.created_on }}
-                        </span> wrote:
+                        </span>
                     </p>
                     <!-- body of the comment goes before the | -->
-                    {{ comment.body | linebreaks }}
+                    {{ comment.body | linebreaks }} 
                 </div> 
                 {% endfor %}
             </div>

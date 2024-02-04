@@ -85,13 +85,9 @@
               <div class="text-center my-account">
                 <div>
                   <div>
-                    {% if profile.profile_picture %} 
-                      <img class="rounded-circle border" src="{{ profile.profile_picture.url }}" height="50px" alt="profile_image"> 
-                    {% else %}
-                      <img class="rounded-circle" src="{% static 'images/profile_image.jpg' %}" height="50px" alt="default_profile_image">
-                    {% endif %}
+                    <div><i class="fa-solid fa-user fa-lg"></i></div>
                   </div>
-                <p class="my-0">My Account</p>
+                <p class="my-0">My Account</p> 
                 </div>
               </div>   
             </a>

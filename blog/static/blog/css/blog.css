@@ -22,3 +22,7 @@
 .btn-outline-light {
     background-color: transparent !important;
 } 
+
+.border-black {
+    color: #000 !important;
+} 
