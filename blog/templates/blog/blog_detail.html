@@ -73,13 +73,13 @@
     <div class="row">
         <div class="col-md-8 mb-4 mt-3">
             <h4>Comments</h4>
-            <div class="card-body">
+            <div class="body">
                 <!-- we want a for loop inside the empty control tags to iterate through each comment in comments -->
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
                         <!-- commenter's name -->
-                        {{ comment.user.username }} 
+                        {{ comment.name }} 
                         <span class=" text-muted font-weight-normal">
                             <!-- comment's created date -->
                             {{ comment.created_on }}

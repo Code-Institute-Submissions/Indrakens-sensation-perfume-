@@ -45,12 +45,12 @@ class PostDetail(View):
         comment_form = CommentForm(data=request.POST)
 
         if comment_form.is_valid():
-            comment_form.instance.username = request.user
+            comment_form.instance.name = request.user.username 
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
             messages.success(request,
-                             'Your comment has been posted')
+                             'Your comment has been posted') 
         else:
             comment_form = CommentForm()
             messages.warning(request,
@@ -61,7 +61,7 @@ class PostDetail(View):
                 "post": post,
                 "comments": comments,
                 "liked": liked,
-                "comment_form": CommentForm(),  
+                "comment_form": CommentForm(),   
         } 
         return render(request, template, context)   
 
