@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect 
 from .models import Post
+from django.contrib import messages 
 from profiles.models import UserProfile
 from .forms import CommentForm 
 
@@ -29,8 +30,8 @@ class PostDetail(View):
                 "post": post,
                 "comments": comments,
                 "liked": liked,
-                "comment_form": CommentForm() 
-            },
+                "comment_form": CommentForm(),  
+            }, 
         )
    
     def post(self, request, slug, *args, **kwargs):
@@ -55,17 +56,14 @@ class PostDetail(View):
             messages.warning(request,
                              'Something went wrong. Please Try Again')
     
-
-        return render(
-            request,
-            "blog/blog_detail.html",
-            {
+        template = "blog/blog_detail.html" 
+        context = {
                 "post": post,
                 "comments": comments,
                 "liked": liked,
-                "comment_form": CommentForm(),
-            },
-        ) 
+                "comment_form": CommentForm(),  
+        } 
+        return render(request, template, context)   
 
 
 class PostLike(View):
