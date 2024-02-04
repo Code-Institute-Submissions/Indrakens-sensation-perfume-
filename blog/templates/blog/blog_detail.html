@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <!-- post header -->
+        <div class="col text-center mt-4 blog-header">
+            <span class="blog-image">
+                <!-- post image -->
+                <img src="{{ post.featured_image.url }}"  class="img-thumbnail" width="10%"> 
+            </span>  
+            <h5 class="font text-uppercase mt-2">
+                {{ post.title }}
+            </h5>  
+            <p class="author small">Author : <strong>{{ post.author }}</strong></p>
+            <hr class="w-75">  
+        </div>
+    </div>
+    <!-- post body -->
+    <div class="blog-container col-8 offset-2 d-inline-block">
+        <p class="card-text">
+            {{ post.content | safe }}
+        </p>        
+        <p class="card-text small">
+            {{ post.created_on}}
+        </p>
+        <div class="row">
+            <div class="col-8 mb-4">
+                <strong>
+                    {% if user.is_authenticated %}
+                    <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                        {% csrf_token %}
+                        {% if liked %}
+                        <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like btn btn-outline-light"><i class="fas fa-heart"></i></button>
+                        {% else %}
+                        <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like btn btn-outline-light"><i class="far fa-heart"></i></button>
+                        {% endif %}
+                    </form>
+                    {% else %}
+                    <span class="text-secondary"><i class="far fa-heart"></i></span>
+                    {% endif %}
+                <!-- number of likes -->
+                <span class="text-dark">{{ post.number_of_likes }}</span>
+                </strong>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

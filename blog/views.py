@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse 
 from django.views import generic, View
+from django.http import HttpResponseRedirect 
 from .models import Post
 from profiles.models import UserProfile
 
@@ -43,3 +44,19 @@ class PostDetail(View):
                 "liked": liked
             },
         )
+
+
+class PostLike(View):
+   
+    def post(self, request, slug, *args, **kwargs):
+        post = get_object_or_404(Post, slug=slug)
+        profile = UserProfile.objects.get(user=request.user)
+        print('USER: ', request.user)
+        print('USER Profile: ', profile)
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(profile)
+        else:
+            post.likes.add(profile)
+
+
+        return HttpResponseRedirect(reverse('post_detail', args=[slug])) 
