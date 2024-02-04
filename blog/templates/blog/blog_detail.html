@@ -59,6 +59,49 @@
                 <!-- number of likes -->
                 <span class="text-dark">{{ post.number_of_likes }}</span>
                 </strong>
+                {% with comments.count as total_comments %}
+                <span class="text-dark"> 
+                    <strong class="text-secondary"><i class="far fa-comments"></i>
+                        <!-- number of comments  --> 
+                        {{ total_comments }}
+                    </strong>
+                </span>
+                {% endwith %}
+            </div> 
+        </div>
+    </div> 
+    <div class="row">
+        <div class="col-md-8 mb-4 mt-3">
+            <h4>Comments</h4>
+            <div class="card-body">
+                <!-- we want a for loop inside the empty control tags to iterate through each comment in comments -->
+                {% for comment in comments %}
+                <div class="comments" style="padding: 10px;">
+                    <p class="font-weight-bold">
+                        <!-- commenter's name -->
+                        {{ comment.name }}
+                        <span class=" text-muted font-weight-normal">
+                            <!-- comment's created date -->
+                            {{ comment.created_on }}
+                        </span> wrote:
+                    </p>
+                    <!-- body of the comment goes before the | -->
+                    {{ comment.body | linebreaks }}
+                </div> 
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-md-4 card mb-4 mt-3 ">
+            <div class="card-body"> 
+                {% if user.is_authenticated %} 
+                <h5>Leave a comment:</h5>
+                <p class="small"><strong><span style="color: #E0B411;">Posting as:</span> {{ user.username }}</strong></p>
+                <form method="post" class="mr-2"> 
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-warning btn-sm border-warning rounded-0 text-uppercase">Submit</button>
+                </form>
+                {% endif %} 
             </div>
         </div>
     </div>
