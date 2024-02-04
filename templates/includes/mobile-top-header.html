@@ -53,6 +53,16 @@
         {% endif %}
     </div> 
 </li>
+<!-- blog -->
+<li class="list-inline-item">
+    <a class="text-black nav-link d-block d-lg-none" 
+         href="{% url 'blog' %}">
+      <div class="text-center blog">
+          <div><i class="fa-sharp fa-solid fa-blog fa-lg"></i></div>
+          <p class="my-0">Blog</p>
+      </div>
+    </a>    
+</li> 
 <!-- access to shoppingbag -->
 <li class="list-inline-item">
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_shopping_bag' %}">

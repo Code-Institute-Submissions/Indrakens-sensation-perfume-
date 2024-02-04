@@ -30,7 +30,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ  
 
 
-
 ALLOWED_HOSTS = [
     'sensation-perfume-812e78510f66.herokuapp.com', 
     'localhost'
@@ -54,7 +53,8 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
-    'profiles',  
+    'profiles', 
+    'blog',  
 
     # Other
     'crispy_forms',
