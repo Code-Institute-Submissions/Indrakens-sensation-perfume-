@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static %}
+{% load static %} 
 
 
 {% block extra_css %}
@@ -93,14 +93,14 @@
             <h4 class="mb-4">Comments</h4>
             <div class="body">
                 <!-- we want a for loop inside the empty control tags to iterate through each comment in comments -->
-                {% for comment in comments %}
+                {% for comment in comments %}  
                 <div class="comments mt-2">
-                    <span> 
+                    <span>
                         {% if profile.profile_picture %} 
-                            <img class="rounded-circle" src="{{ profile.profile_picture.url }}" height="50px" alt="profile_image"> 
+                        <img class="rounded-circle" src="{{ profile.profile_picture.url }}" height="50px" alt="profile_image"> 
                         {% else %}
-                            <img class="rounded-circle" src="{% static 'images/profile_image.jpg' %}" height="50px" alt="default_profile_image">
-                        {% endif %} 
+                        <img class="rounded-circle" src="{% static 'images/profile_image.jpg' %}" height="50px" alt="default_profile_image">
+                        {% endif %}  
                     </span> 
                     <p class="font-weight-bold"> 
                         <!-- commenter's name -->
@@ -112,7 +112,7 @@
                     </p>
                     <!-- body of the comment goes before the | -->
                     {{ comment.body | linebreaks }} 
-                </div> 
+                </div>  
                 {% endfor %}
             </div>
         </div>
@@ -121,7 +121,7 @@
                 {% if user.is_authenticated %} 
                 <h5>Leave a comment:</h5>
                 <p class="small"><strong><span style="color: #E0B411;">Posting as:</span> {{ user.username }}</strong></p>
-                <form method="post" class="mr-2"> 
+                <form method="post" class="mr-2" enctype="multipart/form-data"> 
                     {{ comment_form | crispy }}
                     {% csrf_token %}
                     <button type="submit" class="btn btn-warning btn-sm border-warning rounded-0 text-uppercase">Submit</button>

@@ -9,10 +9,11 @@ from checkout.models import Order
 
 
 
-@login_required
+@login_required 
 def profile(request):
        
     profile = get_object_or_404(UserProfile, user=request.user) 
+    profile.save() 
     form = UserProfileForm(instance=profile) 
     orders = profile.orders.all() 
     context = {
@@ -31,7 +32,7 @@ def update_profile(request, profile):
     profile = get_object_or_404(UserProfile, user=request.user) 
 
     if request.method == 'POST':
-        form = UserProfileForm(request.POST, request.FILES, instance=profile)
+        form = UserProfileForm(request.POST, request.FILES, instance=profile) 
         if form.is_valid():
             form.save()
             messages.success(request, 'Your profile updated successfully') 
