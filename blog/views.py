@@ -19,7 +19,7 @@ class PostDetail(View):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by("-created_on") 
-        name = get_object_or_404(UserProfile, user=request.user)     
+        profile = get_object_or_404(UserProfile, user=request.user)     
         liked = False  
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True   
@@ -32,7 +32,7 @@ class PostDetail(View):
                 "comments": comments,
                 "liked": liked,
                 "comment_form": CommentForm(),
-                "name": name,                  
+                "profile": profile,                  
             }, 
         ) 
     
@@ -40,7 +40,7 @@ class PostDetail(View):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by("-created_on") 
-        name = get_object_or_404(UserProfile, user=request.user)  
+        profile = get_object_or_404(UserProfile, user=request.user)  
         username = request.user  
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
@@ -66,7 +66,7 @@ class PostDetail(View):
                 "comments": comments,
                 "liked": liked,
                 "comment_form": CommentForm(), 
-                "name": name, 
+                "profile": profile, 
                 "username": username,    
         } 
         return render(request, template, context)   
