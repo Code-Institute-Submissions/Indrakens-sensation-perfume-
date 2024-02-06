@@ -42,7 +42,6 @@ class PostDetail(View):
         comments = post.comments.order_by("-created_on") 
         name = get_object_or_404(UserProfile, user=request.user)  
         username = request.user  
-        User = username 
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
