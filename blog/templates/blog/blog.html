@@ -35,10 +35,9 @@
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}"> 
                                 <!-- blog body -->  
                                 <div class="card-body">
-                                    <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                        <h4 class="mb-0 text-uppercase">
-                                            <strong>{{ post.title }}</strong>
-                                        </h4>
+                                    <h4 class="mb-0 text-uppercase" style="color: #E0B411;">
+                                        <strong>{{ post.title }}</strong>
+                                    </h4>
                                     </a>
                                     <p class="card-text">{{ post.excerpt }}</p>
                                     <p class="card-text text-muted small">
@@ -46,9 +45,27 @@
                                         <span class="text-muted ml-2">    
                                             <i class="far fa-heart"></i>
                                             {{ post.number_of_likes }}
-                                        </span> 
-                                    </p>  
-                                </div>
+                                        </span>    
+                                    </p> 
+                                    {% if user and not user.is_authenticated %}  
+                                    <div class="row">
+                                        <p class="small d-inline ml-2 mt-3"> 
+                                            <a class="home-link" href="{% url 'account_login' %}">
+                                                <strong>Login</strong>
+                                            </a> or
+                                            <a class="home-link" href="{% url 'account_signup' %}"> 
+                                                <strong>Register An Account</strong>
+                                            </a> to view the post! 
+                                        </p>
+                                    </div>
+                                    {% else %} 
+                                    <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                                        <p class="mb-0 text-uppercase small">
+                                            <strong>View Page</strong> 
+                                        </p>
+                                    </a>
+                                    {% endif %} 
+                                </div> 
                             </div>
                         </div>
                         {% if forloop.counter|divisibleby:3 %}  

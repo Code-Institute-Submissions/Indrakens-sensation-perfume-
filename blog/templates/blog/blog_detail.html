@@ -59,28 +59,16 @@
                 <!-- number of likes -->
                 <span class="text-dark">{{ post.number_of_likes }}</span>
                 </strong>
-                {% with comments.count as total_comments %}
+                {% with comments.count as total_comments %} 
                 <span class="text-dark"> 
                     <strong class="text-dark ml-2">
                         <i class="far fa-comments text-secondary"></i> 
                         <!-- total_comments variable goes before the closing strong tag --> 
-                        {{ total_comments }} 
+                        {{ comments.total_comments }} 
                     </strong>
                 </span>
                 {% endwith %}
             </div> 
-        </div>
-        <div class="row">
-            {% if user and not user.is_authenticated %} 
-            <p class="small d-inline ml-2 mt-3"> 
-                <a class="home-link" href="{% url 'account_login' %}">
-                    <strong>Login</strong>
-                </a> or
-                <a class="home-link" href="{% url 'account_signup' %}"> 
-                    <strong>Register An Account</strong>
-                </a> to like post ,or leave an comment!
-            </p>
-            {% endif %} 
         </div>
     </div>
     <div class="row">
@@ -96,15 +84,15 @@
                 {% for comment in comments %}  
                 <div class="comments mt-2">
                     <span>
-                        {% if profile.profile_picture %} 
-                        <img class="rounded-circle" src="{{ profile.profile_picture.url }}" height="50px" alt="profile_image"> 
-                        {% else %}
-                        <img class="rounded-circle" src="{% static 'images/profile_image.jpg' %}" height="50px" alt="default_profile_image">
-                        {% endif %}  
                     </span> 
                     <p class="font-weight-bold"> 
-                        <!-- commenter's name --> 
-                        {{ comment.name }} 
+                        <span>
+                            <i class="fa-solid fa-comment-dots" style="color: #E0B411;"></i> 
+                        </span>
+                        <!-- commenter's name -->
+                        <span class="small">
+                            <strong>{{ comment.name }}</strong>
+                        </span>      
                         <span class=" text-muted font-weight-normal small ml-2">
                             <!-- comment's created date -->
                             {{ comment.created_on }}
@@ -118,15 +106,13 @@
         </div>
         <div class="col-md-4 mb-4 mt-3">
             <div class="comment-body"> 
-                {% if user.is_authenticated %} 
                 <h5>Leave a comment:</h5>
                 <p class="small"><strong><span style="color: #E0B411;">Posting as:</span> {{ user.username }}</strong></p>
                 <form method="post" class="mr-2" enctype="multipart/form-data"> 
                     {{ comment_form | crispy }}
                     {% csrf_token %}
                     <button type="submit" class="btn btn-warning btn-sm border-warning rounded-0 text-uppercase">Submit</button>
-                </form>
-                {% endif %} 
+                </form> 
             </div>   
         </div>     
     </div>
