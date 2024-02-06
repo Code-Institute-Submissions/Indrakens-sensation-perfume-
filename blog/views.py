@@ -18,7 +18,8 @@ class PostDetail(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.order_by("-created_on")    
+        comments = post.comments.order_by("-created_on") 
+        profile = get_object_or_404(UserProfile, user=request.user)     
         liked = False  
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True   
@@ -30,7 +31,8 @@ class PostDetail(View):
                 "post": post,
                 "comments": comments,
                 "liked": liked,
-                "comment_form": CommentForm(),   
+                "comment_form": CommentForm(),
+                "profile": profile,                  
             }, 
         ) 
     
