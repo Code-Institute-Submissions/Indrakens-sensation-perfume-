@@ -96,14 +96,14 @@
                 {% for comment in comments %}  
                 <div class="comments mt-2">
                     <span>
-                        {% if comments.user.profile.profile_picture %} 
-                        <img class="rounded-circle" src="{{ comments.user.profile.profile_picture.url }}" height="50px" alt="profile_image"> 
+                        {% if name.profile_picture %} 
+                        <img class="rounded-circle" src="{{ name.profile_picture.url }}" height="50px" alt="profile_image"> 
                         {% else %}
                         <img class="rounded-circle" src="{% static 'images/profile_image.jpg' %}" height="50px" alt="default_profile_image">
                         {% endif %}  
                     </span> 
                     <p class="font-weight-bold"> 
-                        <!-- commenter's name -->
+                        <!-- commenter's name --> 
                         {{ comment.name }} 
                         <span class=" text-muted font-weight-normal small ml-2">
                             <!-- comment's created date -->
