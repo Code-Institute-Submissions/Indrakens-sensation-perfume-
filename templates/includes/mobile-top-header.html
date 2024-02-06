@@ -29,14 +29,14 @@
 <li class="list-inline-item dropdown">
     <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center my-account">
-            <div>
-                {% if profile.profile_picture %} 
-                      <img class="rounded-circle border" src="{{ profile.profile_picture.url }}" height="50px" alt="profile_image"> 
-                    {% else %}
-                      <img class="rounded-circle" src="{% static 'images/profile_image.jpg' %}" height="50px" alt="default_profile_image">
-                    {% endif %} 
+            <div><i class="fa-solid fa-user fa-lg"></i></div>
+            {% if user and not user.is_authenticated %}   
+                <p class="my-0">My Account</p> 
+            {% else %}  
+            <div class="text-center blog">
+                <p class="my-0 text-small">{{ user }} Account</p> 
             </div>
-            <p class="my-0">My Account</p>
+            {% endif %}  
         </div>
     </a>
     <!-- user is authenticated -->

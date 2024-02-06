@@ -3,7 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect 
 from .models import Post
 from django.contrib import messages  
-from .models import UserProfile
+from .models import UserProfile 
 from .forms import CommentForm 
 
 
