@@ -40,6 +40,7 @@ class PostDetail(View):
         comments = post.comments.order_by("-created_on") 
         profile = get_object_or_404(UserProfile, user=request.user)  
         username = request.user  
+        User = username 
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -47,10 +48,10 @@ class PostDetail(View):
         comment_form = CommentForm(data=request.POST)
 
         if comment_form.is_valid():
-            comment_form.instance.name = request.user.username 
+            comment_form.instance.User = request.user.username 
             comment = comment_form.save(commit=False)
             comment.post = post
-            comment.save()
+            comment.save(request.user.username ) 
             messages.success(request,
                              'Your comment has been posted') 
         else:
