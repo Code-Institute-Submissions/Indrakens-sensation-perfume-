@@ -50,7 +50,7 @@ def update_profile(request, profile):
         'on_update_user_profile': True       
     } 
 
-    return render(request, template, context)  
+    return render(request, template, context)   
 
 
 @login_required 

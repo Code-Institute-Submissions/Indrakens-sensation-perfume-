@@ -31,10 +31,10 @@
         <div class="text-center my-account">
             <div><i class="fa-solid fa-user fa-lg"></i></div>
             {% if user and not user.is_authenticated %}   
-                <p class="my-0">Login / Sign Up</p>  
+                <p class="my-0 small">Login / Sign Up</p>  
             {% else %}  
             <div class="text-center blog">
-                <p class="my-0 text-small">{{ user }} Account</p> 
+                <p class="my-0">Account <span class="text-capitalize">{{ user }}</span></p>
             </div>
             {% endif %}  
         </div>
@@ -45,7 +45,7 @@
             {% if request.user.is_superuser %}
                 <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
             {% endif %}
-            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+            <a href="{% url 'profile' %}" class="dropdown-item"><span class="text-capitalize">{{ user }}</span> Profile</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
         {% else %}
             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -64,7 +64,7 @@
     </a>    
 </li> 
 <!-- access to shoppingbag -->
-<li class="list-inline-item">
+<li class="list-inline-item mr-5">
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_shopping_bag' %}">
         <div class="text-center shopping-bag">
             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
