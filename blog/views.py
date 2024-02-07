@@ -18,8 +18,7 @@ class PostDetail(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.order_by("-created_on") 
-        profile = get_object_or_404(UserProfile, user=request.user)     
+        comments = post.comments.order_by("-created_on")       
         liked = False  
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True   
@@ -31,8 +30,7 @@ class PostDetail(View):
                 "post": post,
                 "comments": comments,
                 "liked": liked,
-                "comment_form": CommentForm(),
-                "profile": profile,                  
+                "comment_form": CommentForm(),                   
             }, 
         ) 
     
@@ -40,7 +38,7 @@ class PostDetail(View):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.order_by("-created_on") 
-        profile = get_object_or_404(UserProfile, user=request.user)  
+        profile = get_object_or_404(UserProfile, user=request.user)    
         username = request.user  
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
@@ -52,7 +50,7 @@ class PostDetail(View):
             comment_form.instance.name = request.user.username 
             comment = comment_form.save(commit=False)
             comment.post = post
-            comment.save(request.user.username ) 
+            comment.save(request.user.username )  
             messages.success(request,
                              'Your comment has been posted') 
         else:
@@ -63,7 +61,7 @@ class PostDetail(View):
         template = "blog/blog_detail.html" 
         context = {
                 "post": post,
-                "comments": comments,
+                "comments": comments, 
                 "liked": liked,
                 "comment_form": CommentForm(), 
                 "profile": profile, 

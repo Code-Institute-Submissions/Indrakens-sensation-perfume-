@@ -11,7 +11,7 @@ urlpatterns = [
         "user_order_history/<order_number>",
         views.user_order_history,
         name="user_order_history",
-    ),
+    ), 
     path(
         "delete/<order_number>/",
         views.delete_order_history,
