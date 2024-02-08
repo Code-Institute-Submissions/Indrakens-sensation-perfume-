@@ -512,7 +512,66 @@ input[name='q']::placeholder {
 
     .container-text{
         height: 150%;
-    }  
+    } 
+    
+    .hero-container{
+        width: 100vh; 
+        height: 80%;
+        margin-top: 160px;
+    } 
+    
+    .logo-font {
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 12px !important;
+    } 
+    
+    .shop-now-button {
+        margin-bottom: -30px;
+    } 
+    
+    .footer{
+        margin-top: 20px; 
+        width: 70%;
+    } 
+    
+    .footer-links {
+        margin-top: 10px;
+        margin-left: 40px;
+        text-align: center;
+        font-size: 30px;
+        width: 500px;
+    } 
+
+    .contact { 
+        text-align: center;
+        font-size: 30px;
+        width: 550px;
+        margin-left: 8px !important;
+    } 
+
+    .subscribe {
+        margin-top: 40px;
+        width: 500px;
+        text-align: center;
+        margin-left: 60px !important;
+        font-size: 25px;
+    } 
+
+    #mc_embed_signup {
+        width: 500px;
+        margin-left: 60px;
+        margin-top: 40px; 
+    } 
+
+    .social-links {
+        margin-left: 180px !important;
+    } 
+
+    .socilal-link-icon {
+        font-size: 18px;
+    } 
 } 
 
 @media (max-width: 322px) {  
@@ -569,14 +628,14 @@ input[name='q']::placeholder {
         margin-top: 40px;
         width: 500px;
         text-align: center;
-        margin-left: 40px;
+        margin-left: 60px !important;
         font-size: 25px;
     } 
 
     #mc_embed_signup {
         width: 500px;
-        margin-left: 40px;
-        margin-top: 40px !important; 
+        margin-left: 60px;
+        margin-top: 40px; 
     } 
 
     .social-links {
