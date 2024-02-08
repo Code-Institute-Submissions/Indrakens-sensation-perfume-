@@ -53,7 +53,7 @@
         </li>
         <!-- sales menu -->
         <li class="nav-item dropdown">
-            <a class="nav-link text-black mt-2 text-uppercase" href="#" id="sales-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link text-black mt-2 text-uppercase mr-4" href="#" id="sales-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sales 
             </a>
             <div class="dropdown-menu border border-dark" aria-labelledby="sales-link">
@@ -63,6 +63,15 @@
                 <a href="{% url 'products' %}?category=gift_set_him_sales" class="dropdown-item">Gift Sets For Him</a>
                 <a href="{% url 'products' %}?category=her_sales,gift_set_her_sales,him_sales,gift_set_him_sales" class="dropdown-item">All Sales</a>
             </div> 
+        </li>
+        <!-- blog link -->
+        <li class="nav-item">
+            <a class="nav-link text-black mr-4 mt-2 text-uppercase" href="{% url 'blog' %}" id="him-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+                <span>
+                    <i class="fa-sharp fa-solid fa-blog fa-xs"></i>
+                </span>
+            </a>
         </li>
     </ul>
 </div> 

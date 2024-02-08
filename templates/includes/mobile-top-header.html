@@ -34,7 +34,7 @@
                 <p class="my-0 small">Login / Sign Up</p>  
             {% else %}  
             <div class="text-center blog">
-                <p class="my-0">Account <span class="text-capitalize">{{ user }}</span></p>
+                <p class="my-0">Account  <span class="text-capitalize small">{{ user }}</span></p>
             </div>
             {% endif %}  
         </div>
@@ -52,16 +52,6 @@
             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
         {% endif %}
     </div> 
-</li>
-<!-- blog -->
-<li class="list-inline-item">
-    <a class="text-black nav-link d-block d-lg-none" 
-         href="{% url 'blog' %}">
-      <div class="text-center blog">
-          <div><i class="fa-sharp fa-solid fa-blog fa-lg"></i></div>
-          <p class="my-0">Blog</p>
-      </div>
-    </a>    
 </li> 
 <!-- access to shoppingbag -->
 <li class="list-inline-item mr-5">

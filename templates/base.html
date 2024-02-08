@@ -61,7 +61,7 @@
         </a>
       </div>
       <!-- search field -->
-      <div class="col-6 col-sm-4 my-auto">
+      <div class="col-6 col-sm-4 my-auto"> 
         <form method="GET" action="{% url 'products' %}">
           <div class="input-group w-100 mt-2">
             <input class="form-control border-warning rounded-0" type="text" name="q" placeholder="Search">
@@ -91,7 +91,7 @@
                 <p class="my-0">Login / Sign Up</p> 
                 {% else %}  
                 <div class="text-center blog">
-                  <p class="my-0 small">Account <span class="text-capitalize">{{ user }}</span></p>
+                  <p class="my-0">Account  <span class="text-capitalize">{{ user }}</span></p>
                 </div>
                 {% endif %}   
                 </div>
@@ -111,15 +111,6 @@
               {% endif %}
             </div>
           </li>
-          <!-- blog -->
-          <li class="list-inline-item">
-            <a class="text-black nav-link" href="{% url 'blog' %}">
-              <div class="text-center blog">
-                <div><i class="fa-sharp fa-solid fa-blog fa-lg"></i></div>
-                <p class="my-0 small">Blog</p> 
-              </div>
-            </a>    
-          </li> 
           <!-- shopping bag link -->
           <li class="list-inline-item mr-2">
             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
