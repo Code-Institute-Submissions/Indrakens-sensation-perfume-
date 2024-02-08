@@ -10,10 +10,13 @@ body {
 }  
 
 .hero-container{
-    background: url('/media/home-page.jpg') no-repeat center center;
+    background: url('/media/home-page.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    position: relative; 
     width: 100%; 
-    height: 100%; 
+    height: 80%;
 } 
 
 .bg-dark{
@@ -22,9 +25,11 @@ body {
 
 .logo-font {
     font-family: 'Cinzel Decorative', serif;
+    position: relative;
     color: #FFFBC2 !important;
-    margin-top: 60px;
-    margin-left: 40px;
+    transform: translate(-2%, -20%);
+    top: 60px;
+    left: 40px;
     text-shadow: 4px 2px 1px rgb(6, 6, 6), 0 0 15px rgb(255, 251, 194);
 } 
 
@@ -329,9 +334,11 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* footer */
 .footer{
     margin-top: 20px; 
     width: 100%;
+    height: 60%;
 } 
 
 .footer-header {  
@@ -345,7 +352,7 @@ input[name='q']::placeholder {
 /* mailchimp */
 #mc_embed_signup {
     background: #fff;
-    clear: left;
+    clear: both;
     width: 600px;
 } 
 
@@ -519,5 +526,64 @@ input[name='q']::placeholder {
     
     .container-text{
         height: 150%;
+    }
+
+    .hero-container{
+        width: 100vh; 
+        height: 80%;
+        margin-top: 160px;
     } 
-}  
+    
+    .logo-font {
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 12px !important;
+    } 
+    
+    .shop-now-button {
+        margin-bottom: -30px;
+    } 
+    
+    .footer{
+        margin-top: 20px; 
+        width: 80%;
+    }
+    
+    .footer-links {
+        margin-top: 10px;
+        margin-left: 40px;
+        text-align: center;
+        font-size: 30px;
+        width: 500px;
+    } 
+
+    .contact { 
+        text-align: center;
+        font-size: 30px;
+        width: 550px;
+        margin-left: 8px !important;
+    } 
+
+    .subscribe {
+        margin-top: 40px;
+        width: 500px;
+        text-align: center;
+        margin-left: 40px;
+        font-size: 25px;
+    } 
+
+    #mc_embed_signup {
+        width: 500px;
+        margin-left: 40px;
+        margin-top: 40px !important; 
+    } 
+
+    .social-links {
+        margin-left: 180px !important;
+    } 
+
+    .socilal-link-icon {
+        font-size: 18px;
+    } 
+}   
