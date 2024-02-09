@@ -418,10 +418,9 @@ input[name='q']::placeholder {
 } 
 
 @media (max-width: 920px) {  
-
     .navbar {
         margin-top: 40px;
-        margin-right: 40px;
+        margin-right: 80px;
         font-size: 18px; 
     } 
 
@@ -447,21 +446,19 @@ input[name='q']::placeholder {
 
     .hero-container{
         width: 100vh; 
-        height: 80%;
-        margin-top: 160px;
+        height: 60%;
         margin-right: 90px; 
+		
     } 
     
     .logo-font {
         font-size: 50px;
-        margin-top: 20px;
+        margin-top: 90px;
         margin-bottom: 50px;
-        margin-left: -55px !important;
     } 
     
     .shop-now-button {
-        margin-bottom: -30px;
-        margin-left: -25px !important;
+        margin-bottom: -80px;
     } 
     
     .footer{
@@ -471,7 +468,7 @@ input[name='q']::placeholder {
     
     .footer-links {
         margin-top: 10px;
-        margin-left: 220px !important;
+        margin-left: 200px !important;
         text-align: center;
         font-size: 25px;
         width: 500px;
@@ -481,25 +478,25 @@ input[name='q']::placeholder {
         text-align: center;
         font-size: 25px;
         width: 550px;
-        margin-left: 180px !important;
+        margin-left: 150px !important;
     } 
 
     .subscribe {
         margin-top: 20px;
         width: 600px;
         text-align: center;
-        margin-left: 170px !important;
+        margin-left: 150px !important;
         font-size: 20px;
     } 
 
     #mc_embed_signup {
         width: 600px;
-        margin-left: 170px;
+        margin-left: 150px;
         margin-top: 30px; 
     } 
 
     .social-links {
-        margin-left: 140px !important;
+        margin-left: 120px !important;
     } 
 
     .socilal-link-icon {
