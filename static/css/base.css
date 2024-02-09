@@ -921,9 +921,15 @@ input[name='q']::placeholder {
         margin-right: 40px !important;
     } 
 
+    .input-group { 
+        width: 60% !important;
+        margin-left: 250px !important;
+    } 
+
     .banner {
         margin-top: 30px;
         margin-right: 60px !important;
+        font-size: 25px !important;
     } 
 
     .container-text{
@@ -932,52 +938,55 @@ input[name='q']::placeholder {
     
     .hero-container{
         width: 100vh; 
-        height: 80%;
-        margin-top: 160px;
+        height: 100%;
+        margin-top: 40px;
+        margin-left: -20px;
     } 
     
     .logo-font {
-        font-size: 50px;
-        margin-top: 20px;
+        font-size: 60px;
+        margin-top: 80px;
         margin-bottom: 50px;
-        margin-left: 12px !important;
+        margin-left: 40px !important;
     } 
     
     .shop-now-button {
-        margin-bottom: -30px;
+        margin-bottom: -90px;
+        margin-left: 80px !important;
     } 
     
     .footer{
         margin-top: 20px; 
-        width: 70%;
+        width: 120%;
     } 
     
     .footer-links {
         margin-top: 10px;
         margin-left: 25px;
         text-align: center;
-        font-size: 30px;
-        width: 500px;
+        font-size: 28px;
+        width: 700px;
     } 
 
     .contact { 
         text-align: center;
-        font-size: 30px;
-        width: 550px;
-        margin-left: -25px !important;
+        font-size: 28px;
+        width: 700px;
+        margin-left: 10px !important;
+		margin-top: 80px !important;
     } 
 
     .subscribe {
-        margin-top: 40px;
-        width: 500px;
+        margin-top: 80px;
+        width: 450px;
         text-align: center;
-        margin-left: 25px !important;
+        margin-left: 170px !important;
         font-size: 25px;
     } 
 
     #mc_embed_signup {
-        width: 500px;
-        margin-left: 25px;
+        width: 600px;
+        margin-left: 85px;
         margin-top: 30px; 
     } 
 
@@ -986,17 +995,29 @@ input[name='q']::placeholder {
     } 
 
     .socilal-link-icon {
-        font-size: 18px;
+        font-size: 15px;
     } 
+
+    .sensation-footer-text {
+		font-size: 30px !important;
+		width: 40px important;
+	} 
 } 
 
 @media (max-width: 322px) {  
     .navbar {
         margin-top: 40px;
+		margin-left: -80px !important;
     }
 
+	.input-group { 
+        width: 60% !important;
+        margin-left: 230px !important;
+    } 
+
     .banner {
-        margin-top: 30px;
+        margin-top: 50px;
+		font-size: 25px !important;
     }
     
     .container-text{
@@ -1005,60 +1026,68 @@ input[name='q']::placeholder {
 
     .hero-container{
         width: 100vh; 
-        height: 80%;
-        margin-top: 160px;
+        height: 100%;
+        margin-top: 100px;
     } 
     
     .logo-font {
-        font-size: 50px;
-        margin-top: 20px;
+        font-size: 60px;
+        margin-top: 80px;
         margin-bottom: 50px;
-        margin-left: 12px !important;
+        margin-left: 80px !important;
     } 
     
     .shop-now-button {
-        margin-bottom: -30px;
+        margin-bottom: -120px;
     } 
     
     .footer{
-        margin-top: 20px; 
-        width: 80%;
+        margin-top: 20px !important; 
+        width: 180%;
     }
     
     .footer-links {
-        margin-top: 10px;
+        margin-top: 30px;
         margin-left: 40px;
         text-align: center;
         font-size: 30px;
-        width: 500px;
+        width: 700px;
     } 
 
     .contact { 
         text-align: center;
-        font-size: 30px;
-        width: 550px;
-        margin-left: 8px !important;
+        font-size: 35px;
+        width: 700px;
+        margin-left: 15px !important;
+		margin-top: 80px !important;
     } 
 
     .subscribe {
-        margin-top: 40px;
-        width: 500px;
+        margin-top: 90px;
+        width: 600px;
         text-align: center;
-        margin-left: 60px !important;
-        font-size: 25px;
+        margin-left: 80px !important;
+        font-size: 28px;
     } 
 
     #mc_embed_signup {
-        width: 500px;
-        margin-left: 60px;
-        margin-top: 40px; 
+        width: 600px;
+        margin-left: 90px;
+        margin-top: 50px; 
+		margin-bottom: 60px !important;
     } 
 
     .social-links {
-        margin-left: 180px !important;
+		margin-top: 190px !important;
+        margin-left: 120px !important;
     } 
 
     .socilal-link-icon {
-        font-size: 18px;
-    } 
+        font-size: 20px;
+    }
+
+	.sensation-footer-text {
+		font-size: 30px !important;
+		width: 40px important;
+	}
 }   
