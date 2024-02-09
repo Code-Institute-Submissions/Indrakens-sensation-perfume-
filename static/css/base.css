@@ -918,8 +918,12 @@ input[name='q']::placeholder {
 @media (max-width: 400px) {
     .navbar {
         margin-top: 40px;
-        margin-right: 40px !important;
+        margin-right: 150px !important;
     } 
+
+    .list-inline-item {
+		font-size: 23px !important
+	} 
 
     .input-group { 
         width: 60% !important;
@@ -957,7 +961,7 @@ input[name='q']::placeholder {
     
     .footer{
         margin-top: 20px; 
-        width: 120%;
+        width: 180%;
     } 
     
     .footer-links {
@@ -995,11 +999,11 @@ input[name='q']::placeholder {
     } 
 
     .socilal-link-icon {
-        font-size: 15px;
+        font-size: 50px;
     } 
 
     .sensation-footer-text {
-		font-size: 30px !important;
+		font-size: 25px !important;
 		width: 40px important;
 	} 
 } 
@@ -1009,6 +1013,10 @@ input[name='q']::placeholder {
         margin-top: 40px;
 		margin-left: -80px !important;
     }
+
+    .list-inline-item {
+		font-size: 25px !important
+	} 
 
 	.input-group { 
         width: 60% !important;
