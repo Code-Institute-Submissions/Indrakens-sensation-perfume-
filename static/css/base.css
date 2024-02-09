@@ -769,56 +769,59 @@ input[name='q']::placeholder {
     } 
     
     .logo-font {
-        font-size: 50px;
+        font-size: 60px;
         margin-top: 20px;
         margin-bottom: 50px;
-        margin-left: 12px !important;
     } 
     
     .shop-now-button {
-        margin-bottom: -30px;
+        margin-bottom: -80px;
+		margin-left: -5px;
     } 
     
     .footer{
         margin-top: 20px; 
-        width: 50%;
+        width: 100%;
     } 
     
     .footer-links {
-        margin-top: 10px;
-        margin-left: 25px;
+        margin-top: 10px; 
         text-align: center;
-        font-size: 25px;
-        width: 500px;
+        font-size: 20px;
+        width: 750px;
     } 
 
     .contact { 
         text-align: center;
-        font-size: 25px;
-        width: 550px;
-        margin-left: -25px !important;
+        font-size: 20px;
+        width: 600px;
+        margin-left: 110px !important;
     } 
 
     .subscribe {
-        margin-top: 40px;
-        width: 500px;
+        margin-top: 20px;
         text-align: center;
-        margin-left: 25px !important;
-        font-size: 16px;
+        margin-left: 160px !important;
+        font-size: 17px;
     } 
 
     #mc_embed_signup {
-        width: 500px;
-        margin-left: 25px;
+        width: 600px;
+        margin-left: 120px;
         margin-top: 30px; 
     } 
 
     .social-links {
-        margin-left: 150px !important;
-    } 
+        margin-left: 170px !important;
+		font-size: 20px; 
+    }
+
+	.sensation-footer-text {
+		font-size: 20px; 
+	}
 
     .socilal-link-icon {
-        font-size: 18px;
+        font-size: 15px;
     } 
 } 
 
