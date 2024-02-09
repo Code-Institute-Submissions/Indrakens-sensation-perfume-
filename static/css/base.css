@@ -31,7 +31,9 @@ body {
     top: 60px;
     left: 40px;
     text-shadow: 4px 2px 1px rgb(6, 6, 6), 0 0 15px rgb(255, 251, 194);
+    font-size: 5.5vw;
 } 
+
 
 .font {
     font-family: 'Livvic', sans-serif;
@@ -389,7 +391,7 @@ input[name='q']::placeholder {
 } 
 
 /* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
+@media (min-width: 998px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -403,8 +405,50 @@ input[name='q']::placeholder {
     }
     
     .hero-container {
-        padding-bottom: -154px;
+		margin-top: -60px;
+		margin-left: 20px !important;
     }
+
+	.footer{
+        margin-top: 20px; 
+        width: 80%;
+		height: 25%;
+    }
+
+	.footer-links {
+        margin-top: 10px;
+        margin-left: 50px !important;
+        width: 500px;
+    } 
+
+	.contact { 
+        font-size: 20px;
+        width: 500px;
+        margin-left: 10px !important;
+    } 
+
+	.subscribe {
+        margin-top: 20px;
+        width: 600px;
+        text-align: center;
+        margin-left: -20px !important;
+    } 
+
+    #mc_embed_signup {
+        width: 550px; 
+    } 
+
+    .social-links {
+        margin-left: 120px !important;
+    } 
+
+    .socilal-link-icon {
+        font-size: 15px;
+    } 
+
+    .sensation-footer-text {
+        font-size: 15px !important;
+    } 
 } 
 
 @media (max-width: 990px) {  
