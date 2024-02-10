@@ -48,3 +48,5 @@ The full list of User Stories is available on the project [kanban board]
 #### [AWS S3 and IAM](https://aws.amazon.com/) - Used to host static and media files for this project and IAM for the permissions based roles for accessing the S3 buckets
 #### [Stripe](https://stripe.com/ie) - Used handle secure payments 
 #### [XML-Sitemaps](https://www.xml-sitemaps.com/) - Used to generate Sensation-Perfume sitemap
+#### [Privacy Policy Generator](https://www.privacypolicygenerator.info/) - Used to generate Sensation-Perfume privacy policy
+#### [Mailchimp](https://mailchimp.com/?currency=EUR) - Used to set up Sensation-Perfume newsletter email marketing 
