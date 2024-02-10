@@ -27,3 +27,24 @@ The Agile methodology was used to plan the project. Each user story was linked t
 ### USER STORIES
 The full list of User Stories is available on the project [kanban board] 
 #
+## FEATURES
+### WEB
+### MOBILE
+#
+## TEHNOLOGY USED
+#### [HTML](https://en.wikipedia.org/wiki/HTML) - Used to build the front-end website
+#### [CSS](https://en.wikipedia.org/wiki/CSS) - Used to style the HTML
+#### [JavaScript](https://www.javascript.com/) - Used to add card payment, country field, sorting products, back to top click function, update the item quantity, and remove the item from the shopping bag
+#### [Python](https://www.python.org/) - Used as the back-end programming language
+#### [Django](https://www.djangoproject.com/) - Used as the Python framework for the website. 
+#### [Bootstrap](https://getbootstrap.com/) - Used as the front-end framework for responsiveness and pre-built components
+#### [Git](https://git-scm.com/) - Used for version control
+#### [GitHub](https://github.com/) - Used for online code storage
+#### [GitPod](https://www.gitpod.io/) - Used as a cloud-based IDE for development
+#### [ElephantSQL](https://customer.elephantsql.com/login) - Used as the Postgres database 
+#### [Heroku](https://id.heroku.com/) - Used for cloud based platform for deployment  
+#### [Gunicorn](https://gunicorn.org/) - Used as a website server provider
+#### [Psycopg2](https://pypi.org/project/psycopg2/) - Used as a postgres database adapter
+#### [AWS S3 and IAM](https://aws.amazon.com/) - Used to host static and media files for this project and IAM for the permissions based roles for accessing the S3 buckets
+#### [Stripe](https://stripe.com/ie) - Used handle secure payments 
+#### [XML-Sitemaps](https://www.xml-sitemaps.com/) - Used to generate Sensation-Perfume sitemap
