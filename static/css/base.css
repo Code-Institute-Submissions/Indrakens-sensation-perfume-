@@ -396,10 +396,6 @@ input[name='q']::placeholder {
         padding-top: 60px;
     }
 
-    .hero-container {
-        margin-top: 140px !important;
-    }
-
     .logo-font {
         font-size: 4rem !important;
     } 
