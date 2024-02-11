@@ -446,4 +446,50 @@ input[name='q']::placeholder {
     .shop-now-button {
         margin-bottom: -60px !important;
     } 
+}
+
+@media (max-width: 750px) { 
+    .list-inline-item {
+        margin-top: 40px;
+        margin-right: 60px !important;
+    } 
+    
+    .navbar-toggler {
+        margin-top: 40px;
+        margin-left: 60px !important;
+    }
+    
+    .nav-link .fa-lg {
+        font-size: 1.3rem;
+    } 
+
+    .nav-link p {
+        font-size: 1.3rem;
+    } 
+
+    .navbar-collapse {
+        margin-left: 60px;
+    } 
+
+    .banner {
+        margin-top: 20px;
+        font-size: 1.5rem;
+    } 
+    
+    .input-group {
+        width: 60% !important;
+        margin-left: 200px !important;
+    }
+
+    .hero-container {
+        height: 60% !important; 
+    } 
+
+    .logo-font {
+        font-size: 50px !important;
+    } 
+
+    .shop-now-button {
+        margin-bottom: -60px !important;
+    } 
 } 
