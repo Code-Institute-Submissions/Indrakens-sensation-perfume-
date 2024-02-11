@@ -709,7 +709,7 @@ input[name='q']::placeholder {
     
     .navbar-toggler {
         margin-top: 40px;
-        margin-left: 30px !important;
+        margin-left: 20px !important;
     }
     
     .nav-link .fa-lg {
@@ -739,49 +739,61 @@ input[name='q']::placeholder {
     }
 
     .hero-container {
-        height: 50% !important; 
+        height: 40% !important; 
+		margin-left: 25px;
     } 
 
     .logo-font {
-        font-size: 35px !important;
-        margin-top: 80px !important;
+        font-size: 30px !important;
+        margin-top: 90px !important;
+		margin-left: 20px !important;
     } 
 
     .shop-now-button {
-        margin-bottom: -30px !important;
+        margin-bottom: 10px !important;
+		margin-left: 20px !important;
     } 
 
     .shop-now-button h4 {
-		font-size: 15px;
+		font-size: 12px;
 	} 
 
 	.footer-links {
-		margin-left: 40px;
-	}
+		text-align: center;
+	} 
 
 	.contact {
-		margin-left: -4px !important;
-	}
+		text-align: center;
+	} 
 
 	#mc_embed_shell {
-		width: 400px;
+		width: 320px;
 		margin-left: 40px;
 	}
 
 	.subscribe {
-		font-size: 14px;
+		font-size: 15px;
+		text-align: center;
 	}
-}
+
+	.social-links {
+		margin-left: 25px;
+	}
+
+	.socilal-link-icon {
+		font-size: 10px;
+		margin-left: -15px
+	}
+} 
 
 @media (max-width: 320px) { 
     .list-inline-item {
         margin-top: 40px;
-        margin-right: 10px !important;
     } 
     
     .navbar-toggler {
         margin-top: 40px;
-        margin-left: 30px !important;
+        margin-left: 18px !important;
     }
     
     .nav-link .fa-lg {
@@ -811,11 +823,12 @@ input[name='q']::placeholder {
     }
 
     .hero-container {
-        height: 50% !important; 
+        height: 40% !important; 
+		margin-left: 45px;
     } 
 
     .logo-font {
-        font-size: 35px !important;
+        font-size: 23px !important;
         margin-top: 80px !important;
     } 
 
@@ -824,23 +837,40 @@ input[name='q']::placeholder {
     } 
 
     .shop-now-button h4 {
-		font-size: 15px;
+		font-size: 8px;
 	} 
 
 	.footer-links {
-		margin-left: 40px;
+		margin-left: 100px;
+		text-align: center;
+		font-size: 18px;
 	}
 
 	.contact {
-		margin-left: -4px !important;
+		text-align: center;
+		width: 400px;
+		font-size: 20px;
 	}
 
 	#mc_embed_shell {
-		width: 400px;
-		margin-left: 40px;
+		width: 320px;
+		margin-left: 30px;
 	}
 
 	.subscribe {
 		font-size: 14px;
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	
+	.social-links {
+		margin-left: 50px;
+		font-size: 20px;
+	} 
+
+	.socilal-link-icon {
+		font-size: 15px;
+		margin-left: -15px
 	}
 } 
