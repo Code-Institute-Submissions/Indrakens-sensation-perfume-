@@ -756,15 +756,7 @@ input[name='q']::placeholder {
 
     .shop-now-button h4 {
 		font-size: 12px;
-	} 
-
-	.footer-links {
-		text-align: center;
-	} 
-
-	.contact {
-		text-align: center;
-	} 
+	}  
 
 	#mc_embed_shell {
 		width: 320px;
@@ -783,6 +775,96 @@ input[name='q']::placeholder {
 	.socilal-link-icon {
 		font-size: 10px;
 		margin-left: -15px
+	}
+} 
+
+@media (max-width: 350px) { 
+    .list-inline-item {
+        margin-top: 40px;
+    } 
+    
+    .navbar-toggler {
+        margin-top: 40px;
+        margin-left: 18px !important;
+    }
+    
+    .nav-link .fa-lg {
+        font-size: 0.9rem;
+    }
+
+    .nav-link p {
+        font-size: 0.7rem;
+    } 
+
+    .navbar-collapse {
+        margin-left: 20px;
+    } 
+
+	.nav-link {
+		font-size: 13px !important;
+	}
+
+    .banner {
+        margin-top: 20px;
+        font-size: 1rem;
+    } 
+    
+    .input-group {
+        width: 60% !important;
+        margin-left: 90px !important;
+    }
+
+    .hero-container {
+        height: 40% !important; 
+		margin-left: 45px;
+    } 
+
+    .logo-font {
+        font-size: 23px !important;
+        margin-top: 80px !important;
+    } 
+
+    .shop-now-button {
+        margin-bottom: -30px !important;
+    } 
+
+    .shop-now-button h4 {
+		font-size: 8px;
+	} 
+
+	.footer-links {
+		margin-left: 40px;
+		font-size: 18px;
+		text-align: left;
+	}
+
+	.contact {
+		font-size: 18px;
+		margin-top: 60px !important;
+		text-align: left;
+		width: 400px !important;
+	} 
+
+	#mc_embed_shell {
+		width: 320px;
+		margin-left: 30px;
+	}
+
+	.subscribe {
+		font-size: 14px;
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	
+	.social-links {
+		margin-left: 40px;
+		font-size: 18px;
+	} 
+
+	.socilal-link-icon {
+		font-size: 15px;
+		margin-left: 5px
 	}
 } 
 
@@ -843,12 +925,14 @@ input[name='q']::placeholder {
 	.footer-links {
 		margin-left: 40px;
 		font-size: 18px;
+		text-align: left;
 	}
 
 	.contact {
 		font-size: 18px;
 		margin-top: 60px !important;
-		margin-left: -45px !important;
+		text-align: left;
+		width: 400px !important;
 	} 
 
 	#mc_embed_shell {
@@ -864,12 +948,12 @@ input[name='q']::placeholder {
 
 	
 	.social-links {
-		margin-left: 50px;
-		font-size: 20px;
+		margin-left: 40px;
+		font-size: 18px;
 	} 
 
 	.socilal-link-icon {
 		font-size: 15px;
-		margin-left: -15px
+		margin-left: 5px
 	}
 } 
