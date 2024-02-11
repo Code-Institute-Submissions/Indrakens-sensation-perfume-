@@ -112,8 +112,6 @@ input[name='q']::placeholder{
 .shop-now-button {
     background: #E0B411;
     color: #000;
-    min-width: 260px;
-    font-weight: 700;
     margin-left: 40px;
 } 
 
@@ -497,4 +495,8 @@ input[name='q']::placeholder {
     .shop-now-button {
         margin-bottom: -60px !important;
     } 
+
+    .shop-now-button h4 {
+		font-size: 18px;
+	} 
 } 
