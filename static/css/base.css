@@ -849,8 +849,10 @@ input[name='q']::placeholder {
 	.contact {
 		text-align: center;
 		width: 400px;
-		font-size: 20px;
-	}
+		font-size: 18px;
+		margin-top: 60px !important;
+		margin-left: -45px !important;
+	} 
 
 	#mc_embed_shell {
 		width: 320px;
