@@ -801,11 +801,11 @@ input[name='q']::placeholder {
     }
 
     .nav-link p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     } 
 
     .navbar-collapse {
-        margin-left: 40px;
+        margin-left: 20px;
     } 
 
 	.nav-link {
@@ -841,14 +841,11 @@ input[name='q']::placeholder {
 	} 
 
 	.footer-links {
-		margin-left: 100px;
-		text-align: center;
+		margin-left: 40px;
 		font-size: 18px;
 	}
 
 	.contact {
-		text-align: center;
-		width: 400px;
 		font-size: 18px;
 		margin-top: 60px !important;
 		margin-left: -45px !important;
