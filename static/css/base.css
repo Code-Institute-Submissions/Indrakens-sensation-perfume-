@@ -476,6 +476,10 @@ input[name='q']::placeholder {
         font-size: .75rem;
         float: left;
     } 
+
+    .order-summary {
+		text-align: left !important;
+	} 
 } 
 
 @media (max-width: 890px) { 

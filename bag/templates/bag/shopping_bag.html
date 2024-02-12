@@ -26,7 +26,7 @@
                 {% if shopping_bag_items %} 
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
-                            <thead class="text-black info-text">
+                            <thead class="text-black">
                                 <tr>
                                     <th scope="col">Order Info</th>
                                     <th scope="col"></th>
@@ -77,7 +77,7 @@
                                     </td>
                                 </tr>
                             {% endfor %}
-                            <tr>
+                            <tr class="order-summary">
                                 <!-- order summary -->
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6><strong>Shopping Bag Total: &euro;{{ total|floatformat:2 }}</strong></h6>
