@@ -184,47 +184,46 @@
   <script type="text/javascript">
     $('.toast').toast('show');
   </script>
-  {% endblock %}
-
-  <footer class="footer bg-dark sticky-bottom mt-2">
+  {% endblock %} 
+     
+  <footer class="footer-container sticky-bottom mt-2">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6 text-light mt-4">
+        <div class="col-12 col-lg-6 text-black mt-4">
           <p class="footer-header footer-links">
-            <a href="{% url 'home' %}" class="text-light">Home</a>
+            <a href="{% url 'home' %}" class="text-black"><strong>Home</strong></a>
           </p>
           <p class="footer-header footer-links">
-            <a href="{% url 'account_signup' %}" class="text-light">Login</a>
+            <a href="{% url 'account_signup' %}" class="text-black"><strong>Login</strong></a>
           </p>
           <p class="footer-header footer-links">
-            <a href="{% url 'account_login' %}" class="text-light">Register</a>
+            <a href="{% url 'account_login' %}" class="text-black"><strong>Register</strong></a>
           </p>
           <p class="footer-header footer-links">
-            <a href="{% url 'privacy' %}" class="text-light">Privacy Policy</a>
+            <a href="{% url 'privacy' %}" class="text-black"><strong>Privacy Policy</strong></a>
           </p>
           <ul class="contact" style="margin-left: -40px; margin-top: 20px;">
-            <li class="small">Email : sensationperfume24@gmail.com</li>
-            <li class="small">Phone : (087) 391 6442</li>
+            <li class="small"><strong>Email : sensationperfume24@gmail.com</strong></li>
+            <li class="small"><strong>Phone : (087) 391 6442</strong></li>
           </ul>
         </div>
         <!-- mailchimp -->
-        <div class="col-12 col-lg-6 text-light mt-2">
+        <div class="col-12 col-lg-6 text-dark mt-2">
           <div id="mc_embed_shell">
-            <p class="footer-header subscribe" style="margin-bottom: -15px;">Subscribe to our newsletter for sales and new product
-              arrivals!
+            <p class="footer-header subscribe text-black" style="margin-bottom: -15px;">
+              <strong>Subscribe to our newsletter for sales and new product arrivals!</strong>
             </p>
-            <div id="mc_embed_signup">
+            <div id="mc_embed_signup" style="background-color: #dbdbd9;">
               <form
                 action="https://herokuapp.us12.list-manage.com/subscribe/post?u=7e14fe436cf891ac50462aef8&amp;id=f484bfc4fb&amp;f_id=008247e0f0"
                 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                 target="_blank">
                 <div id="mc_embed_signup_scroll">
                   <div class="mc-field-group text-black">
-                    label class="label small mt-2" for="mce-EMAIL">
-                    Email Address *
+                    <label class="label small mt-2" for="mce-EMAIL">
+                      <strong>Email Address *</strong>
                     </label>
                     <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
-                    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
                   </div>
                   <div id="mce-responses" class="clear foot">
                     <div class="response" id="mce-error-response" style="display: none;"></div>
@@ -236,7 +235,7 @@
                   </div>
                   <div class="optionalParent">
                     <div class="clear foot">
-                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button rounded-0" value="Subscribe">
                       <p style="margin: 0px auto;">
                         <a href="http://eepurl.com/iI0HI6" title="Mailchimp - email marketing made easy and fun">
                           <span style="display: inline-block; background-color: transparent; border-radius: 4px;">
@@ -258,22 +257,22 @@
           </div>
         </div>
 
-      <div class="col-12 col-lg-12 text-light text-center mt-4 mb-4 social-links">
-        <span class="small sensation-footer-text">Sensation Perfume &copy; 2024|</span>
-        <span class="small sensation-footer-text">Follow Us</span>
+      <div class="col-12 col-lg-12 text-black text-center mt-4 mb-4 social-links">
+        <span class="small sensation-footer-text"><strong>Sensation Perfume &copy; 2024|</strong></span>
+        <span class="small sensation-footer-text"><strong>Follow Us</strong></span>
         <span class="small ml-4 mr-4">
-          <a class="text-light socilal-link-icon" style="text-decoration: none;" href="#">
-            <i class="fa-brands fa-square-facebook fa-xl"></i>
+          <a class="socilal-link-icon" style="text-decoration: none;" href="#">
+            <i class="fa-brands fa-square-facebook fa-2xl" style="color: #000"></i>
           </a>
         </span>
         <span class="small mr-4">
-          <a class="text-light socilal-link-icon" style="text-decoration: none;" href="#">
-            <i class="fa-brands fa-square-instagram fa-xl"></i>
+          <a class="socilal-link-icon" style="text-decoration: none;" href="#">
+            <i class="fa-brands fa-square-instagram fa-2xl" style="color: #000"></i>
           </a>
         </span>
         <span class="small mr-4">
-          <a class="text-light socilal-link-icon" style="text-decoration: none;" href="#">
-            <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+          <a class="socilal-link-icon" style="text-decoration: none;" href="#">
+            <i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000;"></i>
           </a>
         </span>
       </div>

@@ -329,9 +329,17 @@ input[name='q']::placeholder {
 }
 
 /* footer */
-.footer{
+.footer-container {
     margin-top: 20px; 
     width: 100%;
+} 
+
+.text-black {
+    color: #000;
+} 
+
+.text-black a {
+    color: #000;
 } 
 
 .footer-header {  
@@ -340,6 +348,7 @@ input[name='q']::placeholder {
 
 .contact {
     list-style-type: none;
+    color: #000 !important;
 } 
 
 .social-link-icon {
@@ -391,7 +400,7 @@ input[name='q']::placeholder {
     } 
 
     .header-container {
-        padding-top: 64px;
+        padding-top: 220px;
     } 
 
     .logo-font {
@@ -862,18 +871,24 @@ input[name='q']::placeholder {
 		font-size: 14px;
 		margin-top: 40px;
 		text-align: center;
-	}
-
+	} 
 	
 	.social-links {
-		margin-left: 40px;
-		font-size: 18px;
+		margin-left: 15px; 
+		font-size: 22px;
 	} 
 
 	.socilal-link-icon {
-		font-size: 15px;
-		margin-left: 5px
-	}
+		font-size: 13px;
+        margin-left: 5px;
+	} 
+
+    .btt-button {
+        height: 30px;
+        width: 30px;
+        bottom: 20px;
+        right: 3px;
+    } 
 } 
 
 @media (max-width: 330px) { 
@@ -957,11 +972,18 @@ input[name='q']::placeholder {
 	
 	.social-links {
 		margin-left: 40px;
-		font-size: 18px;
+		font-size: 20px;
 	} 
 
 	.socilal-link-icon {
-		font-size: 15px;
+		font-size: 12px;
 		margin-left: 5px
-	}
+	} 
+
+    .btt-button {
+        height: 30px;
+        width: 30px;
+        bottom: 20px;
+        right: 5px;
+    } 
 } 
