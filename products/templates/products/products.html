@@ -28,8 +28,8 @@
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                                 <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-                                <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
-                                <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
+                                <option value="product_rating_asc" {% if current_sorting == 'product_rating_asc' %}selected{% endif %}>Rating (low to high)</option>
+                                <option value="product_rating_desc" {% if current_sorting == 'product_rating_desc' %}selected{% endif %}>Rating (high to low)</option>
                                 <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
                                 <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
                                 <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
@@ -119,11 +119,9 @@
         </div>
     </div>
     <!-- back to top button --> 
-    <div class="btt-button shadow-lg rounded-0 float-end">
+    <div class="btt-button shadow-lg rounded-0 float-end ml-4">
         <a class="btt-link d-flex h-100">
-            <i class="fa-sharp fa-solid fa-chevron-up text-secondary text-center mx-auto" style="margin-top: 4px;">
-                <p class="small"><strong>TOP</strong></p>
-            </i>
+            <i class="fa-sharp fa-solid fa-up-long text-secondary mx-auto my-auto"></i>
         </a>	
     </div> 
 {% endblock %} 

@@ -391,8 +391,8 @@ input[name='q']::placeholder {
     } 
 
     .header-container {
-        padding-top: 60px;
-    }
+        padding-top: 64px;
+    } 
 
     .logo-font {
         font-size: 4rem !important;
@@ -401,6 +401,14 @@ input[name='q']::placeholder {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) { 
+    .header-container {
+        padding-top: 164px;
+    } 
+
+    body {
+        height: calc(100vh - 116px); 
+    }
+
     .list-inline-item {
         margin-top: 40px;
         margin-right: 60px !important;
