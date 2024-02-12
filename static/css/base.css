@@ -464,6 +464,18 @@ input[name='q']::placeholder {
     .shop-now-button {
         margin-bottom: -60px !important;
     } 
+
+    .btn.btn-warning.border-warning.rounded-0,
+    .btn.btn-warning.rounded-0 {
+        padding: .375rem .375rem;
+    } 
+
+    .btn.btn-warning.border-warning.rounded-0.btn-lg,
+    .btn.btn-warning.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+        float: left;
+    } 
 } 
 
 @media (max-width: 890px) { 
