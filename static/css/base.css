@@ -188,8 +188,16 @@ hr{
     text-decoration: underline !important;
 }
 
+.remove-item {
+	margin-left: 65px;
+} 
+
 input[name='q']::placeholder {
     color: #aab7c4;   
+} 
+
+.table-responsive {
+	overflow-x:auto;
 } 
 
 /* toast messages */
@@ -381,10 +389,6 @@ input[name='q']::placeholder {
     color: #c10404 !important;
 } 
 
-.table-responsive {
-	overflow-x:auto;
-} 
-
 /* -------------------------------- Media Queries */
 @media (min-width: 1200px) {
     .container {
@@ -480,9 +484,21 @@ input[name='q']::placeholder {
         font-size: .75rem; 
     } 
 
-    .order-summary {
-		text-align: left !important;
-	} 
+    .table-responsive {
+	    overflow-x:auto;
+    }
+
+	.remove-item {
+		margin-left: 5px
+    } 
+
+	.input-group {
+		margin-left: 5px !important;
+	}
+
+	.order-summary {
+		font-size: 15px;
+	}
 } 
 
 @media (max-width: 890px) { 
