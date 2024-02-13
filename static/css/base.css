@@ -661,6 +661,14 @@ input[name='q']::placeholder {
 	.grand-total {
 		font-size: 22px;
 	}
+
+    .col-12.d-none.d-sm-block.d-md-block.d-lg-none.mb-2 hr {
+		width: 640px
+	}
+
+    #mc_embed_shell {
+		width: 670px;
+	} 
 } 
 
 @media (max-width: 767px) {
@@ -693,6 +701,23 @@ input[name='q']::placeholder {
 	hr {
 		width: 510px
 	} 
+
+    .col-12.d-none.d-sm-block.d-md-block.d-lg-none.mb-2 hr {
+		width: 620px
+	}
+
+	#mc_embed_shell {
+		width: 620px;
+		margin-left: -50px
+	} 
+
+	.footer-links {
+		margin-left: -45px;
+	}
+
+	.contact {
+		margin-left: -90px !important;
+	}
 } 
 
 @media (max-width: 600px) { 
@@ -755,10 +780,10 @@ input[name='q']::placeholder {
 
 	.contact {
 		margin-left: -4px !important;
-	}
+	} 
 
 	#mc_embed_shell {
-		width: 450px;
+		width: 440px;
 		margin-left: 40px;
 	} 
 
@@ -810,6 +835,14 @@ input[name='q']::placeholder {
 	hr {
 		width: 450px;
 		margin-left: 38px;
+	} 
+
+    .col-12.d-none.d-sm-block.d-md-block.d-lg-none.mb-2 hr {
+		width: 420px
+	} 
+
+    .shop hr {
+		margin-left: 140px;
 	} 
 } 
 
@@ -863,17 +896,26 @@ input[name='q']::placeholder {
 	} 
 
 	.footer-links {
-		margin-left: 40px;
+		margin-left: 70px;
 	}
 
 	.contact {
-		margin-left: -4px !important;
+		margin-left: 30px !important;
 	}
 
 	#mc_embed_shell {
-		width: 400px;
-		margin-left: 40px;
+		width: 330px;
+		margin-left: 70px;
+	} 
+
+    .social-links {
+		margin-left: 10px;
 	}
+
+	.socilal-link-icon {
+		font-size: 12px;
+		margin-left: -15px
+	} 
 
 	.subscribe {
 		font-size: 14px;
@@ -942,6 +984,14 @@ input[name='q']::placeholder {
 		width: 400px;
 		margin-left: 38px;
 	} 
+
+    .col-12.d-sm-none.mb-2 hr {
+		width: 330px;
+	}
+
+	.shop hr {
+		margin-left: 120px;
+	} 
 } 
 
 
@@ -998,9 +1048,9 @@ input[name='q']::placeholder {
 	}  
 
 	#mc_embed_shell {
-		width: 370px;
-		margin-left: 40px;
-	}
+		width: 320px;
+		margin-left: 60px;
+	} 
 
 	.subscribe {
 		font-size: 15px;
@@ -1008,7 +1058,7 @@ input[name='q']::placeholder {
 	}
 
 	.social-links {
-		margin-left: 25px;
+		margin-left: 22px;
 	}
 
 	.socilal-link-icon {
@@ -1087,6 +1137,19 @@ input[name='q']::placeholder {
 	.management h2 {
 		font-size: 25px;
 	} 
+
+    .col-12.d-sm-none.mb-2 hr {
+		width: 300px;
+        margin-left: 20px;
+	} 
+
+	.shop hr {
+		margin-left: 100px;
+	} 
+
+    .shop h2 {
+		font-size: 25px;
+	} 
 } 
 
 @media (max-width: 380px) { 
@@ -1139,21 +1202,20 @@ input[name='q']::placeholder {
 	} 
 
 	.footer-links {
-		margin-left: 40px;
+		margin-left: 50px;
 		font-size: 16px;
-		text-align: left;
 	}
 
 	.contact {
 		font-size: 18px;
 		margin-top: 60px !important;
-		text-align: left;
 		width: 400px !important;
-	} 
+        margin-left: 10px !important;
+    }     
 
 	#mc_embed_shell {
-		width: 330px;
-		margin-left: 30px;
+		width: 300px;
+		margin-left: 50px;
 	} 
 
 	.subscribe {
@@ -1252,6 +1314,27 @@ input[name='q']::placeholder {
 	.management h2 {
 		font-size: 22px;
 	} 
+
+    .col-12.d-sm-none.mb-2 hr {
+		width: 290px;
+		margin-left: 20px;
+	}
+
+	.shop hr {
+		margin-left: 90px;
+	}
+
+	.shop h2 {
+		font-size: 22px;
+	} 
+
+	.btt-button.shadow-lg.rounded-0.float-end.ml-4 {
+		margin-right: 20px;
+	} 
+
+    .product-container {
+		margin-left: 30px;
+	} 
 } 
 
 @media (max-width: 330px) { 
@@ -1306,19 +1389,19 @@ input[name='q']::placeholder {
 	.footer-links {
 		margin-left: 40px;
 		font-size: 16.5px;
-		text-align: left;
+        margin-left: 60px !important;
 	}
 
 	.contact {
 		font-size: 18px;
 		margin-top: 60px !important;
-		text-align: left;
 		width: 400px !important;
+        margin-left: 20px !important;
 	} 
 
 	#mc_embed_shell {
-		width: 320px;
-		margin-left: 30px;
+		width: 290px;
+		margin-left: 50px;
 	}
 
 	.subscribe {
@@ -1418,5 +1501,27 @@ input[name='q']::placeholder {
 
 	.management h2 {
 		font-size: 22px;
+	} 
+
+    .col-12.d-sm-none.mb-2 hr {
+		width: 260px;
+		margin-left: 20px;
+	}
+
+	.shop hr {
+		margin-left: 95px;
+	}
+
+	.shop h2 {
+		font-size: 22px;
+		margin-left: 50px;
+	} 
+
+	.btt-button.shadow-lg.rounded-0.float-end.ml-4 {
+		margin-right: 30px;
+	}
+
+	.product-container {
+		margin-left: 50px;
 	} 
 } 
