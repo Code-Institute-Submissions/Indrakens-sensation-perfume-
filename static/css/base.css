@@ -477,8 +477,7 @@ input[name='q']::placeholder {
     .btn.btn-warning.border-warning.rounded-0.btn-lg,
     .btn.btn-warning.rounded-0.btn-lg {
         padding: .375rem .375rem;
-        font-size: .75rem;
-        float: left;
+        font-size: .75rem; 
     } 
 
     .order-summary {
