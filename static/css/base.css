@@ -485,7 +485,16 @@ input[name='q']::placeholder {
     .btn.btn-warning.border-warning.rounded-0.btn-lg,
     .btn.btn-warning.rounded-0.btn-lg {
         padding: .375rem .375rem;
-        font-size: .75rem; 
+        font-size: .85rem; 
+    } 
+
+    .btn.btn-warning.border-warning.rounded-0.btn-sm.w-25{
+        padding: .375rem .375rem;
+    }
+
+	.btn.btn-warning.border-warning.rounded-0.btn-sm.w-25{
+        padding: .375rem .375rem;
+        font-size: .55rem; 
     } 
 
     .table-responsive {
@@ -1214,7 +1223,7 @@ input[name='q']::placeholder {
 
 	.footer-links {
 		margin-left: 40px;
-		font-size: 18px;
+		font-size: 16.5px;
 		text-align: left;
 	}
 
