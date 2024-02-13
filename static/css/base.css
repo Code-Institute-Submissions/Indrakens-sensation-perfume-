@@ -554,6 +554,11 @@ input[name='q']::placeholder {
     .shop-now-button h4 {
 		font-size: 18px;
 	} 
+
+    .input-group {
+        width: 60% !important;
+        margin-left: 10px !important;
+    }
 } 
 
 @media (max-width: 790px) { 
@@ -609,6 +614,11 @@ input[name='q']::placeholder {
     .shop-now-button h4 {
 		font-size: 18px;
 	} 
+
+    .input-group {
+        width: 60% !important;
+        margin-left: 10px !important;
+    } 
 } 
 
 @media (max-width: 600px) { 
@@ -679,6 +689,35 @@ input[name='q']::placeholder {
 	}
 
 	.subscribe {
+		font-size: 14px;
+	}
+
+    .input-group {
+        width: 60% !important;
+        margin-left: 10px !important;
+    }
+
+	.product-name,
+	.product-sku,
+	.included-giftbag {
+		font-size: 12px;
+	}
+
+	.product-price,
+	.subtotal{
+		font-size: 14px;
+	}
+
+	.update-link {
+		margin-left: 7.5px;
+		
+	}
+
+	.grand-total {
+		font-size: 20px;
+	}
+
+	.free-delivery {
 		font-size: 14px;
 	}
 } 
