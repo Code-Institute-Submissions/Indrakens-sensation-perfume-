@@ -494,7 +494,7 @@ input[name='q']::placeholder {
 
 	.btn.btn-warning.border-warning.rounded-0.btn-sm.w-25{
         padding: .375rem .375rem;
-        font-size: .55rem; 
+        font-size: .85rem; 
     } 
 
     .table-responsive {
@@ -517,6 +517,15 @@ input[name='q']::placeholder {
 	    width: 130%;
 		margin-left: -50px !important;
     } 
+
+    .form {
+		width: 700px;
+	} 
+
+    .management h2,
+	hr {
+		width: 700px
+	} 
 } 
 
 @media (max-width: 890px) { 
@@ -572,6 +581,15 @@ input[name='q']::placeholder {
         width: 90% !important;
         margin-left: 10px !important;
     }
+
+    .form {
+		width: 690px;
+	}
+
+	.management h2,
+	hr {
+		width: 690px
+	} 
 } 
 
 @media (max-width: 790px) { 
@@ -666,6 +684,15 @@ input[name='q']::placeholder {
 	.grand-total {
 		font-size: 22px;
 	}
+
+    .form {
+		width: 510px;
+	}
+
+	.management h2,
+	hr {
+		width: 510px
+	} 
 } 
 
 @media (max-width: 600px) { 
@@ -731,9 +758,9 @@ input[name='q']::placeholder {
 	}
 
 	#mc_embed_shell {
-		width: 400px;
+		width: 450px;
 		margin-left: 40px;
-	}
+	} 
 
 	.subscribe {
 		font-size: 14px;
@@ -771,7 +798,19 @@ input[name='q']::placeholder {
     .responsive {
 	    width: 140%;
 		margin-left: -40px !important;
-    } 
+    }
+    
+    .form {
+		width: 450px;
+		margin-left: 38px;
+	}
+
+	.management h2, 
+	h5,
+	hr {
+		width: 450px;
+		margin-left: 38px;
+	} 
 } 
 
 @media (max-width: 500px) { 
@@ -883,14 +922,27 @@ input[name='q']::placeholder {
 		font-size: 15px;
 	} 
 
-    .bag-header {
+    .bag-header,
+    .management h2 {
 		font-size: 30px;
 	} 
 
     .t-head {
 		font-size: 15px;
 	} 
-}
+
+    .form {
+		width: 400px;
+		margin-left: 38px;
+	}
+
+	.management h2, 
+	h5,
+	hr {
+		width: 400px;
+		margin-left: 38px;
+	} 
+} 
 
 
 @media (max-width: 450px) { 
@@ -946,7 +998,7 @@ input[name='q']::placeholder {
 	}  
 
 	#mc_embed_shell {
-		width: 320px;
+		width: 370px;
 		margin-left: 40px;
 	}
 
@@ -1019,6 +1071,22 @@ input[name='q']::placeholder {
 	hr {
 		margin-left: 15px
 	} 
+
+    .form {
+		width: 370px;
+		margin-left: 38px;
+	}
+
+	.management h2, 
+	h5,
+	hr {
+		width: 370px;
+		margin-left: 38px;
+	} 
+
+	.management h2 {
+		font-size: 25px;
+	} 
 } 
 
 @media (max-width: 380px) { 
@@ -1084,9 +1152,9 @@ input[name='q']::placeholder {
 	} 
 
 	#mc_embed_shell {
-		width: 320px;
+		width: 330px;
 		margin-left: 30px;
-	}
+	} 
 
 	.subscribe {
 		font-size: 14px;
@@ -1095,13 +1163,11 @@ input[name='q']::placeholder {
 	} 
 	
 	.social-links {
-		margin-left: 15px; 
-		font-size: 22px;
+		font-size: 15px;
 	} 
 
 	.socilal-link-icon {
-		font-size: 13px;
-        margin-left: 5px;
+		font-size: 13px; 
 	} 
 
     .btt-button {
@@ -1169,6 +1235,22 @@ input[name='q']::placeholder {
 
 	hr {
 		margin-left: 20px
+	} 
+
+    .form {
+		width: 330px;
+		margin-left: 32px;
+	}
+
+	.management h2, 
+	h5,
+	hr {
+		width: 330px;
+		margin-left: 32px;
+	} 
+
+	.management h2 {
+		font-size: 22px;
 	} 
 } 
 
@@ -1247,13 +1329,12 @@ input[name='q']::placeholder {
 
 	
 	.social-links {
-		margin-left: 40px;
-		font-size: 20px;
+		margin-left: 50px;
+		font-size: 13.5px;
 	} 
 
 	.socilal-link-icon {
 		font-size: 12px;
-		margin-left: 5px
 	} 
 
     .btt-button {
@@ -1321,5 +1402,21 @@ input[name='q']::placeholder {
 
 	hr {
 		margin-left: 35px
+	} 
+
+    .form {
+		width: 320px;
+		margin-left: 32px;
+	}
+
+	.management h2, 
+	h5,
+	hr {
+		width: 320px;
+		margin-left: 32px;
+	} 
+
+	.management h2 {
+		font-size: 22px;
 	} 
 } 
