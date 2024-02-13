@@ -379,7 +379,11 @@ input[name='q']::placeholder {
 
 #mce-error-response {
     color: #c10404 !important;
-}  
+} 
+
+.table-responsive {
+	overflow-x:auto;
+} 
 
 /* -------------------------------- Media Queries */
 @media (min-width: 1200px) {
