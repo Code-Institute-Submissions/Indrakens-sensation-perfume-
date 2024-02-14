@@ -497,6 +497,11 @@ input[name='q']::placeholder {
         font-size: .85rem; 
     } 
 
+	.btn.btn-warning.rounded-0.border-warning {
+		padding: .180rem .180rem;
+		font-size: .80rem;
+	} 
+
     .table-responsive {
 	    overflow-x:auto;
     }
@@ -1020,7 +1025,7 @@ input[name='q']::placeholder {
 	}  
 
 	#mc_embed_shell {
-		width: 320px;
+		width: 380px;
 		margin-left: 60px;
 	} 
 
@@ -1368,8 +1373,6 @@ input[name='q']::placeholder {
 		text-align: center;
 	}
 
-	
-	
 	.social-links {
 		margin-left: 10px;
 		font-size: 15px;
