@@ -526,7 +526,7 @@ input[name='q']::placeholder {
 	.footer-container {
 		margin-top: 50px !important; 
 		width: 130%;
-		} 
+	} 
 } 
 
 @media (max-width: 890px) { 
