@@ -844,6 +844,10 @@ input[name='q']::placeholder {
     .shop hr {
 		margin-left: 140px;
 	} 
+
+    .blog-header hr {
+		width: 435px !important;
+	} 
 } 
 
 @media (max-width: 500px) { 
@@ -879,7 +883,8 @@ input[name='q']::placeholder {
     } 
 
     .hero-container {
-        height: 50% !important; 
+        height: 40% !important; 
+        margin-left: 5px;
     } 
 
     .logo-font {
@@ -992,6 +997,10 @@ input[name='q']::placeholder {
 	.shop hr {
 		margin-left: 120px;
 	} 
+
+    .blog-header hr {
+		width: 397px !important;
+	} 
 } 
 
 
@@ -1029,7 +1038,7 @@ input[name='q']::placeholder {
 
     .hero-container {
         height: 40% !important; 
-		margin-left: 25px;
+		margin-left: 10px;
     } 
 
     .logo-font {
@@ -1149,6 +1158,10 @@ input[name='q']::placeholder {
 
     .shop h2 {
 		font-size: 25px;
+	} 
+
+    .blog-header hr {
+		width: 340px !important;
 	} 
 } 
 
@@ -1334,6 +1347,20 @@ input[name='q']::placeholder {
 
     .product-container {
 		margin-left: 30px;
+	} 
+
+    .blog-container {
+		margin-left: 60px;
+	}
+
+	.blog-header hr {
+		width: 290px !important;
+		margin-left: 60px;
+	} 
+
+	.blog-header h4 {
+		margin-left: 60px;
+		font-size: 22px;
 	} 
 } 
 
@@ -1524,4 +1551,19 @@ input[name='q']::placeholder {
 	.product-container {
 		margin-left: 50px;
 	} 
+
+    .blog-container {
+		margin-left: 85px;
+	}
+
+	.blog-header hr {
+		width: 240px !important;
+		margin-left: 90px;
+	} 
+
+	.blog-header h4 {
+		margin-left: 90px;
+		font-size: 22px;
+		width: 240px !important;
+	}
 } 
