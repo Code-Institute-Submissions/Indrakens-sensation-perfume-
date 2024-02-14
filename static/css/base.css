@@ -417,6 +417,26 @@ input[name='q']::placeholder {
     .logo-font {
         font-size: 4rem !important;
     } 
+
+    .btn.btn-warning.border-warning.rounded-0,
+    .btn.btn-warning.rounded-0 {
+        padding: .375rem .375rem;
+    } 
+
+    .btn.btn-warning.border-warning.rounded-0.btn-lg,
+    .btn.btn-warning.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .85rem; 
+    } 
+
+    .btn.btn-warning.border-warning.rounded-0.btn-sm.w-25{
+        padding: .375rem .375rem;
+    }
+
+	.btn.btn-warning.border-warning.rounded-0.btn-sm.w-25{
+        padding: .375rem .375rem;
+        font-size: .85rem; 
+    } 
 } 
 
 /* pad the top a bit when navbar is collapsed on mobile */
