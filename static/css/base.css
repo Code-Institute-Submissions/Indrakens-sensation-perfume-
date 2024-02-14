@@ -1369,14 +1369,15 @@ input[name='q']::placeholder {
 	}
 
 	
+	
 	.social-links {
-		margin-left: 50px;
-		font-size: 20px;
+		margin-left: 10px;
+		font-size: 15px;
 	} 
 
 	.socilal-link-icon {
 		font-size: 12px;
-	} 
+	}  
 
     .btt-button {
         height: 30px;
