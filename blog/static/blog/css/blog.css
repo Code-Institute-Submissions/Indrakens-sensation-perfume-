@@ -27,6 +27,24 @@
     color: #000 !important;
 } 
 
+@media (max-width: 600px) { 
+    .blog-header hr {
+		width: 435px !important;
+	}   
+} 
+
+@media (max-width: 500px) {  
+    .blog-header hr {
+		width: 397px !important;
+	}    
+} 
+
+@media (max-width: 450px) {  
+    .blog-header hr {
+		width: 340px !important;
+	} 
+} 
+
 @media (max-width: 330px) { 
     .blog-container {
 		margin-left: 85px;
