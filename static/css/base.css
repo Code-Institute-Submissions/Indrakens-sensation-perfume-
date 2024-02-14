@@ -494,7 +494,7 @@ input[name='q']::placeholder {
 
 	.btn.btn-warning.border-warning.rounded-0.btn-sm.w-25{
         padding: .375rem .375rem;
-        font-size: .85rem; 
+        font-size: .50rem; 
     } 
 
 	.btn.btn-warning.rounded-0.border-warning {
