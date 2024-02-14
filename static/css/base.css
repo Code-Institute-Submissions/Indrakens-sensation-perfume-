@@ -718,6 +718,16 @@ input[name='q']::placeholder {
 	.contact {
 		margin-left: -90px !important;
 	}
+
+    .product-detail-container {
+		margin-left: 90px;
+		 width: 580px;
+	}
+
+	.mb-3.text-uppercase.h3 {
+		font-size: 28px;
+		margin-top: -140px;
+	}  
 } 
 
 @media (max-width: 600px) { 
@@ -847,6 +857,29 @@ input[name='q']::placeholder {
 
     .blog-header hr {
 		width: 435px !important;
+	} 
+
+    .product-detail-container {
+		margin-left: 70px;
+		 width: 420px;
+	}
+
+	.mb-3.text-uppercase.h3 {
+		font-size: 20px;
+		margin-top: -120px;
+	}
+
+	.form-row {
+		margin-left: -40px
+	}
+
+	.keep-shopping.btn.btn-warning.border-warning.rounded-0.btn-lg.mt-5 {
+		margin-left: 6px
+	} 
+
+	.col-12.pb-4.pt-2 p {
+		font-size: 15px;
+		width: 300px;
 	} 
 } 
 
@@ -1000,6 +1033,29 @@ input[name='q']::placeholder {
 
     .blog-header hr {
 		width: 397px !important;
+	} 
+
+    .product-detail-container {
+		margin-left: 70px;
+		 width: 360px;
+	}
+
+	.mb-3.text-uppercase.h3 {
+		font-size: 20px;
+		margin-top: -90px;
+	}
+
+	.form-row {
+		margin-left: -40px
+	}
+
+	.keep-shopping.btn.btn-warning.border-warning.rounded-0.btn-lg.mt-5 {
+		margin-left: 6px
+	} 
+
+	.col-12.pb-4.pt-2 p {
+		font-size: 15px;
+		width: 300px;
 	} 
 } 
 
@@ -1162,6 +1218,29 @@ input[name='q']::placeholder {
 
     .blog-header hr {
 		width: 340px !important;
+	} 
+
+    .product-detail-container {
+		margin-left: 55px;
+		 width: 350px;
+	}
+
+	.mb-3.text-uppercase.h3 {
+		font-size: 20px;
+		margin-top: -90px;
+	}
+
+	.form-row {
+		margin-left: -40px
+	}
+
+	.keep-shopping.btn.btn-warning.border-warning.rounded-0.btn-lg.mt-5 {
+		margin-left: 6px
+	} 
+
+	.col-12.pb-4.pt-2 p {
+		font-size: 15px;
+		width: 300px;
 	} 
 } 
 
@@ -1361,6 +1440,29 @@ input[name='q']::placeholder {
 	.blog-header h4 {
 		margin-left: 60px;
 		font-size: 22px;
+	} 
+
+    .product-detail-container {
+		margin-left: 55px;
+		 width: 320px;
+	}
+
+	.mb-3.text-uppercase.h3 {
+		font-size: 20px;
+		margin-top: -90px;
+	}
+
+	.form-row {
+		margin-left: -40px
+	}
+
+	.keep-shopping.btn.btn-warning.border-warning.rounded-0.btn-lg.mt-5 {
+		margin-left: 6px
+	} 
+
+	.col-12.pb-4.pt-2 p {
+		font-size: 16px;
+		width: 300px;
 	} 
 } 
 
