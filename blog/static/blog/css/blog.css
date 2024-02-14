@@ -26,3 +26,20 @@
 .border-black {
     color: #000 !important;
 } 
+
+@media (max-width: 330px) { 
+    .blog-container {
+		margin-left: 85px;
+	}
+
+	.blog-header hr {
+		width: 240px !important;
+		margin-left: 90px;
+	} 
+
+	.blog-header h4 {
+		margin-left: 90px;
+		font-size: 22px;
+		width: 240px !important;
+	} 
+} 
