@@ -339,12 +339,7 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-/* footer */
-.footer-container {
-    margin-top: 20px; 
-    width: 100%;
-} 
-
+/* footer */ 
 .text-black {
     color: #000;
 } 
@@ -531,6 +526,11 @@ input[name='q']::placeholder {
 	hr {
 		width: 700px
 	} 
+
+	.footer-container {
+		margin-top: 50px !important; 
+		width: 130%;
+		} 
 } 
 
 @media (max-width: 890px) { 
