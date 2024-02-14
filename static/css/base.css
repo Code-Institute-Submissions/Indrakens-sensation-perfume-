@@ -1566,4 +1566,26 @@ input[name='q']::placeholder {
 		font-size: 22px;
 		width: 240px !important;
 	}
+
+    .product-detail-container {
+		margin-left: 55px;
+	}
+
+	.mb-3.text-uppercase.h3 {
+		font-size: 23px;
+		margin-top: -70px;
+	}
+
+	.form-row {
+		margin-left: -40px
+	}
+
+	.keep-shopping.btn.btn-warning.border-warning.rounded-0.btn-lg.mt-5 {
+		margin-left: 6px
+	} 
+
+	.col-12.pb-4.pt-2 p {
+		font-size: 14px;
+		width: 300px;
+	} 
 } 
