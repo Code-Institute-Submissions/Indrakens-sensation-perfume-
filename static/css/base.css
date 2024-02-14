@@ -518,15 +518,6 @@ input[name='q']::placeholder {
 		margin-left: -50px !important;
     } 
 
-    .form {
-		width: 700px;
-	} 
-
-    .management h2,
-	hr {
-		width: 700px
-	} 
-
 	.footer-container {
 		margin-top: 50px !important; 
 		width: 130%;
@@ -585,16 +576,7 @@ input[name='q']::placeholder {
     .input-group {
         width: 90% !important;
         margin-left: 10px !important;
-    }
-
-    .form {
-		width: 690px;
-	}
-
-	.management h2,
-	hr {
-		width: 690px
-	} 
+    } 
 } 
 
 @media (max-width: 790px) { 
@@ -674,11 +656,6 @@ input[name='q']::placeholder {
     #mc_embed_shell {
 		width: 670px;
 	} 
-
-    .container-f {
-		margin-left:140px;
-		
-	} 
 } 
 
 @media (max-width: 767px) {
@@ -701,15 +678,6 @@ input[name='q']::placeholder {
 
 	.grand-total {
 		font-size: 22px;
-	}
-
-    .form {
-		width: 510px;
-	}
-
-	.management h2,
-	hr {
-		width: 510px
 	} 
 
     .col-12.d-none.d-sm-block.d-md-block.d-lg-none.mb-2 hr {
@@ -765,12 +733,7 @@ input[name='q']::placeholder {
     .banner {
         margin-top: 20px;
         font-size: 1rem;
-    } 
-    
-    .input-group {
-        width: 90% !important;
-        margin-left: 90px !important;
-    } 
+    }  
 
     .hero-container {
         height: 50% !important; 
@@ -838,19 +801,7 @@ input[name='q']::placeholder {
     .responsive {
 	    width: 140%;
 		margin-left: -40px !important;
-    }
-    
-    .form {
-		width: 450px;
-		margin-left: 38px;
-	}
-
-	.management h2, 
-	h5,
-	hr {
-		width: 450px;
-		margin-left: 38px;
-	} 
+    } 
 
     .col-12.d-none.d-sm-block.d-md-block.d-lg-none.mb-2 hr {
 		width: 420px
@@ -998,18 +949,6 @@ input[name='q']::placeholder {
 		font-size: 15px;
 	} 
 
-    .form {
-		width: 400px;
-		margin-left: 38px;
-	}
-
-	.management h2, 
-	h5,
-	hr {
-		width: 400px;
-		margin-left: 38px;
-	} 
-
     .col-12.d-sm-none.mb-2 hr {
 		width: 330px;
 	}
@@ -1153,22 +1092,6 @@ input[name='q']::placeholder {
 
 	hr {
 		margin-left: 15px
-	} 
-
-    .form {
-		width: 370px;
-		margin-left: 38px;
-	}
-
-	.management h2, 
-	h5,
-	hr {
-		width: 370px;
-		margin-left: 38px;
-	} 
-
-	.management h2 {
-		font-size: 25px;
 	} 
 
     .col-12.d-sm-none.mb-2 hr {
@@ -1339,22 +1262,6 @@ input[name='q']::placeholder {
 
 	hr {
 		margin-left: 20px
-	} 
-
-    .form {
-		width: 330px;
-		margin-left: 32px;
-	}
-
-	.management h2, 
-	h5,
-	hr {
-		width: 330px;
-		margin-left: 32px;
-	} 
-
-	.management h2 {
-		font-size: 22px;
 	} 
 
     .col-12.d-sm-none.mb-2 hr {
@@ -1536,22 +1443,6 @@ input[name='q']::placeholder {
 
 	hr {
 		margin-left: 35px
-	} 
-
-    .form {
-		width: 320px;
-		margin-left: 32px;
-	}
-
-	.management h2, 
-	h5,
-	hr {
-		width: 320px;
-		margin-left: 32px;
-	} 
-
-	.management h2 {
-		font-size: 22px;
 	} 
 
     .col-12.d-sm-none.mb-2 hr {
