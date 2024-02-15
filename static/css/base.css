@@ -330,7 +330,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #E0B411; /* text-forgot pasword */
 } 
 
 .allauth-form-inner-content input::placeholder {
