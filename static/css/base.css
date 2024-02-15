@@ -325,9 +325,9 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
+    background-color: #E0B411;
     border-color: #222;
-}
+} 
 
 .allauth-form-inner-content a {
 	color: #E0B411; /* text-forgot pasword */
