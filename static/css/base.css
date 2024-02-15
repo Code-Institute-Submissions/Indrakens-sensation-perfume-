@@ -445,11 +445,6 @@ input[name='q']::placeholder {
     .logo-font {
         font-size: 4rem !important;
     } 
-
-    .btn.btn-warning.border-warning.rounded-0,
-    .btn.btn-warning.rounded-0 {
-        padding: .375rem .375rem;
-    } 
 } 
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -459,43 +454,39 @@ input[name='q']::placeholder {
     } 
 
     body {
-        height: calc(100vh - 116px); 
+        height: calc(100vh - 164px); 
     }
 
     .nav-link {
-        padding: 0.15rem;
+        padding: 0.18rem;
     }
 
     .list-inline-item {
-        margin-top: 40px;
-        margin-right: 60px !important;
+        padding: .6rem .6rem;
+        margin-right: 20px !important;
     } 
     
     .navbar-toggler {
         padding: .6rem .6rem;
         font-size: 1rem;
-    }
+		margin-left: 40px;
+    } 
     
     .nav-link .fa-lg {
         font-size: 1.3rem;
-    } 
-
-    .nav-link p {
-        font-size: 1.3rem;
-    } 
+    }  
 
     .navbar-collapse {
-        margin-left: 60px;
+        margin-left: 40px;
     } 
 
     .banner {
-        margin-top: 20px;
-        font-size: .9rem;
+        font-size: 1.3rem;
+		padding: .6rem .6rem;
     } 
     
     .input-group {
         width: 90% !important;
-        margin-left: 200px !important;
     } 
 
     .hero-container {
@@ -540,16 +531,8 @@ input[name='q']::placeholder {
     }
 
 	.remove-item {
-		margin-left: 5px
+		margin-left: 5px;
     } 
-
-	.input-group {
-		margin-left: 5px !important;
-	}
-
-	.order-summary {
-		font-size: 15px;
-	}
 
     .responsive {
 	    width: 130%;
@@ -558,6 +541,5 @@ input[name='q']::placeholder {
 
 	.footer-container {
 		margin-top: 50px !important; 
-		width: 130%;
 	} 
 } 
