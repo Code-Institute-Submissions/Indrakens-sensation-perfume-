@@ -551,3 +551,7 @@ input[name='q']::placeholder {
 		margin-top: 50px !important; 
 	} 
 } 
+
+@media (max-width: 518px) {
+    
+}
