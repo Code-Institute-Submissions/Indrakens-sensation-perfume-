@@ -473,8 +473,12 @@ input[name='q']::placeholder {
     } 
     
     .nav-link .fa-lg {
-        font-size: 1.3rem;
-    }  
+        font-size: 1.2rem;
+    } 
+
+	 .nav-link p {
+        font-size: 1rem;
+    } 
 
     .navbar-collapse {
         margin-left: 40px;
@@ -494,12 +498,16 @@ input[name='q']::placeholder {
     } 
 
     .logo-font {
-        font-size: 50px !important;
+        font-size: 3rem;
     } 
 
     .shop-now-button {
         margin-bottom: -60px !important;
     } 
+
+	 .shop-now-button h4 {
+        font-size: 1rem;
+    }
 
     .btn.btn-warning.border-warning.rounded-0,
     .btn.btn-warning.rounded-0 {
@@ -507,8 +515,8 @@ input[name='q']::placeholder {
     } 
 
     .btn.btn-warning.border-warning.rounded-0.btn-lg,
-    .btn.btn-warning.rounded-0.btn-lg {
-        padding: .375rem .375rem;
+    .btn.btn-warning.rounded-0.btn-lg{
+        padding: .175rem .375rem;
         font-size: .85rem; 
     } 
 
