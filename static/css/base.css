@@ -626,6 +626,44 @@ input[name='q']::placeholder {
     } 
 } 
 
+@media (max-width: 440px) {
+    .list-inline-item {
+        margin-right: 0px !important;
+    } 
+    
+    .navbar-toggler { 
+        font-size: 0.5rem;
+		margin-left: 10px;
+    } 
+
+	.fas.fa-bars.fa-lg {
+		padding: .4rem .1rem;
+		margin-left: -10px;
+		font-size: 26px !important;
+	}
+    
+    .nav-link .fa-lg {
+        font-size: 1rem;
+    } 
+
+	 .nav-link p {
+        font-size: 0.8rem;
+    } 
+
+    .navbar-collapse {
+        margin-left: 10px;
+    }
+
+	.nav-item a {
+		font-size: 0.9rem;
+	}
+
+	 .banner {
+        font-size: 1rem;
+		padding: .6rem .6rem;
+    } 
+} 
+
 @media (max-width: 380px) {
     .list-inline-item {
         margin-right: 0px !important;
