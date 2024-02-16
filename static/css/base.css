@@ -847,7 +847,7 @@ input[name='q']::placeholder {
    } 
 } 
 
-@media (max-width: 320px) {
+@media (max-width: 325px) {
     .navbar-toggler { 
         font-size: 0.8rem;
 		margin-left: 10px;
