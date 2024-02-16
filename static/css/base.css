@@ -437,6 +437,11 @@ input[name='q']::placeholder {
     .logo-font {
         font-size: 4rem !important;
     } 
+
+
+	.list-inline {
+		margin-left: -50px;
+	} 
 } 
 
 /* pad the top a bit when navbar is collapsed on mobile */
