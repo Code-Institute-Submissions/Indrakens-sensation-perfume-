@@ -780,6 +780,37 @@ input[name='q']::placeholder {
 	} 
 } 
 
+@media (max-width: 360px) {
+    .navbar-toggler { 
+       font-size: 0.6rem;
+       margin-left: 10px;
+   } 
+
+   .fas.fa-bars.fa-lg {
+       padding: .4rem .2rem;
+       margin-left: -5px;
+       font-size: 22px !important;
+   }
+   
+   .nav-link .fa-lg {
+       font-size: 1rem;
+       margin-right: -10px;
+   } 
+
+    .nav-link p {
+       font-size: 0.8rem;
+       margin-right: -10px; 
+   } 
+
+   .navbar-collapse {
+       margin-left: 10px;
+   }
+
+   .nav-item a {
+       font-size: 0.8rem;
+   }
+} 
+
 @media (max-width: 330px) {
     .hero-container {
        height: 30% !important;
@@ -817,6 +848,35 @@ input[name='q']::placeholder {
 } 
 
 @media (max-width: 320px) {
+    .navbar-toggler { 
+        font-size: 0.8rem;
+		margin-left: 10px;
+    } 
+
+	.fas.fa-bars.fa-lg {
+		padding: .4rem .1rem;
+		margin-left: -5px;
+		font-size: 20px !important;
+	}
+    
+    .nav-link .fa-lg {
+        font-size: 0.8rem;
+		margin-right: -10px;
+    } 
+
+	 .nav-link p {
+        font-size: 0.7rem;
+		margin-right: -10px; 
+    } 
+
+    .navbar-collapse {
+        margin-left: 10px;
+    }
+
+	.nav-item a {
+		font-size: 0.8rem;
+	} 
+
     .hero-container {
         height: 30% !important;
 		margin-top: -20px;
