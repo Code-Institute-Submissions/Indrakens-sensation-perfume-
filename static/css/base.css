@@ -603,15 +603,9 @@ input[name='q']::placeholder {
 
 @media (max-width: 500px) {
     .navbar-toggler { 
-        font-size: 0.5rem;
+        font-size: 0.8rem;
 		margin-left: 10px;
     } 
-
-	.fas.fa-bars.fa-lg {
-		margin-left: -12px !important;
-		font-size: 18px !important;
-		margin-top: -5px;
-	} 
     
     .nav-link .fa-lg {
         font-size: 1rem;
@@ -737,15 +731,8 @@ input[name='q']::placeholder {
 
 @media (max-width: 440px){
     .navbar-toggler { 
-        font-size: 0.8rem;
-		margin-left: -5px;
+        font-size: 0.7rem;
     } 
-
-	.fas.fa-bars.fa-lg { 
-		margin-left: -7px !important;
-		font-size: 20px !important;
-		margin-top: -1px;
-	} 
     
     .nav-link .fa-lg {
         font-size: 1rem;
@@ -834,14 +821,8 @@ input[name='q']::placeholder {
 @media (max-width: 380px) {    
     .navbar-toggler { 
         font-size: 0.5rem;
-		margin-left: 10px;
+		margin-left: 5px;
     } 
-
-	.fas.fa-bars.fa-lg {
-		padding: .4rem .1rem;
-		margin-left: -10px;
-		font-size: 26px !important;
-	}
     
     .nav-link .fa-lg {
         font-size: 1rem;
@@ -907,14 +888,8 @@ input[name='q']::placeholder {
 @media (max-width: 360px) {
     .navbar-toggler { 
        font-size: 0.6rem;
-       margin-left: 10px;
+       margin-left: 5px;
     } 
-
-    .fas.fa-bars.fa-lg {
-       padding: .4rem .2rem;
-       margin-left: -5px;
-       font-size: 22px !important;
-    }
    
     .nav-link .fa-lg {
        font-size: 1rem;
@@ -971,8 +946,8 @@ input[name='q']::placeholder {
 
 @media (max-width: 330px) {
     .navbar-toggler { 
-        font-size: 0.8rem;
-		margin-left: 10px;
+        font-size: 0.5rem;
+		margin-left: 5px;
     } 
 
 	.fas.fa-bars.fa-lg {
