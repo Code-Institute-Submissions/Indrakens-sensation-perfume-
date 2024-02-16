@@ -534,6 +534,12 @@ input[name='q']::placeholder {
         font-size: .50rem; 
     } 
 
+    .form-control.btn.btn-warning.border.border-warning.rounded-0,
+	.form-control.border.border-warning.rounded-0{
+		padding: .375rem .375rem;
+        font-size: .85rem; 
+	} 
+
 	.btn.btn-warning.rounded-0.border-warning {
 		padding: .180rem .180rem;
 		font-size: .80rem;
@@ -735,4 +741,19 @@ input[name='q']::placeholder {
         font-size: 1.6rem;
 		margin-bottom: -30px;
     } 
+
+    .shop-now-button h4 {
+        font-size: 0.8rem !important;
+	} 
+} 
+
+@media (max-width: 320px) {
+	.logo-font {
+        font-size: 1.4rem;
+		margin-bottom: -30px;
+    } 
+
+	.shop-now-button h4 {
+        font-size: 0.6rem !important;
+	} 
 } 
