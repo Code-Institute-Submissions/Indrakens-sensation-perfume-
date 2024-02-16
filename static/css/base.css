@@ -673,6 +673,23 @@ input[name='q']::placeholder {
         font-size: 1.9rem;
 		margin-bottom: -20px;
     }
+
+    .responsive {
+		width: 180%;
+		margin-left: -50px !important;
+	} 
+
+	.update-link.text-success{
+		margin-left: 5px;
+	} 
+
+    .my-0.text-uppercase.product-name,
+	.my-0.small.text-muted.product-sku,
+	.my-0.small.included-giftbag {
+		font-size: 0.9rem;
+		margin-left: -10px;
+		margin-right: -15px;
+	} 
 } 
 
 @media (max-width: 480px) {
@@ -716,18 +733,26 @@ input[name='q']::placeholder {
 		font-size: 0.9rem;
 		margin-top: 20px;
 	} 
+
+    .my-0.text-uppercase.product-name,
+	.my-0.small.text-muted.product-sku,
+	.my-0.small.included-giftbag {
+		font-size: 0.8rem;
+		margin-left: -10px;
+		margin-right: -15px;
+	} 
 } 
 
 @media (max-width: 440px){
     .navbar-toggler { 
         font-size: 0.8rem;
-		margin-left: 10px;
+		margin-left: -5px;
     } 
 
 	.fas.fa-bars.fa-lg { 
-		margin-left: -1px !important;
+		margin-left: -7px !important;
 		font-size: 20px !important;
-		margin-top: 3px;
+		margin-top: -1px;
 	} 
     
     .nav-link .fa-lg {
