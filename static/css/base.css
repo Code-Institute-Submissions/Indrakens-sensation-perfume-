@@ -906,6 +906,22 @@ input[name='q']::placeholder {
     } 
 }
 
+@media (max-width: 400px) {
+    .fa-brands.fa-square-facebook.fa-xl {
+        font-size: 1.2rem;
+        margin-left: 90px;
+    }
+
+    .fa-brands.fa-square-instagram.fa-xl {
+        font-size: 1.2rem;
+    }
+
+    .fa-brands.fa-square-x-twitter.fa-xl {
+        font-size: 1.2rem;
+        margin-right: 70px;
+    }
+} 
+
 @media (max-width: 380px) {
     .navbar-toggler {
         font-size: 0.5rem;
