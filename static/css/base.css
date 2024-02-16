@@ -567,6 +567,11 @@ input[name='q']::placeholder {
     #mc_embed_signup {
         margin-right: 20px;
     }
+
+    .w-100.responsive {
+        width: 120% !important;
+        margin-left: 10px !important;
+    } 
 }
 
 
@@ -574,6 +579,11 @@ input[name='q']::placeholder {
     .logo-font {
         font-size: 2.5rem;
     }
+
+    .w-100.responsive {
+        width: 180% !important;
+        margin-left: -25px !important;
+    } 
 }
 
 @media (max-width: 600px) {
@@ -622,6 +632,11 @@ input[name='q']::placeholder {
         height: 30px;
         width: 30px;
     }
+
+    .w-100.responsive {
+        width: 200% !important;
+        margin-left: -25px !important;
+    } 
 }
 
 @media (max-width: 500px) {
@@ -713,6 +728,11 @@ input[name='q']::placeholder {
     .footer-header.subscribe.text-black {
         font-size: 0.9rem;
     } 
+
+    .w-100.responsive {
+        width: 230% !important;
+        margin-left: -25px !important;
+    } 
 }
 
 @media (max-width: 480px) {
@@ -767,6 +787,11 @@ input[name='q']::placeholder {
 
     .btt-button {
         margin-right: -12px;
+    } 
+
+    .w-100.responsive {
+        width: 250% !important;
+        margin-left: -25px !important;
     } 
 }
 
@@ -868,6 +893,11 @@ input[name='q']::placeholder {
 
     .footer-header.subscribe.text-black {
         margin-right: 30px;
+    }
+    
+    .w-100.responsive {
+        width: 280% !important;
+        margin-left: -25px !important;
     } 
 }
 
@@ -943,6 +973,11 @@ input[name='q']::placeholder {
 
     .footer-header.subscribe.text-black {
         margin-right: 30px;
+    } 
+
+    .w-100.responsive {
+        width: 280% !important;
+        margin-left: -15px !important;
     } 
 }
 
@@ -1024,6 +1059,25 @@ input[name='q']::placeholder {
 
     .footer-header.subscribe.text-black {
         margin-right: 30px;
+    } 
+
+
+    .w-100.responsive {
+        width: 250% !important;
+        margin-left: -5px !important;
+    } 
+
+    .form-check-label.checkout {
+        font-size: 0.8rem;
+    }
+
+    .text-muted.checkout {
+        font-size: 0.8rem;
+    }
+
+    .font.text-uppercase.mb-3.checkout {
+        font-size: 1.8rem;
+        margin-top: -20px;
     } 
 }
 
@@ -1162,4 +1216,17 @@ input[name='q']::placeholder {
         width: 250% !important;
         margin-left: -2px !important;
     } 
+
+    .form-check-label.checkout {
+        font-size: 0.8rem;
+    } 
+
+    .text-muted.checkout {
+        font-size: 0.8rem;
+    }
+
+    .font.text-uppercase.mb-3.checkout {
+        font-size: 1.8rem;
+        margin-top: -20px;
+    }
 }
