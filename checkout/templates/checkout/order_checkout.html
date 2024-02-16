@@ -19,7 +19,7 @@
     <div class="container"> 
         <div class="row">
             <div class="col mt-4 shop">
-                    <h2 class="font text-uppercase mb-3">Checkout</h2> 
+                    <h2 class="font text-uppercase mb-3 checkout">Checkout</h2> 
                 <hr>
             </div>
         </div>
@@ -74,7 +74,7 @@
                 </div> 
             </div>
             <div class="col-12 col-lg-6">
-                <p class="text-muted">To complete your order, please fill out the form</p>
+                <p class="text-muted checkout">To complete your order, please fill out the form</p>
                 <form action="{% url 'order_checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %} 
                     <!-- your details -->
@@ -96,7 +96,7 @@
                         {{ order_form.user_country | as_crispy_field }} 
                         <div class="form-check form-check-inline float-right mr-0">
 							{% if user.is_authenticated %}
-								<label class="form-check-label" for="id-save-info">Save delivery information to my profile</label>
+								<label class="form-check-label checkout" for="id-save-info">Save delivery information to my profile</label>
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info">
 							{% else %}
 								<label class="form-check-label small" for="id-save-info">

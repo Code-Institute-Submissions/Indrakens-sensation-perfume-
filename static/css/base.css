@@ -1157,4 +1157,9 @@ input[name='q']::placeholder {
     .btt-button {
         margin-right: -10px;
     } 
+
+    .w-100.responsive {
+        width: 250% !important;
+        margin-left: -2px !important;
+    } 
 }
