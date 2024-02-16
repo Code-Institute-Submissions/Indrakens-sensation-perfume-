@@ -647,22 +647,33 @@ input[name='q']::placeholder {
     } 
 } 
 
-@media (max-width: 480px) {
-	.footer-header.subscribe.text-black {
-		font-size: 0.9rem;
-		margin-top: 20px;
-	} 
-} 
-
-@media (max-width: 440px) {
-    .list-inline-item {
-        margin-right: 0px !important;
-    } 
-    
+@media (max-width: 500px) {
     .navbar-toggler { 
         font-size: 0.5rem;
 		margin-left: 10px;
     } 
+
+	.fas.fa-bars.fa-lg {
+		margin-left: -12px !important;
+		font-size: 18px !important;
+		margin-top: -5px;
+	} 
+    
+    .nav-link .fa-lg {
+        font-size: 1rem;
+    } 
+
+	 .nav-link p {
+        font-size: 0.8rem;
+    } 
+
+    .navbar-collapse {
+        margin-left: 10px;
+    }
+
+	.nav-item a {
+		font-size: 0.9rem;
+	} 
 
 	.fas.fa-bars.fa-lg {
 		padding: .4rem .1rem;
@@ -702,7 +713,41 @@ input[name='q']::placeholder {
     }
 }
 
+@media (max-width: 480px) {
+	.footer-header.subscribe.text-black {
+		font-size: 0.9rem;
+		margin-top: 20px;
+	} 
+}  
+
 @media (max-width: 440px){
+    .navbar-toggler { 
+        font-size: 0.8rem;
+		margin-left: 10px;
+    } 
+
+	.fas.fa-bars.fa-lg { 
+		margin-left: -1px !important;
+		font-size: 20px !important;
+		margin-top: 3px;
+	} 
+    
+    .nav-link .fa-lg {
+        font-size: 1rem;
+    } 
+
+	 .nav-link p {
+        font-size: 0.8rem;
+    } 
+
+    .navbar-collapse {
+        margin-left: 10px;
+    }
+
+	.nav-item a {
+		font-size: 0.9rem;
+	} 
+
     .fa-brands.fa-square-facebook.fa-xl {
         font-size: 1.2rem;
         margin-left: 110px;
@@ -771,11 +816,7 @@ input[name='q']::placeholder {
 	} 
 } 
 
-@media (max-width: 380px) {
-    .list-inline-item {
-        margin-right: 0px !important;
-    } 
-    
+@media (max-width: 380px) {    
     .navbar-toggler { 
         font-size: 0.5rem;
 		margin-left: 10px;
