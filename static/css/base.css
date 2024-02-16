@@ -418,7 +418,7 @@ input[name='q']::placeholder {
 @media (min-width: 1200px) {
     .container {
         max-width: 70%;
-    }
+    } 
 }
 
 /* fixed top navbar only on medium and up */
@@ -899,6 +899,11 @@ input[name='q']::placeholder {
         width: 280% !important;
         margin-left: -25px !important;
     } 
+
+    .font.text-uppercase.mb-3.checkout-success-page {
+        font-size: 1.5rem;
+        margin-top: -20px;
+    } 
 }
 
 @media (max-width: 380px) {
@@ -978,6 +983,11 @@ input[name='q']::placeholder {
     .w-100.responsive {
         width: 280% !important;
         margin-left: -15px !important;
+    } 
+
+    .font.text-uppercase.mb-3.checkout-success-page {
+        font-size: 1.3rem;
+        margin-top: -20px;
     } 
 }
 
@@ -1078,6 +1088,19 @@ input[name='q']::placeholder {
     .font.text-uppercase.mb-3.checkout {
         font-size: 1.8rem;
         margin-top: -20px;
+    } 
+
+    .font.text-uppercase.mb-3.checkout-success-page {
+        font-size: 1.2rem;
+        margin-top: -20px;
+    }
+
+    .text-black.checkout-success-page {
+        font-size: 0.9rem;
+    }
+
+    .col-12.col-md-8.text-md-right.checkout-success-page {
+        font-size: 0.9rem;
     } 
 }
 
@@ -1229,4 +1252,17 @@ input[name='q']::placeholder {
         font-size: 1.8rem;
         margin-top: -20px;
     }
+
+    .font.text-uppercase.mb-3.checkout-success-page {
+        font-size: 1.2rem;
+        margin-top: -20px;
+    } 
+
+    .text-black.checkout-success-page {
+        font-size: 0.9rem;
+    } 
+
+    .col-12.col-md-8.text-md-right.checkout-success-page {
+        font-size: 0.8rem;
+    } 
 }
