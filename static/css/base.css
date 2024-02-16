@@ -699,12 +699,75 @@ input[name='q']::placeholder {
 	.logo-font {
         font-size: 1.9rem;
 		margin-bottom: -20px;
+    }
+}
+
+@media (max-width: 440px){
+    .fa-brands.fa-square-facebook.fa-xl {
+        font-size: 1.2rem;
+        margin-left: 110px;
+    }
+   
+    .fa-brands.fa-square-instagram.fa-xl {
+        font-size: 1.2rem;
+    }
+   
+    .fa-brands.fa-square-x-twitter.fa-xl {
+        font-size: 1.2rem;
+        margin-right: 90px;
     } 
 
     .footer-header.subscribe.text-black {
 		font-size: 0.8rem;
 		text-align: center;
 		margin-top: 20px;
+	} 
+
+    .font.text-uppercase.mb-3.bag-header {
+		font-size: 1.8rem;
+		margin-top: -20px;
+	}
+
+	.text-black.t-head {
+		font-size: 0.8rem;
+	} 
+
+    .responsive {
+		width: 200%;
+	}
+
+	.my-0.text-uppercase.product-name,
+	.my-0.small.text-muted.product-sku,
+	.my-0.small.included-giftbag {
+		font-size: 0.6rem;
+		margin-left: -20px;
+	}
+
+	.my-0.product-price,
+	.my-0.subtotal {
+		font-size: 0.8rem
+	}
+
+	.update-link.text-success{
+		font-size: 0.9rem;
+		margin-left: 5px;
+	}
+
+	.remove-item.text-danger{
+		font-size: 0.9rem;
+	} 
+
+    .total,
+	.delivery {
+		font-size: 0.9rem;
+	}
+
+	.mt-4.grand-total {
+		font-size: 1.2rem;
+	}
+
+	.mb-1.text-success.free-delivery {
+		font-size: 0.8rem;
 	} 
 } 
 
@@ -778,76 +841,79 @@ input[name='q']::placeholder {
 		text-align: center;
 		margin-top: 20px;
 	} 
+
+    .responsive {
+		width: 180%;
+		margin-left: -40px !important;
+	} 
 } 
 
 @media (max-width: 360px) {
     .navbar-toggler { 
        font-size: 0.6rem;
        margin-left: 10px;
-   } 
+    } 
 
-   .fas.fa-bars.fa-lg {
+    .fas.fa-bars.fa-lg {
        padding: .4rem .2rem;
        margin-left: -5px;
        font-size: 22px !important;
-   }
+    }
    
-   .nav-link .fa-lg {
+    .nav-link .fa-lg {
        font-size: 1rem;
        margin-right: -10px;
-   } 
+    } 
 
     .nav-link p {
        font-size: 0.8rem;
        margin-right: -10px; 
-   } 
+    } 
 
-   .navbar-collapse {
+    .navbar-collapse {
        margin-left: 10px;
-   }
+    }
 
-   .nav-item a {
+    .nav-item a {
        font-size: 0.8rem;
-   }
+    }
+
+    .my-0.text-uppercase.product-name,
+	.my-0.small.text-muted.product-sku,
+	.my-0.small.included-giftbag {
+		font-size: 0.5rem;
+		margin-left: -20px;
+	}
+
+	.my-0.product-price,
+	.my-0.subtotal {
+		font-size: 0.8rem
+	}
+
+	.update-link.text-success{
+		font-size: 0.8rem;
+		margin-left: 5px;
+	}
+
+	.remove-item.text-danger{
+		font-size: 0.8rem;
+	}
+
+	.total,
+	.delivery {
+		font-size: 0.8rem;
+	}
+
+	.mt-4.grand-total {
+		font-size: 1rem;
+	}
+
+	.mb-1.text-success.free-delivery {
+		font-size: 0.7rem;
+	} 
 } 
 
 @media (max-width: 330px) {
-    .hero-container {
-       height: 30% !important;
-       margin-top: -20px;
-   } 
-
-   .logo-font {
-       font-size: 1.3rem;
-       margin-bottom: -30px;
-   } 
-
-   .shop-now-button h4 {
-       font-size: 0.6rem !important;
-   } 
-
-   .fa-brands.fa-square-facebook.fa-xl {
-       font-size: 1rem;
-       margin-left: 80px;
-   }
-
-   .fa-brands.fa-square-instagram.fa-xl {
-       font-size: 1rem;
-   }
-
-   .fa-brands.fa-square-x-twitter.fa-xl {
-       font-size: 1rem;
-       margin-right: 60px;
-   }
-
-   .footer-header.subscribe.text-black {
-       font-size: 0.8rem;
-       text-align: center;
-       margin-top: 20px;
-   } 
-} 
-
-@media (max-width: 325px) {
     .navbar-toggler { 
         font-size: 0.8rem;
 		margin-left: 10px;
@@ -878,36 +944,95 @@ input[name='q']::placeholder {
 	} 
 
     .hero-container {
-        height: 30% !important;
-		margin-top: -20px;
-    } 
+       height: 30% !important;
+       margin-top: -20px;
+   } 
 
-	.logo-font {
-        font-size: 1.3rem;
-		margin-bottom: -30px;
-    } 
+    .logo-font {
+       font-size: 1.3rem;
+       margin-bottom: -30px;
+   } 
 
-	.shop-now-button h4 {
-        font-size: 0.6rem !important;
-	} 
+   .shop-now-button h4 {
+       font-size: 0.6rem !important;
+   } 
 
     .fa-brands.fa-square-facebook.fa-xl {
-		font-size: 1rem;
-		margin-left: 80px;
-	}
+       font-size: 1rem;
+       margin-left: 80px;
+   }
 
-	.fa-brands.fa-square-instagram.fa-xl {
-		font-size: 1rem;
-	}
+    .fa-brands.fa-square-instagram.fa-xl {
+       font-size: 1rem;
+   }
 
-	.fa-brands.fa-square-x-twitter.fa-xl {
-		font-size: 1rem;
-		margin-right: 60px;
-	}
+    .fa-brands.fa-square-x-twitter.fa-xl {
+       font-size: 1rem;
+       margin-right: 60px;
+   }
 
     .footer-header.subscribe.text-black {
-		font-size: 0.8rem;
-		text-align: center;
-		margin-top: 20px;
+       font-size: 0.8rem;
+       text-align: center;
+       margin-top: 20px;
+   } 
+
+    .update-link.text-success{
+		font-size: 0.7rem;
+		margin-left: 5px;
+	}
+
+	.remove-item.text-danger{
+		font-size: 0.7rem;
+	}
+
+	.total,
+	.delivery {
+		font-size: 0.7rem;
+	}
+
+	.mt-4.grand-total {
+		font-size: 0.9rem;
+	}
+
+	.mb-1.text-success.free-delivery {
+		font-size: 0.6rem;
+	}
+
+	.responsive {
+		width: 160%;
+		margin-left: -30px !important;
+	} 
+
+    .update-link.text-success{
+		font-size: 0.7rem;
+		margin-left: 5px;
+	}
+
+	.remove-item.text-danger{
+		font-size: 0.7rem;
+	}
+
+	.total,
+	.delivery {
+		font-size: 0.7rem;
+	}
+
+	.mt-4.grand-total {
+		font-size: 0.9rem;
+	}
+
+	.mb-1.text-success.free-delivery {
+		font-size: 0.6rem;
+	}
+
+	.responsive {
+		width: 160%;
+		margin-left: -30px !important;
+	} 
+
+    .font.text-uppercase.mb-3.bag-header {
+		font-size: 1.6rem;
+		margin-top: -20px;
 	} 
 } 
