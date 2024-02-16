@@ -53,15 +53,7 @@ body {
 
 .nav-item a:hover{
     color: #FFFBC2 !important; 
-} 
-
-.navbar-toggler-icon i{
-    color: #E0B411;  
-} 
-
-.navbar-toggler-icon i:hover{
-    color: #FFFBC2;  
-} 
+}  
 
 .dropdown-menu a{
     color: #000 !important;
