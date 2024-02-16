@@ -745,15 +745,48 @@ input[name='q']::placeholder {
     .shop-now-button h4 {
         font-size: 0.8rem !important;
 	} 
+
+    .fa-brands.fa-square-facebook.fa-xl {
+		font-size: 1.2rem;
+		margin-left: 90px;
+	}
+
+	.fa-brands.fa-square-instagram.fa-xl {
+		font-size: 1.2rem;
+	}
+
+	.fa-brands.fa-square-x-twitter.fa-xl {
+		font-size: 1.2rem;
+		margin-right: 70px;
+	}
 } 
 
 @media (max-width: 320px) {
+    .hero-container {
+        height: 30% !important;
+		margin-top: -20px;
+    } 
+
 	.logo-font {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
 		margin-bottom: -30px;
     } 
 
 	.shop-now-button h4 {
         font-size: 0.6rem !important;
 	} 
+
+    .fa-brands.fa-square-facebook.fa-xl {
+		font-size: 1rem;
+		margin-left: 80px;
+	}
+
+	.fa-brands.fa-square-instagram.fa-xl {
+		font-size: 1rem;
+	}
+
+	.fa-brands.fa-square-x-twitter.fa-xl {
+		font-size: 1rem;
+		margin-right: 60px;
+	}
 } 
