@@ -17,7 +17,11 @@
 
 #id_default_country option:first-child {
     color: #aab7c4;
-}
+} 
+
+.cancel-link {
+    color: #E0B411 !important;
+} 
 
 /* order history */
 .order-history{
