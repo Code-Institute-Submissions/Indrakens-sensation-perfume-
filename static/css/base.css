@@ -1046,7 +1046,7 @@ input[name='q']::placeholder {
     } 
 } 
 
-@media (max-width: 380px) {
+@media (max-width: 375px) {
     .navbar-toggler {
         font-size: 0.5rem;
         margin-left: 5px;
@@ -1108,9 +1108,20 @@ input[name='q']::placeholder {
     }
 
     .responsive {
-        width: 150%;
-        margin-left: -25px !important;
+        width: 110%;
+        margin-left: -5px !important;
     }
+
+    .my-0.text-uppercase.product-name,
+    .my-0.small.text-muted.product-sku,
+    .my-0.small.included-giftbag {
+        font-size: 0.5rem;
+    }
+
+    .my-0.product-price,
+    .my-0.subtotal {
+        font-size: 0.6rem
+    } 
 
     .btt-button {
         margin-right: -12px;
