@@ -896,8 +896,8 @@ input[name='q']::placeholder {
     }
     
     .w-100.responsive {
-        width: 280% !important;
-        margin-left: -25px !important;
+        width: 200% !important;
+        margin-left: -10px !important;
     } 
 
     .font.text-uppercase.mb-3.checkout-success-page {
@@ -920,6 +920,11 @@ input[name='q']::placeholder {
         font-size: 1.2rem;
         margin-right: 70px;
     }
+
+    .w-100.responsive {
+        width: 200% !important;
+        margin-left: -10px !important;
+    } 
 } 
 
 @media (max-width: 380px) {
@@ -997,8 +1002,8 @@ input[name='q']::placeholder {
     } 
 
     .w-100.responsive {
-        width: 280% !important;
-        margin-left: -15px !important;
+        width: 220% !important;
+        margin-left: -10px !important;
     } 
 
     .font.text-uppercase.mb-3.checkout-success-page {
@@ -1089,7 +1094,7 @@ input[name='q']::placeholder {
 
 
     .w-100.responsive {
-        width: 250% !important;
+        width: 220% !important;
         margin-left: -5px !important;
     } 
 
@@ -1233,7 +1238,7 @@ input[name='q']::placeholder {
     } 
 
     .w-100.responsive {
-        width: 250% !important;
+        width: 220% !important;
         margin-left: -2px !important;
     } 
 
