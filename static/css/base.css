@@ -265,10 +265,6 @@ input[name='q']::placeholder {
 }
 
 /* allauth account */
-.allauth-form-inner-content{
-    margin-bottom: -150px;
-}
-
 .sign-in,
 .register,
 .verify,
