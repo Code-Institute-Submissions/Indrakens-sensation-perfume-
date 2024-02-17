@@ -984,8 +984,8 @@ input[name='q']::placeholder {
     }
 
     .responsive {
-        width: 180%;
-        margin-left: -40px !important;
+        width: 150%;
+        margin-left: -25px !important;
     }
 
     .btt-button {
@@ -1207,23 +1207,9 @@ input[name='q']::placeholder {
     }
 
     .responsive {
-        width: 160%;
-        margin-left: -30px !important;
-    }
-
-    .update-link.text-success {
-        font-size: 0.7rem;
-        margin-left: 5px;
-    }
-
-    .remove-item.text-danger {
-        font-size: 0.7rem;
-    }
-
-    .total,
-    .delivery {
-        font-size: 0.7rem;
-    }
+        width: 150%;
+        margin-left: -20px !important;
+    } 
 
     .mt-4.grand-total {
         font-size: 0.9rem;
@@ -1231,12 +1217,7 @@ input[name='q']::placeholder {
 
     .mb-1.text-success.free-delivery {
         font-size: 0.6rem;
-    }
-
-    .responsive {
-        width: 160%;
-        margin-left: -30px !important;
-    }
+    } 
 
     .font.text-uppercase.mb-3.bag-header {
         font-size: 1.6rem;
