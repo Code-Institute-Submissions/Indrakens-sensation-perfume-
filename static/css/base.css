@@ -664,6 +664,10 @@ input[name='q']::placeholder {
         margin-left: -10px;
         margin-right: -15px;
     }
+
+    .profile.float-right {
+        font-size: 0.9rem;
+    } 
 }
 
 @media (max-width: 500px) {
@@ -765,6 +769,10 @@ input[name='q']::placeholder {
         width: 120%;
         margin-left: -25px !important;
     } 
+
+    .profile.float-right {
+        font-size: 0.8rem;
+    } 
 }
 
 @media (max-width: 480px) {
@@ -829,6 +837,11 @@ input[name='q']::placeholder {
     .responsive {
         width: 120%;
         margin-left: -25px !important;
+    } 
+
+    .profile.float-right {
+        font-size: 0.9rem;
+        margin-right: 85px; 
     } 
 }
 
@@ -942,6 +955,18 @@ input[name='q']::placeholder {
         font-size: 1.5rem;
         margin-top: -20px;
     } 
+
+    .col-12.profile.mt-4.ml-5.mr-5.mb-2 h2 {
+        font-size: 1.6rem;
+    }    
+
+    .profile.float-right {
+        margin-right: 55px
+    }
+
+    .small.text-uppercase.profile-order-history {
+        font-size: 0.7rem;
+    } 
 }
 
 @media (max-width: 400px) {
@@ -967,6 +992,29 @@ input[name='q']::placeholder {
     .responsive {
         width: 120%;
         margin-left: -25px !important;
+    } 
+
+    .col-12.profile.mt-4.ml-5.mr-5.mb-2 h2 {
+        font-size: 1.6rem;
+        margin-top: -20px;
+    }   
+
+    .list-group.mb-4 {
+        font-size: 0.9rem;
+        width: 180px;
+    } 
+
+    .profile.float-right {
+        font-size: 0.9rem;
+        margin-right: 45px
+    }
+
+    .text-muted.profile-order-history {
+        margin-left: 10px;
+    }
+
+    .small.text-uppercase.profile-order-history {
+        font-size: 0.7rem;
     } 
 } 
 
@@ -1052,6 +1100,37 @@ input[name='q']::placeholder {
     .font.text-uppercase.mb-3.checkout-success-page {
         font-size: 1.3rem;
         margin-top: -20px;
+    }
+    
+    .col-12.profile.mt-4.ml-5.mr-5.mb-2 h2 {
+        font-size: 1.5rem;
+        margin-top: -20px;
+    } 
+
+    .text-muted.profile {
+        font-size: 0.9rem;
+    } 
+
+    .rounded-circle.border.responsive-profile {
+        height: 100px;
+    } 
+
+    .list-group.mb-4 {
+        font-size: 0.8rem;
+        width: 170px;
+    } 
+
+    .profile.float-right {
+        font-size: 0.9rem;
+        margin-right: 40px
+    }
+
+    .text-muted.profile-order-history {
+        margin-left: 10px;
+    }
+
+    .small.text-uppercase.profile-order-history {
+        font-size: 0.7rem;
     } 
 }
 
@@ -1165,6 +1244,41 @@ input[name='q']::placeholder {
 
     .col-12.col-md-8.text-md-right.checkout-success-page {
         font-size: 0.9rem;
+    } 
+
+    .col-12.profile.mt-4.ml-5.mr-5.mb-2 h2 {
+        font-size: 1.5rem;
+        margin-top: -20px;
+    } 
+
+    .text-muted.profile {
+        font-size: 0.8rem;
+    } 
+
+    .rounded-circle.border.responsive-profile {
+        height: 100px;
+    } 
+
+    .list-group.mb-4 {
+        font-size: 0.7rem;
+        width: 160px;
+    } 
+
+    .profile.float-right {
+        font-size: 0.8rem;
+        margin-right: 35px
+    }
+
+    .text-muted.profile-order-history {
+        margin-left: 10px;
+    }
+
+    .small.text-uppercase.profile-order-history {
+        font-size: 0.6rem;
+    }
+
+    .small.order-history-table {
+        font-size: 0.7rem
     } 
 }
 
