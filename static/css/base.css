@@ -730,8 +730,8 @@ input[name='q']::placeholder {
     } 
 
     .w-100.responsive {
-        width: 230% !important;
-        margin-left: -25px !important;
+        width: 180% !important;
+        margin-left: -15px !important;
     } 
 }
 
@@ -790,8 +790,8 @@ input[name='q']::placeholder {
     } 
 
     .w-100.responsive {
-        width: 250% !important;
-        margin-left: -25px !important;
+        width: 180% !important;
+        margin-left: -15px !important;
     } 
 }
 
