@@ -24,9 +24,9 @@
         <div class="row">
             <div class="col-12 profile mb-4 ml-5 mr-5">
                 {% if profile.profile_picture %} 
-                    <img class="rounded-circle border" src="{{ profile.profile_picture.url }}" height="130px" alt="profile_image"> 
+                    <img class="rounded-circle border responsive-profile" src="{{ profile.profile_picture.url }}" height="130px" alt="profile_image"> 
                 {% else %}
-                    <img class="rounded-circle" src="{{ MEDIA_URL }}profile_image.jpg" height="130px" alt="default_profile_image">
+                    <img class="rounded-circle border responsive-profile" src="{{ MEDIA_URL }}profile_image.jpg" height="130px" alt="default_profile_image">
                 {% endif %} 
             </div>
         </div>
