@@ -1132,6 +1132,14 @@ input[name='q']::placeholder {
     .small.text-uppercase.profile-order-history {
         font-size: 0.7rem;
     } 
+
+    .small.text-uppercase.update-order-history {
+        font-size: 0.6rem;
+    }
+
+    .small.update-order-history {
+        font-size: 0.6rem;
+    } 
 }
 
 @media (max-width: 360px) {
@@ -1279,6 +1287,14 @@ input[name='q']::placeholder {
 
     .small.order-history-table {
         font-size: 0.7rem
+    } 
+
+    .small.text-uppercase.update-order-history {
+        font-size: 0.5rem;
+    }
+
+    .small.update-order-history {
+        font-size: 0.6rem;
     } 
 }
 
@@ -1453,6 +1469,18 @@ input[name='q']::placeholder {
     }
 
     .small.text-uppercase.profile-order-history {
+        font-size: 0.6rem;
+    }
+    
+    .text-muted.update {
+        font-size: 0.9rem;
+    } 
+
+    .small.text-uppercase.update-order-history {
+        font-size: 0.5rem;
+    }
+
+    .small.update-order-history {
         font-size: 0.6rem;
     } 
 } 
