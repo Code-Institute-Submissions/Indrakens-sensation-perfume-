@@ -1312,7 +1312,12 @@ input[name='q']::placeholder {
     } 
 
     .col-12.profile.mt-4.ml-5.mr-5.mb-2 h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        margin-top: -20px;
+    } 
+
+    .text-muted.profile {
+        font-size: 0.8rem;
     } 
 
     .rounded-circle.border.responsive-profile {
@@ -1322,5 +1327,10 @@ input[name='q']::placeholder {
     .list-group.mb-4 {
         font-size: 0.7rem;
         width: 150px;
+    } 
+
+    .profile.float-right {
+        font-size: 0.8rem;
+        margin-right: 25px
     } 
 } 
