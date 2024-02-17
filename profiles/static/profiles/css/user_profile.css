@@ -19,9 +19,9 @@
     color: #aab7c4;
 }
 
-.col-6.col-lg-4.ml-5.profile {
+.list-group.mb-4{
     overflow-x: auto;
-}
+} 
 
 /* order history */
 .order-history{
