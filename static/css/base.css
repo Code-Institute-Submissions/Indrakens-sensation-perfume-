@@ -1310,4 +1310,12 @@ input[name='q']::placeholder {
     .col-12.col-md-8.text-md-right.checkout-success-page {
         font-size: 0.8rem;
     } 
-}
+
+    .col-12.profile.mt-4.ml-5.mr-5.mb-2 h2 {
+        font-size: 1.2rem;
+    } 
+
+    .rounded-circle.border.responsive-profile {
+        height: 100px;
+    } 
+} 
