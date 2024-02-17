@@ -1333,4 +1333,12 @@ input[name='q']::placeholder {
         font-size: 0.8rem;
         margin-right: 25px
     } 
+
+    .text-muted.profile-order-history {
+        margin-left: 10px;
+    }
+
+    .small.text-uppercase.profile-order-history {
+        font-size: 0.6rem;
+    } 
 } 
