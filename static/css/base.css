@@ -339,7 +339,7 @@ input[name='q']::placeholder {
 }
 
 .mb-4.verify-email {
-    margin-top: 20px;
+    margin-top: 40px !important;
 }
 
 /* product form */
