@@ -36,7 +36,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-    'sensation-perfume.herokuapp.com', 
+    'sensation-perfume-d52586ead80b.herokuapp.com', 
     'localhost'
     ]  
 
