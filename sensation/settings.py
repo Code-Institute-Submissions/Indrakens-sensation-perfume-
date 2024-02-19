@@ -32,8 +32,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
     'sensation-perfume-d52586ead80b.herokuapp.com', 
-    'localhost',
-    '8000-indrakens-sensationperf-ysjffzial95.ws-eu108.gitpod.io'
+    'localhost'
     ]  
 
 
