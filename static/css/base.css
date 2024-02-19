@@ -577,6 +577,13 @@ input[name='q']::placeholder {
         width: 120% !important;
         margin-left: 10px !important;
     } 
+
+
+    .display-4.font.text-black.error-h2,
+    .error-p,
+    .error-h4{
+        width: 450px;
+    } 
 }
 
 
@@ -605,6 +612,13 @@ input[name='q']::placeholder {
 
     .img-thumbnail {
         width: 15%;
+    } 
+
+
+    .display-4.font.text-black.error-h2,
+    .error-p,
+    .error-h4{
+        width: 450px;
     } 
 }
 
@@ -680,6 +694,13 @@ input[name='q']::placeholder {
     
     .img-thumbnail {
         width: 15%;
+    } 
+
+
+    .display-4.font.text-black.error-h2,
+    .error-p,
+    .error-h4{
+        width: 450px;
     } 
 }
 
@@ -789,6 +810,13 @@ input[name='q']::placeholder {
 
     .img-thumbnail {
         width: 15%;
+    }
+    
+    
+    .display-4.font.text-black.error-h2,
+    .error-p,
+    .error-h4{
+        width: 450px;
     } 
 }
 
@@ -863,6 +891,13 @@ input[name='q']::placeholder {
 
     .img-thumbnail {
         width: 15%;
+    }
+    
+    
+    .display-4.font.text-black.error-h2,
+    .error-p,
+    .error-h4{
+        width: 450px;
     } 
 }
 
@@ -992,7 +1027,14 @@ input[name='q']::placeholder {
     .img-thumbnail {
         width: 20%;
     } 
-}
+
+
+    .display-4.font.text-black.error-h2,
+    .error-p,
+    .error-h4{
+        width: 450px;
+    } 
+} 
 
 @media (max-width: 400px) {
     .fa-brands.fa-square-facebook.fa-xl {
@@ -1048,6 +1090,12 @@ input[name='q']::placeholder {
 
     .card-text {
         font-size: 0.8rem;
+    } 
+
+    .display-4.font.text-black.error-h2,
+    .error-p,
+    .error-h4{
+        width: 350px;
     } 
 } 
 
@@ -1191,6 +1239,12 @@ input[name='q']::placeholder {
 
     .card-text {
         font-size: 0.8rem;
+    } 
+
+    .display-4.font.text-black.error-h2,
+    .error-p,
+    .error-h4{
+        width: 350px;
     } 
 }
 
@@ -1355,6 +1409,12 @@ input[name='q']::placeholder {
 
     .card-text {
         font-size: 0.8rem;
+    } 
+
+    .display-4.font.text-black.error-h2,
+    .error-p,
+    .error-h4{
+        width: 300px;
     } 
 }
 
@@ -1550,5 +1610,11 @@ input[name='q']::placeholder {
 
     .card-text {
         font-size: 0.8rem;
+    } 
+
+    .display-4.font.text-black.error-h2,
+    .error-p,
+    .error-h4{
+        width: 300px;
     } 
 } 
