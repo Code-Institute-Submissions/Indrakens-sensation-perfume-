@@ -13,8 +13,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os 
 import dj_database_url
 from pathlib import Path 
-if os.path.isfile('env.py'):
-    import env
 
 
 
@@ -31,15 +29,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = 'DEVELOPMENT' in os.environ 
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ 
  
 
 
 ALLOWED_HOSTS = [
     'sensation-perfume-d52586ead80b.herokuapp.com', 
-    'localhost',
-    '8000-indrakens-sensationperf-ysjffzial95.ws-eu108.gitpod.io'
+    'localhost'
     ]  
 
 
