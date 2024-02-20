@@ -81,4 +81,7 @@ Due to the Django codes in templates, [W3C Markup Validation Service](https://va
 | country_field.js | <img width="957" alt="Screenshot 2024-02-20 013231" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/b2000947-c379-49f0-b90d-b41051a25632">|
 | back to top click function| <img width="949" alt="Screenshot 2024-02-20 015107" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/98f9b31f-2ab7-46b0-89aa-8f70d7d96f54">|
 | sort selector | <img width="952" alt="Screenshot 2024-02-20 020513" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/fc71e3fc-58f8-4a17-8fbd-f929eb155125">|
- 
+## GOOGLE LIGHTHOUSE
+|       |       |
+|------|-------|
+| Lighthouse testing | <img width="575" alt="Screenshot 2024-02-20 022410" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/44ba4908-21b6-478e-b15c-52a15cc1630d">|
