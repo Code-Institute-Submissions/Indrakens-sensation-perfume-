@@ -1,5 +1,51 @@
 # TABLE OF CONTENT
 
+## MANUAL TESTING
+### Account Registration
+|  TEST                                     | RESULTS  |
+|---------|--------:|
+| User can create an account                |   PASS   |
+| User receives email verification          |   PASS   |   
+| User can log-in                           |   PASS   |
+| User is notified of logging in to account |   PASS   |
+| User can log-out                          |   PASS   |
+| User is notified of logging out of account|   PASS   |
+### Navigation - Logout/ Not Registered User
+|     TEST                                  | RESULTS  |
+|---------|--------:|
+| User can click on Shop All and navigate to - categories, price, shop all                           |  PASS  |
+| User can click on For Her and navigate to - eau de parfum, eau de toilette, all for her                    |  PASS  |
+| User can click on For Him and navigate to - eau de parfum, eau de toilette, all for him                    |  PASS  |
+| User can click on Gift Sets and navigate to - gift sets for her, gift sets for him, all gift sets          |  PASS  |
+| User can click on Sales and navigate to - for her, gift sets for her, for him, gift sets for him, all sales|  PASS  |
+| User can click on Blog and navigate to - Sensation-Perfume-Blog                                            |  PASS  |
+| User navigate to Sensation-Perfume-Blog detail page                                                        |  PASS  | 
+| User can click on Shopping bag and navigate to - shopping bag                                              |  PASS  |
+| User can click on Login/ Sign Up and navigate to - register, login                                         |  PASS  |
+| User can navigate to product page                                                                          |  PASS  |
+| User can navigate to product detail page                                                                   |  PASS  |
+### Navigation - Login/ Registered User
+|     TEST                                  | RESULTS  |
+|---------|--------:|
+| User can click on Shop All and navigate to - categories, price, shop all                           |  PASS  |
+| User can click on For Her and navigate to - eau de parfum, eau de toilette, all for her                    |  PASS  |
+| User can click on For Him and navigate to - eau de parfum, eau de toilette, all for him                    |  PASS  |
+| User can click on Gift Sets and navigate to - gift sets for her, gift sets for him, all gift sets          |  PASS  |
+| User can click on Sales and navigate to - for her, gift sets for her, for him, gift sets for him, all sales|  PASS  |
+| User can click on Blog and navigate to - Sensation-Perfume-Blog                                            |  PASS  |
+| User navigate to Sensation-Perfume-Blog detail page                                                        |  PASS  | 
+| User can click on Shopping bag and navigate to - shopping bag                                              |  PASS  |
+| User can click on Username- Profile and navigate to - username-profile, logout                             |  PASS  |
+| Super User can click on Username- Profile and navigate to - product management, username-profile, logout   |  PASS  |
+| User can navigate to product page                                                                          |  PASS  |
+| User can navigate to product detail page                                                                   |  PASS  |
+### Product Sorting and Searching
+|   TEST                     |  RESULTS                                  |
+|--------|---------:|
+| User can click on search field and search for a product                              |  PASS |
+| User can click on Sort by in product pages and sort products by - price (low to high)|  PASS | 
+| User can click on Sort by in product pages and sort products by - price (high to low)|  PASS |        
+
 ## CI PYTHON LINTER [pep8ci](https://pep8ci.herokuapp.com/)
 |     |      |
 |-----|------|
