@@ -27,6 +27,8 @@
 | User can click on link sent in email to reset pasword - redirects to web Change Pasword                  |  PASS  |
 | User can change pasword - notifie pasword change                                                         |  PASS  |
 ### Accoun Logout
+|  TEST                                               |  RESULTS  |
+|-------|-----------:|
 | User can log-out - redirects to Log out page        |  PASS |
 | User can click on Home link - redirects to home page|  PASS |
 | User is notified of logging out of account          |  PASS |   
