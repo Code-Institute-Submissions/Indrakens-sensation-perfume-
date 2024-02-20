@@ -2,18 +2,30 @@
 
 ## MANUAL TESTING
 ### Account Registration
-|  TEST                                     | RESULTS  |
+|  TEST                                                  | RESULTS  |
 |---------|--------:|
-| User can create an account                |   PASS   |
-| User receives email verification          |   PASS   |   
-| User can log-in                           |   PASS   |
-| User is notified of logging in to account |   PASS   |
-| User can log-out                          |   PASS   |
-| User is notified of logging out of account|   PASS   |
+| User can create an account                             |  PASS  |
+| User receives email verification                       |  PASS  |
+| User can click on Login link - redirects to Login page |  PASS  |  
+| User can click on Home link - redirects to Home page   |  PASS  | 
+### Account Login
+|  TEST                                                                                                    |  RESULTS  |
+|---------|---------:|
+| User can log-in                                                                                          |  PASS  |
+| User is notified of logging in to account                                                                |  PASS  |
+| User can save login details                                                                              |  PASS  |
+| User can click on Register link - redirects to Register page                                             |  PASS  |
+| User can click on Home link - redirects to Home page                                                     |  PASS  |
+| User can click on Forgot Pasword link - redirects to pasword reset page, pasword reset sent to user email|  PASS  |
+| User can click on link sent in email to reset pasword - redirects to web Change Pasword                  |  PASS  |
+| User can change pasword - notifie pasword change                                                         |  PASS  |
+### Accoun Logout
+| User can log-out - redirects to Log out page |   PASS   |
+| User is notified of logging out of account   |   PASS   |   
 ### Navigation - Logout/ Not Registered User
-|     TEST                                  | RESULTS  |
+|     TEST                                                                                                   | RESULTS  |
 |---------|--------:|
-| User can click on Shop All and navigate to - categories, price, shop all                           |  PASS  |
+| User can click on Shop All and navigate to - categories, price, shop all                                   |  PASS  |
 | User can click on For Her and navigate to - eau de parfum, eau de toilette, all for her                    |  PASS  |
 | User can click on For Him and navigate to - eau de parfum, eau de toilette, all for him                    |  PASS  |
 | User can click on Gift Sets and navigate to - gift sets for her, gift sets for him, all gift sets          |  PASS  |
@@ -25,9 +37,9 @@
 | User can navigate to product page                                                                          |  PASS  |
 | User can navigate to product detail page                                                                   |  PASS  |
 ### Navigation - Login/ Registered User
-|     TEST                                  | RESULTS  |
+|     TEST                                                                                                   | RESULTS  |
 |---------|--------:|
-| User can click on Shop All and navigate to - categories, price, shop all                           |  PASS  |
+| User can click on Shop All and navigate to - categories, price, shop all                                   |  PASS  |
 | User can click on For Her and navigate to - eau de parfum, eau de toilette, all for her                    |  PASS  |
 | User can click on For Him and navigate to - eau de parfum, eau de toilette, all for him                    |  PASS  |
 | User can click on Gift Sets and navigate to - gift sets for her, gift sets for him, all gift sets          |  PASS  |
@@ -36,15 +48,83 @@
 | User navigate to Sensation-Perfume-Blog detail page                                                        |  PASS  | 
 | User can click on Shopping bag and navigate to - shopping bag                                              |  PASS  |
 | User can click on Username- Profile and navigate to - username-profile, logout                             |  PASS  |
-| Super User can click on Username- Profile and navigate to - product management, username-profile, logout   |  PASS  |
 | User can navigate to product page                                                                          |  PASS  |
 | User can navigate to product detail page                                                                   |  PASS  |
 ### Product Sorting and Searching
-|   TEST                     |  RESULTS                                  |
+|   TEST                                                                               |  RESULTS |
 |--------|---------:|
-| User can click on search field and search for a product                              |  PASS |
+| User can click on search field and search for a product by - name, description       |  PASS |
 | User can click on Sort by in product pages and sort products by - price (low to high)|  PASS | 
-| User can click on Sort by in product pages and sort products by - price (high to low)|  PASS |        
+| User can click on Sort by in product pages and sort products by - price (high to low)|  PASS | 
+| User can click on Sort by in product pages and sort products by - name (A to Z)      |  PASS | 
+| User can click on Sort by in product pages and sort products by - name (Z to A)      |  PASS | 
+| User can click on Sort by in product pages and sort products by - category (A to Z)  |  PASS |
+| User can click on Sort by in product pages and sort products by - category (Z to A)  |  PASS | 
+### Product Detail Page
+|  TEST                                                                                                                           |  RESULTS |
+|--------|---------:| 
+| User can choose to add gift wrap to product by clicking on Offer Gift Wrap - Includes Gift Bag & Decorative Ribbon (if provided)| PASS |
+| User can add product quantity                                                                                                   | PASS |
+| User can click on Keep Shopping button - redirects to all product page                                                          | PASS |
+| User can click on Add To Bag button - notifies added product in shopping bag                                                    | PASS |
+### Shopping Bag
+|   TEST                                                                   |  RESULTS |
+|--------|--------:|
+| User can update product quantity - notifies updated product quantity     | PASS |
+| User can click on Keep Shopping button - redirects to all product page   | PASS |
+| User can click on Go To Checkout button - redirects to checkout page     | PASS |
+| User can remove product from shopping bag - notifies removed product     | PASS |
+### Checkout - Not Login/ Registered User
+|    TEST                                                                                                  |  RESULT |
+|-----------|----------:|
+| User can  easily fill the form to complete the order                                                     |  PASS |
+| User can easily add card payment                                                                         |  PASS |
+| User can click on Adjust Bag button - redirects to shopping bag                                          |  PASS |
+| User can click on Complete Order button - redirects to order confirmation page and notifies order number |  PASS |
+| User can click on Check Out The Latest Sales in order confirmation page - redirects to All Sales page    |  PASS |
+### Checkout - Login User
+|    TEST                                                                                                  |  RESULT |
+|-----------|----------:|
+| User can  easily fill the form to complete the order                                                     |  PASS |
+| User can easily add card payment                                                                         |  PASS |
+| User can save delivery information to profile                                                            |  PASS |
+| User can click on Adjust Bag button - redirects to shopping bag                                          |  PASS |
+| User can click on Complete Order button - redirects to order confirmation page and notifies order number |  PASS |
+| User order information saved in user profile Order History                                               |  PASS |
+| User can click on Check Out The Latest Sales in order confirmation page - redirects to All Sales page    |  PASS |
+### User Profile
+|    TEST                                                                                                                                                     |  RESULTS |
+|--------|--------:|
+| User can view delivery information and order history                                                                                                        |  PASS |
+| User can click on order number in order history and view past order confirmation - redirects to order confirmation page and notifies past order confirmation|  PASS |
+| User can click on Back To Profile button - redirects to user profile page                                                                                   |  PASS |
+| User can click on Home link - redirects to home page                                                                                                        |  PASS |
+| User can click on Update Profile button - redirects to Update user Profile page                                                                             |  PASS |
+### Update User Profile
+|    TEST                                                                                                                                                     |  RESULTS |
+|--------|--------:|
+| User can update delivery information - notifies updated profile and redirects to profile page                                                               |  PASS |
+| User can add, update, remove profile picture - notifies updated profile and redirects to profile page                                                       |  PASS |
+| User can click on order number in order history and view past order confirmation - redirects to order confirmation page and notifies past order confirmation|  PASS |
+| User can delete order history order number - redirects to profile page and notifies deleted order number from order history                                 |  PASS |
+| User can click on Cancel link - redirects to profile page                                                                                                   |  PASS |
+### Blog - Not Login/ Registered User
+|   TEST                                                            |  RESULTS  |
+|----------|-----------:|
+| User can click on blog - redirects to Sensation-Perfume Blog page |  PASS |
+| User can click on post title - redirects to blog post detail page |  PASS |
+### Blog - Login User
+|   TEST                                                            |  RESULTS  |
+|-------|---------:|
+| User can click on blog - redirects to Sensation-Perfume Blog page |  PASS |
+| User can click on post title - redirects to blog post detail page |  PASS |
+| User can like/ unlike post                                        |  PASS |
+| User can leave comment in blog post - notifies posted comment     |  PASS |
+
+### Super User 
+|  TEST                                                                                                      |  RESULTS |
+|--------|---------:|
+| Super User can click on Username- Profile and navigate to - product management, username-profile, logout   |  PASS  |       
 
 ## CI PYTHON LINTER [pep8ci](https://pep8ci.herokuapp.com/)
 |     |      |
