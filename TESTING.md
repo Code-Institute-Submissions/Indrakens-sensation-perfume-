@@ -121,7 +121,19 @@
 | User can click on post title - redirects to blog post detail page |  PASS |
 | User can like/ unlike post                                        |  PASS |
 | User can leave comment in blog post - notifies posted comment     |  PASS |
-
+### Subscribe
+|  TEST      | RESULTS |
+|--------|-------:|
+| User can subscribe to newslwtter - notifies subscribing | PASS |
+| Notification | <img width="818" alt="Screenshot 2024-02-20 175748" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/f1641f8a-bc6d-483e-9518-ec9744751abd">|
+| Subscribed User email in Mailchimp (not login and login user) | <img width="959" alt="Screenshot 2024-02-20 182414" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/4c2ffbc9-4bde-4aa2-9efe-45ced68d7f4e">|
+### Social Links
+|  TESTS                                                                        | RESULTS |
+|-------|-------:|
+| User can click on Twitter icon - redirects to twiter.com page                  | PASS |
+| User can click on Instagram icon - redirects to instagram.com page             | PASS |
+| User can click on Facebook icon - redirects to Sensation Perfume facebook page | PASS |
+| Sensation Perfume Facebook page | <img width="956" alt="Screenshot 2024-02-20 181804" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/4dc131ae-4c4d-49c5-bb7c-c4fe37a2bfec">|
 ### Super User 
 |  TEST                                                                                                                                   |  RESULTS |
 |--------|---------:|
