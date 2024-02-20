@@ -20,8 +20,9 @@
 | User can click on link sent in email to reset pasword - redirects to web Change Pasword                  |  PASS  |
 | User can change pasword - notifie pasword change                                                         |  PASS  |
 ### Accoun Logout
-| User can log-out - redirects to Log out page |   PASS   |
-| User is notified of logging out of account   |   PASS   |   
+| User can log-out - redirects to Log out page        |  PASS |
+| User can click on Home link - redirects to home page|  PASS |
+| User is notified of logging out of account          |  PASS |   
 ### Navigation - Logout/ Not Registered User
 |     TEST                                                                                                   | RESULTS  |
 |---------|--------:|
@@ -122,9 +123,12 @@
 | User can leave comment in blog post - notifies posted comment     |  PASS |
 
 ### Super User 
-|  TEST                                                                                                      |  RESULTS |
+|  TEST                                                                                                                                   |  RESULTS |
 |--------|---------:|
-| Super User can click on Username- Profile and navigate to - product management, username-profile, logout   |  PASS  |       
+| Super user can login in admin panel                                                                                                     |  PASS  |
+| Super User can update product in product detail page - redirects to Profile management update product page and notifies updating product|  PASS  | 
+| Super User can add product by clicking on Username-Profile Product Management - redirects to Profile Managemente Add Product            |  PASS  |
+| Super User can delete product in product detail page - redirects to all product page and notifies deleted product                       |  PASS  |
 
 ## CI PYTHON LINTER [pep8ci](https://pep8ci.herokuapp.com/)
 |     |      |
