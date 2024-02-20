@@ -22,6 +22,7 @@ The website was deployed via Heroku - the live site can be found here -
 * [EPICS](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#epics)
 * [USER STORies](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#user-stories)
 * [FEATURES](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#features)
+* [FACEBOOK]
    * [WEB](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#web)
    * [MOBILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#mobile)
 * [TESTING](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#testing)
@@ -124,6 +125,11 @@ The full list of User Stories is available on the project [Sensation Perfume Kan
 ### WEB
 ### MOBILE
 #
+## FACEBOOK
+|        |          |
+|--------|--------|
+| Header | <img width="955" alt="Screenshot 2024-02-20 194046" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/16cc5277-7f55-4865-9b8a-615e0d222531">|
+| Intro  | <img width="961" alt="Screenshot 2024-02-19 190950" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/413348c9-4931-4e9f-9089-3d06d3603f56">|
 ## TESTING
 Full testing can be seen in [TESTING.md](https://github.com/Indrakens/sensation-perfume/blob/main/TESTING.md) file.
 ## TEHNOLOGY USED
