@@ -16,6 +16,7 @@ The website was deployed via Heroku - the live site can be found here -
 * [DATABASE MODEL]  
 * [WIREFRAMES]
 * [BUSINESS MODEL]
+* [TESTING]
 ## UX
 ### UX DESIGN
 #### Color Scheme 
@@ -95,6 +96,8 @@ The full list of User Stories is available on the project [Sensation Perfume Kan
 ### WEB
 ### MOBILE
 #
+## TESTING
+Full testing can be seen in [TESTING.md](https://github.com/Indrakens/sensation-perfume/blob/main/TESTING.md) file.
 ## TEHNOLOGY USED
 #### [HTML](https://en.wikipedia.org/wiki/HTML) - Used to build the front-end website
 #### [CSS](https://en.wikipedia.org/wiki/CSS) - Used to style the HTML
