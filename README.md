@@ -7,16 +7,23 @@ The website was deployed via Heroku - the live site can be found here -
 [SENSATION - PERFUME]
 #
 ## TABLE OF CONTENT
-* [UX]
-* [UX DESIGN] 
-   * [Color Scheme]
-   * [Fonts]
-   * [Images]
-   * [Icons] 
+* [UX](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#tehnology-used)
+* [UX DESIGN](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#tehnology-used) 
+   * [Color Scheme](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#color-scheme)
+   * [Fonts](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#fonts)
+   * [Images](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#images)
+   * [Icons](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#icons) 
 * [DATABASE MODEL]  
 * [WIREFRAMES]
-* [BUSINESS MODEL]
-* [TESTING]
+* [BUSINESS MODEL](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#business-model)
+* [AGILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#agile)
+* [EPICS](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#epics)
+* [USER STORies](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#user-stories)
+* [FEATURES](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#features)
+   * [WEB](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#web)
+   * [MOBILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#mobile)
+* [TESTING](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#testing)
+* [TEHNOLOGY USED](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#tehnology-used)
 ## UX
 ### UX DESIGN
 #### Color Scheme 
@@ -33,6 +40,25 @@ The website was deployed via Heroku - the live site can be found here -
 | Home page image was created in [CANVA](https://www.canva.com/)| ![90674E5C-AB18-45BE-8D23-E06C36CDF78A (2)](https://github.com/Indrakens/sensation-perfume/assets/127971416/4eaf2844-a701-40dc-988f-fb02ed4e8610)|
 #### ICONS
 * The website uses from [Font Awesome]( https://fontawesome.com/ ) icons.
+## WIREFRAMES
+### WEB
+|        |          |
+|----------|----------|
+| Home Page | ![home page](https://github.com/Indrakens/sensation-perfume/assets/127971416/5d36baa2-fd0c-4e69-b351-6dbbd107e03f)|
+| Product Page | ![product page](https://github.com/Indrakens/sensation-perfume/assets/127971416/95d6dd47-cc59-4aca-9758-dfd1e0336b76)|
+| Product Detail Page | ![product detail page](https://github.com/Indrakens/sensation-perfume/assets/127971416/c8205b1e-cc1a-45c1-9226-374d83007083)|
+| Shopping Bag Page| ![shopping bag](https://github.com/Indrakens/sensation-perfume/assets/127971416/b5f7a8cf-df0c-40b4-9202-7032e62b49f8)|
+| Checkout Page | ![checkout page](https://github.com/Indrakens/sensation-perfume/assets/127971416/f861fa72-9345-492d-9fbd-060365876a44)|
+| Product Managemente Page | ![product managemente page ](https://github.com/Indrakens/sensation-perfume/assets/127971416/3f3f4285-79bd-41c3-9441-56e078c4cad5)|
+| User Profile Page | ![user profile page](https://github.com/Indrakens/sensation-perfume/assets/127971416/de77bcf7-9437-4f3d-9741-a73a2cf7641c)|
+| Blog Post Page | ![blog page](https://github.com/Indrakens/sensation-perfume/assets/127971416/4766df6c-98f8-40ff-bbc2-5faaeb4d4856)|
+| Blog Post Detail Page | ![blog detail page](https://github.com/Indrakens/sensation-perfume/assets/127971416/bec3e0fd-3d6d-4834-9faf-cd5856ac79e4)|
+### MOBILE
+|       |       |
+|---------|---------|
+| Home Page | ![mobile home page](https://github.com/Indrakens/sensation-perfume/assets/127971416/d702a9ff-da1c-4c15-8310-89f9a0988448)|
+| Product Page | ![mobile product page](https://github.com/Indrakens/sensation-perfume/assets/127971416/404b8a5d-19e2-4f8a-bbe1-94b56c847207)|
+| Shopping Bag Page | ![mobile shopping bag](https://github.com/Indrakens/sensation-perfume/assets/127971416/96ff3ee7-ff65-458e-ba16-cd97b2d44f97)|
 ## BUSINESS MODEL 
 The business is a B2C e-commerce platform whose goal is to provide products to its customers through an online store. The benefit for a business is easy to scale the business as it grows. Easy to set up a physical location. The business offers perfumes, eau de toilette, giftsets, products for sale- for women and men. Also offers gift wrap for perfumes and eau-de-toilette which is optional. The business marketing strategy is promote the online store trough it's Facebook business page, share the page with friends and family to expanding the business. An online store has a blog section for promoting the product or letting customers know about new product arrivals, which could be productive and sell more products to expand the business. The business goal was to create an online store where shoppers could easily navigate through the website. Provide users with products that meet their expectations, easily add product to shopping bag, and allow them to checkout quickly and easily.
 #
