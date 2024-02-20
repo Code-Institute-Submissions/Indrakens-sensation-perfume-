@@ -14,7 +14,9 @@ The website was deployed via Heroku - the live site can be found here -
    * [Images](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#images)
    * [Icons](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#icons) 
 * [DATABASE MODEL]  
-* [WIREFRAMES]
+* [WIREFRAMES](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#wireframes)
+   * [WEB](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#web)
+   * [MOBILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#mobile)
 * [BUSINESS MODEL](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#business-model)
 * [AGILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#agile)
 * [EPICS](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#epics)
