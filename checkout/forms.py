@@ -5,10 +5,18 @@ from .models import Order
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
-        fields = ('first_name', 'last_name', 'user_email', 'user_phone_number', 
-                  'user_street_address1', 'user_street_address2',
-                  'user_town_or_city', 'user_postcode', 'user_country',
-                  'user_county',) 
+        fields = (
+            "first_name",
+            "last_name",
+            "user_email",
+            "user_phone_number",
+            "user_street_address1",
+            "user_street_address2",
+            "user_town_or_city",
+            "user_postcode",
+            "user_country",
+            "user_county",
+        )
 
     def __init__(self, *args, **kwargs):
         """
@@ -17,25 +25,25 @@ class OrderForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'first_name': 'Name',
-            'last_name': 'Surname',
-            'user_email': 'Email Address',
-            'user_phone_number': 'Phone Number',
-            'user_street_address1': 'Street Address 1',
-            'user_street_address2': 'Street Address 2', 
-            'user_town_or_city': 'Town or City', 
-            'user_county': 'County, State or Locality', 
-            'user_postcode': 'Postal Code', 
-        } 
+            "first_name": "Name",
+            "last_name": "Surname",
+            "user_email": "Email Address",
+            "user_phone_number": "Phone Number",
+            "user_street_address1": "Street Address 1",
+            "user_street_address2": "Street Address 2",
+            "user_town_or_city": "Town or City",
+            "user_county": "County, State or Locality",
+            "user_postcode": "Postal Code",
+        }
 
-        self.fields['first_name'].widget.attrs['autofocus'] = True 
-        self.fields['last_name'].widget.attrs['autofocus'] = True 
+        self.fields["first_name"].widget.attrs["autofocus"] = True
+        self.fields["last_name"].widget.attrs["autofocus"] = True
         for field in self.fields:
-            if field != 'user_country':
+            if field != "user_country":
                 if self.fields[field].required:
-                    placeholder = f'{placeholders[field]} *'
+                    placeholder = f"{placeholders[field]} *"
                 else:
                     placeholder = placeholders[field]
-                self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'stripe-style-input'
-            self.fields[field].label = False               
+                self.fields[field].widget.attrs["placeholder"] = placeholder
+            self.fields[field].widget.attrs["class"] = "stripe-style-input"
+            self.fields[field].label = False

@@ -5,6 +5,7 @@ from profiles.models import UserProfile
 
 STATUS = ((0, "Draft"), (1, "Published")) 
 
+
 class Post(models.Model):
     """Blog post model"""
     title = models.CharField(max_length=200, unique=False) 
