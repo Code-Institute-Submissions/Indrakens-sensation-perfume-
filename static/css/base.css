@@ -423,7 +423,7 @@ input[name='q']::placeholder {
 @media (min-width: 1200px) {
     .container {
         max-width: 70%;
-    } 
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -576,14 +576,14 @@ input[name='q']::placeholder {
     .w-100.responsive {
         width: 120% !important;
         margin-left: 10px !important;
-    } 
+    }
 
 
     .display-4.font.text-black.error-h2,
     .error-p,
-    .error-h4{
+    .error-h4 {
         width: 450px;
-    } 
+    }
 }
 
 
@@ -595,7 +595,7 @@ input[name='q']::placeholder {
     .w-100.responsive {
         width: 180% !important;
         margin-left: -25px !important;
-    } 
+    }
 
     .responsive {
         width: 140%;
@@ -608,18 +608,18 @@ input[name='q']::placeholder {
         font-size: 0.8rem;
         margin-left: -10px;
         margin-right: -15px;
-    } 
+    }
 
     .img-thumbnail {
         width: 15%;
-    } 
+    }
 
 
     .display-4.font.text-black.error-h2,
     .error-p,
-    .error-h4{
+    .error-h4 {
         width: 450px;
-    } 
+    }
 }
 
 @media (max-width: 600px) {
@@ -672,7 +672,7 @@ input[name='q']::placeholder {
     .w-100.responsive {
         width: 200% !important;
         margin-left: -25px !important;
-    } 
+    }
 
 
     .responsive {
@@ -691,17 +691,17 @@ input[name='q']::placeholder {
     .profile.float-right {
         font-size: 0.9rem;
     }
-    
+
     .img-thumbnail {
         width: 15%;
-    } 
+    }
 
 
     .display-4.font.text-black.error-h2,
     .error-p,
-    .error-h4{
+    .error-h4 {
         width: 450px;
-    } 
+    }
 }
 
 @media (max-width: 500px) {
@@ -792,32 +792,32 @@ input[name='q']::placeholder {
 
     .footer-header.subscribe.text-black {
         font-size: 0.9rem;
-    } 
+    }
 
     .w-100.responsive {
         width: 180% !important;
         margin-left: -15px !important;
-    } 
+    }
 
     .responsive {
         width: 120%;
         margin-left: -25px !important;
-    } 
+    }
 
     .profile.float-right {
         font-size: 0.8rem;
-    } 
+    }
 
     .img-thumbnail {
         width: 15%;
     }
-    
-    
+
+
     .display-4.font.text-black.error-h2,
     .error-p,
-    .error-h4{
+    .error-h4 {
         width: 450px;
-    } 
+    }
 }
 
 @media (max-width: 480px) {
@@ -872,33 +872,33 @@ input[name='q']::placeholder {
 
     .btt-button {
         margin-right: -12px;
-    } 
+    }
 
     .w-100.responsive {
         width: 180% !important;
         margin-left: -15px !important;
-    } 
+    }
 
     .responsive {
         width: 120%;
         margin-left: -25px !important;
-    } 
+    }
 
     .profile.float-right {
         font-size: 0.9rem;
-        margin-right: 85px; 
-    } 
+        margin-right: 85px;
+    }
 
     .img-thumbnail {
         width: 15%;
     }
-    
-    
+
+
     .display-4.font.text-black.error-h2,
     .error-p,
-    .error-h4{
+    .error-h4 {
         width: 450px;
-    } 
+    }
 }
 
 @media (max-width: 452px) {
@@ -954,7 +954,7 @@ input[name='q']::placeholder {
     .responsive {
         width: 100%;
         margin-left: -5px !important;
-    } 
+    }
 
     .my-0.text-uppercase.product-name,
     .my-0.small.text-muted.product-sku,
@@ -1001,20 +1001,20 @@ input[name='q']::placeholder {
     .footer-header.subscribe.text-black {
         margin-right: 30px;
     }
-    
+
     .w-100.responsive {
         width: 200% !important;
         margin-left: -10px !important;
-    } 
+    }
 
     .font.text-uppercase.mb-3.checkout-success-page {
         font-size: 1.5rem;
         margin-top: -20px;
-    } 
+    }
 
     .col-12.profile.mt-4.ml-5.mr-5.mb-2 h2 {
         font-size: 1.6rem;
-    }    
+    }
 
     .profile.float-right {
         margin-right: 55px
@@ -1022,19 +1022,19 @@ input[name='q']::placeholder {
 
     .small.text-uppercase.profile-order-history {
         font-size: 0.7rem;
-    } 
+    }
 
     .img-thumbnail {
         width: 20%;
-    } 
+    }
 
 
     .display-4.font.text-black.error-h2,
     .error-p,
-    .error-h4{
+    .error-h4 {
         width: 450px;
-    } 
-} 
+    }
+}
 
 @media (max-width: 400px) {
     .fa-brands.fa-square-facebook.fa-xl {
@@ -1054,22 +1054,22 @@ input[name='q']::placeholder {
     .w-100.responsive {
         width: 200% !important;
         margin-left: -10px !important;
-    } 
+    }
 
     .responsive {
         width: 120%;
         margin-left: -25px !important;
-    } 
+    }
 
     .col-12.profile.mt-4.ml-5.mr-5.mb-2 h2 {
         font-size: 1.6rem;
         margin-top: -20px;
-    }   
+    }
 
     .list-group.mb-4 {
         font-size: 0.9rem;
         width: 180px;
-    } 
+    }
 
     .profile.float-right {
         font-size: 0.9rem;
@@ -1082,7 +1082,7 @@ input[name='q']::placeholder {
 
     .small.text-uppercase.profile-order-history {
         font-size: 0.7rem;
-    } 
+    }
 
     .img-thumbnail {
         width: 20%;
@@ -1090,14 +1090,14 @@ input[name='q']::placeholder {
 
     .card-text {
         font-size: 0.8rem;
-    } 
+    }
 
     .display-4.font.text-black.error-h2,
     .error-p,
-    .error-h4{
+    .error-h4 {
         width: 350px;
-    } 
-} 
+    }
+}
 
 @media (max-width: 375px) {
     .navbar-toggler {
@@ -1174,7 +1174,7 @@ input[name='q']::placeholder {
     .my-0.product-price,
     .my-0.subtotal {
         font-size: 0.6rem
-    } 
+    }
 
     .btt-button {
         margin-right: -12px;
@@ -1182,35 +1182,35 @@ input[name='q']::placeholder {
 
     .footer-header.subscribe.text-black {
         margin-right: 30px;
-    } 
+    }
 
     .w-100.responsive {
         width: 220% !important;
         margin-left: -10px !important;
-    } 
+    }
 
     .font.text-uppercase.mb-3.checkout-success-page {
         font-size: 1.3rem;
         margin-top: -20px;
     }
-    
+
     .col-12.profile.mt-4.ml-5.mr-5.mb-2 h2 {
         font-size: 1.5rem;
         margin-top: -20px;
-    } 
+    }
 
     .text-muted.profile {
         font-size: 0.9rem;
-    } 
+    }
 
     .rounded-circle.border.responsive-profile {
         height: 100px;
-    } 
+    }
 
     .list-group.mb-4 {
         font-size: 0.8rem;
         width: 170px;
-    } 
+    }
 
     .profile.float-right {
         font-size: 0.9rem;
@@ -1223,7 +1223,7 @@ input[name='q']::placeholder {
 
     .small.text-uppercase.profile-order-history {
         font-size: 0.7rem;
-    } 
+    }
 
     .small.text-uppercase.update-order-history {
         font-size: 0.6rem;
@@ -1231,7 +1231,7 @@ input[name='q']::placeholder {
 
     .small.update-order-history {
         font-size: 0.6rem;
-    } 
+    }
 
     .img-thumbnail {
         width: 20%;
@@ -1239,13 +1239,13 @@ input[name='q']::placeholder {
 
     .card-text {
         font-size: 0.8rem;
-    } 
+    }
 
     .display-4.font.text-black.error-h2,
     .error-p,
-    .error-h4{
+    .error-h4 {
         width: 350px;
-    } 
+    }
 }
 
 @media (max-width: 360px) {
@@ -1318,21 +1318,21 @@ input[name='q']::placeholder {
     .fa-brands.fa-square-x-twitter.fa-xl {
         font-size: 1rem;
         margin-right: 60px;
-    } 
+    }
 
     .btt-button {
         margin-right: -12px;
-    } 
+    }
 
     .footer-header.subscribe.text-black {
         margin-right: 30px;
-    } 
+    }
 
 
     .w-100.responsive {
         width: 220% !important;
         margin-left: -5px !important;
-    } 
+    }
 
     .form-check-label.checkout {
         font-size: 0.8rem;
@@ -1345,7 +1345,7 @@ input[name='q']::placeholder {
     .font.text-uppercase.mb-3.checkout {
         font-size: 1.8rem;
         margin-top: -20px;
-    } 
+    }
 
     .font.text-uppercase.mb-3.checkout-success-page {
         font-size: 1.2rem;
@@ -1358,25 +1358,25 @@ input[name='q']::placeholder {
 
     .col-12.col-md-8.text-md-right.checkout-success-page {
         font-size: 0.9rem;
-    } 
+    }
 
     .col-12.profile.mt-4.ml-5.mr-5.mb-2 h2 {
         font-size: 1.5rem;
         margin-top: -20px;
-    } 
+    }
 
     .text-muted.profile {
         font-size: 0.8rem;
-    } 
+    }
 
     .rounded-circle.border.responsive-profile {
         height: 100px;
-    } 
+    }
 
     .list-group.mb-4 {
         font-size: 0.7rem;
         width: 160px;
-    } 
+    }
 
     .profile.float-right {
         font-size: 0.8rem;
@@ -1393,7 +1393,7 @@ input[name='q']::placeholder {
 
     .small.order-history-table {
         font-size: 0.7rem
-    } 
+    }
 
     .small.text-uppercase.update-order-history {
         font-size: 0.5rem;
@@ -1401,7 +1401,7 @@ input[name='q']::placeholder {
 
     .small.update-order-history {
         font-size: 0.6rem;
-    } 
+    }
 
     .img-thumbnail {
         width: 20%;
@@ -1409,13 +1409,13 @@ input[name='q']::placeholder {
 
     .card-text {
         font-size: 0.8rem;
-    } 
+    }
 
     .display-4.font.text-black.error-h2,
     .error-p,
-    .error-h4{
+    .error-h4 {
         width: 300px;
-    } 
+    }
 }
 
 @media (max-width: 330px) {
@@ -1507,7 +1507,7 @@ input[name='q']::placeholder {
     .responsive {
         width: 150%;
         margin-left: -20px !important;
-    } 
+    }
 
     .mt-4.grand-total {
         font-size: 0.9rem;
@@ -1515,7 +1515,7 @@ input[name='q']::placeholder {
 
     .mb-1.text-success.free-delivery {
         font-size: 0.6rem;
-    } 
+    }
 
     .font.text-uppercase.mb-3.bag-header {
         font-size: 1.6rem;
@@ -1523,21 +1523,21 @@ input[name='q']::placeholder {
     }
 
     .small.sensation-footer-text {
-		font-size: 0.8rem;
-	} 
+        font-size: 0.8rem;
+    }
 
     .btt-button {
         margin-right: -10px;
-    } 
+    }
 
     .w-100.responsive {
         width: 220% !important;
         margin-left: -2px !important;
-    } 
+    }
 
     .form-check-label.checkout {
         font-size: 0.8rem;
-    } 
+    }
 
     .text-muted.checkout {
         font-size: 0.8rem;
@@ -1551,38 +1551,38 @@ input[name='q']::placeholder {
     .font.text-uppercase.mb-3.checkout-success-page {
         font-size: 1.2rem;
         margin-top: -20px;
-    } 
+    }
 
     .text-black.checkout-success-page {
         font-size: 0.9rem;
-    } 
+    }
 
     .col-12.col-md-8.text-md-right.checkout-success-page {
         font-size: 0.8rem;
-    } 
+    }
 
     .col-12.profile.mt-4.ml-5.mr-5.mb-2 h2 {
         font-size: 1rem;
         margin-top: -20px;
-    } 
+    }
 
     .text-muted.profile {
         font-size: 0.8rem;
-    } 
+    }
 
     .rounded-circle.border.responsive-profile {
         height: 100px;
-    } 
+    }
 
     .list-group.mb-4 {
         font-size: 0.7rem;
         width: 150px;
-    } 
+    }
 
     .profile.float-right {
         font-size: 0.8rem;
         margin-right: 25px
-    } 
+    }
 
     .text-muted.profile-order-history {
         margin-left: 10px;
@@ -1591,10 +1591,10 @@ input[name='q']::placeholder {
     .small.text-uppercase.profile-order-history {
         font-size: 0.6rem;
     }
-    
+
     .text-muted.update {
         font-size: 0.9rem;
-    } 
+    }
 
     .small.text-uppercase.update-order-history {
         font-size: 0.5rem;
@@ -1602,19 +1602,19 @@ input[name='q']::placeholder {
 
     .small.update-order-history {
         font-size: 0.6rem;
-    } 
+    }
 
     .img-thumbnail {
         width: 20%;
-    } 
+    }
 
     .card-text {
         font-size: 0.8rem;
-    } 
+    }
 
     .display-4.font.text-black.error-h2,
     .error-p,
-    .error-h4{
+    .error-h4 {
         width: 300px;
-    } 
-} 
+    }
+}

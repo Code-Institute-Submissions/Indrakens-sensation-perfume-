@@ -50,4 +50,28 @@
 | profiles/ views.py | <img width="547" alt="Screenshot 2024-02-19 235829" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/8c45f0e6-416c-4794-b64c-00c411d2d81c">|
 | profiles/ urls.py | <img width="548" alt="Screenshot 2024-02-20 000127" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/787e7dbc-33d0-4a11-ac28-d0ccc237c9f6">|
 | profiles/ models.py | <img width="519" alt="Screenshot 2024-02-20 000929" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/a023a502-b747-4508-beb8-2bba9b5fabc9">|
-| profiles/ forms.py | <img width="556" alt="Screenshot 2024-02-20 001107" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/fcc88f88-b30d-47b5-bfc7-b1891c7b8bbd">|    
+| profiles/ forms.py | <img width="556" alt="Screenshot 2024-02-20 001107" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/fcc88f88-b30d-47b5-bfc7-b1891c7b8bbd">|
+## HTML VALIDATION
+Due to the Django codes in templates, [W3C Markup Validation Service](https://validator.w3.org/) shows errors, for that reason only included base.html validator result
+|      |      |
+|------|------|
+| Result | <img width="894" alt="Screenshot 2024-02-20 004832" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/d32ee635-1217-43e4-9509-99a6078c537c">|
+|  Result | <img width="645" alt="Screenshot 2024-02-20 004939" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/6ced7a4b-732d-46d3-9af2-37a40e4de0c1">|
+## CSS VALIDATION - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+|      |      |
+|------|-------|
+| base.css| <img width="764" alt="Screenshot 2024-02-20 005856" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/c660d4f6-abd6-4dff-8935-7c47ed415086">|
+| warnings | <img width="818" alt="Screenshot 2024-02-20 005911" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/bb337ef8-c3cd-4f27-ac70-d45bf7735d00">|
+#
+|     |      |
+|------|------|
+| user_profiles.css | <img width="766" alt="Screenshot 2024-02-20 010452" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/51d368dc-8f8f-4743-96be-284a9e053552">|
+#
+|      |      |
+|-----|-------|
+| order_checkout.css | <img width="769" alt="Screenshot 2024-02-20 011049" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/3c313559-6eb1-42f9-99ff-2576d1269393">|
+| warnings | <img width="374" alt="Screenshot 2024-02-20 011105" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/0b657cc4-3460-4ef8-b6fe-bf25fab9524b">|
+#
+|      |      |
+|-----|-------|
+| blog.css | <img width="762" alt="Screenshot 2024-02-20 011457" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/5ef39474-d13f-4f94-843d-6a75d75c3f3c">|
