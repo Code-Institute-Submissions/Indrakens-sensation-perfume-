@@ -38,9 +38,58 @@ The business is a B2C e-commerce platform whose goal is to provide products to i
 ## AGILE
 The Agile methodology was used to plan the project. Each user story was linked to an Epic. Issues were used to create Epics and User Stories with a custom template. Once work on the website story was complete, the user story was moved into the "Done" column.
 ### EPICS
+* Shop Management [#5](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=49190188)
+* Viewing and Navigation [#7](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=49190730)
+* Shopping Bag and Checkout [#8](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=49191015)
+* Register an Account [#9](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=49191123)
+* Newsletter [#11](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=49192157)
+* Login/ Logout [#13](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51790230)
+* Sorting and Searching [#14](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51791259)
+* Shop Facebook Business Page [#32](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53740551)
+* Like / Comment Blog Post [#36](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53748018)
 #
 ### USER STORIES
-The full list of User Stories is available on the project [kanban board] 
+The full list of User Stories is available on the project [Sensation Perfume Kanban Board](https://github.com/users/Indrakens/projects/24/views/1). From the Epics 20 User Stories were developed. 
+* Shopp Owner
+   * As a Store Owner I can add, update, delete products so that I can manage online store [#16](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51797988)
+* User Profile
+   * As a User I can easily login so that I can view my profile page [#17](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51800365)
+* Viewing Products
+   * As Shopper I can view all lists of products so that I can select some to purchase [#18](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51801674)
+* Navigate Products
+   * As a Shopper I can navigate to sales so that I can take advantage of special savings on products I'd like to purchase [#19](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51803375)      
+* Shopping Bag
+   * As a Shopper I can view my shopping bag so that I can adjust the shopping bag or go to checkout [#20](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51805228)  
+* Checkout
+   * As a Shopper I can go to checkout page so that I can purchase the products I like to order [#21](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51806372)   
+* Product Sorting
+   * As a Shopper I can sort list of products so that I can easily identify the best rated, priced and categorically sorted products [#22](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51810355)  
+* Product Searching
+   * As a Shopper I can search for the product so that I can find specific product I'd like to purchase [#23](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51811339)   
+* Login/ Logout 
+   * As User I can login/ logout so that I can view the website or leave it [#24](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51812460)  
+* Unregistered User
+   * As a Unregistered User I can register an account so that I could save my profile [#25](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51813967)     
+* View Number of Likes and Comments
+   * As User I can view number of likes and comments so that I can know which are the most liked and commented blog post [#26](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53733372) 
+* Like / Unlike Blog Post
+   * As User I can like/unlike blog post so that I can interact with the blog content [#27](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53734449)
+* Comment Blog Post
+   * As User I can comment a blog post so that I can interact with the other users in blog detail page [#28](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53734983)    
+* Manage Blog Post
+   * As a Shop Admin I can create blog post so that I can publish post or draft post and complete blog post later [#29](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53737131) 
+* Manage Comments
+   * As a Shop Admin I can delete comment so that I can filter out inappropriate content [#30](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53737607)
+* Sign Up To Newsletter
+   * As a Shopper I can sign up for a newsletter so that I can get access to sales or promotions [#31](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53739280)
+* Facebook Business Page
+   * As a Shop Owner I can create Sensation-Perfume business page in Facebook so that I can attract and promote my business to customers through social media [#33](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53741395)             
+* Registering an Account
+   * As a User I can register an account so that I can save my order history and have my own profile page [#34](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53743263)
+* View Users
+   * As a Shop Admin I can view number of registered users so that I can see how many users are interacting with online shop [#35](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53744263)    
+* View Blog Posts
+   * As a User I can can view blog posts so that I can read latest promotions or sales [#37](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53748971)  
 #
 ## FEATURES
 ### WEB
