@@ -1,11 +1,11 @@
 # TABLE OF CONTENT
-* MANUAL TESTING
-* CI PYTHON LINTER
-* HTML VALIDATION
-* CSS VALIDATION
-* JAVASCRIPT
-* GOOGLE LIGHTHOUSE TESTING
-* CROSS-BROWSER COMPABILITY
+* [MANUAL TESTING](https://github.com/Indrakens/sensation-perfume/blob/main/TESTING.md#manual-testing)
+* [CI PYTHON LINTER](https://github.com/Indrakens/sensation-perfume/blob/main/TESTING.md#ci-python-linter-pep8ci)
+* [HTML VALIDATION](https://github.com/Indrakens/sensation-perfume/blob/main/TESTING.md#html-validation)
+* [CSS VALIDATION](https://github.com/Indrakens/sensation-perfume/blob/main/TESTING.md#css-validation---w3c-css-validation-service)
+* [JAVASCRIPT](https://github.com/Indrakens/sensation-perfume/blob/main/TESTING.md#javascript---jshint)
+* [GOOGLE LIGHTHOUSE TESTING](https://github.com/Indrakens/sensation-perfume/blob/main/TESTING.md#google-lighthouse-testing)
+* [CROSS-BROWSER COMPABILITY](https://github.com/Indrakens/sensation-perfume/blob/main/TESTING.md#cross-browser-compability)
 
 ## MANUAL TESTING
 ### Account Registration
