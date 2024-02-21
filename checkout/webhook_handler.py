@@ -49,7 +49,7 @@ class StripeWH_Handler:
 
         # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(
-         intent.latest_charge
+            intent.latest_charge
         )
 
         billing_details = stripe_charge.billing_details
