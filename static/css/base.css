@@ -1622,7 +1622,7 @@ input[name='q']::placeholder {
 @media (max-width: 280px) {
     .fa-brands.fa-square-facebook.fa-xl {
         font-size: 1rem;
-        margin-left: 80px;
+        margin-left: 10px;
     }
 
     .fa-brands.fa-square-instagram.fa-xl {
@@ -1631,6 +1631,15 @@ input[name='q']::placeholder {
 
     .fa-brands.fa-square-x-twitter.fa-xl {
         font-size: 1rem;
-        margin-right: 40px;
+        margin-right: 10px;
     } 
-}
+
+    .shop-now-button {
+        margin-top:-30px;
+        margin-left: 10px;
+    } 
+
+    .display-3.logo-font.text-white {
+        margin-left: 10px;
+    }
+} 
