@@ -43,8 +43,7 @@ def order_checkout(request):
         shopping_bag = request.session.get('bag', {})
 
         form_data = {
-            'first_name': request.POST['first_name'],
-            'last_name': request.POST['last_name'],
+            'full_name': request.POST['full_name'],
             'user_email': request.POST['user_email'],
             'user_phone_number': request.POST['user_phone_number'],
             'user_street_address1': request.POST['user_street_address1'],
@@ -115,8 +114,7 @@ def order_checkout(request):
             try:
                 profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
-                    'first_name': profile.user.get_short_name(),
-                    'last_name': profile.user.get_full_name(),
+                    'full_name': profile.user.get_full_name(),
                     'user_email': profile.user.email,
                     'user_phone_number': profile.profile_phone_number,
                     'user_country': profile.profile_country,
