@@ -43,6 +43,11 @@ The website was deployed via Heroku - the live site can be found here -
 | Home page image was created in [CANVA](https://www.canva.com/)| ![90674E5C-AB18-45BE-8D23-E06C36CDF78A (2)](https://github.com/Indrakens/sensation-perfume/assets/127971416/4eaf2844-a701-40dc-988f-fb02ed4e8610)|
 #### ICONS
 * The website uses from [Font Awesome]( https://fontawesome.com/ ) icons.
+## DATABASE
+|         |        |
+|---------|----------|
+| Conceptual ERD | ![New Wireframe 1 (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/9ef098d8-c760-449b-b59a-35eb2d76a276)|
+#
 ## WIREFRAMES
 ### WEB
 |        |          |
