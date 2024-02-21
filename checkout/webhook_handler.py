@@ -20,15 +20,20 @@ class StripeWH_Handler:
 
     def _send_confirmation_email(self, order):
         """Send the user a confirmation email"""
-        cust_email = order.user_email
+        cust_email = order.email
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_email_subject.txt',
             {'order': order})
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-
-        send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [cust_email])
+        
+        send_mail(
+            subject,
+            body,
+            settings.DEFAULT_FROM_EMAIL,
+            [cust_email]
+        )        
 
     def handle_event(self, event):
         """
@@ -40,11 +45,11 @@ class StripeWH_Handler:
 
     def handle_payment_intent_succeeded(self, event):
         """
-        Handle the payment intent succeeded webhook from Stripe
+        Handle the payment_intent.succeeded webhook from Stripe
         """
         intent = event.data.object
         pid = intent.id
-        shopping_bag = intent.metadata.bag
+        bag = intent.metadata.bag
         save_info = intent.metadata.save_info
 
         # Get the Charge object
@@ -89,9 +94,9 @@ class StripeWH_Handler:
                     user_town_or_city__iexact=shipping_details.address.city,
                     user_street_address1__iexact=shipping_details.address.line1,
                     user_street_address2__iexact=shipping_details.address.line2,
-                    user_county__iexact=shipping_details.address.state, 
+                    user_county__iexact=shipping_details.address.state,
                     grand_total=grand_total,
-                    original_bag=shopping_bag,
+                    original_bag=bag,
                     stripe_pid=pid,
                 )
                 order_exists = True
@@ -102,12 +107,12 @@ class StripeWH_Handler:
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
-                    content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
-                    status=200)
+                content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
+                status=200)
         else:
             order = None
             try:
-                order = Order.object.create(
+                order = Order.objects.create(
                     full_name=shipping_details.name,
                     user_profile=profile,
                     user_email=billing_details.email,
@@ -118,10 +123,10 @@ class StripeWH_Handler:
                     user_street_address1=shipping_details.address.line1,
                     user_street_address2=shipping_details.address.line2,
                     user_county=shipping_details.address.state,
-                    original_bag=shopping_bag,
+                    original_bag=bag,
                     stripe_pid=pid,
                 )
-                for item_id, item_data in json.loads(shopping_bag).items():
+                for item_id, item_data in json.loads(bag).items():
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
@@ -131,14 +136,14 @@ class StripeWH_Handler:
                         )
                         order_line_item.save()
                     else:
-                        for giftwrap, quantity in item_data['items_by_giftwrap'].items():
+                        for size, quantity in item_data['items_by_giftwrap'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
                                 gift_bag_size=giftwrap,
                             )
-                        order_line_item.save()
+                            order_line_item.save()
             except Exception as e:
                 if order:
                     order.delete()
@@ -147,12 +152,12 @@ class StripeWH_Handler:
                     status=500)
         self._send_confirmation_email(order)
         return HttpResponse(
-            content=(f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook'),
+            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
             status=200)
 
     def handle_payment_intent_payment_failed(self, event):
         """
-        Handle the payment intent payment failed webhook from Stripe
+        Handle the payment_intent.payment_failed webhook from Stripe
         """
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
