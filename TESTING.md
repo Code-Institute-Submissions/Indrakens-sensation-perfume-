@@ -84,7 +84,7 @@
 | User can click on Keep Shopping button - redirects to all product page   | PASS |
 | User can click on Go To Checkout button - redirects to checkout page     | PASS |
 | User can remove product from shopping bag - notifies removed product     | PASS |
-### Checkout - Not Login/ Registered User
+### Checkout - Logout/ Not Registered User
 |    TEST                                                                                                  |  RESULT |
 |-----------|----------:|
 | User can  easily fill the form to complete the order                                                     |  PASS |
@@ -118,7 +118,7 @@
 | User can click on order number in order history and view past order confirmation - redirects to order confirmation page and notifies past order confirmation|  PASS |
 | User can delete order history order number - redirects to profile page and notifies deleted order number from order history                                 |  PASS |
 | User can click on Cancel link - redirects to profile page                                                                                                   |  PASS |
-### Blog - Not Login/ Registered User
+### Blog - Logout/ Not Registered User
 |   TEST                                                            |  RESULTS  |
 |----------|-----------:|
 | User can click on blog - redirects to Sensation-Perfume Blog page |  PASS |
