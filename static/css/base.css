@@ -1618,3 +1618,19 @@ input[name='q']::placeholder {
         width: 300px;
     }
 }
+
+@media (max-width: 280px) {
+    .fa-brands.fa-square-facebook.fa-xl {
+        font-size: 1rem;
+        margin-left: 80px;
+    }
+
+    .fa-brands.fa-square-instagram.fa-xl {
+        font-size: 1rem;
+    }
+
+    .fa-brands.fa-square-x-twitter.fa-xl {
+        font-size: 1rem;
+        margin-right: 40px;
+    } 
+}
