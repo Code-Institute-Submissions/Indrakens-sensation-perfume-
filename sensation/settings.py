@@ -36,7 +36,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'sensation-perfume-d52586ead80b.herokuapp.com', 
     'localhost',
-    '8000-indrakens-sensationperf-qag0bmw8kso.ws-eu108.gitpod.io'
+    '8000-indrakens-sensationperf-qag0bmw8kso.ws-eu108.gitpod.io',
+    '8000-indrakens-sensationperf-lnld7jpvwt8.ws-eu108.gitpod.io'
     ]  
 
 
