@@ -128,24 +128,78 @@ The full list of User Stories is available on the project [Sensation Perfume Kan
 #
 ## FEATURES
 ### WEB
-* Nav Bar 
+#### Navigation Bar 
 |         |         |
 |-------|---------|
-| Logout/ Not Registered User | <img width="946" alt="Screenshot 2024-02-21 235226" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/9b05b3b4-ba23-4d62-bda6-3511bae23852">|
-| Login User | <img width="947" alt="Screenshot 2024-02-21 235808" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/ca9e97f9-5a2e-49cf-8fc3-b8514dce907a">|
-* Home Page
+| Logout/ Not Registered User- displays links, logo- redirects user to home page, search bar, free delivery baner, Login/Sign Up link, shopping bag | <img width="946" alt="Screenshot 2024-02-21 235226" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/9b05b3b4-ba23-4d62-bda6-3511bae23852">|
+| Login User - displays links, logo- redirects user to home page, search bar, free delivery baner, username Account, shopping bag | <img width="947" alt="Screenshot 2024-02-21 235808" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/ca9e97f9-5a2e-49cf-8fc3-b8514dce907a">|
+#### Home Page
 |        |       |
 |-------|--------|
 | Logout/ Not Registered User | <img width="946" alt="Screenshot 2024-02-21 235226" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/26e7c4b2-9f18-489b-a570-4cdd539adcd7">|
 | Login User | <img width="947" alt="Screenshot 2024-02-21 235808" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/2e552897-a366-4586-b266-4223c024e09d">|
-* Product Page
+#### Register Account Page
+|      |       |
+|------|------|
+| Dispays registration form, login link, home link | <img width="952" alt="Screenshot 2024-02-22 012514" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/75e7771e-e817-4568-8988-7f807efee520">|
+#### Login Page
+|      |       |
+| Displays register link, login form, remeber label, home link, forgot pasword link| <img width="949" alt="Screenshot 2024-02-22 013953" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/12dae2be-6a73-4a87-b504-d8894b5ae7a3">| 
+#### Logout Page
+|    |      |
+|------|-----|
+| Displays logout button, home link | <img width="948" alt="Screenshot 2024-02-22 013647" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/7989e0e8-79ee-4c2b-a47e-c2245463e85f">| 
+#### Product Page
 |      |       |
 |-------|-------|
 | Displays product image, name, price, category, rating, sort-field, back to top button | <img width="949" alt="Screenshot 2024-02-22 000020" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/c7102e98-2815-48b2-81fa-bfbcb36a2588">|
+#### Product Detail Page
 | Product Detail Page For Him, For Her - Displays product name, price, category, rating, product description, offer gift wrap, quantity, keep shopping button, add to bag button| <img width="945" alt="Screenshot 2024-02-22 003240" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/3492d5b7-ed02-4549-ae28-328270bf0cbb">|
 | Product Detail Page Gift Sets - Displays product name, price, category, rating, product description, include, quantity, keep shopping button, add to bag button | <img width="947" alt="Screenshot 2024-02-22 003504" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/d3eabc2b-f693-4944-b575-17e1e76c20f1">|
 | Product Detail Page For Him, For Her Sales - Displays product name, price, price was, category, rating, product description, quantity, keep shopping button, add to bag button | <img width="949" alt="Screenshot 2024-02-22 004406" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/da2194dd-54df-4932-9079-fb95c3a60619">|
 | Product Detail Page Gift Sets Sales - Displays product name, price, price was, category, rating, product description, include, quantity, keep shopping button, add to bag button| <img width="949" alt="Screenshot 2024-02-22 004555" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/094239ad-505b-4332-87a7-5b2a5ea44a84">| 
+#### Blog Post Page
+|     |     |
+|-----|-----|
+| Displays post image, post title, excerpt, created-on, likes, back to top button | <img width="949" alt="Screenshot 2024-02-22 005528" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/23dfaaf1-1e73-4201-97c5-1140e12b58a8">|
+#### Blog Post Detail Page
+|       |        |
+|-------|---------|
+|Logout User-displays post image, title, author, content, created-on, number of likes and comments, links to login and register| <img width="946" alt="Screenshot 2024-02-22 010503" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/cec62909-7cab-44e2-9cb0-5fd4190f6a41">|
+| Comments Logout User | <img width="950" alt="Screenshot 2024-02-22 010612" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/a0176359-64ec-42fb-8f9c-6f39c96c2fa7">|
+|Login User-displays post image, title, author, content, created-on, number of likes and comments| <img width="946" alt="Screenshot 2024-02-22 011230" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/e3002e3c-7746-46dc-9819-ec78400b623b">| 
+| Comments Login User - displays comments, cpmment body | <img width="949" alt="Screenshot 2024-02-22 011440" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/24d534a6-eeae-4264-b4d1-166e4436f28a">|
+#### Shopping Bag Page
+|      |       |
+|--------|-------|
+| Displays order info, price, quantity, subtotal, update and remove item, shopping bag total, delivery, total free delivery availability, keep shopping button, checkout button| <img width="951" alt="Screenshot 2024-02-22 014616" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/a8da1f3e-0d30-4a7c-8339-3580297ea1e1">|
+#### Checkout Page
+|     |      |
+|------|-----|
+| Displays order form- your details, order owervie| <img width="946" alt="Screenshot 2024-02-22 015014" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/ac8f9a9f-b883-4e0b-8172-694757f5da2f">|
+| Displays delivery info, save delivery info tag, add payment, your card charges, adjust bag button, complete order button| <img width="949" alt="Screenshot 2024-02-22 015308" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/3d3a0bf7-8ea1-4518-a006-4ccd99c167d0">|
+#### Checkout Success Page
+|       |        |
+|------|-------|
+| Displays order confirmation, checkout the latest sales button, info confirmation email sent to user email| <img width="947" alt="Screenshot 2024-02-22 015803" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/73ce1e93-e462-447a-81b6-7e849009a687">|
+### User Profile Page
+|       |       |
+|------|------|
+| Displays user default picture, delivery information, order history, order number link- redirects to past order confirmation page, update profile button, homelink| <img width="949" alt="Screenshot 2024-02-22 020144" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/b8080242-7858-4c69-ad21-604599792599">| 
+#### Update User Profile Page
+|       |       |
+|-------|------| 
+| Displays update profile form, select image button, order history, delete order histor, order number link- redirects to past order confirmation page, update button, cancel link| <img width="949" alt="Screenshot 2024-02-22 020746" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/d52feca1-2e6e-4493-99c7-e88f9bd5669c">|
+#### Super User - Product Management
+|       |      |
+|------|------|
+| Add Product- displays add product form, select image button, home page link, cancel button, add button| <img width="960" alt="Screenshot 2024-02-22 021014" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/ce5d179e-11b6-4be1-98c5-8ee5d9c931b9">|
+| Update and Delete product displayed in product detail page| <img width="947" alt="Screenshot 2024-02-22 021422" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/88f0b0f6-7290-429f-adf4-40efe1f936cd">|
+| Update product page - displays update product form, curent image, select image button, cancel button, update product button | <img width="952" alt="Screenshot 2024-02-22 021609" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/1a86c78c-5d05-43e0-87d7-e86da61e99a0">|
+#### Footer
+|      |      |
+|------|------|
+| Footer displayed on all pages | <img width="723" alt="Screenshot 2024-02-22 021901" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/ebfeaa0c-65c8-4f97-b11d-125eef85dd1f">|
 ### MOBILE
 #
 ## FACEBOOK
