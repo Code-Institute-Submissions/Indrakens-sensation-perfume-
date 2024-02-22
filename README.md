@@ -1,10 +1,13 @@
 # SENSATION - PERFUME 
 <img width="796" alt="Screenshot 2024-02-17 195341" src="https://github.com/Indrakens/boutique_ado/assets/127971416/5f580240-73aa-4d82-8df0-29757ecfa767">
- Sensation Perfume is a e-commerce website that sells perfumes for women and men.
-
+Sensation Perfume is an e-commerce website that sells perfumes for women and men. It has a payment type and subscription where users can subscribe for the latest sales and new product arrivals. 
+#
+Users can begin a shopping instance where they can select products they would like to buy from the database. When the user is done, they can be directed to their shopping bag to view what they have and they can either start the payment process, update/delete items, or go back to the products page and add more items. When the user completes their shopping process, they will receive an email confirming their order. Registered Users have access to the profile page where they can update profile details, upload images and delete order history.
+#
+Sensation Perfume uses the Django Python framework to generate views via HTML and CSS. JavaScript is used to make the pages interactive. JavaScript was also used to handle posting user payment securely with Stripe. JavaScript also was used for back to top button click functionality. All the pages are mainly styled with Bootstrap5 and custom CSS. All dependences are handled by pip.
 #
 The website was deployed via Heroku - the live site can be found here - 
-[SENSATION - PERFUME]
+[SENSATION - PERFUME](https://sensation-perfume-d52586ead80b.herokuapp.com/)
 #
 ## TABLE OF CONTENT
 * [UX](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#tehnology-used)
@@ -20,13 +23,14 @@ The website was deployed via Heroku - the live site can be found here -
 * [BUSINESS MODEL](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#business-model)
 * [AGILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#agile)
 * [EPICS](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#epics)
-* [USER STORies](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#user-stories)
+* [USER STORIES](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#user-stories)
 * [FEATURES](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#features)
    * [WEB](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#web)
    * [MOBILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#mobile)
 * [FACEBOOK](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#facebook)    
 * [TESTING](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#testing)
 * [TEHNOLOGY USED](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#tehnology-used)
+* [DEPLOYMENT] 
 ## UX
 ### UX DESIGN
 #### Color Scheme 
@@ -168,7 +172,7 @@ The full list of User Stories is available on the project [Sensation Perfume Kan
 |Logout User-displays post image, title, author, content, created-on, number of likes and comments, links to login and register| <img width="946" alt="Screenshot 2024-02-22 010503" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/cec62909-7cab-44e2-9cb0-5fd4190f6a41">|
 | Comments Logout User | <img width="950" alt="Screenshot 2024-02-22 010612" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/a0176359-64ec-42fb-8f9c-6f39c96c2fa7">|
 |Login User-displays post image, title, author, content, created-on, number of likes and comments| <img width="946" alt="Screenshot 2024-02-22 011230" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/e3002e3c-7746-46dc-9819-ec78400b623b">| 
-| Comments Login User - displays comments, cpmment body | <img width="949" alt="Screenshot 2024-02-22 011440" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/24d534a6-eeae-4264-b4d1-166e4436f28a">|
+| Comments Login User - displays comments, comment body | <img width="949" alt="Screenshot 2024-02-22 011440" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/24d534a6-eeae-4264-b4d1-166e4436f28a">|
 #### Shopping Bag Page
 |      |       |
 |--------|-------|
@@ -200,7 +204,26 @@ The full list of User Stories is available on the project [Sensation Perfume Kan
 |      |      |
 |------|------|
 | Footer displayed on all pages | <img width="723" alt="Screenshot 2024-02-22 021901" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/ebfeaa0c-65c8-4f97-b11d-125eef85dd1f">|
-### MOBILE
+### MOBILE 
+|      |      |
+|-------|-----|
+| Nav Bar Top- Logout/ Not registered User | <img width="209" alt="Screenshot 2024-02-22 023629" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/c095a64f-8a8f-4844-81ab-497b5eda8cb1">|
+| Nav Bar drop down menu | <img width="204" alt="Screenshot 2024-02-22 023840" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/1fed5707-264b-4142-b7fa-418965de03a9">|
+| Nav Bar - Login User | <img width="203" alt="Screenshot 2024-02-22 024042" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/00709dea-ef90-4eab-b3b3-f339999528d5">|
+| Register Account | <img width="197" alt="Screenshot 2024-02-22 024528" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/faa781c9-d5ea-49f1-80d7-b44ceba6ea69">|
+| Login | <img width="207" alt="Screenshot 2024-02-22 024648" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/8838b974-d2ec-4084-829e-e0d8d865537f">|
+| Logout | <img width="197" alt="Screenshot 2024-02-22 024326" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/26d7521b-3b2b-46c8-8c25-f5e7da80e51c">|
+| Product Page | <img width="207" alt="Screenshot 2024-02-22 024830" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/8973fdfa-1025-41ae-994c-cf63fa297d81">|
+| Product Detail Page  | <img width="207" alt="Screenshot 2024-02-22 025151" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/3ca90bd9-b8dc-4456-846b-44d43b6bad30">|
+| Continues Product Detail Page | <img width="212" alt="Screenshot 2024-02-22 025442" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/3e8f52fa-cc4f-4f44-9a63-e6fb540d0ee5">|
+| Shopping Bag | <img width="208" alt="Screenshot 2024-02-22 025646" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/2d7c54df-4ab9-496e-85fb-c4d096fab342">|
+| Checkout Page | <img width="210" alt="Screenshot 2024-02-22 025808" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/5580fbaa-3906-4373-922f-edd405a6a6fd">|
+| Checkout Success Page | <img width="205" alt="Screenshot 2024-02-22 030042" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/4405e939-dadb-441c-a8ac-81e9ae7055f8">|
+| Blog Page | <img width="215" alt="Screenshot 2024-02-22 030233" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/7b7cf25d-2eb9-4824-ad23-e09312c8446b">|
+| Blog Post Detail Page | <img width="219" alt="Screenshot 2024-02-22 030438" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/18a4597f-b1bc-4b55-9ef9-fc9d54426344">|
+| Blog Blog Post Detail Page comments - Logout/ not Registered User | <img width="212" alt="Screenshot 2024-02-22 030639" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/e152b8a4-daef-4e14-9b93-791e42cb3422">|
+| Blog Blog Post Detail Page comments - Login User | <img width="219" alt="Screenshot 2024-02-22 031118" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/6dd22e11-825c-4ed2-9881-d42293bd01d4">| 
+| Footer | <img width="216" alt="Screenshot 2024-02-22 031406" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/b5299b5c-644c-432c-8bae-830cd7d5667f">|
 #
 ## FACEBOOK
 |        |          |
