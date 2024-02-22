@@ -1,10 +1,10 @@
 # SENSATION - PERFUME 
 <img width="796" alt="Screenshot 2024-02-17 195341" src="https://github.com/Indrakens/boutique_ado/assets/127971416/5f580240-73aa-4d82-8df0-29757ecfa767">
 Sensation Perfume is an e-commerce website that sells perfumes for women and men. It has a payment type and subscription where users can subscribe for the latest sales and new product arrivals. 
-#
+
 Users can begin a shopping instance where they can select products they would like to buy from the database. When the user is done, they can be directed to their shopping bag to view what they have and they can either start the payment process, update/delete items, or go back to the products page and add more items. When the user completes their shopping process, they will receive an email confirming their order. Registered Users have access to the profile page where they can update profile details, upload images and delete order history.
 #
-Sensation Perfume uses the Django Python framework to generate views via HTML and CSS. JavaScript is used to make the pages interactive. JavaScript was also used to handle posting user payment securely with Stripe. JavaScript also was used for back to top button click functionality. All the pages are mainly styled with Bootstrap5 and custom CSS. All dependences are handled by pip.
+Sensation Perfume uses the Django Python framework to generate views via HTML and CSS. JavaScript is used to make the pages interactive. JavaScript was also used to handle posting user payments securely with Stripe. Javascript also was used for back-to-top button click functionality. All the pages are mainly styled with Bootstrap5 and custom CSS. All dependencies are handled by Pip.
 #
 The website was deployed via Heroku - the live site can be found here - 
 [SENSATION - PERFUME](https://sensation-perfume-d52586ead80b.herokuapp.com/)
@@ -251,3 +251,65 @@ Full testing can be seen in [TESTING.md](https://github.com/Indrakens/sensation-
 #### [XML-Sitemaps](https://www.xml-sitemaps.com/) - Used to generate Sensation-Perfume sitemap
 #### [Privacy Policy Generator](https://www.privacypolicygenerator.info/) - Used to generate Sensation-Perfume privacy policy
 #### [Mailchimp](https://mailchimp.com/?currency=EUR) - Used to set up Sensation-Perfume newsletter email marketing 
+## FEATURE TO IMPLEMENT
+* Users can edit or delete their own commented comments
+* Registered users can delete their account from web. At the moment only admin can delete user in admin panel
+## BUG
+* I wasn't able to set up a user profile image to nav link my profile instead of an icon. It was only visible when you were on the profile page. Also, the user profile image didn't appear in the comments when the user commented. 
+## DEPLOYMENT
+* Sign-up / Log-in to [Heroku](https://www.heroku.com/home)
+* From the main Heroku Dashboard page select 'New' and then 'Create New App'
+* Give the project a name (app name must be unique) and select a suitable region, then select create app
+* Heroku will create the app and bring you to the deploy tab
+* From the submenu at the top, navigate to the resources tab
+* Add the database to the app, in the add-ons section search for 'Heroku Postgres', select the package that appears and add 'Heroku Postgres' as the database
+* Click on the setting tab
+* In the Heroku settings tab of your project update the config vars to the following:
+|  Key      |    Value       |
+|---------|---------:|
+| AWS_ACCESS_KEY_ID     | From AWS in CSV Download |
+| AWS_SECRET_ACCESS_KEY | From AWS in CSV Download |
+| DATABASE_URL          | From ElephantSQL dashboard |
+| EMAIL_HOST_PASSWORD   | App Password from Email Client |
+| EMAIL_HOST_USER       | Email address |
+| SECRET_KEY            | Randomly Generated Django Key |
+| STRIPE_PUBLIC_KEY     | Publishable key from Stripe Dashboard |
+| STRIPE_SECRET_KEY     | Secret key from Stripe Dashboard |
+| STRIPE_WH_SECRET      | Signing secret from Stripe Webhooks Endpoint |
+| USE_AWS               | True |
+* If you deploy at the beginning of the project then add the key value of: DISABLE_COLLCETSTATIC and set it to 1. When you have staticfiles to push then remove this variable
+* Once the project is completed and you are no longer working on it set DEBUG = False in settings.py
+* Log in to Heroku and select the deploy tab on your Heroku App and connect your GitHub account
+* Search for your repository and connect it
+* Once you have selected the correct repository, scroll down and click "Deploy Branch"
+* Watch the log as it deploys your project and ensure there are no errors
+* If everything is correct it should deploy successfully
+* Click on open app at the top of the page to view your deployed app
+## FORKING AND CLONING
+### Forking the repository
+By forking the GitHub Repository you can make a copy of the original repository to view or change without it effecting the original repository
+* Logging into GitHub or create an account
+* Locate the repository [https://github.com/Indrakens/sensation-perfume](https://github.com/Indrakens/sensation-perfume)
+* At the top of the repository, on the right side of the page, select "Fork" from the buttons available
+* A copy of the repository should now be created in your own repository
+### Create a clone of repository
+Creating a clone enables you to make a copy of the repository at that point in time - this lets you run a copy of the project locally
+* Navigate to [https://github.com/Indrakens/sensation-perfume](https://github.com/Indrakens/sensation-perfume)
+* Click on the arrow on the green code button at the top of the list of files
+* Select the clone by https option and copy the URL it provides to the clipboard
+* Navigate to your code editor of choice and within the terminal change the directory to the location you want to clone the repository to
+* Type 'git clone' and paste the https link you copied from github
+* Press enter and git will clone the repository to your local machine 
+## CONTENT AND RESOURCES
+#### Django Documentation
+* Read through the django documentation multiple times
+* Used extensively during development of this project
+#### W3 Schools
+* Used for reference throughout for simple css examples
+#### Code Institute
+* The Code Institute reference material was used as a general reference for things that I had previously done during the course
+* Course content for portfolio project 4 helped able to complete this project
+## ACKNOWLEDGMENT
+* Graeme Taylor - my mentor who provided me with great feedback and guidance at the inception of this projec
+* Alan Bushell - our teacher, always a great mentor during stand-up. And who helped insure me to get true this project
+* To all the tutors in Code Institute were always on hand to answer any queries or questions if things got too difficult
