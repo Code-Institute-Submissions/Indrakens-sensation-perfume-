@@ -13,7 +13,7 @@ The website was deployed via Heroku - the live site can be found here -
    * [Fonts](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#fonts)
    * [Images](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#images)
    * [Icons](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#icons) 
-* [DATABASE MODEL]  
+* [DATABASE MODEL](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#database)  
 * [WIREFRAMES](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#wireframes)
    * [WEB](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#web)
    * [MOBILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#mobile)
@@ -22,9 +22,9 @@ The website was deployed via Heroku - the live site can be found here -
 * [EPICS](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#epics)
 * [USER STORies](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#user-stories)
 * [FEATURES](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#features)
-* [FACEBOOK](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#facebook)
    * [WEB](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#web)
    * [MOBILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#mobile)
+* [FACEBOOK](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#facebook)    
 * [TESTING](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#testing)
 * [TEHNOLOGY USED](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#tehnology-used)
 ## UX
@@ -128,6 +128,24 @@ The full list of User Stories is available on the project [Sensation Perfume Kan
 #
 ## FEATURES
 ### WEB
+* Nav Bar 
+|         |         |
+|-------|---------|
+| Logout/ Not Registered User | <img width="946" alt="Screenshot 2024-02-21 235226" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/9b05b3b4-ba23-4d62-bda6-3511bae23852">|
+| Login User | <img width="947" alt="Screenshot 2024-02-21 235808" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/ca9e97f9-5a2e-49cf-8fc3-b8514dce907a">|
+* Home Page
+|        |       |
+|-------|--------|
+| Logout/ Not Registered User | <img width="946" alt="Screenshot 2024-02-21 235226" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/26e7c4b2-9f18-489b-a570-4cdd539adcd7">|
+| Login User | <img width="947" alt="Screenshot 2024-02-21 235808" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/2e552897-a366-4586-b266-4223c024e09d">|
+* Product Page
+|      |       |
+|-------|-------|
+| Displays product image, name, price, category, rating, sort-field, back to top button | <img width="949" alt="Screenshot 2024-02-22 000020" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/c7102e98-2815-48b2-81fa-bfbcb36a2588">|
+| Product Detail Page For Him, For Her - Displays product name, price, category, rating, product description, offer gift wrap, quantity, keep shopping button, add to bag button| <img width="945" alt="Screenshot 2024-02-22 003240" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/3492d5b7-ed02-4549-ae28-328270bf0cbb">|
+| Product Detail Page Gift Sets - Displays product name, price, category, rating, product description, include, quantity, keep shopping button, add to bag button | <img width="947" alt="Screenshot 2024-02-22 003504" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/d3eabc2b-f693-4944-b575-17e1e76c20f1">|
+| Product Detail Page For Him, For Her Sales - Displays product name, price, price was, category, rating, product description, quantity, keep shopping button, add to bag button | <img width="949" alt="Screenshot 2024-02-22 004406" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/da2194dd-54df-4932-9079-fb95c3a60619">|
+| Product Detail Page Gift Sets Sales - Displays product name, price, price was, category, rating, product description, include, quantity, keep shopping button, add to bag button| <img width="949" alt="Screenshot 2024-02-22 004555" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/094239ad-505b-4332-87a7-5b2a5ea44a84">| 
 ### MOBILE
 #
 ## FACEBOOK
