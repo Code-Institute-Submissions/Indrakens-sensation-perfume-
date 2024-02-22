@@ -4,7 +4,7 @@ Sensation Perfume is an e-commerce website that sells perfumes for women and men
 
 Users can begin a shopping instance where they can select products they would like to buy from the database. When the user is done, they can be directed to their shopping bag to view what they have and they can either start the payment process, update/delete items, or go back to the products page and add more items. When the user completes their shopping process, they will receive an email confirming their order. Registered Users have access to the profile page where they can update profile details, upload images and delete order history.
 #
-Sensation Perfume uses the Django Python framework to generate views via HTML and CSS. JavaScript is used to make the pages interactive. JavaScript was also used to handle posting user payments securely with Stripe. Javascript also was used for back-to-top button click functionality. All the pages are mainly styled with Bootstrap5 and custom CSS. All dependencies are handled by Pip.
+Sensation Perfume uses the Django Python framework to generate views via HTML and CSS. JavaScript is used to handle posting user payments securely with Stripe. Javascript also was used for back-to-top button click functionality. All the pages are mainly styled with Bootstrap and custom CSS. All dependencies are handled by Pip.
 #
 The website was deployed via Heroku - the live site can be found here - 
 [SENSATION - PERFUME](https://sensation-perfume-d52586ead80b.herokuapp.com/)
@@ -21,7 +21,7 @@ The website was deployed via Heroku - the live site can be found here -
    * [WEB](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#web)
    * [MOBILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#mobile)
 * [BUSINESS MODEL](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#business-model)
-* [SEO] 
+* [SEO](https://github.com/Indrakens/sensation-perfume?tab=readme-ov-file#seo)
 * [AGILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#agile) 
 * [EPICS](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#epics)
 * [USER STORIES](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#user-stories)
@@ -31,14 +31,14 @@ The website was deployed via Heroku - the live site can be found here -
 * [FACEBOOK](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#facebook)    
 * [TESTING](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#testing)
 * [TEHNOLOGY USED](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#tehnology-used)
-* [FEATURE TO IMPLEMENT]
-* [BUG]
-* [DEPLOYMENT] 
-* [FORKING AND CLONING]
-  * [Forking The Repository]
-  * [Create A Clone Of Repository]
-* [CONTENT AND RESOURCES]  
-* [ACKNOWLEDGMENT]
+* [FEATURE TO IMPLEMENT](https://github.com/Indrakens/sensation-perfume?tab=readme-ov-file#feature-to-implement)
+* [BUG](https://github.com/Indrakens/sensation-perfume?tab=readme-ov-file#bug)
+* [DEPLOYMENT](https://github.com/Indrakens/sensation-perfume?tab=readme-ov-file#deployment)
+* [FORKING AND CLONING](https://github.com/Indrakens/sensation-perfume?tab=readme-ov-file#forking-and-cloning)
+  * [Forking The Repository](https://github.com/Indrakens/sensation-perfume?tab=readme-ov-file#forking-the-repository)
+  * [Create A Clone Of Repository](https://github.com/Indrakens/sensation-perfume?tab=readme-ov-file#create-a-clone-of-repository)
+* [CONTENT AND RESOURCES](https://github.com/Indrakens/sensation-perfume?tab=readme-ov-file#content-and-resources)  
+* [ACKNOWLEDGMENT](https://github.com/Indrakens/sensation-perfume?tab=readme-ov-file#acknowledgment)
 ## UX
 ### UX DESIGN
 #### Color Scheme 
@@ -164,6 +164,7 @@ The full list of User Stories is available on the project [Sensation Perfume Kan
 | Dispays registration form, login link, home link | <img width="952" alt="Screenshot 2024-02-22 012514" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/75e7771e-e817-4568-8988-7f807efee520">|
 #### Login Page
 |      |       |
+|-----|------|
 | Displays register link, login form, remeber label, home link, forgot pasword link| <img width="949" alt="Screenshot 2024-02-22 013953" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/12dae2be-6a73-4a87-b504-d8894b5ae7a3">| 
 #### Logout Page
 |    |      |
@@ -174,6 +175,8 @@ The full list of User Stories is available on the project [Sensation Perfume Kan
 |-------|-------|
 | Displays product image, name, price, category, rating, sort-field, back to top button | <img width="949" alt="Screenshot 2024-02-22 000020" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/c7102e98-2815-48b2-81fa-bfbcb36a2588">|
 #### Product Detail Page
+|       |       |
+|-------|-------|
 | Product Detail Page For Him, For Her - Displays product name, price, category, rating, product description, offer gift wrap, quantity, keep shopping button, add to bag button| <img width="945" alt="Screenshot 2024-02-22 003240" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/3492d5b7-ed02-4549-ae28-328270bf0cbb">|
 | Product Detail Page Gift Sets - Displays product name, price, category, rating, product description, include, quantity, keep shopping button, add to bag button | <img width="947" alt="Screenshot 2024-02-22 003504" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/d3eabc2b-f693-4944-b575-17e1e76c20f1">|
 | Product Detail Page For Him, For Her Sales - Displays product name, price, price was, category, rating, product description, quantity, keep shopping button, add to bag button | <img width="949" alt="Screenshot 2024-02-22 004406" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/da2194dd-54df-4932-9079-fb95c3a60619">|
