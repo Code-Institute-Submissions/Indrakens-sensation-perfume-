@@ -21,7 +21,8 @@ The website was deployed via Heroku - the live site can be found here -
    * [WEB](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#web)
    * [MOBILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#mobile)
 * [BUSINESS MODEL](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#business-model)
-* [AGILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#agile)
+* [SEO] 
+* [AGILE](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#agile) 
 * [EPICS](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#epics)
 * [USER STORIES](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#user-stories)
 * [FEATURES](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#features)
@@ -30,7 +31,14 @@ The website was deployed via Heroku - the live site can be found here -
 * [FACEBOOK](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#facebook)    
 * [TESTING](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#testing)
 * [TEHNOLOGY USED](https://github.com/Indrakens/sensation-perfume/tree/main?tab=readme-ov-file#tehnology-used)
+* [FEATURE TO IMPLEMENT]
+* [BUG]
 * [DEPLOYMENT] 
+* [FORKING AND CLONING]
+  * [Forking The Repository]
+  * [Create A Clone Of Repository]
+* [CONTENT AND RESOURCES]  
+* [ACKNOWLEDGMENT]
 ## UX
 ### UX DESIGN
 #### Color Scheme 
@@ -73,6 +81,14 @@ The website was deployed via Heroku - the live site can be found here -
 | Shopping Bag Page | ![mobile shopping bag](https://github.com/Indrakens/sensation-perfume/assets/127971416/96ff3ee7-ff65-458e-ba16-cd97b2d44f97)|
 ## BUSINESS MODEL 
 The business is a B2C e-commerce platform whose goal is to provide products to its customers through an online store. The benefit for a business is easy to scale the business as it grows. Easy to set up a physical location. The business offers perfumes, eau de toilette, giftsets, products for sale- for women and men. Also offers gift wrap for perfumes and eau-de-toilette which is optional. The business marketing strategy is promote the online store trough it's Facebook business page, share the page with friends and family to expanding the business. An online store has a blog section for promoting the product or letting customers know about new product arrivals, which could be productive and sell more products to expand the business. The business goal was to create an online store where shoppers could easily navigate through the website. Provide users with products that meet their expectations, easily add product to shopping bag, and allow them to checkout quickly and easily.
+#
+## SEO
+#### Keywords
+Once the business model was decided on as an a perfume store I started working on how to market the site and what keywords to target. I utilised google trends to find more popular search terms. I checked for a number of keywords on google search and I was able to see wich key words are most popular for perfume store. 
+#### Sitemap.xml
+I generated a sitemap for the site so that once ready engines like google can search it effectively
+#### Robots.txt
+I generated a robots.txt file so that google could crawl the site. I have blocked off the accounts app as there is no benefit for google to crawl those pages
 #
 ## AGILE
 The Agile methodology was used to plan the project. Each user story was linked to an Epic. Issues were used to create Epics and User Stories with a custom template. Once work on the website story was complete, the user story was moved into the "Done" column.
@@ -286,13 +302,13 @@ Full testing can be seen in [TESTING.md](https://github.com/Indrakens/sensation-
 * If everything is correct it should deploy successfully
 * Click on open app at the top of the page to view your deployed app
 ## FORKING AND CLONING
-### Forking the repository
+### Forking The Repository 
 By forking the GitHub Repository you can make a copy of the original repository to view or change without it effecting the original repository
 * Logging into GitHub or create an account
 * Locate the repository [https://github.com/Indrakens/sensation-perfume](https://github.com/Indrakens/sensation-perfume)
 * At the top of the repository, on the right side of the page, select "Fork" from the buttons available
 * A copy of the repository should now be created in your own repository
-### Create a clone of repository
+### Create A Clone Of Repository
 Creating a clone enables you to make a copy of the repository at that point in time - this lets you run a copy of the project locally
 * Navigate to [https://github.com/Indrakens/sensation-perfume](https://github.com/Indrakens/sensation-perfume)
 * Click on the arrow on the green code button at the top of the list of files
