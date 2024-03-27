@@ -26,9 +26,51 @@
                         </a>
                     {% endif %}
                 </div>
+                <!-- product reviw -->
+                <div class="w-100 mt-6">
+                    <h5 class="text-xl">Reviews</h5>
+
+                    {% if request.user.is_authenticated %}
+                       <form method="POST" action="." class="px-5 py-2 mb-3 bg-secondary rounded">
+                           {% csrf_token %}
+
+                           <!-- rating -->
+                           <div class="mb-3">
+                            <label>Rating</label><br>
+                            <select name="rating">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3" selected>3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                           </div>
+                           
+                           <!-- comment -->
+                           <div>
+                            <label>Comment</label><br>
+                            <textarea name="content"></textarea>
+                           </div>
+
+                           <!-- submit button -->
+                           <div>
+                            <button>Submit</button>
+                           </div>
+                       </form>
+                    {% endif %}
+                    
+                    {% for review in product.reviews.all %} 
+                        <div class="px-4 py-5 rounded mb-4 bg-secondary">
+                            <strong>Rating: </strong> {{ review.rating }}/5<br>
+                            <strong>Date: </strong> {{ review.created_at|date:"Y-m-d" }}<br>
+                            <strong>Comment: </strong><br>
+                            {{ review.content }} 
+                        </div>
+                    {% endfor %} 
+                </div>
             </div>
             <!-- product details -->
-            <div class="col-12 col-md-6 col-lg-5 mt-4">
+            <div class="col-12 col-lg-5 mt-4">
                 <div class="product-details-container mb-5 mt-5">
                     <p class="mb-3 text-uppercase h3 p-name">{{ product.name }}</p>
                     <!-- product price -->
@@ -45,8 +87,8 @@
                     </p>
                     {% endif %} 
                     <!-- product rating -->
-                    {% if product.product_rating %} 
-                        <small class="text-dark"><i class="fas fa-star mr-1" style="color: #E0B411;"></i>{{ product.rating }} / 5</small>
+                    {% if product.get_rating > 0 %} 
+                        <small class="text-dark"><i class="fas fa-star mr-1" style="color: #E0B411;"></i>{{ product.get_rating }} / 5</small>
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %} 
