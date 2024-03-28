@@ -83,29 +83,30 @@
                                     <h6 class="total"><strong>Shopping Bag Total: &euro;{{ total|floatformat:2 }}</strong></h6>
                                     <h6 class="delivery">Delivery: &euro;{{ delivery|floatformat:2 }}</h6>
                                     <h4 class="mt-4 grand-total"><strong>Total: &euro;{{ grand_total|floatformat:2 }}</strong></h4>
-                                    {% if free_delivery_delta > 0 %}
-                                        <p class="mb-1 text-success free-delivery">
+                                    {% if free_delivery_delta > 0 %} 
+                                        <h5 class="mb-1 free-delivery text-center" style="background-color: #dbdbd9;">
                                             Free delivery available by spending <strong>&euro;{{ free_delivery_delta }}</strong> more!
-                                        </p>
+                                        </h5>
                                     {% endif %} 
                                 </td> 
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <!-- keep shopping button -->
-                                    <a href="{% url 'products' %}" class="btn btn-warning border-warning rounded-0 btn-lg">
-                                        <span class="icon">
-                                            <i class="fa-solid fa-angles-left"></i>
-                                        </span>
-                                        <span class="text-uppercase small">Keep Shopping</span>
-                                    </a>
                                     <!-- checkout button -->
-                                    <a href="{% url 'order_checkout' %}" class="btn btn-warning border-warning rounded-0 btn-lg">
+                                    <a href="{% url 'order_checkout' %}" class="btn btn-warning border-warning rounded-0 btn-lg w-50">
                                         <span class="text-uppercase small">Go To Checkout</span> 
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
                                         </span>
                                     </a> 
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td colspan="5" class="text-right">
+                                    <!-- keep shopping button -->
+                                    <a href="{% url 'products' %}" class="btn btn-light border-warning rounded-0 btn-lg w-50">
+                                        <span class="text-uppercase small">Continue Shopping</span>
+                                    </a>
                                 </td>
                             </tr> 
                         </table>    
