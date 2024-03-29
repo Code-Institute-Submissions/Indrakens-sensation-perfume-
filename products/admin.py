@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, Review
+from .models import Product, Category, Genders, Review
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -7,8 +7,8 @@ class ProductAdmin(admin.ModelAdmin):
         'sku',
         'name',
         'category',
+        'gender',
         'price',
-        'product_rating',
         'image',
     )
 
@@ -22,6 +22,13 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
+class GendersAdmin(admin.ModelAdmin):
+    list_display = (
+        'friendly_name',
+        'name',
+    )      
+
+
 class ReviewyAdmin(admin.ModelAdmin):
     list_display = (
         'rating',
@@ -31,4 +38,5 @@ class ReviewyAdmin(admin.ModelAdmin):
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
+admin.site.register(Genders, GendersAdmin)
 admin.site.register(Review, ReviewyAdmin)
