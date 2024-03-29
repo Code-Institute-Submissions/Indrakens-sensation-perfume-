@@ -75,8 +75,16 @@
                                             <!-- product category -->
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
-                                                <a class="text-dark" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                <a class="text-dark text-uppercase" href="{% url 'products' %}?category={{ product.category.name }}">
                                                     <i class="fas fa-tag mr-1" style="color: #E0B411;"></i>{{ product.category.friendly_name }} 
+                                                </a>
+                                            </p>
+                                            {% endif %} 
+                                            <!-- product gender -->
+                                            {% if product.gender %}
+                                            <p class="small mt-1 mb-0">
+                                                <a class="text-dark text-uppercase" href="{% url 'products' %}?gender={{ product.gender.name }}">
+                                                    <i class="fas fa-solid fa-venus-mars mr-1" style="color: #E0B411;"></i>{{ product.gender.friendly_name }} 
                                                 </a>
                                             </p>
                                             {% endif %} 

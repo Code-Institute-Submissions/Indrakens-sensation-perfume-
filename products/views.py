@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Review, Category
+from .models import Product, Review, Category, Genders
 from .forms import ProductForm
 
 
@@ -35,7 +35,12 @@ def all_products(request):
         if "category" in request.GET:
             categories = request.GET["category"].split(",")
             products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)   
+            categories = Category.objects.filter(name__in=categories)
+
+        if "genders" in request.GET:
+            gender = request.Get["genders"].split(',')
+            products = products.filter(genders__name__in=gender)
+            gender = Genders.objects.filter(name__in=gender)      
 
         if "q" in request.GET:
             query = request.GET["q"]
