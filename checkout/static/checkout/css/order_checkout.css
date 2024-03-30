@@ -71,8 +71,15 @@ select option[value=""] {
 .loading-spinner i{
   font-size: 200px;
 }   
+/* checkout page */
+.bag-link:hover {
+    color: #000 !important;
+}
 
-/* order checkoit success */
+.alert-text {
+  background-color: #f78585 !important;
+}
+/* order checkout success */
 .order{
   border-top: 2px solid #000 !important;
 }  

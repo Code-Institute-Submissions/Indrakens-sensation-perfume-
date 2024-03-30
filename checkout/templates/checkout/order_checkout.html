@@ -112,30 +112,27 @@
                         <!-- display form errors -->
                         <div class="mb-3 text-danger small" id="card-errors" role="alert"></div>
                         <!-- pass the client secret to the view so can get the payment intent id -->
-                        <input type="hidden" value="{{ client_secret }}" name="client_secret"> 
+                        <input type="hidden" value="{{ client_secret }}" name="client_secret">
+                        <!-- notification alert -->
+						<p class="small my-0 alert-text text-center">
+							<span>Your card will be charged <strong>&euro;{{ grand_total|floatformat:2 }}</strong></span>
+						</p> 
                     </fieldset> 
                     <!-- payment submit -->
-                    <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_shopping_bag' %}" class="btn btn-warning rounded-0 border-warning">
-							<span class="icon">
-								<i class="fa-solid fa-angles-left"></i>
-							</span>
-							<span class="text-uppercase">Adjust Bag</span>
-						</a>
+                    <div class="submit-button text-right mt-2 mb-2">                    
                         <!-- payment submit button -->
-						<button id="submit-button" class="btn btn-warning rounded-0 border-warning">
+						<button id="submit-button" class="btn btn-warning rounded-0 border-warning w-100">
 							<span class="text-uppercase">Complete Order</span>
 							<span class="icon">
 								<i class="fas fa-lock"></i>
 							</span>
 						</button>
-                        <!-- notification alert -->
-						<p class="small text-danger my-0">
-							<span class="icon">
-								<i class="fas fa-exclamation-circle"></i>
-							</span>
-							<span>Your card will be charged <strong>&euro;{{ grand_total|floatformat:2 }}</strong></span>
-						</p>
+					</div>
+                    <!-- return to shopping bag link -->
+                    <div class="text-right mt-2 mb-2">                    
+						<a href="{% url 'view_shopping_bag' %}" class="text-black bag-link">
+							<p class="text-uppercase"><i class="fa-solid fa-angles-left"></i> Return to shopping bag</p>
+						</a>
 					</div>
                 </form> 
             </div>
