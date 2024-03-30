@@ -1,4 +1,4 @@
-from django.shortcuts import render, reverse, redirect, get_object_or_404
+from django.shortcuts import render, reverse, redirect, get_object_or_404, HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -87,8 +87,6 @@ def product_detail(request, product_id):
                 content=content,
                 created_by=request.user
                 )
-
-            return redirect('products')
 
     context = {
         "product": product,
