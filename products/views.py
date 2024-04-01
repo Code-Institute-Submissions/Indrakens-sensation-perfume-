@@ -12,6 +12,8 @@ def all_products(request):
     """A view to show all products"""
 
     products = Product.objects.all()
+    gender_list = Genders.objects.all()
+    
     query = None
     categories = None
     gender = None
@@ -80,6 +82,7 @@ def product_detail(request, product_id):
                 review.rating = rating
                 review.content = content
                 review.save()
+                messages.success(request, "Successfully added review!")
             else:
                 review = Review.objects.create(
                 product=product,
