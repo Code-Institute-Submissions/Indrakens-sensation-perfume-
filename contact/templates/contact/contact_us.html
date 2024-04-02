@@ -25,6 +25,9 @@
                 <form method="POST" action="" class="form mb-4">
                     {% csrf_token %} 
                     {{ form | crispy }} 
+                    <div class="col-12 text-right">
+                        <button class="btn btn-warning border-warning rounded-0 btn-lg w-50 text-uppercase" type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>

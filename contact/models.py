@@ -9,7 +9,7 @@ class Contact(models.Model):
     ]
 
     email = models.EmailField()
-    query = models.CharField(max_length=20, choices=CHOICES)
+    query = models.CharField(max_length=20, choices=CHOICES, default='query')
     subject = models.CharField(max_length=150)
     message = models.TextField(max_length=800)
 
