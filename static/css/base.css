@@ -34,6 +34,7 @@ body {
 
 .font {
     font-family: 'Livvic', sans-serif;
+    color: #000 !important;
 }
 
 .fst-normal {
