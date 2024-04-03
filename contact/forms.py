@@ -1,8 +1,8 @@
-from django.forms import ModelForm
+from django import forms
 from .models import Contact
 
 
-class ContactForm(ModelForm):
+class ContactForm(forms.ModelForm):
     class Meta:
         model = Contact
         fields = '__all__'
@@ -20,5 +20,5 @@ class ContactForm(ModelForm):
         }
 
         self.fields['email'].widget.attrs['autofocus'] = True
-        for field_name, field in self.fields.items():
-            field.widget.attrs["class"] = "border-warning rounded-0" 
+        for field_name, fields in self.fields.items():
+            fields.widget.attrs["class"] = "border-warning rounded-0" 

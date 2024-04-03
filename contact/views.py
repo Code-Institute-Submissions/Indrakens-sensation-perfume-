@@ -16,7 +16,7 @@ def contact_us(request):
         if form.is_valid():
             form.save()                
             messages.success(request, 'Message sent succesfuly. Thank you for contacting with us!')
-            return redirect(reverse('home'))
+            return redirect(reverse('contact_us'))
         else:
             messages.error(request, 'Something went wrong, please try again.')
 
