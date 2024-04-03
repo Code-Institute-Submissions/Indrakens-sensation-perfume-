@@ -14,7 +14,7 @@ def contact_us(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            form.save()                
+            form.save()                    
             messages.success(request, 'Message sent succesfuly. Thank you for contacting with us!')
             return redirect(reverse('contact_us'))
         else:
