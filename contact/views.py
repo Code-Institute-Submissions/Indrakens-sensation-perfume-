@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, reverse
 from .forms import ContactForm
 from django.contrib import messages
+from django.core.mail import send_mail
+from django.conf import settings
 
 
 def contact_us(request):
@@ -14,8 +16,8 @@ def contact_us(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            form.save()                    
-            messages.success(request, 'Message sent succesfuly. Thank you for contacting with us!')
+            form.save()                 
+            messages.info(request, 'Please allow up to 48 hours for us to get back to you. Thank you for contacting with us!')
             return redirect(reverse('contact_us'))
         else:
             messages.error(request, 'Something went wrong, please try again.')
@@ -27,4 +29,4 @@ def contact_us(request):
     context = {
         'form': form
     }
-    return render(request, template, context)
+    return render(request, template, context)    
