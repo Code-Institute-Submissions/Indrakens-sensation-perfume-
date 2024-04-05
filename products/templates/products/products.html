@@ -32,7 +32,7 @@
                                 <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
                                 <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
                                 <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
-                                <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                                <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>   
                             </select>
                         </div>
                     </div>
@@ -79,8 +79,8 @@
                                             {% endif %} 
                                             <!-- product gender -->
                                             {% if product.gender %}
-                                            <p class="small mt-1 mb-0 text-dark text-uppercase">   
-                                                <i class="fas fa-solid fa-venus-mars mr-1" style="color: #E0B411;"></i>{{ product.gender.friendly_name }}   
+                                            <p class="small mt-1 mb-0 text-dark text-uppercase">
+                                                <i class="fas fa-solid fa-venus-mars mr-1" style="color: #E0B411;"></i>{{ product.gender.friendly_name }}      
                                             </p>
                                             {% endif %} 
                                             <!-- product rating --> 

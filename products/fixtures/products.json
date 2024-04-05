@@ -7,9 +7,9 @@
             "name": "ARMANI ACQUA DI GIO PROFONDO (75ML) - Men's Aftershave Perfume Spray",
             "product_description": "Like taking a plunge into the deep blue sea, senses are awakened by green mandarin and bergamot while an ultramarine, nearly icy hue is conveyed by Acqua di Giò's iconic marine notes. As the bubbles of oxygen rise to the top, the rosemary, lavender, cypress and lentisk absolute blend at its heart. Exuding a masculine character of depth and intensity, notes of woody patchouli and enveloping musk finally fuse with the saline accent of a mineral ambery accord at the base.",
             "category": 3,
+            "gender": 2,
             "has_giftwrap": "True",
             "price": 74.99,
-            "product_rating": 5,
             "image": "30765557153951.jpg"
         }
     },
@@ -18,12 +18,12 @@
         "model": "products.product",
         "fields": {
             "sku": "M ARMAN-GIFTSET-038",
-            "name": "ARMANI ACQUA DI GIO - Men's gift Set",
+            "name": "ARMANI ACQUA DI GIO - Men's Gift Set",
             "product_description": "The classic Acqua Di Gio for Men by Giorgio Armani is a simply gorgeous scent of freedom, inspired by the elements; the freshness of the sea, the scorching Mediterranean sun. A perfect blend of sweet and salty notes with sharp notes of spices, softened with a woody, musky base.",
             "category": 6,
+            "gender": 2,
             "include": "100ml EDT & 75g Deodorant Stick",
             "price": 85.99,
-            "product_rating": 5,
             "image": "36431778447519.jpg"
         }
     },
@@ -35,10 +35,10 @@
             "name": "AZZARO WANTED BY NIGHT - Men's Gift Set",
             "product_description": "Azzaro Wanted by Night is announced as an explosive woody and spicy oriental of unabashed sensuality, a blend of temptation and masculinity. The composition mixes exotic woods and spices, and highlights the three main accords: cinnamon, red cedar and tobacco.",
             "category": 10,
+            "gender": 2,
             "include": "100ml EDP & 5.7ml EDP",
             "price": 60.99,
             "price_was": 65,
-            "product_rating": 4.1,
             "image": "33992124137631.jpg"
         }
     },
@@ -50,9 +50,9 @@
             "name": "AZZARO POUR HOMME NAUGHTY LEATHER (100ML) - Men's Aftershave Spray",
             "product_description": "Is strong, confident, seductive and dynamic. The intense notes of davana and leather create a powerful fragrance which is intensely woody and oriental. Sweet notes of vanilla add an elegant sensuality to a masculine mysterious olfactory delight. Carnal desire emerges from the shadows and light.",
             "category": 9,
+            "gender": 2,
             "price": 37.99,
             "price_was": 45,
-            "product_rating": 5,
             "image": "32534440870047.jpg"
         }
     },
@@ -64,9 +64,9 @@
             "name": "BURBERRY LONDON (100ML) - Men's Aftershave Spray",
             "product_description": "A sophisticated scent with notes of lavender, bergamot and warm cinnamon perfectly balanced with heart notes of leather and mimosa with tobacco leaves and oak moss make this a truly refined fragrance.",
             "category": 4,
+            "gender": 2,
             "has_giftwrap": "True",
             "price": 46.99,
-            "product_rating": 4.5,
             "image": "20284524789919.jpg"
         }
     },
@@ -78,9 +78,9 @@
             "name": "BURBERRY MR BURBERRY (50ML) - Men's Aftershave Spray",
             "product_description": "Fresh top notes of crisp zesty grapefruit, with a seductive base of earthy vetiver and smoky guaiac wood.",
             "category": 9,
+            "gender": 2,
             "price": 29,
             "price_was": 48,
-            "product_rating": 3.5,
             "image": "21386846601375.jpg"
         }
     },
@@ -92,9 +92,9 @@
             "name": "CALVIN KLEIN EUPHORIA MEN (30ML) - Men's Aftershave Spray",
             "product_description": "Euphoria Men by Calvin Klein is a Woody Aromatic fragrance for men. An addictive and evocative scent arouses all the senses. The fragrance is a refreshing, woody fragrance containing ginger, pepper, black basil, sage, cedar, amber, patchouli, Brazilian redwood and suede.",
             "category": 4,
+            "gender": 2,
             "has_giftwrap": "True",
             "price": 47.99,
-            "product_rating": 5,
             "image": "36394024042655.jpg"
         }
     },
@@ -106,9 +106,9 @@
             "name": "M CALVI-GIFTSET-045",
             "product_description": "As the scent lingers, it combines with the middle notes of coriander, lily, orange blossom, and juniper berries, adding a subtle yet exotic aroma to your senses. Finally, the base notes of sandalwood, amber, musk, and vetiver take over, creating an unmistakable air of sophistication and sensuality.",
             "category": 6,
+            "gender": 2,
             "include": "30ml EDT & Shower Gel",
             "price": 55.99,
-            "product_rating": 4.6,
             "image": "36490398990495.jpg"
         }
     },
@@ -120,9 +120,9 @@
             "name": "CALVIN KLEIN ETERNITY FOR MEN REFLECTIONS (100ML) - Men's Aftershave Spray",
             "product_description": "The fragrance opens with the lush herbal note of absinthe, before settling on a sweet delight chocolatey heart note. Oakmoss and sandalwood create a woodsy mysterious finish which completes this intriguing and unique scent.",
             "category": 9,
+            "gender": 2,
             "price": 49.99,
             "price_was": 72,
-            "product_rating": 5,
             "image": "36431630205087.jpg"
         }
     },
@@ -134,9 +134,9 @@
             "name": "CAROLINA HERRERA BAD BOY - Men's Gift Set",
             "product_description": "Contrasting layers build the composition of this scent. Fresh bergamot with punchy notes of pepper from a confident opening. At the heart lies herby, aromatic notes of cedar and sage. The base is strong with rich tonka bean and woody accords for a masculine finish.",
             "category": 6,
+            "gender": 2,
             "include": "50ml EDT, 10ml EDT & Shower Gel",
             "price": 81.99,
-            "product_rating": 4.4,
             "image": "34320837542047.jpg"
         }
     },
@@ -148,9 +148,9 @@
             "name": "CAROLINA HERRERA BAD BOY COLBALT - Men's Gift Set",
             "product_description": "The fragrance opens with notes of pink pepper which are enhanced by a floral yet masculine geranium heart. The mineral accents of the truffle accord base are invigorated with smoky oakwood and infused with ethically sourced vetiver and sexy cedarwood.",
             "category": 6,
+            "gender": 2,
             "include": "100ml EDT, 10ml EDT & Shower Gel",
             "price": 86.99,
-            "product_rating": 5,
             "image": "34325808480415.jpg"
         }
     },
@@ -162,9 +162,9 @@
             "name": "CAROLINA HERRERA 212 VIP (100ML) - Men's Aftershave Spray",
             "product_description": "Are you on the list? Join the private party with 212 VIP Men from Carolina Herrera, inspired by the scent and attitude of the most exclusive parties.",
             "category": 9,
+            "gender": 2,
             "price": 39.99,
             "price_was": 57,
-            "product_rating": 5,
             "image": "21500858794143.jpg"
         }
     },
@@ -176,9 +176,9 @@
             "name": "DAVIDOFF HOT WATER (110ML) - Aftershave Spray",
             "product_description": "Is an oriental-spicy fragrance for men. Davidoff heats things up this time with this hot and fiery scen.",
             "category": 9,
+            "gender": 2,
             "price": 29,
             "price_was": 50,
-            "product_rating": 4.3,
             "image": "20850681970847.jpg"
         }
     },
@@ -190,9 +190,9 @@
             "name": "DIESEL BAD INTENSE (50ML) - Men's Aftershave Perfume Spray",
             "product_description": "A masculine fragrance for a man who lives for seduction and never gets enough. Diesel Bad Intense is a sizzling take on the tobacco-caviar signature of their popular Bad fragrance. The scent reveals itself with a sharp sparkle of bergamot. Before you know it, a hot cocktail of nutmeg and cinnamon inflamed the caviar accord. Tobacco and woody notes burning.",
             "category": 3,
+            "gender": 2,
             "has_giftwrap": "True",
             "price": 52.99,
-            "product_rating": 4.4,
             "image": "18019119759519.jpg"
         }
     },
@@ -204,9 +204,9 @@
             "name": "DIESEL SOUND OF THE BRAVE (50ML) - Men's Aftershave Spray",
             "product_description": "The fragrance is an oriental fougère with aromatic bison grass accord and lavandin essence resonating against each other, creating a perfect flow at the heart of the fragrance. Mixed in on top, spicy juniper essence and invigorating lemon essence bounce and vibrate. The end is an intense base of warm amber woods and sensual musks.",
             "category": 4,
+            "gender": 2,
             "has_giftwrap": "True",
             "price": 43.99,
-            "product_rating": 5,
             "image": "30765764477087.jpg"
         }
     },
@@ -218,9 +218,9 @@
             "name": "DIESEL FUEL FOR LIFE - Men's Gift Set",
             "product_description": "Cavallier, is an energetic magic potion of star anise, raspberry and heliotrope that will keep you coming back for more.",
             "category": 6,
+            "gender": 2,
             "include": "75ml EDT & Shower Gel, Deodorant Spray",
             "price": 67.99,
-            "product_rating": 5,
             "image": "32289370275999.jpg"
         }
     },
@@ -232,10 +232,10 @@
             "name": "DIESEL D BY DIESEL - Men's Gift set",
             "product_description": "Addressing a new era for Diesel D by Diesel is an aromatic gender-fluid fragrance.",
             "category": 10,
+            "gender": 2,
             "include": "100ml EDT & Shower gel, Moisturizer",
             "price": 67.99,
             "price_was": 87,
-            "product_rating": 5,
             "image": "34345671786655.jpg"
         }
     },
@@ -247,9 +247,9 @@
             "name": "DOLCE & GABBANA K (50ML) - Men's Aftershave Perfume Spray",
             "product_description": "This effortlessly joyful fragrance opens with notes of blood orange, zingy Sicilian lemon and tangy juniper berries. The heart is a unique twist of aromatic notes, smooth fig nectar and clary sage. The fragrance finishes with a sensual base formed of patchouli, cedar and vetiver.",
             "category": 3,
+            "gender": 2,
             "has_giftwrap": "True",
             "price": 62.99,
-            "product_rating": 5,
             "image": "20854045900959.jpg"
         }
     },
@@ -261,9 +261,9 @@
             "name": "DOLCE & GABBANA POUR HOMME INTENSO (75ML) - Men's Aftershave Perfume Spray",
             "product_description": "Dolce & Gabbana Intenso is a woody aromatic fragrance, whose profound appeal is defined by a brand new discovery in the olfactory world: the Moepel accord which has been re-created from the flowers and leaves of the Milkwood tree using Headspace technology.",
             "category": 3,
+            "gender": 2,
             "has_giftwrap": "True",
             "price": 52.99,
-            "product_rating": 4.5,
             "image": "34807692918943.jpg"
         }
     },
@@ -275,9 +275,9 @@
             "name": "DOLCE & GABBANA K (50ML) - Men's Aftershave Spray",
             "product_description": "This effortlessly joyful fragrance opens with notes of blood orange, zingy Sicilian lemon and tangy Juniper berries. This instantly refreshes and energizes the wearer, taking inspiration from the Mediterranean air. The heart is a unique twist of aromatic, herby notes with a kick of fiery Pimento. The fragrance is finished with a sensual base formed of Cedar, Vetiver and Patchouli.",
             "category": 4,
+            "gender": 2,
             "has_giftwrap": "True",
             "price": 59.99,
-            "product_rating": 5,
             "image": "15096326488157.jpg"
         }
     },
@@ -289,9 +289,9 @@
             "name": "DOLCE & GABBANA THE ONE GREY (30ML) - Men's Aftershave Spray",
             "product_description": "A playful fusion of spicy and aromatic notes takes place. Bitter grapefruit is combined with aromatic and herbal notes of coriander, cardamom and basil to introduce the scent. Lavender powers the heart alongside geranium and clary sage. The One For Men's signature combination of warm tobacco and woody notes completes this masculine scent.",
             "category": 4,
+            "gender": 2,
             "has_giftwrap": "True",
             "price": 54.99,
-            "product_rating": 5,
             "image": "34228562493599.jpg"
         }
     },
@@ -303,9 +303,9 @@
             "name": "DOLCE & GABBANA K - Men's Gift Set",
             "product_description": "This effortlessly joyful fragrance opens with notes of blood orange, zingy Sicilian lemon and tangy Juniper berries. This instantly refreshes and energizes the wearer, taking inspiration from the Mediterranean air. The heart is a unique twist of aromatic, herby notes with a kick of fiery Pimento. The fragrance is finished with a sensual base formed of Cedar, Vetiver and Patchouli.",
             "category": 6,
+            "gender": 2,
             "include": "50ml EDT & Shower Gel, Aftershave Balm",
             "price": 75,
-            "product_rating": 5,
             "image": "34859884118175.jpg"
         }
     },
