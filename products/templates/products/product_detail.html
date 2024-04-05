@@ -72,8 +72,9 @@
                     
                     {% for review in product.reviews.all %} 
                         <div class="px-4 py-5 rounded mb-4" style="background-color: #dbdbd9;">
-                            <strong>Rating: </strong> {{ review.rating }}/5<br>
-                            <strong>Date: </strong> {{ review.created_at|date:"Y-m-d" }}<br>
+                            <span class="small"><strong>Rating: </strong></span> {{ review.rating }}/5<br>
+                            <span class="small"><strong>Date: </strong></span> {{ review.created_at|date:"Y-m-d" }}<br>
+                            <span class="small"><strong>Commented By: </strong></span> {{ review.created_by }}<br>
                             <strong>Comment: </strong><br>
                             {{ review.content }} 
                         </div>
