@@ -14,7 +14,7 @@ def contact_us(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            form.save()                 
+            form.save()       
             messages.info(request, 'Please allow up to 48 hours for us to get back to you. Thank you for contacting with us!')
             return redirect(reverse('contact_us'))
         else:
@@ -27,4 +27,5 @@ def contact_us(request):
     context = {
         'form': form
     }
-    return render(request, template, context)    
+    return render(request, template, context)
+        

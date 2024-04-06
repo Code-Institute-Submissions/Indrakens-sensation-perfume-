@@ -24,7 +24,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class GendersAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
+        'gender_friendly_name',
         'name',
     )      
 
