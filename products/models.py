@@ -17,6 +17,21 @@ class Category(models.Model):
         return self.friendly_name
 
 
+class Brand(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Brands'
+
+    name = models.CharField(max_length=254)
+    brand_friendly_name = models.CharField(max_length=254, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_brand_friendly_name(self):
+        return self.brand_friendly_name        
+
+
 class Genders(models.Model):
 
     class Meta:
@@ -36,6 +51,8 @@ class Genders(models.Model):
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True,
                                  blank=True, on_delete=models.SET_NULL)
+    brand = models.ForeignKey('Brand', null=True,
+                                 blank=True, on_delete=models.SET_NULL)                             
     gender = models.ForeignKey('Genders', null=True,
                                  blank=True, on_delete=models.SET_NULL)                           
     sku = models.CharField(max_length=254, null=True, blank=True)

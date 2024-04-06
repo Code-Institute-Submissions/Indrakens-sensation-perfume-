@@ -70,10 +70,17 @@
                                             <!-- product category -->
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0 text-dark text-uppercase">
-                                                <i class="fa-solid fa-tags mr-1" style="color: #E0B411;"></i>
+                                                <i class="fa-solid fa-spray-can mr-1" style="color: #E0B411;"></i>
                                                 <strong>{{ product.category.friendly_name }}</strong> 
                                             </p>
-                                            {% endif %} 
+                                            {% endif %}
+                                            <!-- product brand -->
+                                            {% if product.brand %}
+                                            <p class="small mt-1 mb-0 text-dark text-uppercase">
+                                                <i class="fa-solid fa-tags mr-1" style="color: #E0B411;"></i>
+                                                <strong>{{ product.brand.brand_friendly_name }}</strong>     
+                                            </p>
+                                            {% endif %}  
                                             <!-- product gender -->
                                             {% if product.gender %}
                                             <p class="small mt-1 mb-0 text-dark text-uppercase">
