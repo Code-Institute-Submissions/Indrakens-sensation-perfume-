@@ -113,14 +113,12 @@
                         </table>    
                     </div>
                 {% else %} 
-                    <p class="lead mb-5 text-dark">Your shopping bag is empty.</p>
-                    <!-- keep shopping button -->
-                    <a href="{% url 'products' %}" class="btn btn-warning border-warning rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fa-solid fa-angles-left"></i>
-                        </span>
-                        <span class="text-uppercase">Continue Shopping</span>
-                    </a>
+                    <p class="lead mb-2 text-dark">Your shopping bag is empty.</p>
+                    <!-- all product link -->
+                    <p class="text-uppercase"> 
+                        <a class="home-link" href="{% url 'products' %}">
+                            <i class="fa-solid fa-angles-left"></i> Begin Shopping
+                    </p>
                 {% endif %}
             </div>
         </div>
