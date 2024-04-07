@@ -91,7 +91,12 @@
     </div> 
     <div class="row"> 
         <div class="col-md-8">
-            <h4 class="mb-4">Comments</h4>     
+            <h4 class="mb-4">Comments</h4>
+            {% if post and not comments %}  
+                <p class="mt-2 text-muted"> 
+                    No Comments 
+                </p>
+            {% endif %}      
             <div class="body">     
                 <!-- we want a for loop inside the empty control tags to iterate through each comment in comments -->
                 {% for comment in comments %}  
@@ -115,7 +120,7 @@
                     {{ comment.body | linebreaks }} 
                 </div>  
                 {% endfor %}      
-            </div> 
+            </div>
         </div>
         <div class="col-md-4 mb-4 mt-3">
             <div class="comment-body"> 
