@@ -33,16 +33,11 @@
                         {% endif %}
                     {% endfor %} 
                     <div class="text-right">
-                        <!-- go to home page link -->
-                        <p class="small d-inline mr-2">Go to 
+                        <!-- return to home page link -->
+                        <p class="small d-inline ml-2"> 
                             <a class="home-link" href="{% url 'home' %}">
-                              <strong>Home</strong>
-                            </a> page.
-                        </p>
-                        <!-- button cancel -->
-                        <a class="btn btn-warning border-warning rounded-0 btn-sm w-25" href="{% url 'add_product' %}">
-                            <span class="text-uppercase">Cancel</span>
-                        </a> 
+                              <strong><i class="fa-solid fa-angles-left"></i> Return To Home Page</strong>
+                        </p> 
                         <!-- button add -->
                         <button class="btn btn-warning border-warning rounded-0 btn-sm w-25">
                             <span class="text-uppercase">Add</span>

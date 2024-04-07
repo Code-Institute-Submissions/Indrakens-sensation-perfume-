@@ -32,15 +32,16 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %} 
-                    <div class="text-right mt-4"> 
-                        <!-- button cancel -->
-                        <a class="btn btn-warning border-warning rounded-0 btn-sm w-25" href="{% url 'product_detail' product.id %}">
-                            <span class="text-uppercase">Cancel</span>
-                        </a> 
+                    <div class="text-right mt-4">   
                         <!-- button update -->
                         <button class="btn btn-warning border-warning rounded-0 btn-sm">
                             <span class="text-uppercase">Update Product</span>
                         </button>
+                        <!-- return to product id detail page link -->
+                        <p class="small mt-2"> 
+                            <a class="home-link" href="{% url 'product_detail' product.id %}">
+                              <i class="fa-solid fa-angles-left"></i> Return To <strong>{{ product.name }}</strong> Page.
+                        </p>
                     </div>    
                 </form>
             </div>
