@@ -333,7 +333,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content {
-    height: calc(100vh - 154px);
+    height: calc(100vh - 74px);
 }
 
 .mb-4.verify-email {
