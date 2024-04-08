@@ -26,21 +26,21 @@ class BrandAdmin(admin.ModelAdmin):
     list_display = (
         'brand_friendly_name',
         'name',
-    )    
+    )
 
 
 class GendersAdmin(admin.ModelAdmin):
     list_display = (
         'gender_friendly_name',
         'name',
-    )      
+    )
 
 
 class ReviewyAdmin(admin.ModelAdmin):
     list_display = (
         'rating',
         'content',
-    )    
+    )
 
 
 admin.site.register(Product, ProductAdmin)

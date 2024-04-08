@@ -14,4 +14,4 @@ class Contact(models.Model):
     message = models.TextField(max_length=800)
 
     def __str__(self):
-        return self.email    
+        return self.email

@@ -1,4 +1,5 @@
-from django.shortcuts import render, reverse, redirect, get_object_or_404, HttpResponseRedirect
+from django.shortcuts import (
+    render, reverse, redirect, get_object_or_404, HttpResponseRedirect)
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -14,7 +15,6 @@ def all_products(request):
     products = Product.objects.all()
     brand_list = Brand.objects.all()
     gender_list = Genders.objects.all()
-    
     query = None
     categories = None
     brands = None
@@ -28,11 +28,11 @@ def all_products(request):
             sort = sortkey
             if sortkey == "name":
                 sortkey = "lower_name"
-                products = products.annotate(lower_name=Lower("name"))           
+                products = products.annotate(lower_name=Lower("name"))
             if "direction" in request.GET:
                 direction = request.GET["direction"]
                 if direction == "desc":
-                    sortkey = f"-{sortkey}"                       
+                    sortkey = f"-{sortkey}"
             products = products.order_by(sortkey)
 
         if "category" in request.GET:
@@ -43,13 +43,12 @@ def all_products(request):
         if "brand" in request.GET:
             brands = request.GET["brand"].split(",")
             products = products.filter(brand__name__in=brands)
-            brands = Category.objects.filter(name__in=brands)    
+            brands = Category.objects.filter(name__in=brands)
 
         if "gender" in request.GET:
             genders = request.Get["gender"].split(',')
             products = products.filter(genders__name__in=genders)
             gender = Genders.objects.filter(name__in=genders)
-                  
 
         if "q" in request.GET:
             query = request.GET["q"]
@@ -58,7 +57,7 @@ def all_products(request):
                 return redirect(reverse("products"))
 
             queries = (
-                Q(name__icontains=query) 
+                Q(name__icontains=query)
                 | Q(product_description__icontains=query)
             )
             products = products.filter(queries)

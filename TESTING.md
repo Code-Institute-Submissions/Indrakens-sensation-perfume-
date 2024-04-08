@@ -215,11 +215,11 @@
 #
 |     |      |
 |-----|------|
-| products/ views.py | <img width="539" alt="Screenshot 2024-02-19 233850" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/9a99ec90-6529-47bb-bfbf-928d42f99276">|
+| products/ views.py | ![Screenshot 2024-04-08 233951](https://github.com/Indrakens/sensation-perfume/assets/127971416/9d7b97ef-92c5-44ad-b2c5-2242eb0f0738)|
 | products/ urls.py | <img width="510" alt="Screenshot 2024-02-19 234200" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/627c24a9-28cc-46ac-9c9a-accdf33cf7a7">|
-| products/ models.py | <img width="512" alt="Screenshot 2024-02-19 234913" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/0e6578b0-0054-44d7-9d56-aeabe26018e6">|
-| products/ forms.py | <img width="527" alt="Screenshot 2024-02-19 235107" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/6b112f7d-2484-4a9c-8cc0-9f2601586f0e">|
-| products/ admin.py | <img width="556" alt="Screenshot 2024-02-19 235416" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/beccda8b-b141-41ce-b340-953b0ba8e461">|
+| products/ models.py | ![Screenshot 2024-04-08 235259](https://github.com/Indrakens/sensation-perfume/assets/127971416/307cfa9f-cf25-4871-a133-a29303f5f671)|
+| products/ forms.py | ![Screenshot 2024-04-08 235731](https://github.com/Indrakens/sensation-perfume/assets/127971416/0445dbed-4c85-45e7-b247-f01b5069c863)|
+| products/ admin.py | ![Screenshot 2024-04-09 000215](https://github.com/Indrakens/sensation-perfume/assets/127971416/c3a8cadc-14b0-4777-ba89-ca5a75c46cb8)|
 #
 |   |    |
 |----|----|
@@ -227,6 +227,14 @@
 | profiles/ urls.py | <img width="548" alt="Screenshot 2024-02-20 000127" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/787e7dbc-33d0-4a11-ac28-d0ccc237c9f6">|
 | profiles/ models.py | <img width="519" alt="Screenshot 2024-02-20 000929" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/a023a502-b747-4508-beb8-2bba9b5fabc9">|
 | profiles/ forms.py | <img width="556" alt="Screenshot 2024-02-20 001107" src="https://github.com/Indrakens/sensation-perfume/assets/127971416/fcc88f88-b30d-47b5-bfc7-b1891c7b8bbd">|
+#
+|     |      |
+|--------|-------|
+| contact/ views.py | ![Screenshot 2024-04-09 001450](https://github.com/Indrakens/sensation-perfume/assets/127971416/3efd4dee-8ee4-4e46-97d4-95d483d86ba4)|
+| contact/ models.py | ![Screenshot 2024-04-09 001841](https://github.com/Indrakens/sensation-perfume/assets/127971416/05f1d870-4a5a-4fa7-9518-4acef84584d0)|
+| contact/ forms.py | ![Screenshot 2024-04-09 002217](https://github.com/Indrakens/sensation-perfume/assets/127971416/cfb2835c-0c7a-42f2-94c7-24d2bce6354a)|
+| contact/ urls.py | ![Screenshot 2024-04-09 002736](https://github.com/Indrakens/sensation-perfume/assets/127971416/dbf3e8a5-e08a-4f4b-a7cc-f9dc240102b7)|
+| contact/ admin.py | ![Screenshot 2024-04-09 003107](https://github.com/Indrakens/sensation-perfume/assets/127971416/b675b287-9010-4b19-939e-6bc0fd08ff83)|
 ## HTML VALIDATION
 Due to the Django codes in templates, [W3C Markup Validation Service](https://validator.w3.org/) shows errors, for that reason only included base.html validator result
 |      |      |

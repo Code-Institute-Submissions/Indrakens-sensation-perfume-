@@ -21,4 +21,4 @@ class ContactForm(forms.ModelForm):
 
         self.fields['email'].widget.attrs['autofocus'] = True
         for field_name, fields in self.fields.items():
-            fields.widget.attrs["class"] = "border-warning rounded-0" 
+            fields.widget.attrs["class"] = "border-warning rounded-0"

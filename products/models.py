@@ -23,13 +23,14 @@ class Brand(models.Model):
         verbose_name_plural = 'Brands'
 
     name = models.CharField(max_length=254)
-    brand_friendly_name = models.CharField(max_length=254, null=True, blank=True)
+    brand_friendly_name = models.CharField(max_length=254, null=True,
+                                            blank=True)
 
     def __str__(self):
         return self.name
 
     def get_brand_friendly_name(self):
-        return self.brand_friendly_name        
+        return self.brand_friendly_name
 
 
 class Genders(models.Model):
@@ -38,32 +39,32 @@ class Genders(models.Model):
         verbose_name_plural = 'Genders'
 
     name = models.CharField(max_length=254)
-    gender_friendly_name = models.CharField(max_length=254, null=True, blank=True)
+    gender_friendly_name = models.CharField(max_length=254, null=True,
+                                            blank=True)
 
     def __str__(self):
         return self.name
 
     def get_gender_friendly_name(self):
-        return self.gender_friendly_name      
-
+        return self.gender_friendly_name
 
 
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True,
                                  blank=True, on_delete=models.SET_NULL)
     brand = models.ForeignKey('Brand', null=True,
-                                 blank=True, on_delete=models.SET_NULL)                             
+                                blank=True, on_delete=models.SET_NULL)                 
     gender = models.ForeignKey('Genders', null=True,
-                                 blank=True, on_delete=models.SET_NULL)                           
+                                blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     product_description = models.TextField()
     include = models.CharField(max_length=254, null=True, blank=True)
     has_giftwrap = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2, null=True,
-                                 blank=True) 
+                                blank=True)
     price_was = models.DecimalField(max_digits=6, decimal_places=2, null=True,
-                                     blank=True)
+                                    blank=True)
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
@@ -78,12 +79,14 @@ class Product(models.Model):
         if reviews_total > 0:
             return reviews_total / self.reviews.count()
 
-        return 0            
+        return 0
 
 
 class Review(models.Model):
-    product = models.ForeignKey(Product, related_name='reviews', on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, related_name='reviews',
+                                on_delete=models.CASCADE)
     rating = models.IntegerField(default=3)
     content = models.TextField()
-    created_by = models.ForeignKey(User, related_name='reviews', on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True)      
+    created_by = models.ForeignKey(User, related_name='reviews',
+                                    on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
