@@ -46,6 +46,7 @@
 | User can click on Login/ Sign Up and navigate to - register, login                                         |  PASS  |
 | User can navigate to product page                                                                          |  PASS  |
 | User can navigate to product detail page                                                                   |  PASS  |
+| User can clik on contct us - notifies user to Login or Register An Account to contact us                   |  PASS  |
 ### Navigation - Login/ Registered User
 |     TEST                                                                                                   | RESULTS  |
 |---------|--------:|
@@ -79,30 +80,29 @@
 ### Product Review - Login/ Registered User 
 |  TEST                                            | RESULTS |
 |---------|---------|
-| User can see product rating in product and product detail page                                                                      | PASS |
-| User can reed reviews in product detail page - displays rating, date added, commented by, comment                                   | PASS |
-| User can see not rated products in product page and product detail page - displays No Rating                                        | PASS |
-| User can see no reviewed product in product detail page - displays No Reviews                                                       | PASS |
-| User can add review in product detail page - displays review form  with included dropdown rating menu, comment field, submit button | PASS |
-| User adding review is notified of adding the review                                                                                 | PASS |
+| User can see product rating in product and product detail page                                    | PASS |
+| User can reed reviews in product detail page - displays rating, date added, commented by, comment | PASS |
+| User can see not rated products in product page and product detail page - displays No Rating      | PASS |
+| User can see no reviewed product in product detail page - displays No Reviews                     | PASS |
+| User can add review in product detail page - notifies added review                                | PASS |
 ### Product Detail Page
 |  TEST                                                                                                                           |  RESULTS |
 |--------|---------:| 
 | User can choose to add gift wrap to product by clicking on Offer Gift Wrap - Includes Gift Bag & Decorative Ribbon (if provided)| PASS |
 | User can add product quantity                                                                                                   | PASS |
-| User can click on Keep Shopping button - redirects to all product page                                                          | PASS |
+| User can click on Continue Shopping link  - redirects to all product page                                                       | PASS |
 | User can click on Add To Bag button - notifies added product in shopping bag                                                    | PASS |
 ### Shopping Bag
 |   TEST                                                                   |  RESULTS |
 |--------|--------:|
 | User can update product quantity - notifies updated product quantity     | PASS |
-| User can click on Keep Shopping button - redirects to all product page   | PASS |
+| User can click on Continue Shopping link - redirects to all product page   | PASS |
 | User can click on Go To Checkout button - redirects to checkout page     | PASS |
 | User can remove product from shopping bag - notifies removed product     | PASS |
 ### Checkout - Logout/ Not Registered User
 |    TEST                                                                                                  |  RESULT |
 |-----------|----------:|
-| User can  easily fill the form to complete the order                                                     |  PASS |
+| User can easily fill the form to complete the order                                                     |  PASS |
 | User can easily add card payment                                                                         |  PASS |
 | User can click on Adjust Bag button - redirects to shopping bag                                          |  PASS |
 | User can click on Complete Order button - redirects to order confirmation page and notifies order number |  PASS |
@@ -136,7 +136,13 @@
 ### Contact Us - Logout/ Not Registered User
 |   TEST                                         |  RESULTS  |
 |----------|--------|
-| 
+| User can clik on contct us - notifies user to Login or Register An Account to contact us| PASS |
+### Contact Us - Login User
+|  TEST                                     |  RESULTS  |
+|---------|----------|
+| User can click on contact us - redirects to contact form page                | PASS |
+| User can easily fill the contact form - notifies user for contacting with us | PASS |
+| User can click on return To Home Page link - redirects to home page          | PASS |
 ### Blog - Logout/ Not Registered User
 |   TEST                                                            |  RESULTS  |
 |----------|-----------:|
@@ -166,8 +172,8 @@
 |  TEST                                                                                                                                   |  RESULTS |
 |--------|---------:|
 | Super user can login in admin panel                                                                                                     |  PASS  |
-| Super User can update product in product detail page - redirects to Profile management update product page and notifies updating product|  PASS  | 
-| Super User can add product by clicking on Username-Profile Product Management - redirects to Profile Managemente Add Product            |  PASS  |
+| Super User can update product in product detail page - redirects to Management Update Product page and notifies updating product        |  PASS  | 
+| Super User can add product by clicking on Username-Profile  Management - redirects to  Managemente Add Product                          |  PASS  |
 | Super User can delete product in product detail page - redirects to all product page and notifies deleted product                       |  PASS  |
 
 ## CI PYTHON LINTER [pep8ci](https://pep8ci.herokuapp.com/)
