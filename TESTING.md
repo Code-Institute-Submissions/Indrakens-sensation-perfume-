@@ -35,7 +35,7 @@
 ### Navigation - Logout/ Not Registered User
 |     TEST                                                                                                   | RESULTS  |
 |---------|--------:|
-| User can click on Shop All and navigate to - categories, price, shop all                                   |  PASS  |
+| User can click on Shop All and navigate to all products page                                               |  PASS  |
 | User can click on For Her and navigate to - eau de parfum, eau de toilette, all for her                    |  PASS  |
 | User can click on For Him and navigate to - eau de parfum, eau de toilette, all for him                    |  PASS  |
 | User can click on Gift Sets and navigate to - gift sets for her, gift sets for him, all gift sets          |  PASS  |
@@ -49,7 +49,7 @@
 ### Navigation - Login/ Registered User
 |     TEST                                                                                                   | RESULTS  |
 |---------|--------:|
-| User can click on Shop All and navigate to - categories, price, shop all                                   |  PASS  |
+| User can click on Shop All and navigate to all products page                                               |  PASS  |
 | User can click on For Her and navigate to - eau de parfum, eau de toilette, all for her                    |  PASS  |
 | User can click on For Him and navigate to - eau de parfum, eau de toilette, all for him                    |  PASS  |
 | User can click on Gift Sets and navigate to - gift sets for her, gift sets for him, all gift sets          |  PASS  |
@@ -60,16 +60,31 @@
 | User can click on Username- Profile and navigate to - username-profile, logout                             |  PASS  |
 | User can navigate to product page                                                                          |  PASS  |
 | User can navigate to product detail page                                                                   |  PASS  |
+| User can click on Contact Us and navigate to contact form page                                             |  PASS  |
 ### Product Sorting and Searching
 |   TEST                                                                               |  RESULTS |
 |--------|---------:|
 | User can click on search field and search for a product by - name, description       |  PASS |
 | User can click on Sort by in product pages and sort products by - price (low to high)|  PASS | 
 | User can click on Sort by in product pages and sort products by - price (high to low)|  PASS | 
-| User can click on Sort by in product pages and sort products by - name (A to Z)      |  PASS | 
-| User can click on Sort by in product pages and sort products by - name (Z to A)      |  PASS | 
-| User can click on Sort by in product pages and sort products by - category (A to Z)  |  PASS |
-| User can click on Sort by in product pages and sort products by - category (Z to A)  |  PASS | 
+| User can click on Sort by in product pages and sort products by - brand (A to Z)     |  PASS | 
+| User can click on Sort by in product pages and sort products by - brand (Z to A)     |  PASS |
+### Product Review - Logout/ Not Registered User 
+|  TEST                                            | RESULTS |
+|---------|---------|
+| User can see product rating in product and product detail page                                   | PASS |
+| User can reed reviews in product detail page - displays rating, date added, commented by, comment| PASS |
+| User can see not rated products in product page and product detail page - displays No Rating     | PASS |
+| User can see no reviewed product in product detail page - displays No Reviews                    | PASS |
+### Product Review - Login/ Registered User 
+|  TEST                                            | RESULTS |
+|---------|---------|
+| User can see product rating in product and product detail page                                                                      | PASS |
+| User can reed reviews in product detail page - displays rating, date added, commented by, comment                                   | PASS |
+| User can see not rated products in product page and product detail page - displays No Rating                                        | PASS |
+| User can see no reviewed product in product detail page - displays No Reviews                                                       | PASS |
+| User can add review in product detail page - displays review form  with included dropdown rating menu, comment field, submit button | PASS |
+| User adding review is notified of adding the review                                                                                 | PASS |
 ### Product Detail Page
 |  TEST                                                                                                                           |  RESULTS |
 |--------|---------:| 
@@ -118,6 +133,10 @@
 | User can click on order number in order history and view past order confirmation - redirects to order confirmation page and notifies past order confirmation|  PASS |
 | User can delete order history order number - redirects to profile page and notifies deleted order number from order history                                 |  PASS |
 | User can click on Cancel link - redirects to profile page                                                                                                   |  PASS |
+### Contact Us - Logout/ Not Registered User
+|   TEST                                         |  RESULTS  |
+|----------|--------|
+| 
 ### Blog - Logout/ Not Registered User
 |   TEST                                                            |  RESULTS  |
 |----------|-----------:|

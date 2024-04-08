@@ -8,7 +8,7 @@ def contact_us(request):
     form = ContactForm()
 
     if not request.user.is_authenticated:
-        messages.error(request, 'Login to contact us')
+        messages.error(request, 'Login or Register An Account to contact us')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
