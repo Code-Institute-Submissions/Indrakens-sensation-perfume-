@@ -81,7 +81,7 @@
                                 <!-- order summary -->
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6 class="total"><strong>Shopping Bag Total: &euro;{{ total|floatformat:2 }}</strong></h6>
-                                    <h6 class="delivery">Delivery: &euro;{{ delivery|floatformat:2 }}</h6>
+                                    <h6 class="delivery"><strong>Delivery: &euro;{{ delivery|floatformat:2 }}</strong></h6>
                                     <h4 class="mt-4 grand-total"><strong>Total: &euro;{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %} 
                                         <h5 class="mb-1 free-delivery text-center" style="background-color: #A6D16C;">
