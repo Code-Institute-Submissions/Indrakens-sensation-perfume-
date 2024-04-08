@@ -196,7 +196,7 @@
         "model": "products.brand",
         "fields": {
             "name": "kenzo",
-            "friendly_name": "Kenzo"
+            "brand_friendly_name": "Kenzo"
         }
     },
     {
