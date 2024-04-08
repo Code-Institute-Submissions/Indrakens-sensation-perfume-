@@ -4,7 +4,7 @@
         "model": "products.gender",
         "fields": {
             "name": "female",
-            "friendly_name": "Women's"
+            "gender_friendly_name": "Women's"
         }
     },
     {
@@ -12,7 +12,7 @@
         "model": "products.gender",
         "fields": {
             "name": "male",
-            "friendly_name": "Men's"
+            "gender_friendly_name": "Men's"
         }
     }
 ]

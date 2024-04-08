@@ -1,0 +1,282 @@
+[
+    {
+        "pk": 1,
+        "model": "products.brand",
+        "fields": {
+            "name": "armani",
+            "brand_friendly_name": "Armani"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.brand",
+        "fields": {
+            "name": "azzaro",
+            "brand_friendly_name": "Azzaro"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.brand",
+        "fields": {
+            "name": "burberry",
+            "brand_friendly_name": "Burberry"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.brand",
+        "fields": {
+            "name": "calvin_klein",
+            "brand_friendly_name": "Calvin Klein"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.brand",
+        "fields": {
+            "name": "carolina_herrera",
+            "brand_friendly_name": "Carolina Herrera"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.brand",
+        "fields": {
+            "name": "davidoff",
+            "brand_friendly_name": "Davidoff"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.brand",
+        "fields": {
+            "name": "diesel",
+            "brand_friendly_name": "Diesel"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.brand",
+        "fields": {
+            "name": "dolce_gabbana",
+            "brand_friendly_name": "Dolce & Gabbana"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.brand",
+        "fields": {
+            "name": "givenchy",
+            "brand_friendly_name": "Givenchy"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.brand",
+        "fields": {
+            "name": "gucci",
+            "brand_friendly_name": "Gucci"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.brand",
+        "fields": {
+            "name": "hugo_boss",
+            "brand_friendly_name": "Hugo Boss"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.brand",
+        "fields": {
+            "name": "issey_miyake",
+            "brand_friendly_name": "Issey Miyake"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.brand",
+        "fields": {
+            "name": "jacques_bogart",
+            "brand_friendly_name": "Jacques Bogart"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.brand",
+        "fields": {
+            "name": "jean_paul_gaultier",
+            "brand_friendly_name": "Jean Paul Gaultier"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.brand",
+        "fields": {
+            "name": "jimmy_choo",
+            "brand_friendly_name": "Jimmy Choo"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.brand",
+        "fields": {
+            "name": "mont_blanc",
+            "brand_friendly_name": "Mont Blanc"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.brand",
+        "fields": {
+            "name": "paco_rabanne",
+            "brand_friendly_name": "Paco Rabanne"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.brand",
+        "fields": {
+            "name": "versace",
+            "brand_friendly_name": "Versace"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.brand",
+        "fields": {
+            "name": "ysl",
+            "brand_friendly_name": "YSL"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.brand",
+        "fields": {
+            "name": "chloe",
+            "brand_friendly_name": "Chloe"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.brand",
+        "fields": {
+            "name": "chopard",
+            "brand_friendly_name": "Chopard"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.brand",
+        "fields": {
+            "name": "clinique",
+            "brand_friendly_name": "Clinique"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.brand",
+        "fields": {
+            "name": "dkny",
+            "brand_friendly_name": "DKNY"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.brand",
+        "fields": {
+            "name": "juicy_couture",
+            "brand_friendly_name": "Juicy Couter"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.brand",
+        "fields": {
+            "name": "kenzo",
+            "friendly_name": "Kenzo"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.brand",
+        "fields": {
+            "name": "lancome",
+            "brand_friendly_name": "Lancome"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.brand",
+        "fields": {
+            "name": "marc_jacobs",
+            "brand_friendly_name": "Marc Jacobs"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "products.brand",
+        "fields": {
+            "name": "narciso_rodriguez",
+            "brand_friendly_name": "Narciso Rodriguez"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "products.brand",
+        "fields": {
+            "name": "prada",
+            "brand_friendly_name": "Prada"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "products.brand",
+        "fields": {
+            "name": "roberto_cavalli",
+            "brand_friendly_name": "Roberto Cavalli"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "products.brand",
+        "fields": {
+            "name": "thierry_mugler",
+            "brand_friendly_name": "Thierry Mugler"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "products.brand",
+        "fields": {
+            "name": "victor_rolf",
+            "brand_friendly_name": "Victor & Rolf"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "products.brand",
+        "fields": {
+            "name": "police",
+            "brand_friendly_name": "Police"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "products.brand",
+        "fields": {
+            "name": "elizabeth_arden",
+            "brand_friendly_name": "Elizabeth Arden"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "products.brand",
+        "fields": {
+            "name": "lanvin",
+            "brand_friendly_name": "Lanvin"
+        }
+    }
+]
