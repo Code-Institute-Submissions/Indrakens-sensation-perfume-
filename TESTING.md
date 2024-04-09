@@ -96,7 +96,7 @@
 |   TEST                                                                   |  RESULTS |
 |--------|--------:|
 | User can update product quantity - notifies updated product quantity     | PASS |
-| User can click on Continue Shopping link - redirects to all product page   | PASS |
+| User can click on Continue Shopping link - redirects to all product page | PASS |
 | User can click on Go To Checkout button - redirects to checkout page     | PASS |
 | User can remove product from shopping bag - notifies removed product     | PASS |
 ### Checkout - Logout/ Not Registered User

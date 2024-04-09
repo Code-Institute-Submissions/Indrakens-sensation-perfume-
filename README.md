@@ -58,7 +58,7 @@ The website was deployed via Heroku - the live site can be found here -
 ## DATABASE
 |         |        |
 |---------|----------|
-| Conceptual ERD | ![New Wireframe 1 (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/9ef098d8-c760-449b-b59a-35eb2d76a276)|
+| Conceptual ERD | ![erd](https://github.com/Indrakens/sensation-perfume/assets/127971416/9e14bfd6-bdfb-4971-9b36-bf895d17e546)|
 #
 ## WIREFRAMES
 ### WEB
