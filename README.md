@@ -105,9 +105,11 @@ The Agile methodology was used to plan the project. Each user story was linked t
 * Sorting and Searching [#14](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51791259)
 * Shop Facebook Business Page [#32](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53740551)
 * Like / Comment Blog Post [#36](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53748018)
+* Product Review [#42](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=59130849)
+* Contact Form [#43](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=59132777)
 #
 ### USER STORIES
-The full list of User Stories is available on the project [Sensation Perfume Kanban Board](https://github.com/users/Indrakens/projects/24/views/1). From the Epics 20 User Stories were developed. 
+The full list of User Stories is available on the project [Sensation Perfume Kanban Board](https://github.com/users/Indrakens/projects/24/views/1). From the Epics 22 User Stories were developed. 
 * Shopp Owner
    * As a Store Owner I can add, update, delete products so that I can manage online store [#16](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=51797988)
 * User Profile
@@ -147,7 +149,11 @@ The full list of User Stories is available on the project [Sensation Perfume Kan
 * View Users
    * As a Shop Admin I can view number of registered users so that I can see how many users are interacting with online shop [#35](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53744263)    
 * View Blog Posts
-   * As a User I can can view blog posts so that I can read latest promotions or sales [#37](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53748971)  
+   * As a User I can can view blog posts so that I can read latest promotions or sales [#37](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=53748971)
+* Product Review
+   * As a User I can can leave a review to the products so that I can I can let know product like/dislike [#44](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=59133249)
+* Contact Us
+   * As a User I can can contact the business owner so that I can notify about my query [#45](https://github.com/users/Indrakens/projects/24/views/1?pane=issue&itemId=59134472)  
 #
 ## FEATURES
 ### WEB
