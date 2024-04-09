@@ -64,21 +64,24 @@ The website was deployed via Heroku - the live site can be found here -
 ### WEB
 |        |          |
 |----------|----------|
-| Home Page | ![home page](https://github.com/Indrakens/sensation-perfume/assets/127971416/5d36baa2-fd0c-4e69-b351-6dbbd107e03f)|
-| Product Page | ![product page](https://github.com/Indrakens/sensation-perfume/assets/127971416/95d6dd47-cc59-4aca-9758-dfd1e0336b76)|
-| Product Detail Page | ![product detail page](https://github.com/Indrakens/sensation-perfume/assets/127971416/c8205b1e-cc1a-45c1-9226-374d83007083)|
-| Shopping Bag Page| ![shopping bag](https://github.com/Indrakens/sensation-perfume/assets/127971416/b5f7a8cf-df0c-40b4-9202-7032e62b49f8)|
-| Checkout Page | ![checkout page](https://github.com/Indrakens/sensation-perfume/assets/127971416/f861fa72-9345-492d-9fbd-060365876a44)|
-| Product Managemente Page | ![product managemente page ](https://github.com/Indrakens/sensation-perfume/assets/127971416/3f3f4285-79bd-41c3-9441-56e078c4cad5)|
-| User Profile Page | ![user profile page](https://github.com/Indrakens/sensation-perfume/assets/127971416/de77bcf7-9437-4f3d-9741-a73a2cf7641c)|
-| Blog Post Page | ![blog page](https://github.com/Indrakens/sensation-perfume/assets/127971416/4766df6c-98f8-40ff-bbc2-5faaeb4d4856)|
-| Blog Post Detail Page | ![blog detail page](https://github.com/Indrakens/sensation-perfume/assets/127971416/bec3e0fd-3d6d-4834-9faf-cd5856ac79e4)|
+| Home Page | ![home no logged in user](https://github.com/Indrakens/sensation-perfume/assets/127971416/8ed9232b-9316-4a22-b790-edb263760b0f)|
+| Product Page | ![product page](https://github.com/Indrakens/sensation-perfume/assets/127971416/72c4171a-8f91-49eb-b97e-9438c72fdf1d)|
+| Product Detail Page With Review - Login User | ![user product detail page (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/124cc486-61d1-44f0-8ad7-3345bd7ac73e)|
+| Product Detail Page Without Review - Login User | ![login user no raiting and reviews detail page (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/a360eb5a-aa22-43da-ad61-d5a0d1fc56b6)|
+| Super User Product Detail Page with reviews | ![super user p-detail page with revies and included giftwrap (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/1335e4e0-fb86-4423-8b7a-9cc72293b6bb)|
+| Shopping Bag Page| ![shopping bag (2)](https://github.com/Indrakens/sensation-perfume/assets/127971416/6d226467-a255-4aa2-a687-5cfed854c73e)|
+| Checkout Page | ![checkout (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/ec1226d3-c1e2-4ff5-bba2-370b37fb3faa)|
+| Product Managemente - Add Product Page | ![management add product (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/d8edf98b-6650-4a6f-bf3a-ec42710f06ca)|
+|  Product Managemente - Update Product Page | ![management update product (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/bb0f463c-d6c5-4fb2-b3d2-8f3a1d75f69e)|
+| Contact Us Page | ![contact us form (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/fb56430e-2023-4f36-bc4b-85e2406414ff)|
+
 ### MOBILE
 |       |       |
 |---------|---------|
-| Home Page | ![mobile home page](https://github.com/Indrakens/sensation-perfume/assets/127971416/d702a9ff-da1c-4c15-8310-89f9a0988448)|
-| Product Page | ![mobile product page](https://github.com/Indrakens/sensation-perfume/assets/127971416/404b8a5d-19e2-4f8a-bbe1-94b56c847207)|
-| Shopping Bag Page | ![mobile shopping bag](https://github.com/Indrakens/sensation-perfume/assets/127971416/96ff3ee7-ff65-458e-ba16-cd97b2d44f97)|
+| Home Page | ![mobile home (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/ed8ac83f-0580-436f-bb25-8f75a94b526c)|
+| Product Page | ![mobail all products (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/0e5f2810-267a-4aaa-8e09-9354c9ff8a50)|
+| Product detail Page without reviews - Not Logged in User | ![no loedin user detail page no rating (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/ca97a864-5531-4940-bfb2-a1ed8eac7319)|
+| Product detail Page with reviews - Not Logged in User | ![no loedin user detail page (1)](https://github.com/Indrakens/sensation-perfume/assets/127971416/afb22ae2-9d2c-4a90-917c-a4803f714e9f)|
 ## BUSINESS MODEL 
 The business is a B2C e-commerce platform whose goal is to provide products to its customers through an online store. The benefit for a business is easy to scale the business as it grows. Easy to set up a physical location. The business offers perfumes, eau de toilette, giftsets, products for sale- for women and men. Also offers gift wrap for perfumes and eau-de-toilette which is optional. The business marketing strategy is promote the online store trough it's Facebook business page, share the page with friends and family to expanding the business. An online store has a blog section for promoting the product or letting customers know about new product arrivals, which could be productive and sell more products to expand the business. The business goal was to create an online store where shoppers could easily navigate through the website. Provide users with products that meet their expectations, easily add product to shopping bag, and allow them to checkout quickly and easily.
 #
